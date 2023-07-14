@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<module xmlns="http://guidewire.com/xml/module" name="pc-cmdline">
+  <dependencies>
+    <dependency name="pl"/>
+  </dependencies>
+  <excludes>
+    <pattern>gw/xsd/guidewire/soapheaders.xsd</pattern>
+  </excludes>
+  <settings>
+    <setting name="gx.product" value="pc"/>
+  </settings>
+</module>
