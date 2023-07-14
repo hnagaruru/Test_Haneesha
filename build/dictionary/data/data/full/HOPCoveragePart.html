@@ -1,0 +1,690 @@
+<html>
+<head>
+<title>HOPCoveragePart</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">HOPCoveragePart <span class="entityname">(pc_hopcoveragepart) (delegates to <A HREF="Coverable.html" TARGET="tableFrame">Coverable</A>, <A HREF="EffDated.html" TARGET="tableFrame">EffDated</A>, <A HREF="Modifiable.html" TARGET="tableFrame">Modifiable</A>)</span></div>
+<div class="desc">
+<span id="reflink_2093" class="reftext" onclick='showAndHideRefBox("refbox_2093", "reflink_2093")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_2093" class="refbox_inner" style="display:none;">
+Coverage Parts for the HOP line
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">HOPCoveragePart</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Editable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Editable</b><br>The related database table contains rows that are editable by application users based on roles and permissions. An Editable table manages additional fields that represent an audit trail of an entity in the table (for example, who created it and when, who last edited it and when).')">?</span></sup>, Exportable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>, Extendable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Extendable</b><br>Can be extended with additional custom fields added to it.')">?</span></sup>, Final<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Final</b><br>The entity cannot be subtyped.')">?</span></sup>, Keyed<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Keyed</b><br>Has a related database table that has a primary key. Each row in a Keyed table has an integer primary key named ID. IDs are managed internally by the application, and the system ensures that no two rows in a keyed table have the same ID. In addition to the internal key, an external primary key can be associated with each row in a table.')">?</span></sup>, Sourceable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Sourceable</b><br>Contains entities that are linked to an external source. Each row in a Sourceable entity\'s table has additional fields to identify the external system and store the ID of the Sourceable entity in the external system.')">?</span></sup>, Versionable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Versionable</b><br>Has a version number that increases every time the entity is changed. This allows the cache to identify when entities have been updated.')">?</span></sup></span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_2094" class="reftext" onclick='showAndHideRefBox("refbox_2094", "reflink_2094")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_2094" class="refbox_inner" style="display:none;">
+<A HREF="../full/HOPCoveragePart.html" TARGET="tableFrame">HOPCoveragePart.BasedOnValue</A><br><A HREF="../full/HOPCoveragePart.html" TARGET="tableFrame">HOPCoveragePart.Fixed</A><br><A HREF="../full/HOPCoveragePartCond.html" TARGET="tableFrame">HOPCoveragePartCond.HOPCoveragePart</A><br><A HREF="../full/HOPCoveragePartCov.html" TARGET="tableFrame">HOPCoveragePartCov.HOPCoveragePart</A><br><A HREF="../full/HOPCoveragePartExcl.html" TARGET="tableFrame">HOPCoveragePartExcl.HOPCoveragePart</A><br><A HREF="../full/HOPCoveragePartMod.html" TARGET="tableFrame">HOPCoveragePartMod.HOPCoveragePart</A><br><A HREF="../full/HOPDwelling.html" TARGET="tableFrame">HOPDwelling.HOPCoveragePart</A>
+</div>
+</span>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_2095" class="reftext" onclick='showAndHideRefBox("refbox_2095", "reflink_2095")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_2095" class="refbox_inner" style="display:none;">
+<A HREF="../full/PolicyLine.html#HOPLine" TARGET="tableFrame">HOPLine.HOPCoverageParts</A>
+</div>
+</span>
+</div>
+<span class="showhidelink"><a id="showAllElements" href="#" onClick="return showAllUIDetails()">Show user interface details on all fields</a></span>
+
+<br>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+<a name="hopcoveragepart_id"></a>
+<p class="column">
+<span class="coltitle">ID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "key")'>key</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Internally managed primary key</span>
+<a name="hopcoveragepart_archivepartition"></a>
+<p class="column">
+<span class="coltitle">ArchivePartition</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "softentityreference")'>softentityreference</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">Unique number to partition the data so that the multiple workers can work independently</span>
+<a name="hopcoveragepart_archivepartition_prop"></a>
+<p class="column">
+<span class="coltitle">ARCHIVEPARTITION_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_basedon"></a>
+<p class="column">
+<span class="coltitle">BasedOn</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning HOPCoveragePart</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_basedonid_dynprop"></a>
+<p class="column">
+<span class="coltitle">BASEDONID_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_basedonuntyped"></a>
+<p class="column">
+<span class="coltitle">BasedOnUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning EffDated</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_basedonvalue"></a>
+<p class="column">
+<span class="coltitle">BasedOnValue</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="HOPCoveragePart.html" TARGET="tableFrame">HOPCoveragePart</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: BasedOnID)</span>
+<br>
+<span class="desc">Link to the row on which this row is based; or null if new to branch</span>
+<a name="hopcoveragepart_basedonvalue_prop"></a>
+<p class="column">
+<span class="coltitle">BASEDONVALUE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_beanversion_prop"></a>
+<p class="column">
+<span class="coltitle">BEANVERSION_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_branch"></a>
+<p class="column">
+<span class="coltitle">Branch</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning PolicyPeriod</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_branchid_dynprop"></a>
+<p class="column">
+<span class="coltitle">BRANCHID_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_branchuntyped"></a>
+<p class="column">
+<span class="coltitle">BranchUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning EffDatedBranch</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_branchvalue"></a>
+<p class="column">
+<span class="coltitle">BranchValue</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="PolicyPeriod.html" TARGET="tableFrame">PolicyPeriod</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: BranchID)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Link to root of effdated tree</span>
+<a name="hopcoveragepart_branchvalue_prop"></a>
+<p class="column">
+<span class="coltitle">BRANCHVALUE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_changetype"></a>
+<p class="column">
+<span class="coltitle">ChangeType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/EffDatedChangeType_tl.html" TARGET="tableFrame">EffDatedChangeType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">Type of change made to this row</span>
+<a name="hopcoveragepart_changetype_dynprop"></a>
+<p class="column">
+<span class="coltitle">CHANGETYPE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_changetype_prop"></a>
+<p class="column">
+<span class="coltitle">CHANGETYPE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_conditions_prop"></a>
+<p class="column">
+<span class="coltitle">CONDITIONS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_coverablereferencedate"></a>
+<p class="column">
+<span class="coltitle">CoverableReferenceDate</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.Date</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_coverablestate"></a>
+<p class="column">
+<span class="coltitle">CoverableState</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.Jurisdiction</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_coverageparttype"></a>
+<p class="column">
+<span class="coltitle">CoveragePartType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/CoveragePartType_tl.html" TARGET="tableFrame">CoveragePartType</A> using filter <A HREF="../typelist/CoveragePartType_tl.html#HOPCoveragePartType" TARGET="tableFrame">HOPCoveragePartType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The type of this coverage part (Rental, Condominium, Dwelling)</span>
+<div class='screenrefbody'>
+<span id=showhideUI_0 onclick='showAndHideUIDetails("UITable_0", "showhideUI_0")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_0' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>CoveragePartSelectionDV.HOPHomeowners.pcf:31</td>
+<td>Web.Policy.HOP.CoveragePart</td>
+<td>coveragePart.CoveragePartType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_PolicyReview
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyFile_HOPCoverages
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopcoveragepart_coverageparttype_prop"></a>
+<p class="column">
+<span class="coltitle">COVERAGEPARTTYPE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_coverages_prop"></a>
+<p class="column">
+<span class="coltitle">COVERAGES_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_createtime"></a>
+<p class="column">
+<span class="coltitle">CreateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was created</span>
+<a name="hopcoveragepart_createtime_prop"></a>
+<p class="column">
+<span class="coltitle">CREATETIME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_createuser"></a>
+<p class="column">
+<span class="coltitle">CreateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CreateUserID)</span>
+<br>
+<span class="desc">User who created the object</span>
+<a name="hopcoveragepart_createuser_prop"></a>
+<p class="column">
+<span class="coltitle">CREATEUSER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_effdatedkey"></a>
+<p class="column">
+<span class="coltitle">EffDatedKey</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.core.effdate.EffDatedKey</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_effectivedate"></a>
+<p class="column">
+<span class="coltitle">EffectiveDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Effective date of this row.  A value of NULL in the database indicates that this row's effective date is equal to the Period Start.</span>
+<a name="hopcoveragepart_effectivedate_dynprop"></a>
+<p class="column">
+<span class="coltitle">EFFECTIVEDATE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_effectivedate_prop"></a>
+<p class="column">
+<span class="coltitle">EFFECTIVEDATE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_exclusions_prop"></a>
+<p class="column">
+<span class="coltitle">EXCLUSIONS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_expirationdate"></a>
+<p class="column">
+<span class="coltitle">ExpirationDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Expiration date of this row.  A value of NULL in the database indicates that this row's expiration date is equal to the Period End.</span>
+<a name="hopcoveragepart_expirationdate_dynprop"></a>
+<p class="column">
+<span class="coltitle">EXPIRATIONDATE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_expirationdate_prop"></a>
+<p class="column">
+<span class="coltitle">EXPIRATIONDATE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_fixed"></a>
+<p class="column">
+<span class="coltitle">Fixed</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="HOPCoveragePart.html" TARGET="tableFrame">HOPCoveragePart</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: FixedID)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Unique ID for this 'object' across all branches and periods</span>
+<a name="hopcoveragepart_fixed_prop"></a>
+<p class="column">
+<span class="coltitle">FIXED_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_fixedid"></a>
+<p class="column">
+<span class="coltitle">FixedId</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.core.Key</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_fixedid_dynprop"></a>
+<p class="column">
+<span class="coltitle">FIXEDID_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_frozen"></a>
+<p class="column">
+<span class="coltitle">Frozen</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_frozenset"></a>
+<p class="column">
+<span class="coltitle">FrozenSet</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="FrozenSet.html" TARGET="tableFrame">FrozenSet</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: FrozenSetID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_frozenset_prop"></a>
+<p class="column">
+<span class="coltitle">FROZENSET_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_hopcoveragepartmods_prop"></a>
+<p class="column">
+<span class="coltitle">HOPCOVERAGEPARTMODS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_hopdwellings_prop"></a>
+<p class="column">
+<span class="coltitle">HOPDWELLINGS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_hopline"></a>
+<p class="column">
+<span class="coltitle">HOPLine</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="PolicyLine.html#HOPLine" TARGET="tableFrame">HOPLine</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_hopline_prop"></a>
+<p class="column">
+<span class="coltitle">HOPLINE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_id_prop"></a>
+<p class="column">
+<span class="coltitle">ID_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_initialconditionscreated"></a>
+<p class="column">
+<span class="coltitle">InitialConditionsCreated</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Whether or not the initial set of conditions has been created on this Coverable.</span>
+<a name="hopcoveragepart_initialconditionscreated_dynprop"></a>
+<p class="column">
+<span class="coltitle">INITIALCONDITIONSCREATED_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_initialconditionscreated_prop"></a>
+<p class="column">
+<span class="coltitle">INITIALCONDITIONSCREATED_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_initialcoveragescreated"></a>
+<p class="column">
+<span class="coltitle">InitialCoveragesCreated</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Whether or not the initial set of coverages has been created on this Coverable.</span>
+<a name="hopcoveragepart_initialcoveragescreated_dynprop"></a>
+<p class="column">
+<span class="coltitle">INITIALCOVERAGESCREATED_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_initialcoveragescreated_prop"></a>
+<p class="column">
+<span class="coltitle">INITIALCOVERAGESCREATED_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_initialexclusionscreated"></a>
+<p class="column">
+<span class="coltitle">InitialExclusionsCreated</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Whether or not the initial set of exclusions has been created on this Coverable.</span>
+<a name="hopcoveragepart_initialexclusionscreated_dynprop"></a>
+<p class="column">
+<span class="coltitle">INITIALEXCLUSIONSCREATED_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_initialexclusionscreated_prop"></a>
+<p class="column">
+<span class="coltitle">INITIALEXCLUSIONSCREATED_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_modifiableline"></a>
+<p class="column">
+<span class="coltitle">ModifiableLine</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning PolicyLine</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_modifiablepolicyperiod"></a>
+<p class="column">
+<span class="coltitle">ModifiablePolicyPeriod</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning PolicyPeriod</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_modifiablereferencedate"></a>
+<p class="column">
+<span class="coltitle">ModifiableReferenceDate</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.Date</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_modifiablestate"></a>
+<p class="column">
+<span class="coltitle">ModifiableState</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.Jurisdiction</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_new"></a>
+<p class="column">
+<span class="coltitle">New</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_newlyimported"></a>
+<p class="column">
+<span class="coltitle">NewlyImported</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_policyline"></a>
+<p class="column">
+<span class="coltitle">PolicyLine</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning PolicyLine</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_preferredcoveragecurrency"></a>
+<p class="column">
+<span class="coltitle">PreferredCoverageCurrency</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Preferred Coverage Currency for coverages associated with this coverable</span>
+<a name="hopcoveragepart_preferredcoveragecurrency_dynprop"></a>
+<p class="column">
+<span class="coltitle">PREFERREDCOVERAGECURRENCY_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_preferredcoveragecurrency_prop"></a>
+<p class="column">
+<span class="coltitle">PREFERREDCOVERAGECURRENCY_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_promoted"></a>
+<p class="column">
+<span class="coltitle">Promoted</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_publicid"></a>
+<p class="column">
+<span class="coltitle">PublicID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "publicid")'>publicid</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ID or primary key of the row in the external system to which this row is mapped</span>
+<a name="hopcoveragepart_publicid_prop"></a>
+<p class="column">
+<span class="coltitle">PUBLICID_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_referencedateinternal"></a>
+<p class="column">
+<span class="coltitle">ReferenceDateInternal</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Internal field for storing the reference date of this entity on bound policy periods.</span>
+<a name="hopcoveragepart_referencedateinternal_dynprop"></a>
+<p class="column">
+<span class="coltitle">REFERENCEDATEINTERNAL_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_referencedateinternal_prop"></a>
+<p class="column">
+<span class="coltitle">REFERENCEDATEINTERNAL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_slice"></a>
+<p class="column">
+<span class="coltitle">Slice</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_slicedate"></a>
+<p class="column">
+<span class="coltitle">SliceDate</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.Date</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_type"></a>
+<p class="column">
+<span class="coltitle">TYPE</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EffDatedEntityTypeReference<entity.HOPCoveragePart, entity.PolicyPeriod></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_unsliced"></a>
+<p class="column">
+<span class="coltitle">Unsliced</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning HOPCoveragePart</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_unsliceduntyped"></a>
+<p class="column">
+<span class="coltitle">UnslicedUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning EffDated</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_updatetime"></a>
+<p class="column">
+<span class="coltitle">UpdateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was last updated</span>
+<a name="hopcoveragepart_updatetime_prop"></a>
+<p class="column">
+<span class="coltitle">UPDATETIME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_updateuser"></a>
+<p class="column">
+<span class="coltitle">UpdateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: UpdateUserID)</span>
+<br>
+<span class="desc">User who last updated the object</span>
+<a name="hopcoveragepart_updateuser_prop"></a>
+<p class="column">
+<span class="coltitle">UPDATEUSER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_versionlist"></a>
+<p class="column">
+<span class="coltitle">VersionList</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning windowed.HOPCoveragePartVersionList</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_versionlistuntyped"></a>
+<p class="column">
+<span class="coltitle">VersionListUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.core.effdate.EffDatedVersionList</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="Arrays"></a><div class="arraysbox">Arrays</div>
+<a name="hopcoveragepart_associatedcoverageparttypes"></a>
+<p class="column">
+<span class="coltitle">AssociatedCoveragePartTypes</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning typekey.CoveragePartType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_conditions"></a>
+<p class="column">
+<span class="coltitle">Conditions</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="HOPCoveragePartCond.html" TARGET="tableFrame">HOPCoveragePartCond</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Conditions directly attached to the HOPCoveragePart</span>
+<a name="hopcoveragepart_conditionsfromcoverable"></a>
+<p class="column">
+<span class="coltitle">ConditionsFromCoverable</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning PolicyCondition</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_coverages"></a>
+<p class="column">
+<span class="coltitle">Coverages</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="HOPCoveragePartCov.html" TARGET="tableFrame">HOPCoveragePartCov</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Coverages directly attached to the HOPCoveragePart</span>
+<a name="hopcoveragepart_coveragesconditionsandexclusionsfromcoverable"></a>
+<p class="column">
+<span class="coltitle">CoveragesConditionsAndExclusionsFromCoverable</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning Clause</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_coveragesfromcoverable"></a>
+<p class="column">
+<span class="coltitle">CoveragesFromCoverable</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning Coverage</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_exclusions"></a>
+<p class="column">
+<span class="coltitle">Exclusions</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="HOPCoveragePartExcl.html" TARGET="tableFrame">HOPCoveragePartExcl</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Exclusions directly attached to the HOPCoveragePart</span>
+<a name="hopcoveragepart_exclusionsfromcoverable"></a>
+<p class="column">
+<span class="coltitle">ExclusionsFromCoverable</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning Exclusion</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_hopcoveragepartmods"></a>
+<p class="column">
+<span class="coltitle">HOPCoveragePartMods</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="HOPCoveragePartMod.html" TARGET="tableFrame">HOPCoveragePartMod</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Modifiers directly attached to the HOPCoveragePart</span>
+<a name="hopcoveragepart_hopdwellings"></a>
+<p class="column">
+<span class="coltitle">HOPDwellings</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="HOPDwelling.html" TARGET="tableFrame">HOPDwelling</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Dwellings for this Coverage Part</span>
+<a name="hopcoveragepart_modifiers"></a>
+<p class="column">
+<span class="coltitle">Modifiers</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning Modifier</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopcoveragepart_policylocations"></a>
+<p class="column">
+<span class="coltitle">PolicyLocations</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning PolicyLocation</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="Unique Keys for HOPCoveragePart"></a><div class="arraysbox">Unique Keys for HOPCoveragePart</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>hopcoveragepart1a</td>
+<td>PublicID</td></tr>
+<tr><td>hopcoveragepart3a</td>
+<td>BranchID, FixedID, ID</td></tr>
+</table>
+<script language="JavaScript">
+function showAllUIDetails() {
+showUIDetails('UITable_0', 'showhideUI_0');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Hide user interface details on all fields';
+  link.onclick = hideAllUIDetails;
+  return false;
+}
+function hideAllUIDetails() {
+hideUIDetails('UITable_0', 'showhideUI_0');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Show user interface details on all fields';
+  link.onclick = showAllUIDetails;
+  return false;
+}
+</script>
+
+</body>
+</html>

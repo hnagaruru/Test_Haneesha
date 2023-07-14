@@ -1,0 +1,933 @@
+<html>
+<head>
+<title>CalcRoutineParamName</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox"
+<div><span class="pagetitle">CalcRoutineParamName</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="entityname">(pctl_calcroutineparamname)</span>
+</div>
+<div class="desc">Used for defining the parameter names that can be set in a calculation parameter set</div>
+</div>
+<table cellpadding="3" cellspacing="0" border="0" height="20" width="100%">
+<tr>
+<td nowrap="true" class="attrbox" height="20">
+<span class="attrtitle">Attributes: 
+
+</span>
+</td>
+</tr>
+</table>
+<br/>
+<div class="refbox biglist odd">
+<span id="reflink_5076" class="reftext" onclick='showAndHideRefBox("refbox_5076", "reflink_5076")'><img src="../../res/blackup.gif" border="0"><b>Referenced by: </b></span>
+<div id="refbox_5076" class="refbox_inner" style="display:none;">
+<A HREF="../full/CalcStepValueDelegate.html" TARGET="tableFrame">CalcStepValueDelegate.InScopeParam</A><br><A HREF="../full/CalcRoutineParameter.html" TARGET="tableFrame">CalcRoutineParameter.Code</A><br><A HREF="../full/CalcStepDefinition.html" TARGET="tableFrame">CalcStepDefinition.InScopeParam</A><br><A HREF="../full/CalcStepDefinitionArgument.html" TARGET="tableFrame">CalcStepDefinitionArgument.InScopeParam</A><br><A HREF="../full/CalcStepDefinitionOperand.html" TARGET="tableFrame">CalcStepDefinitionOperand.InScopeParam</A><br><A HREF="../full/RateTableArgumentSource.html" TARGET="tableFrame">RateTableArgumentSource.Root</A>
+</div>
+</span>
+</div>
+<a id='TOC'></a>
+<a name="Typecodes"></a><div class="arraysbox">Typecodes</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+<td>Description</td>
+<td>Priority</td>
+<td>Internal</td>
+<td>Retired</td>
+</tr>
+<tr valign="top">
+<td><a href=#assigneddriver>assigneddriver</a></td>
+<td>AssignedDriver</td>
+<td>Assigned Driver</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#building>building</a></td>
+<td>Building</td>
+<td>Building</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#costdata>costdata</a></td>
+<td>CostData</td>
+<td>CostData</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#coverage>coverage</a></td>
+<td>Coverage</td>
+<td>Coverage</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#cpbldgcov>cpbldgcov</a></td>
+<td>CPBldgCoverage</td>
+<td>CP Building Coverage</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#cpbppcov>cpbppcov</a></td>
+<td>CPBPPCoverage</td>
+<td>CP Business Personal Property Coverage</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#cpdeductfactorname>cpdeductfactorname</a></td>
+<td>CPDeductibleFactorName</td>
+<td>CP Deductible Factor Name</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#currentdriver>currentdriver</a></td>
+<td>CurrentDriver</td>
+<td>Current Driver</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#driverassignmentinfo>driverassignmentinfo</a></td>
+<td>DriverAssignmentInfo</td>
+<td>Driver Assignment Information</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#hopbasepremiuminfo>hopbasepremiuminfo</a></td>
+<td>HOPBasePremiumInfo</td>
+<td>HOP Base Premium Information</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#hopcoveragepart>hopcoveragepart</a></td>
+<td>HOPCoveragePart</td>
+<td>HOP Coverage Part</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#hopdwelling>hopdwelling</a></td>
+<td>HOPDwelling</td>
+<td>HOP Dwelling</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#hopmodifier>hopmodifier</a></td>
+<td>HOP Modifier Code</td>
+<td>HOP Modifier Code to be used in Modifier Rate lookup</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#hopmodifierbasis>hopmodifierbasis</a></td>
+<td>HOP Modifier Basis</td>
+<td>HOP Basis to be used for Rating Modification</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#hopmodifiervalue>hopmodifiervalue</a></td>
+<td>HOP Modifier Value</td>
+<td>HOP Modifier Value to be used in Modifier Rate lookup</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#papipnj>papipnj</a></td>
+<td>PIPNJCoverage</td>
+<td>PA PIP New Jersey Coverage</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#policyline>policyline</a></td>
+<td>PolicyLine</td>
+<td>Policy Line</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#previoustermamount>previoustermamount</a></td>
+<td>PreviousTermAmount</td>
+<td>Previous term amount, e.g. for renewal capping</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#proratedpremiumtotal>proratedpremiumtotal</a></td>
+<td>ProratedPremiumTotal</td>
+<td>The total prorated premium amount</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#ratedate>ratedate</a></td>
+<td>RateDate</td>
+<td>Rate Date</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#ratinginfo>ratinginfo</a></td>
+<td>RatingInfo</td>
+<td>Rating Information</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#state>state</a></td>
+<td>State</td>
+<td>State</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#taxablebasis>taxablebasis</a></td>
+<td>TaxableBasis</td>
+<td>Taxable Basis</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#vehicle>vehicle</a></td>
+<td>Vehicle</td>
+<td>Vehicle</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<div class='subtypebox'>
+<a name=assigneddriver></a>
+<div class="titlebox">
+<div class="filtertitle">assigneddriver <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5077" class="reftext" onclick='showAndHideRefBox("refbox_5077", "reflink_5077")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5077" class="refbox_inner" style="display:none;">
+Assigned Driver
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>AssignedDriver</td>
+<td>Assigned Driver</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=building></a>
+<div class="titlebox">
+<div class="filtertitle">building <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5078" class="reftext" onclick='showAndHideRefBox("refbox_5078", "reflink_5078")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5078" class="refbox_inner" style="display:none;">
+Building
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Building</td>
+<td>Building</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=costdata></a>
+<div class="titlebox">
+<div class="filtertitle">costdata <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5079" class="reftext" onclick='showAndHideRefBox("refbox_5079", "reflink_5079")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5079" class="refbox_inner" style="display:none;">
+CostData
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>CostData</td>
+<td>CostData</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=coverage></a>
+<div class="titlebox">
+<div class="filtertitle">coverage <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5080" class="reftext" onclick='showAndHideRefBox("refbox_5080", "reflink_5080")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5080" class="refbox_inner" style="display:none;">
+Coverage
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Coverage</td>
+<td>Coverage</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=cpbldgcov></a>
+<div class="titlebox">
+<div class="filtertitle">cpbldgcov <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5081" class="reftext" onclick='showAndHideRefBox("refbox_5081", "reflink_5081")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5081" class="refbox_inner" style="display:none;">
+CP Building Coverage
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>CPBldgCoverage</td>
+<td>CP Building Coverage</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=cpbppcov></a>
+<div class="titlebox">
+<div class="filtertitle">cpbppcov <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5082" class="reftext" onclick='showAndHideRefBox("refbox_5082", "reflink_5082")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5082" class="refbox_inner" style="display:none;">
+CP Business Personal Property Coverage
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>CPBPPCoverage</td>
+<td>CP Business Personal Property Coverage</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=cpdeductfactorname></a>
+<div class="titlebox">
+<div class="filtertitle">cpdeductfactorname <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5083" class="reftext" onclick='showAndHideRefBox("refbox_5083", "reflink_5083")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5083" class="refbox_inner" style="display:none;">
+CP Deductible Factor Name
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>CPDeductibleFactorName</td>
+<td>CP Deductible Factor Name</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=currentdriver></a>
+<div class="titlebox">
+<div class="filtertitle">currentdriver <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5084" class="reftext" onclick='showAndHideRefBox("refbox_5084", "reflink_5084")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5084" class="refbox_inner" style="display:none;">
+Current Driver
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>CurrentDriver</td>
+<td>Current Driver</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=driverassignmentinfo></a>
+<div class="titlebox">
+<div class="filtertitle">driverassignmentinfo <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5085" class="reftext" onclick='showAndHideRefBox("refbox_5085", "reflink_5085")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5085" class="refbox_inner" style="display:none;">
+Driver Assignment Information
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>DriverAssignmentInfo</td>
+<td>Driver Assignment Information</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=hopbasepremiuminfo></a>
+<div class="titlebox">
+<div class="filtertitle">hopbasepremiuminfo <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5086" class="reftext" onclick='showAndHideRefBox("refbox_5086", "reflink_5086")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5086" class="refbox_inner" style="display:none;">
+HOP Base Premium Information
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>HOPBasePremiumInfo</td>
+<td>HOP Base Premium Information</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=hopcoveragepart></a>
+<div class="titlebox">
+<div class="filtertitle">hopcoveragepart <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5087" class="reftext" onclick='showAndHideRefBox("refbox_5087", "reflink_5087")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5087" class="refbox_inner" style="display:none;">
+HOP Coverage Part
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>HOPCoveragePart</td>
+<td>HOP Coverage Part</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=hopdwelling></a>
+<div class="titlebox">
+<div class="filtertitle">hopdwelling <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5088" class="reftext" onclick='showAndHideRefBox("refbox_5088", "reflink_5088")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5088" class="refbox_inner" style="display:none;">
+HOP Dwelling
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>HOPDwelling</td>
+<td>HOP Dwelling</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=hopmodifier></a>
+<div class="titlebox">
+<div class="filtertitle">hopmodifier <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5089" class="reftext" onclick='showAndHideRefBox("refbox_5089", "reflink_5089")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5089" class="refbox_inner" style="display:none;">
+HOP Modifier Code to be used in Modifier Rate lookup
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>HOP Modifier Code</td>
+<td>HOP Modifier Code to be used in Modifier Rate lookup</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=hopmodifierbasis></a>
+<div class="titlebox">
+<div class="filtertitle">hopmodifierbasis <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5090" class="reftext" onclick='showAndHideRefBox("refbox_5090", "reflink_5090")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5090" class="refbox_inner" style="display:none;">
+HOP Basis to be used for Rating Modification
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>HOP Modifier Basis</td>
+<td>HOP Basis to be used for Rating Modification</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=hopmodifiervalue></a>
+<div class="titlebox">
+<div class="filtertitle">hopmodifiervalue <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5091" class="reftext" onclick='showAndHideRefBox("refbox_5091", "reflink_5091")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5091" class="refbox_inner" style="display:none;">
+HOP Modifier Value to be used in Modifier Rate lookup
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>HOP Modifier Value</td>
+<td>HOP Modifier Value to be used in Modifier Rate lookup</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=papipnj></a>
+<div class="titlebox">
+<div class="filtertitle">papipnj <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5092" class="reftext" onclick='showAndHideRefBox("refbox_5092", "reflink_5092")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5092" class="refbox_inner" style="display:none;">
+PA PIP New Jersey Coverage
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>PIPNJCoverage</td>
+<td>PA PIP New Jersey Coverage</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=policyline></a>
+<div class="titlebox">
+<div class="filtertitle">policyline <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5093" class="reftext" onclick='showAndHideRefBox("refbox_5093", "reflink_5093")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5093" class="refbox_inner" style="display:none;">
+Policy Line
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>PolicyLine</td>
+<td>Policy Line</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=previoustermamount></a>
+<div class="titlebox">
+<div class="filtertitle">previoustermamount <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5094" class="reftext" onclick='showAndHideRefBox("refbox_5094", "reflink_5094")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5094" class="refbox_inner" style="display:none;">
+Previous term amount, e.g. for renewal capping
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>PreviousTermAmount</td>
+<td>Previous term amount, e.g. for renewal capping</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=proratedpremiumtotal></a>
+<div class="titlebox">
+<div class="filtertitle">proratedpremiumtotal <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5095" class="reftext" onclick='showAndHideRefBox("refbox_5095", "reflink_5095")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5095" class="refbox_inner" style="display:none;">
+The total prorated premium amount
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>ProratedPremiumTotal</td>
+<td>The total prorated premium amount</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=ratedate></a>
+<div class="titlebox">
+<div class="filtertitle">ratedate <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5096" class="reftext" onclick='showAndHideRefBox("refbox_5096", "reflink_5096")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5096" class="refbox_inner" style="display:none;">
+Rate Date
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>RateDate</td>
+<td>Rate Date</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=ratinginfo></a>
+<div class="titlebox">
+<div class="filtertitle">ratinginfo <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5097" class="reftext" onclick='showAndHideRefBox("refbox_5097", "reflink_5097")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5097" class="refbox_inner" style="display:none;">
+Rating Information
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>RatingInfo</td>
+<td>Rating Information</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=state></a>
+<div class="titlebox">
+<div class="filtertitle">state <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5098" class="reftext" onclick='showAndHideRefBox("refbox_5098", "reflink_5098")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5098" class="refbox_inner" style="display:none;">
+State
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>State</td>
+<td>State</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=taxablebasis></a>
+<div class="titlebox">
+<div class="filtertitle">taxablebasis <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5099" class="reftext" onclick='showAndHideRefBox("refbox_5099", "reflink_5099")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5099" class="refbox_inner" style="display:none;">
+Taxable Basis
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>TaxableBasis</td>
+<td>Taxable Basis</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=vehicle></a>
+<div class="titlebox">
+<div class="filtertitle">vehicle <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_5100" class="reftext" onclick='showAndHideRefBox("refbox_5100", "reflink_5100")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_5100" class="refbox_inner" style="display:none;">
+Vehicle
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Vehicle</td>
+<td>Vehicle</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

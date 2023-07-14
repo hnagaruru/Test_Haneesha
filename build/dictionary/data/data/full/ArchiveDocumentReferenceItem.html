@@ -1,0 +1,236 @@
+<html>
+<head>
+<title>ArchiveDocumentReferenceItem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">ArchiveDocumentReferenceItem <span class="entityname">(pc_archivedocrefitem) (delegates to <A HREF="Editable.html" TARGET="tableFrame">Editable</A>)</span></div>
+<div class="desc">
+<span id="reflink_673" class="reftext" onclick='showAndHideRefBox("refbox_673", "reflink_673")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_673" class="refbox_inner" style="display:none;">
+
+        Keep track of one bean in database that is directly referenced by one bean from an archive document.
+        One bean in database can be referenced by more than one archive document, in which case there are multiple
+        ArchiveDocumentReferenceItem rows for it.
+
+    
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">ArchiveDocumentReferenceItem</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Editable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Editable</b><br>The related database table contains rows that are editable by application users based on roles and permissions. An Editable table manages additional fields that represent an audit trail of an entity in the table (for example, who created it and when, who last edited it and when).')">?</span></sup>, Final<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Final</b><br>The entity cannot be subtyped.')">?</span></sup>, Keyed<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Keyed</b><br>Has a related database table that has a primary key. Each row in a Keyed table has an integer primary key named ID. IDs are managed internally by the application, and the system ensures that no two rows in a keyed table have the same ID. In addition to the internal key, an external primary key can be associated with each row in a table.')">?</span></sup>, Sourceable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Sourceable</b><br>Contains entities that are linked to an external source. Each row in a Sourceable entity\'s table has additional fields to identify the external system and store the ID of the Sourceable entity in the external system.')">?</span></sup>, Versionable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Versionable</b><br>Has a version number that increases every time the entity is changed. This allows the cache to identify when entities have been updated.')">?</span></sup></span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_674" class="reftext" onclick='showAndHideRefBox("refbox_674", "reflink_674")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_674" class="refbox_inner" style="display:none;">
+<A HREF="../full/ArchiveDocumentReferences.html" TARGET="tableFrame">ArchiveDocumentReferences.ReferenceItems</A>
+</div>
+</span>
+</div>
+<span class="showhidelink"><a id="showAllElements" href="#" onClick="return showAllUIDetails()">Show user interface details on all fields</a></span>
+
+<br>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+<a name="archivedocumentreferenceitem_id"></a>
+<p class="column">
+<span class="coltitle">ID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "key")'>key</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Internally managed primary key</span>
+<a name="archivedocumentreferenceitem_beanversion_prop"></a>
+<p class="column">
+<span class="coltitle">BEANVERSION_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="archivedocumentreferenceitem_createtime"></a>
+<p class="column">
+<span class="coltitle">CreateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was created</span>
+<a name="archivedocumentreferenceitem_createtime_dynprop"></a>
+<p class="column">
+<span class="coltitle">CREATETIME_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="archivedocumentreferenceitem_createtime_prop"></a>
+<p class="column">
+<span class="coltitle">CREATETIME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="archivedocumentreferenceitem_createuser"></a>
+<p class="column">
+<span class="coltitle">CreateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CreateUserID)</span>
+<br>
+<span class="desc">User who created the object</span>
+<a name="archivedocumentreferenceitem_createuser_dynprop"></a>
+<p class="column">
+<span class="coltitle">CREATEUSER_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="archivedocumentreferenceitem_createuser_prop"></a>
+<p class="column">
+<span class="coltitle">CREATEUSER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="archivedocumentreferenceitem_id_prop"></a>
+<p class="column">
+<span class="coltitle">ID_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="archivedocumentreferenceitem_new"></a>
+<p class="column">
+<span class="coltitle">New</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="archivedocumentreferenceitem_newlyimported"></a>
+<p class="column">
+<span class="coltitle">NewlyImported</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="archivedocumentreferenceitem_publicid"></a>
+<p class="column">
+<span class="coltitle">PublicID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "publicid")'>publicid</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ID or primary key of the row in the external system to which this row is mapped</span>
+<a name="archivedocumentreferenceitem_publicid_prop"></a>
+<p class="column">
+<span class="coltitle">PUBLICID_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="archivedocumentreferenceitem_referencedbean"></a>
+<p class="column">
+<span class="coltitle">ReferencedBean</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning KeyableBean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="archivedocumentreferenceitem_referencedentity"></a>
+<p class="column">
+<span class="coltitle">ReferencedEntity</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (1024)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Name of the entity of the referenced object. For instances of subtypes, this is always the subtype root entity.</span>
+<a name="archivedocumentreferenceitem_referencedentity_prop"></a>
+<p class="column">
+<span class="coltitle">REFERENCEDENTITY_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="archivedocumentreferenceitem_referencedentitypublicid"></a>
+<p class="column">
+<span class="coltitle">ReferencedEntityPublicID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "publicid")'>publicid</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">PublicID of the referenced object.</span>
+<a name="archivedocumentreferenceitem_referencedentitypublicid_prop"></a>
+<p class="column">
+<span class="coltitle">REFERENCEDENTITYPUBLICID_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="archivedocumentreferenceitem_root"></a>
+<p class="column">
+<span class="coltitle">Root</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="ArchiveDocumentReferences.html" TARGET="tableFrame">ArchiveDocumentReferences</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="archivedocumentreferenceitem_root_prop"></a>
+<p class="column">
+<span class="coltitle">ROOT_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="archivedocumentreferenceitem_type"></a>
+<p class="column">
+<span class="coltitle">TYPE</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityTypeReference<entity.ArchiveDocumentReferenceItem></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="archivedocumentreferenceitem_updatetime"></a>
+<p class="column">
+<span class="coltitle">UpdateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was last updated</span>
+<a name="archivedocumentreferenceitem_updatetime_dynprop"></a>
+<p class="column">
+<span class="coltitle">UPDATETIME_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="archivedocumentreferenceitem_updatetime_prop"></a>
+<p class="column">
+<span class="coltitle">UPDATETIME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="archivedocumentreferenceitem_updateuser"></a>
+<p class="column">
+<span class="coltitle">UpdateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: UpdateUserID)</span>
+<br>
+<span class="desc">User who last updated the object</span>
+<a name="archivedocumentreferenceitem_updateuser_dynprop"></a>
+<p class="column">
+<span class="coltitle">UPDATEUSER_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="archivedocumentreferenceitem_updateuser_prop"></a>
+<p class="column">
+<span class="coltitle">UPDATEUSER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="Unique Keys for ArchiveDocumentReferenceItem"></a><div class="arraysbox">Unique Keys for ArchiveDocumentReferenceItem</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>archivedocrefite1a</td>
+<td>PublicID</td></tr>
+</table>
+<script language="JavaScript">
+function showAllUIDetails() {
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Hide user interface details on all fields';
+  link.onclick = hideAllUIDetails;
+  return false;
+}
+function hideAllUIDetails() {
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Show user interface details on all fields';
+  link.onclick = showAllUIDetails;
+  return false;
+}
+</script>
+
+</body>
+</html>

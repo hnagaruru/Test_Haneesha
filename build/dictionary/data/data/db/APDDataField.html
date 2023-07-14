@@ -1,0 +1,835 @@
+<html>
+<head>
+<title>APDDataField</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">APDDataField <span class="entityname">(pcx_apddatafield) (delegates to <A HREF="EffDated.html" TARGET="tableFrame">EffDated</A>)</span></div>
+<div class="desc">
+<span id="reflink_265" class="reftext" onclick='showAndHideRefBox("refbox_265", "reflink_265")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_265" class="refbox_inner" style="display:none;">
+The instance of a data field within a manual risk
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">APDDataField</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Abstract<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Abstract</b><br>The entity is a supertype, but all instances of it must be one of its subtypes. That is, you cannot instantiate the supertype entity itself. An abstract entity is appropriate when the supertype serves only to collect logic or common fields, but does not make sense to exist on its own.')">?</span></sup>, Editable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Editable</b><br>The related database table contains rows that are editable by application users based on roles and permissions. An Editable table manages additional fields that represent an audit trail of an entity in the table (for example, who created it and when, who last edited it and when).')">?</span></sup>, Exportable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>, Extendable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Extendable</b><br>Can be extended with additional custom fields added to it.')">?</span></sup>, Keyed<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Keyed</b><br>Has a related database table that has a primary key. Each row in a Keyed table has an integer primary key named ID. IDs are managed internally by the application, and the system ensures that no two rows in a keyed table have the same ID. In addition to the internal key, an external primary key can be associated with each row in a table.')">?</span></sup>, Sourceable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Sourceable</b><br>Contains entities that are linked to an external source. Each row in a Sourceable entity\'s table has additional fields to identify the external system and store the ID of the Sourceable entity in the external system.')">?</span></sup>, Supertype<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Supertype</b><br>A single table that represents multiple types of entities, called subtypes. Each subtype shares application logic and a majority of their fields. Each subtype may also define fields that are particular to it.')">?</span></sup>, Versionable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Versionable</b><br>Has a version number that increases every time the entity is changed. This allows the cache to identify when entities have been updated.')">?</span></sup></span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_266" class="reftext" onclick='showAndHideRefBox("refbox_266", "reflink_266")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_266" class="refbox_inner" style="display:none;">
+<A HREF="../full/APDDataField.html" TARGET="tableFrame">APDDataField.BasedOnValue</A><br><A HREF="../full/APDDataField.html" TARGET="tableFrame">APDDataField.Fixed</A>
+</div>
+</span>
+</div>
+<span class="showhidelink"><a id="showAllElements" href="#" onClick="return showAllUIDetails()">Show user interface details on all fields</a></span>
+
+<br>
+<a name=subtypes></a>
+<br/>
+<span class="filtertitle">Subtypes</span>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+</tr>
+<tr>
+<td>
+APDRiskExposureField</td>
+<td><A HREF="#APDRiskExposureField" TARGET="tableFrame">APDRiskExposureField</A></td>
+</tr>
+<tr>
+<td>
+APDRiskField</td>
+<td><A HREF="#APDRiskField" TARGET="tableFrame">APDRiskField</A></td>
+</tr>
+<tr>
+<td>
+APDRiskTerm</td>
+<td><A HREF="#APDRiskTerm" TARGET="tableFrame">APDRiskTerm</A></td>
+</tr>
+<tr>
+<td>
+&nbsp;
+&nbsp;
+APDRiskScheduleTerm</td>
+<td><A HREF="#APDRiskScheduleTerm" TARGET="tableFrame">APDRiskScheduleTerm</A></td>
+</tr>
+</table>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+<a name="apddatafield_id"></a>
+<p class="column">
+<span class="coltitle">ID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "key")'>key</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Internally managed primary key</span>
+<a name="apddatafield_archivepartition"></a>
+<p class="column">
+<span class="coltitle">ArchivePartition</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "softentityreference")'>softentityreference</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">Unique number to partition the data so that the multiple workers can work independently</span>
+<a name="apddatafield_attribute"></a>
+<p class="column">
+<span class="coltitle">Attribute</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDAttribute.html" TARGET="tableFrame">APDAttribute</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: AttributeID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The definition of the information captured in this field</span>
+<a name="apddatafield_basedonvalue"></a>
+<p class="column">
+<span class="coltitle">BasedOnValue</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDDataField.html" TARGET="tableFrame">APDDataField</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: BasedOnID)</span>
+<br>
+<span class="desc">Link to the row on which this row is based; or null if new to branch</span>
+<a name="apddatafield_bitvalue"></a>
+<p class="column">
+<span class="coltitle">BitValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The value if a true/false</span>
+<div class='screenrefbody'>
+<span id=showhideUI_0 onclick='showAndHideUIDetails("UITable_0", "showhideUI_0")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_0' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDDataFieldValue.boolean.pcf:19</td>
+<td></td>
+<td>dataField.BitValue</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+APDRiskPopup
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+APDRiskSubClausePopup
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apddatafield_branchvalue"></a>
+<p class="column">
+<span class="coltitle">BranchValue</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="PolicyPeriod.html" TARGET="tableFrame">PolicyPeriod</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: BranchID)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Link to root of effdated tree</span>
+<a name="apddatafield_changetype"></a>
+<p class="column">
+<span class="coltitle">ChangeType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/EffDatedChangeType_tl.html" TARGET="tableFrame">EffDatedChangeType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">Type of change made to this row</span>
+<a name="apddatafield_codevalue"></a>
+<p class="column">
+<span class="coltitle">CodeValue</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDDropdownEntry.html" TARGET="tableFrame">APDDropdownEntry</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CodeValueID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The drop down list entry if this field is a drop down</span>
+<div class='screenrefbody'>
+<span id=showhideUI_1 onclick='showAndHideUIDetails("UITable_1", "showhideUI_1")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_1' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDDataFieldValue.typekey.pcf:28</td>
+<td></td>
+<td>dataField.CodeValue</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+APDRiskPopup
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+APDRiskSubClausePopup
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apddatafield_createtime"></a>
+<p class="column">
+<span class="coltitle">CreateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was created</span>
+<a name="apddatafield_createuser"></a>
+<p class="column">
+<span class="coltitle">CreateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CreateUserID)</span>
+<br>
+<span class="desc">User who created the object</span>
+<a name="apddatafield_datevalue"></a>
+<p class="column">
+<span class="coltitle">DateValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The value if a date/time</span>
+<div class='screenrefbody'>
+<span id=showhideUI_2 onclick='showAndHideUIDetails("UITable_2", "showhideUI_2")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_2' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDDataFieldValue.date.pcf:19</td>
+<td></td>
+<td>dataField.DateValue</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+APDRiskPopup
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+APDRiskSubClausePopup
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apddatafield_decimalvalue"></a>
+<p class="column">
+<span class="coltitle">DecimalValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "decimal")'>decimal</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The value if a number</span>
+<div class='screenrefbody'>
+<span id=showhideUI_3 onclick='showAndHideUIDetails("UITable_3", "showhideUI_3")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_3' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDDataFieldValue.bigdecimal.pcf:20</td>
+<td></td>
+<td>dataField.DecimalValue</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+APDRiskPopup
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+APDRiskSubClausePopup
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>APDDataFieldValue.money.pcf:22</td>
+<td></td>
+<td>dataField.DecimalValue</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+APDRiskPopup
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+APDRiskSubClausePopup
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apddatafield_effectivedate"></a>
+<p class="column">
+<span class="coltitle">EffectiveDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Effective date of this row.  A value of NULL in the database indicates that this row's effective date is equal to the Period Start.</span>
+<a name="apddatafield_expirationdate"></a>
+<p class="column">
+<span class="coltitle">ExpirationDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Expiration date of this row.  A value of NULL in the database indicates that this row's expiration date is equal to the Period End.</span>
+<a name="apddatafield_fixed"></a>
+<p class="column">
+<span class="coltitle">Fixed</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDDataField.html" TARGET="tableFrame">APDDataField</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: FixedID)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Unique ID for this 'object' across all branches and periods</span>
+<a name="apddatafield_frozenset"></a>
+<p class="column">
+<span class="coltitle">FrozenSet</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="FrozenSet.html" TARGET="tableFrame">FrozenSet</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: FrozenSetID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apddatafield_integervalue"></a>
+<p class="column">
+<span class="coltitle">IntegerValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "integer")'>integer</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The value if an integer</span>
+<div class='screenrefbody'>
+<span id=showhideUI_4 onclick='showAndHideUIDetails("UITable_4", "showhideUI_4")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_4' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDDataFieldValue.integer.pcf:20</td>
+<td></td>
+<td>dataField.IntegerValue</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+APDRiskPopup
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+APDRiskSubClausePopup
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apddatafield_location"></a>
+<p class="column">
+<span class="coltitle">Location</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="PolicyLocation.html" TARGET="tableFrame">PolicyLocation</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: LocationID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The value if it is a location</span>
+<a name="apddatafield_party"></a>
+<p class="column">
+<span class="coltitle">Party</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="PolicyContactRole.html" TARGET="tableFrame">PolicyContactRole</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: PartyID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The value if it is a party</span>
+<div class='screenrefbody'>
+<span id=showhideUI_5 onclick='showAndHideUIDetails("UITable_5", "showhideUI_5")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_5' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDDataFieldValue.party.pcf:21</td>
+<td></td>
+<td>dataField.Party</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+APDRiskPopup
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+APDRiskSubClausePopup
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apddatafield_publicid"></a>
+<p class="column">
+<span class="coltitle">PublicID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "publicid")'>publicid</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ID or primary key of the row in the external system to which this row is mapped</span>
+<a name="apddatafield_scalabledecimalvalue"></a>
+<p class="column">
+<span class="coltitle">ScalableDecimalValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "decimal")'>decimal</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The value if a scalable number</span>
+<div class='screenrefbody'>
+<span id=showhideUI_6 onclick='showAndHideUIDetails("UITable_6", "showhideUI_6")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_6' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDDataFieldValue.scalablebigdecimal.pcf:20</td>
+<td></td>
+<td>dataField.ScalableDecimalValue</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+APDRiskPopup
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+APDRiskSubClausePopup
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>APDDataFieldValue.scalablemoney.pcf:21</td>
+<td></td>
+<td>dataField.ScalableDecimalValue</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+APDRiskPopup
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+APDRiskSubClausePopup
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apddatafield_scalableintegervalue"></a>
+<p class="column">
+<span class="coltitle">ScalableIntegerValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "integer")'>integer</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The value if a scalable integer</span>
+<div class='screenrefbody'>
+<span id=showhideUI_7 onclick='showAndHideUIDetails("UITable_7", "showhideUI_7")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_7' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDDataFieldValue.scalableinteger.pcf:20</td>
+<td></td>
+<td>dataField.ScalableIntegerValue</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+APDRiskPopup
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+APDRiskSubClausePopup
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apddatafield_stringvalue"></a>
+<p class="column">
+<span class="coltitle">StringValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The value if text or a drop down entry</span>
+<div class='screenrefbody'>
+<span id=showhideUI_8 onclick='showAndHideUIDetails("UITable_8", "showhideUI_8")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_8' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDDataFieldValue.default.pcf:18</td>
+<td></td>
+<td>dataField.StringValue</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+APDRiskPopup
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+APDRiskSubClausePopup
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apddatafield_subtype"></a>
+<p class="column">
+<span class="coltitle">Subtype</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="#subtypes" TARGET="tableFrame">APDDataField</A> subtypes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Identifies a particular subtype within a supertype table; each subtype of a supertype has its own unique subtype value</span>
+<a name="apddatafield_updatetime"></a>
+<p class="column">
+<span class="coltitle">UpdateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was last updated</span>
+<a name="apddatafield_updateuser"></a>
+<p class="column">
+<span class="coltitle">UpdateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: UpdateUserID)</span>
+<br>
+<span class="desc">User who last updated the object</span>
+<a name="Arrays"></a><div class="arraysbox">Arrays</div>
+<a name="Unique Keys for APDDataField"></a><div class="arraysbox">Unique Keys for APDDataField</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>apddatafield3a</td>
+<td>BranchID, FixedID, Subtype, ID</td></tr>
+<tr><td>apddatafield1a</td>
+<td>PublicID</td></tr>
+</table>
+<a name="Subtypes"></a><div class="arraysbox">Subtypes</div>
+<div class='subtypebox'>
+<a name=APDRiskExposureField></a>
+<div class="titlebox">
+<div class="filtertitle">APDRiskExposureField <span class='supername'>(subtype of <A HREF="APDDataField.html" TARGET="tableFrame">APDDataField</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_267" class="reftext" onclick='showAndHideRefBox("refbox_267", "reflink_267")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_267" class="refbox_inner" style="display:none;">
+The instance of a field within a manual exposure
+</div>
+</span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_268" class="reftext" onclick='showAndHideRefBox("refbox_268", "reflink_268")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_268" class="refbox_inner" style="display:none;">
+<A HREF="../full/APDRiskExposure.html" TARGET="tableFrame">APDRiskExposure.Fields</A>
+</div>
+</span>
+</div>
+<a name="apdriskexposurefield_riskexposure"></a>
+<p class="column">
+<span class="coltitle">RiskExposure</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDRiskExposure.html" TARGET="tableFrame">APDRiskExposure</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: RiskExposureID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The exposure for which this is a field</span>
+<a name="Unique Keys for APDRiskExposureField"></a><div class="arraysbox">Unique Keys for APDRiskExposureField</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>apddatafield3a</td>
+<td>BranchID, FixedID, Subtype, ID</td></tr>
+<tr><td>apddatafield1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=APDRiskField></a>
+<div class="titlebox">
+<div class="filtertitle">APDRiskField <span class='supername'>(subtype of <A HREF="APDDataField.html" TARGET="tableFrame">APDDataField</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_269" class="reftext" onclick='showAndHideRefBox("refbox_269", "reflink_269")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_269" class="refbox_inner" style="display:none;">
+The instance of a field within a manual risk
+</div>
+</span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_270" class="reftext" onclick='showAndHideRefBox("refbox_270", "reflink_270")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_270" class="refbox_inner" style="display:none;">
+<A HREF="../full/APDRiskCoverable.html" TARGET="tableFrame">APDRiskCoverable.RiskFields</A>
+</div>
+</span>
+</div>
+<a name="apdriskfield_riskcoverable"></a>
+<p class="column">
+<span class="coltitle">RiskCoverable</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDRiskCoverable.html" TARGET="tableFrame">APDRiskCoverable</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: RiskCoverableID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The coverable that this field qualifies</span>
+<a name="Unique Keys for APDRiskField"></a><div class="arraysbox">Unique Keys for APDRiskField</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>apddatafield3a</td>
+<td>BranchID, FixedID, Subtype, ID</td></tr>
+<tr><td>apddatafield1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=APDRiskScheduleTerm></a>
+<div class="titlebox">
+<div class="filtertitle">APDRiskScheduleTerm <span class='supername'>(subtype of <A HREF="APDDataField.html#APDRiskTerm" TARGET="tableFrame">APDRiskTerm</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_271" class="reftext" onclick='showAndHideRefBox("refbox_271", "reflink_271")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_271" class="refbox_inner" style="display:none;">
+A term that is part of a schedule item
+</div>
+</span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_272" class="reftext" onclick='showAndHideRefBox("refbox_272", "reflink_272")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_272" class="refbox_inner" style="display:none;">
+<A HREF="../full/APDRiskScheduleItem.html" TARGET="tableFrame">APDRiskScheduleItem.ItemTerms</A>
+</div>
+</span>
+</div>
+<a name="apdriskscheduleterm_riskitem"></a>
+<p class="column">
+<span class="coltitle">RiskItem</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDRiskScheduleItem.html" TARGET="tableFrame">APDRiskScheduleItem</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: RiskItemID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The schedule item that this is part of</span>
+<a name="Unique Keys for APDRiskScheduleTerm"></a><div class="arraysbox">Unique Keys for APDRiskScheduleTerm</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>apddatafield3a</td>
+<td>BranchID, FixedID, Subtype, ID</td></tr>
+<tr><td>apddatafield1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=APDRiskTerm></a>
+<div class="titlebox">
+<div class="filtertitle">APDRiskTerm <span class='supername'>(subtype of <A HREF="APDDataField.html" TARGET="tableFrame">APDDataField</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_273" class="reftext" onclick='showAndHideRefBox("refbox_273", "reflink_273")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_273" class="refbox_inner" style="display:none;">
+The instance of a field within a manual risk
+</div>
+</span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_274" class="reftext" onclick='showAndHideRefBox("refbox_274", "reflink_274")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_274" class="refbox_inner" style="display:none;">
+<A HREF="../full/APDRiskClause.html" TARGET="tableFrame">APDRiskClause.RiskTerms</A>
+</div>
+</span>
+</div>
+<a name="apdriskterm_riskclause"></a>
+<p class="column">
+<span class="coltitle">RiskClause</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDRiskClause.html" TARGET="tableFrame">APDRiskClause</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: APDRiskClauseID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The clause that this field qualifies</span>
+<a name="Unique Keys for APDRiskTerm"></a><div class="arraysbox">Unique Keys for APDRiskTerm</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>apddatafield3a</td>
+<td>BranchID, FixedID, Subtype, ID</td></tr>
+<tr><td>apddatafield1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<script language="JavaScript">
+function showAllUIDetails() {
+showUIDetails('UITable_0', 'showhideUI_0');
+showUIDetails('UITable_1', 'showhideUI_1');
+showUIDetails('UITable_2', 'showhideUI_2');
+showUIDetails('UITable_3', 'showhideUI_3');
+showUIDetails('UITable_4', 'showhideUI_4');
+showUIDetails('UITable_5', 'showhideUI_5');
+showUIDetails('UITable_6', 'showhideUI_6');
+showUIDetails('UITable_7', 'showhideUI_7');
+showUIDetails('UITable_8', 'showhideUI_8');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Hide user interface details on all fields';
+  link.onclick = hideAllUIDetails;
+  return false;
+}
+function hideAllUIDetails() {
+hideUIDetails('UITable_0', 'showhideUI_0');
+hideUIDetails('UITable_1', 'showhideUI_1');
+hideUIDetails('UITable_2', 'showhideUI_2');
+hideUIDetails('UITable_3', 'showhideUI_3');
+hideUIDetails('UITable_4', 'showhideUI_4');
+hideUIDetails('UITable_5', 'showhideUI_5');
+hideUIDetails('UITable_6', 'showhideUI_6');
+hideUIDetails('UITable_7', 'showhideUI_7');
+hideUIDetails('UITable_8', 'showhideUI_8');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Show user interface details on all fields';
+  link.onclick = showAllUIDetails;
+  return false;
+}
+</script>
+
+</body>
+</html>

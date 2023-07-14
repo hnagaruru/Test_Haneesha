@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>QuoteStoreSummary</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">QuoteStoreSummary <span class="entityname">(Virtual) (delegates to <A HREF="KeyableBean.html" TARGET="tableFrame">KeyableBean</A>)</span></div>
+<div class="desc">
+<span id="reflink_3367" class="reftext" onclick='showAndHideRefBox("refbox_3367", "reflink_3367")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_3367" class="refbox_inner" style="display:none;">
+Encapsulates the "summary" or "header" fields needed to display the results of a HVQ Quote PolicyPeriod search.
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">QuoteStoreSummary</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Exportable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>, Extendable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Extendable</b><br>Can be extended with additional custom fields added to it.')">?</span></sup>, Final<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Final</b><br>The entity cannot be subtyped.')">?</span></sup>, Keyed<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Keyed</b><br>Has a related database table that has a primary key. Each row in a Keyed table has an integer primary key named ID. IDs are managed internally by the application, and the system ensures that no two rows in a keyed table have the same ID. In addition to the internal key, an external primary key can be associated with each row in a table.')">?</span></sup>, Sourceable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Sourceable</b><br>Contains entities that are linked to an external source. Each row in a Sourceable entity\'s table has additional fields to identify the external system and store the ID of the Sourceable entity in the external system.')">?</span></sup></span>
+</div>
+</div>
+<span class="showhidelink"><a id="showAllElements" href="#" onClick="return showAllUIDetails()">Show user interface details on all fields</a></span>
+
+<br>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+<a name="quotestoresummary_id"></a>
+<p class="column">
+<span class="coltitle">ID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "key")'>key</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Internally managed primary key</span>
+<a name="quotestoresummary_contact"></a>
+<p class="column">
+<span class="coltitle">Contact</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="Contact.html" TARGET="tableFrame">Contact</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="quotestoresummary_contact_prop"></a>
+<p class="column">
+<span class="coltitle">CONTACT_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="quotestoresummary_emailaddress"></a>
+<p class="column">
+<span class="coltitle">EmailAddress</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (60)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Primary email address of Primary Named Insured contact</span>
+<a name="quotestoresummary_emailaddress_prop"></a>
+<p class="column">
+<span class="coltitle">EMAILADDRESS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="quotestoresummary_id_dynprop"></a>
+<p class="column">
+<span class="coltitle">ID_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="quotestoresummary_id_prop"></a>
+<p class="column">
+<span class="coltitle">ID_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="quotestoresummary_name"></a>
+<p class="column">
+<span class="coltitle">Name</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Display name of the Primary Named Insured contact</span>
+<a name="quotestoresummary_name_prop"></a>
+<p class="column">
+<span class="coltitle">NAME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="quotestoresummary_new"></a>
+<p class="column">
+<span class="coltitle">New</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="quotestoresummary_newlyimported"></a>
+<p class="column">
+<span class="coltitle">NewlyImported</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="quotestoresummary_publicid"></a>
+<p class="column">
+<span class="coltitle">PublicID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "publicid")'>publicid</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ID or primary key of the row in the external system to which this row is mapped</span>
+<a name="quotestoresummary_publicid_dynprop"></a>
+<p class="column">
+<span class="coltitle">PUBLICID_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="quotestoresummary_publicid_prop"></a>
+<p class="column">
+<span class="coltitle">PUBLICID_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="quotestoresummary_quoteidentifier"></a>
+<p class="column">
+<span class="coltitle">QuoteIdentifier</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (60)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">A unique ID associated with PolicyPeriod quote</span>
+<a name="quotestoresummary_quoteidentifier_prop"></a>
+<p class="column">
+<span class="coltitle">QUOTEIDENTIFIER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="quotestoresummary_submissionnumber"></a>
+<p class="column">
+<span class="coltitle">SubmissionNumber</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (60)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The SubmissionNumber of the Submission of the PolicyPeriod</span>
+<a name="quotestoresummary_submissionnumber_prop"></a>
+<p class="column">
+<span class="coltitle">SUBMISSIONNUMBER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="quotestoresummary_type"></a>
+<p class="column">
+<span class="coltitle">TYPE</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityTypeReference<entity.QuoteStoreSummary></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="quotestoresummary_workphone"></a>
+<p class="column">
+<span class="coltitle">WorkPhone</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "phone")'>phone</span> (30)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Work phone of Primary Named Insured contact</span>
+<a name="quotestoresummary_workphone_prop"></a>
+<p class="column">
+<span class="coltitle">WORKPHONE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<script language="JavaScript">
+function showAllUIDetails() {
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Hide user interface details on all fields';
+  link.onclick = hideAllUIDetails;
+  return false;
+}
+function hideAllUIDetails() {
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Show user interface details on all fields';
+  link.onclick = showAllUIDetails;
+  return false;
+}
+</script>
+
+</body>
+</html>

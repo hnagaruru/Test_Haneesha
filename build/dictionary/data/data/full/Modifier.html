@@ -1,0 +1,861 @@
+<html>
+<head>
+<title>Modifier</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">Modifier <span class="entityname">(Virtual)</span></div>
+<div class="desc">
+<span id="reflink_51" class="reftext" onclick='showAndHideRefBox("refbox_51", "reflink_51")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_51" class="refbox_inner" style="display:none;">
+Modifiers capture information relevant to the pricing of a policy that is not necessarily tied to a specific coverable or coverage.
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">Modifier</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Extendable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Extendable</b><br>Can be extended with additional custom fields added to it.')">?</span></sup>, Final<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Final</b><br>The entity cannot be subtyped.')">?</span></sup></span>
+</div>
+</div>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+<a name="modifier_id"></a>
+<p class="column">
+<span class="coltitle">ID</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.core.Key</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_basedonid_dynprop"></a>
+<p class="column">
+<span class="coltitle">BASEDONID_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_basedonuntyped"></a>
+<p class="column">
+<span class="coltitle">BasedOnUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning EffDated</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_booleanmodifier"></a>
+<p class="column">
+<span class="coltitle">BooleanModifier</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Boolean modifier</span>
+<div class='screenrefbody'>
+<span id=showhideUI_0 onclick='showAndHideUIDetails("UITable_0", "showhideUI_0")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_0' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>BusinessAutoStateModifierPanelSet.pcf:3</td>
+<td></td>
+<td>modifier.BooleanModifier</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+PolicyFile_StateInfo
+</td>
+</tr>
+<tr>
+<td>HOPModifiersInputSet.pcf:3</td>
+<td>hopmodifier.Pattern.DisplayName</td>
+<td>hopmodifier.BooleanModifier</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPModifiers
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>ModifierSummaryLV.pcf:3</td>
+<td>Web.PolicyLine.Modifiers.Value</td>
+<td>modifier.BooleanModifier</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_PolicyReview
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>PolicyLineSummaryPanelSet.PersonalAutoLine.pcf:3</td>
+<td></td>
+<td>modifier.BooleanModifier</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_PolicyReview
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>WCModifiersInputSet.pcf:84</td>
+<td>modifier.Pattern.Name</td>
+<td>modifier.BooleanModifier</td>
+<td>true</td>
+<td>
+CommercialProperty_Modifiers
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_WCStateRate
+<br>
+PolicyFile_ProductModifiers
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+PolicyFile_Modifiers
+<br>
+PolicyFile_Modifiers_GL
+<br>
+PolicyFile_Modifiers_BOP
+<br>
+PolicyFile_PolicyReview
+<br>
+PolicyFile_Modifiers_BA
+<br>
+RewriteNewAccountWizard
+<br>
+GeneralLiability_Modifiers_GL
+</td>
+</tr>
+</table>
+</div></div>
+<a name="modifier_booleanmodifier_dynprop"></a>
+<p class="column">
+<span class="coltitle">BOOLEANMODIFIER_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_branchid_dynprop"></a>
+<p class="column">
+<span class="coltitle">BRANCHID_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_branchuntyped"></a>
+<p class="column">
+<span class="coltitle">BranchUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning EffDatedBranch</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_changetype_dynprop"></a>
+<p class="column">
+<span class="coltitle">CHANGETYPE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_datatype"></a>
+<p class="column">
+<span class="coltitle">DataType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning typekey.ModifierDataType</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_datemodifier"></a>
+<p class="column">
+<span class="coltitle">DateModifier</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Date modifier</span>
+<div class='screenrefbody'>
+<span id=showhideUI_1 onclick='showAndHideUIDetails("UITable_1", "showhideUI_1")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_1' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>WCModifiersInputSet.pcf:98</td>
+<td>modifier.Pattern.Name</td>
+<td>modifier.DateModifier</td>
+<td>true</td>
+<td>
+CommercialProperty_Modifiers
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_WCStateRate
+<br>
+PolicyFile_ProductModifiers
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+PolicyFile_Modifiers
+<br>
+PolicyFile_Modifiers_GL
+<br>
+PolicyFile_Modifiers_BOP
+<br>
+PolicyFile_PolicyReview
+<br>
+PolicyFile_Modifiers_BA
+<br>
+RewriteNewAccountWizard
+<br>
+GeneralLiability_Modifiers_GL
+</td>
+</tr>
+</table>
+</div></div>
+<a name="modifier_datemodifier_dynprop"></a>
+<p class="column">
+<span class="coltitle">DATEMODIFIER_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_effdatedkey"></a>
+<p class="column">
+<span class="coltitle">EffDatedKey</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.core.effdate.EffDatedKey</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_effectivedate_dynprop"></a>
+<p class="column">
+<span class="coltitle">EFFECTIVEDATE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_eligible"></a>
+<p class="column">
+<span class="coltitle">Eligible</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Whether this modifier is eligible or not</span>
+<div class='screenrefbody'>
+<span id=showhideUI_2 onclick='showAndHideUIDetails("UITable_2", "showhideUI_2")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_2' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>BusinessAutoStateModifierPanelSet.pcf:126</td>
+<td></td>
+<td>modifier.Eligible</td>
+<td>modifier.Pattern.DisplayEligibility</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+PolicyFile_StateInfo
+</td>
+</tr>
+<tr>
+<td>BusinessAutoStateModifierPanelSet.pcf:53</td>
+<td>Web.Policy.Modifiers.Eligible</td>
+<td>modifier.Eligible</td>
+<td>modifier.Pattern.DisplayEligibility</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+PolicyFile_StateInfo
+</td>
+</tr>
+<tr>
+<td>WCModifiersInputSet.pcf:31</td>
+<td>DisplayKey.get("Web.Policy.Modifiers.Eligibility", rateModifier.Pattern.Name)</td>
+<td>rateModifier.Eligible</td>
+<td>true</td>
+<td>
+CommercialProperty_Modifiers
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_WCStateRate
+<br>
+PolicyFile_ProductModifiers
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+PolicyFile_Modifiers
+<br>
+PolicyFile_Modifiers_GL
+<br>
+PolicyFile_Modifiers_BOP
+<br>
+PolicyFile_PolicyReview
+<br>
+PolicyFile_Modifiers_BA
+<br>
+RewriteNewAccountWizard
+<br>
+GeneralLiability_Modifiers_GL
+</td>
+</tr>
+</table>
+</div></div>
+<a name="modifier_eligible_dynprop"></a>
+<p class="column">
+<span class="coltitle">ELIGIBLE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_expirationdate_dynprop"></a>
+<p class="column">
+<span class="coltitle">EXPIRATIONDATE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_fixedid"></a>
+<p class="column">
+<span class="coltitle">FixedId</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.core.Key</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_fixedid_dynprop"></a>
+<p class="column">
+<span class="coltitle">FIXEDID_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_justification"></a>
+<p class="column">
+<span class="coltitle">Justification</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Additional comment to justify the value of this modifier</span>
+<div class='screenrefbody'>
+<span id=showhideUI_3 onclick='showAndHideUIDetails("UITable_3", "showhideUI_3")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_3' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>BusinessAutoStateModifierPanelSet.pcf:159</td>
+<td></td>
+<td>modifier.Justification</td>
+<td>modifier.Pattern.DisplayJustification</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+PolicyFile_StateInfo
+</td>
+</tr>
+<tr>
+<td>BusinessAutoStateModifierPanelSet.pcf:93</td>
+<td>Web.Policy.RatingInputs.Justification</td>
+<td>modifier.Justification</td>
+<td>modifier.Pattern.DisplayJustification</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+PolicyFile_StateInfo
+</td>
+</tr>
+</table>
+</div></div>
+<a name="modifier_justification_dynprop"></a>
+<p class="column">
+<span class="coltitle">JUSTIFICATION_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_maximum"></a>
+<p class="column">
+<span class="coltitle">Maximum</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.math.BigDecimal</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_minimum"></a>
+<p class="column">
+<span class="coltitle">Minimum</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.math.BigDecimal</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_modifiertype"></a>
+<p class="column">
+<span class="coltitle">ModifierType</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_new"></a>
+<p class="column">
+<span class="coltitle">New</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_owningmodifiable"></a>
+<p class="column">
+<span class="coltitle">OwningModifiable</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning Modifiable</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_pattern"></a>
+<p class="column">
+<span class="coltitle">Pattern</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.productmodel.ModifierPatternBase</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_patterncode"></a>
+<p class="column">
+<span class="coltitle">PatternCode</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "patterncode")'>patterncode</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">The pattern defining what kind of Modifier this is</span>
+<a name="modifier_patterncode_dynprop"></a>
+<p class="column">
+<span class="coltitle">PATTERNCODE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_promoted"></a>
+<p class="column">
+<span class="coltitle">Promoted</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_publicid"></a>
+<p class="column">
+<span class="coltitle">PublicID</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_ratefactorssum"></a>
+<p class="column">
+<span class="coltitle">RateFactorsSum</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.math.BigDecimal</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_ratemodifier"></a>
+<p class="column">
+<span class="coltitle">RateModifier</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "rate")'>rate</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Rate modifier. Use the setRateWithinLimits method to set value within min/max limits.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_4 onclick='showAndHideUIDetails("UITable_4", "showhideUI_4")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_4' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>BusinessAutoStateModifierPanelSet.pcf:79</td>
+<td>Web.Policy.PolicyLine.PerState.Modifiers.Value</td>
+<td>modifier.RateModifier</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+PolicyFile_StateInfo
+</td>
+</tr>
+</table>
+</div></div>
+<a name="modifier_ratemodifier_dynprop"></a>
+<p class="column">
+<span class="coltitle">RATEMODIFIER_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_ratewithinlimits"></a>
+<p class="column">
+<span class="coltitle">RateWithinLimits</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.math.BigDecimal</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_referencedate"></a>
+<p class="column">
+<span class="coltitle">ReferenceDate</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.Date</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_referencedateinternal"></a>
+<p class="column">
+<span class="coltitle">ReferenceDateInternal</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">Internal field for storing the reference date of modifiers on bound policy periods. Normally the ReferenceDate property should be used instead.</span>
+<a name="modifier_referencedateinternal_dynprop"></a>
+<p class="column">
+<span class="coltitle">REFERENCEDATEINTERNAL_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_schedulerate"></a>
+<p class="column">
+<span class="coltitle">ScheduleRate</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_slice"></a>
+<p class="column">
+<span class="coltitle">Slice</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_slicedate"></a>
+<p class="column">
+<span class="coltitle">SliceDate</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.Date</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_state"></a>
+<p class="column">
+<span class="coltitle">State</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Jurisdiction_tl.html" TARGET="tableFrame">Jurisdiction</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The state to attach rating information to.</span>
+<a name="modifier_state_dynprop"></a>
+<p class="column">
+<span class="coltitle">STATE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_type"></a>
+<p class="column">
+<span class="coltitle">TYPE</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityTypeReference<entity.Modifier></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_typekeymodifier"></a>
+<p class="column">
+<span class="coltitle">TypeKeyModifier</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Typekey modifier</span>
+<div class='screenrefbody'>
+<span id=showhideUI_5 onclick='showAndHideUIDetails("UITable_5", "showhideUI_5")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_5' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>WCModifiersInputSet.pcf:92</td>
+<td>modifier.Pattern.Name</td>
+<td>modifier.TypeKeyModifier</td>
+<td>true</td>
+<td>
+CommercialProperty_Modifiers
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_WCStateRate
+<br>
+PolicyFile_ProductModifiers
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+PolicyFile_Modifiers
+<br>
+PolicyFile_Modifiers_GL
+<br>
+PolicyFile_Modifiers_BOP
+<br>
+PolicyFile_PolicyReview
+<br>
+PolicyFile_Modifiers_BA
+<br>
+RewriteNewAccountWizard
+<br>
+GeneralLiability_Modifiers_GL
+</td>
+</tr>
+</table>
+</div></div>
+<a name="modifier_typekeymodifier_dynprop"></a>
+<p class="column">
+<span class="coltitle">TYPEKEYMODIFIER_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_typelist"></a>
+<p class="column">
+<span class="coltitle">TypeList</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_unsliceduntyped"></a>
+<p class="column">
+<span class="coltitle">UnslicedUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning EffDated</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_valuefinal"></a>
+<p class="column">
+<span class="coltitle">ValueFinal</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: true)&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Whether this modifier's value is final or not</span>
+<div class='screenrefbody'>
+<span id=showhideUI_6 onclick='showAndHideUIDetails("UITable_6", "showhideUI_6")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_6' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>BusinessAutoStateModifierPanelSet.pcf:152</td>
+<td></td>
+<td>modifier.ValueFinal</td>
+<td>modifier.Pattern.DisplayValueFinal</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+PolicyFile_StateInfo
+</td>
+</tr>
+<tr>
+<td>BusinessAutoStateModifierPanelSet.pcf:85</td>
+<td>Web.Policy.Modifiers.ValueFinal</td>
+<td>modifier.ValueFinal</td>
+<td>modifier.Pattern.DisplayValueFinal</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+PolicyFile_StateInfo
+</td>
+</tr>
+<tr>
+<td>WCModifiersInputSet.pcf:50</td>
+<td>Web.Policy.Modifiers.ExModFinal</td>
+<td>rateModifier.ValueFinal</td>
+<td>true</td>
+<td>
+CommercialProperty_Modifiers
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_WCStateRate
+<br>
+PolicyFile_ProductModifiers
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+PolicyFile_Modifiers
+<br>
+PolicyFile_Modifiers_GL
+<br>
+PolicyFile_Modifiers_BOP
+<br>
+PolicyFile_PolicyReview
+<br>
+PolicyFile_Modifiers_BA
+<br>
+RewriteNewAccountWizard
+<br>
+GeneralLiability_Modifiers_GL
+</td>
+</tr>
+</table>
+</div></div>
+<a name="modifier_valuefinal_dynprop"></a>
+<p class="column">
+<span class="coltitle">VALUEFINAL_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="modifier_versionlistuntyped"></a>
+<p class="column">
+<span class="coltitle">VersionListUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.core.effdate.EffDatedVersionList</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<html>
+<head>
+<title>EffDated</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">EffDated <span class="entityname">(Virtual) (delegates to <A HREF="EffDatedBase.html" TARGET="tableFrame">EffDatedBase</A>)</span></div>
+<div class="desc">
+<span id="reflink_25" class="reftext" onclick='showAndHideRefBox("refbox_25", "reflink_25")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_25" class="refbox_inner" style="display:none;">
+null
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">EffDated</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Final<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Final</b><br>The entity cannot be subtyped.')">?</span></sup></span>
+</div>
+</div>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+<a name="effdated_id"></a>
+<p class="column">
+<span class="coltitle">ID</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.core.Key</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Internally managed primary key</span>
+<a name="effdated_basedonid_dynprop"></a>
+<p class="column">
+<span class="coltitle">BASEDONID_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="effdated_basedonuntyped"></a>
+<p class="column">
+<span class="coltitle">BasedOnUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning EffDated</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="effdated_branchid_dynprop"></a>
+<p class="column">
+<span class="coltitle">BRANCHID_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="effdated_branchuntyped"></a>
+<p class="column">
+<span class="coltitle">BranchUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning EffDatedBranch</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="effdated_changetype"></a>
+<p class="column">
+<span class="coltitle">ChangeType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/EffDatedChangeType_tl.html" TARGET="tableFrame">EffDatedChangeType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">Type of change made to this row</span>
+<a name="effdated_changetype_dynprop"></a>
+<p class="column">
+<span class="coltitle">CHANGETYPE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="effdated_contiguousdateranges"></a>
+<p class="column">
+<span class="coltitle">ContiguousDateRanges</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.List<gw.api.util.Range<java.util.Date>></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the ranges of dates for which this EffDated is effective, ignoring edit dates.</span>
+<a name="effdated_earliesteffectivedate"></a>
+<p class="column">
+<span class="coltitle">EarliestEffectiveDate</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.Date</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Return the date this bean start to exist</span>
+<a name="effdated_effdatedkey"></a>
+<p class="column">
+<span class="coltitle">EffDatedKey</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.core.effdate.EffDatedKey</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="effdated_effectivedate"></a>
+<p class="column">
+<span class="coltitle">EffectiveDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Effective date of this row.  A value of NULL in the database indicates that this row's effective date is equal to the Period Start.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_0 onclick='showAndHideUIDetails("UITable_0", "showhideUI_0")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_0' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>BusinessAutoStateModifierPanelSet.pcf:164</td>
+<td></td>
+<td>modifier.EffectiveDate</td>
+<td>false</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+PolicyFile_StateInfo
+</td>
+</tr>
+<tr>
+<td>BusinessAutoStateModifierPanelSet.pcf:99</td>
+<td>Web.Policy.PolicyLine.PerState.Modifiers.EffectiveDate</td>
+<td>modifier.EffectiveDate</td>
+<td>false</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+PolicyFile_StateInfo
+</td>
+</tr>
+</table>
+</div></div>
+<a name="effdated_effectivedate_dynprop"></a>
+<p class="column">
+<span class="coltitle">EFFECTIVEDATE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="effdated_effectivedaterange"></a>
+<p class="column">
+<span class="coltitle">EffectiveDateRange</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning com.guidewire.pl.system.util.DateRange</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="effdated_effectivedaterangewm"></a>
+<p class="column">
+<span class="coltitle">EffectiveDateRangeWM</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning com.guidewire.pl.system.util.DateRange</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the entire effective window of this eff-dated</span>
+<a name="effdated_eventdates"></a>
+<p class="column">
+<span class="coltitle">EventDates</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.Set<java.util.Date></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns all event dates for the EffDated.  An event date is anywhere where an edit occurs, the EffDated becomes
+effective, or the EffDated expires.  Since this method returns a set, the results will be unique but unordered.</span>
+<a name="effdated_expirationdate"></a>
+<p class="column">
+<span class="coltitle">ExpirationDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Expiration date of this row.  A value of NULL in the database indicates that this row's expiration date is equal to the Period End.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_1 onclick='showAndHideUIDetails("UITable_1", "showhideUI_1")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_1' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>BusinessAutoStateModifierPanelSet.pcf:105</td>
+<td>Web.Policy.PolicyLine.PerState.Modifiers.ExpirationDate</td>
+<td>modifier.ExpirationDate</td>
+<td>false</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+PolicyFile_StateInfo
+</td>
+</tr>
+<tr>
+<td>BusinessAutoStateModifierPanelSet.pcf:169</td>
+<td></td>
+<td>modifier.ExpirationDate</td>
+<td>false</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+PolicyFile_StateInfo
+</td>
+</tr>
+</table>
+</div></div>
+<a name="effdated_expirationdate_dynprop"></a>
+<p class="column">
+<span class="coltitle">EXPIRATIONDATE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="effdated_fixedid"></a>
+<p class="column">
+<span class="coltitle">FixedId</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.core.Key</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="effdated_fixedid_dynprop"></a>
+<p class="column">
+<span class="coltitle">FIXEDID_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="effdated_latestexpirationdate"></a>
+<p class="column">
+<span class="coltitle">LatestExpirationDate</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.Date</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Return the date this bean cease to exist</span>
+<a name="effdated_new"></a>
+<p class="column">
+<span class="coltitle">New</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="effdated_promoted"></a>
+<p class="column">
+<span class="coltitle">Promoted</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="effdated_publicid"></a>
+<p class="column">
+<span class="coltitle">PublicID</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ID or primary key of the row in the external system to which this row is mapped</span>
+<a name="effdated_removed"></a>
+<p class="column">
+<span class="coltitle">Removed</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns <code>true</code> if and only if this EffDated is open for removal in its bundle.</span>
+<a name="effdated_slice"></a>
+<p class="column">
+<span class="coltitle">Slice</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="effdated_slicedate"></a>
+<p class="column">
+<span class="coltitle">SliceDate</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.Date</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="effdated_type"></a>
+<p class="column">
+<span class="coltitle">TYPE</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityTypeReference<entity.EffDated></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="effdated_typeidstring"></a>
+<p class="column">
+<span class="coltitle">TypeIDString</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="effdated_unsliceduntyped"></a>
+<p class="column">
+<span class="coltitle">UnslicedUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning EffDated</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="effdated_versionlistuntyped"></a>
+<p class="column">
+<span class="coltitle">VersionListUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.core.effdate.EffDatedVersionList</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+</body>
+</html>

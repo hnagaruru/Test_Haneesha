@@ -1,0 +1,1403 @@
+<html>
+<head>
+<title>RateBook</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">RateBook <span class="entityname">(pc_ratebook) (delegates to <A HREF="Retireable.html" TARGET="tableFrame">Retireable</A>)</span></div>
+<div class="desc">
+<span id="reflink_3456" class="reftext" onclick='showAndHideRefBox("refbox_3456", "reflink_3456")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_3456" class="refbox_inner" style="display:none;">
+Describes which versions of which rate tables comprise a rate book
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">RateBook</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Editable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Editable</b><br>The related database table contains rows that are editable by application users based on roles and permissions. An Editable table manages additional fields that represent an audit trail of an entity in the table (for example, who created it and when, who last edited it and when).')">?</span></sup>, Extendable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Extendable</b><br>Can be extended with additional custom fields added to it.')">?</span></sup>, Final<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Final</b><br>The entity cannot be subtyped.')">?</span></sup>, Keyed<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Keyed</b><br>Has a related database table that has a primary key. Each row in a Keyed table has an integer primary key named ID. IDs are managed internally by the application, and the system ensures that no two rows in a keyed table have the same ID. In addition to the internal key, an external primary key can be associated with each row in a table.')">?</span></sup>, Sourceable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Sourceable</b><br>Contains entities that are linked to an external source. Each row in a Sourceable entity\'s table has additional fields to identify the external system and store the ID of the Sourceable entity in the external system.')">?</span></sup>, Versionable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Versionable</b><br>Has a version number that increases every time the entity is changed. This allows the cache to identify when entities have been updated.')">?</span></sup></span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_3457" class="reftext" onclick='showAndHideRefBox("refbox_3457", "reflink_3457")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_3457" class="refbox_inner" style="display:none;">
+<A HREF="../full/Cost.html" TARGET="tableFrame">Cost.RateBook</A><br><A HREF="../full/APDCost.html" TARGET="tableFrame">APDCost.RateBook</A><br><A HREF="../full/BACost.html" TARGET="tableFrame">BACost.RateBook</A><br><A HREF="../full/BOPCost.html" TARGET="tableFrame">BOPCost.RateBook</A><br><A HREF="../full/CPCost.html" TARGET="tableFrame">CPCost.RateBook</A><br><A HREF="../full/GLCost.html" TARGET="tableFrame">GLCost.RateBook</A><br><A HREF="../full/HOPCost.html" TARGET="tableFrame">HOPCost.RateBook</A><br><A HREF="../full/IMCost.html" TARGET="tableFrame">IMCost.RateBook</A><br><A HREF="../full/ImpactTestingRateBook.html" TARGET="tableFrame">ImpactTestingRateBook.RateBook</A><br><A HREF="../full/PACost.html" TARGET="tableFrame">PACost.RateBook</A><br><A HREF="../full/RateBookCalcRoutine.html" TARGET="tableFrame">RateBookCalcRoutine.RateBook</A><br><A HREF="../full/RateBookExportResult.html" TARGET="tableFrame">RateBookExportResult.RateBook</A><br><A HREF="../full/RateBookExportWorkItem.html" TARGET="tableFrame">RateBookExportWorkItem.RateBook</A><br><A HREF="../full/RateBook_BookDesc_L10N.html" TARGET="tableFrame">RateBook_BookDesc_L10N.Owner</A><br><A HREF="../full/RateBook_BookName_L10N.html" TARGET="tableFrame">RateBook_BookName_L10N.Owner</A><br><A HREF="../full/RateTable.html" TARGET="tableFrame">RateTable.RateBook</A><br><A HREF="../full/WCCost.html" TARGET="tableFrame">WCCost.RateBook</A>
+</div>
+</span>
+</div>
+<span class="showhidelink"><a id="showAllElements" href="#" onClick="return showAllUIDetails()">Show user interface details on all fields</a></span>
+
+<br>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+<a name="ratebook_id"></a>
+<p class="column">
+<span class="coltitle">ID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "key")'>key</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Internally managed primary key</span>
+<a name="ratebook_activitydisplayname"></a>
+<p class="column">
+<span class="coltitle">ActivityDisplayName</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_beanversion_prop"></a>
+<p class="column">
+<span class="coltitle">BEANVERSION_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_bookcode"></a>
+<p class="column">
+<span class="coltitle">BookCode</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "patterncode")'>patterncode</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(unique index)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>unique index</b><br>The column participates in one or more unique indexes.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The rate book code</span>
+<div class='screenrefbody'>
+<span id=showhideUI_0 onclick='showAndHideUIDetails("UITable_0", "showhideUI_0")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_0' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>ImpactTestingSelectRatebooksScreen.pcf:126</td>
+<td>Web.Rating.RateBooks.Code</td>
+<td>inactiveRateBook.BookCode</td>
+<td>false</td>
+<td>
+ImpactTestingWizard
+</td>
+</tr>
+<tr>
+<td>ImpactTestingSelectRatebooksScreen.pcf:196</td>
+<td>Web.Rating.RateBooks.Code</td>
+<td>selectedRateBook.RateBook.BookCode</td>
+<td>false</td>
+<td>
+ImpactTestingWizard
+</td>
+</tr>
+<tr>
+<td>ImpactTestingSelectRatebooksScreen.pcf:69</td>
+<td>Web.Rating.RateBooks.Code</td>
+<td>activeRateBook.BookCode</td>
+<td>false</td>
+<td>
+ImpactTestingWizard
+</td>
+</tr>
+<tr>
+<td>RateBookDV.pcf:27</td>
+<td>Web.Rating.RateBooks.Code</td>
+<td>ratebook.BookCode</td>
+<td>true</td>
+<td>
+EditRateBook
+<br>
+VersionRateBook
+<br>
+RateBookDetail
+<br>
+NewRateBook
+</td>
+</tr>
+<tr>
+<td>RateBookDetailsScreen.pcf:181</td>
+<td>Web.Rating.RateBooks.Code</td>
+<td>rateBook.BookCode</td>
+<td>true</td>
+<td>
+RateBookDetail
+</td>
+</tr>
+<tr>
+<td>RateBookMergePopup.pcf:149</td>
+<td></td>
+<td>mergedRateBook.BookCode</td>
+<td>(book1.BookCode != book2.BookCode)</td>
+<td>
+RateBookMergePopup
+</td>
+</tr>
+<tr>
+<td>RateBookPanelSet.pcf:70</td>
+<td>Web.Rating.RateBooks.Code</td>
+<td>ratebook.BookCode</td>
+<td>false</td>
+<td>
+RateBooks
+</td>
+</tr>
+</table>
+</div></div>
+<a name="ratebook_bookcode_prop"></a>
+<p class="column">
+<span class="coltitle">BOOKCODE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_bookdesc"></a>
+<p class="column">
+<span class="coltitle">BookDesc</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(localized)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>localized</b><br>The property is represented by a different localized table.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Optional detailed description of the rate book.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_1 onclick='showAndHideUIDetails("UITable_1", "showhideUI_1")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_1' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>RateBookDV.pcf:45</td>
+<td>Web.Rating.RateBooks.Description</td>
+<td>ratebook.BookDesc</td>
+<td>true</td>
+<td>
+EditRateBook
+<br>
+VersionRateBook
+<br>
+RateBookDetail
+<br>
+NewRateBook
+</td>
+</tr>
+<tr>
+<td>RateBookDetailsScreen.pcf:199</td>
+<td>Web.Rating.RateBooks.Description</td>
+<td>rateBook.BookDesc</td>
+<td>true</td>
+<td>
+RateBookDetail
+</td>
+</tr>
+</table>
+</div></div>
+<a name="ratebook_bookdesc_en_us"></a>
+<p class="column">
+<span class="coltitle">BookDesc_en_US</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_bookdesc_l10n_array_prop"></a>
+<p class="column">
+<span class="coltitle">BOOKDESC_L10N_ARRAY_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_bookdesc_prop"></a>
+<p class="column">
+<span class="coltitle">BOOKDESC_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_bookedition"></a>
+<p class="column">
+<span class="coltitle">BookEdition</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "patterncode")'>patterncode</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(unique index)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>unique index</b><br>The column participates in one or more unique indexes.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The edition of the rate book. This, combined with the 'BookName', identifies the rate book to the user.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_2 onclick='showAndHideUIDetails("UITable_2", "showhideUI_2")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_2' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>ImpactTestingSelectRatebooksScreen.pcf:132</td>
+<td>Web.Rating.RateBooks.Edition</td>
+<td>inactiveRateBook.BookEdition</td>
+<td>false</td>
+<td>
+ImpactTestingWizard
+</td>
+</tr>
+<tr>
+<td>ImpactTestingSelectRatebooksScreen.pcf:203</td>
+<td>Web.Rating.RateBooks.Edition</td>
+<td>selectedRateBook.RateBook.BookEdition</td>
+<td>false</td>
+<td>
+ImpactTestingWizard
+</td>
+</tr>
+<tr>
+<td>ImpactTestingSelectRatebooksScreen.pcf:75</td>
+<td>Web.Rating.RateBooks.Edition</td>
+<td>activeRateBook.BookEdition</td>
+<td>false</td>
+<td>
+ImpactTestingWizard
+</td>
+</tr>
+<tr>
+<td>RateBookDV.pcf:40</td>
+<td>Web.Rating.RateBooks.Edition</td>
+<td>ratebook.BookEdition</td>
+<td>true</td>
+<td>
+EditRateBook
+<br>
+VersionRateBook
+<br>
+RateBookDetail
+<br>
+NewRateBook
+</td>
+</tr>
+<tr>
+<td>RateBookDetailsScreen.pcf:194</td>
+<td>Web.Rating.RateBooks.Edition</td>
+<td>rateBook.BookEdition</td>
+<td>true</td>
+<td>
+RateBookDetail
+</td>
+</tr>
+<tr>
+<td>RateBookMergePopup.pcf:68</td>
+<td>Web.Rating.RateBooks.Edition</td>
+<td>mergedRateBook.BookEdition</td>
+<td>true</td>
+<td>
+RateBookMergePopup
+</td>
+</tr>
+<tr>
+<td>RateBookPanelSet.pcf:74</td>
+<td>Web.Rating.RateBooks.Edition</td>
+<td>ratebook.BookEdition</td>
+<td>false</td>
+<td>
+RateBooks
+</td>
+</tr>
+</table>
+</div></div>
+<a name="ratebook_bookedition_prop"></a>
+<p class="column">
+<span class="coltitle">BOOKEDITION_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_bookgroup"></a>
+<p class="column">
+<span class="exttitle">BookGroup</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Tag used for grouping RateBooks; used in RateBook lookup relaxation ordering.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_3 onclick='showAndHideUIDetails("UITable_3", "showhideUI_3")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_3' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>RateBookDV.pcf:62</td>
+<td>Web.Rating.RateBooks.BookGroup</td>
+<td>ratebook.BookGroup</td>
+<td>true</td>
+<td>
+EditRateBook
+<br>
+VersionRateBook
+<br>
+RateBookDetail
+<br>
+NewRateBook
+</td>
+</tr>
+<tr>
+<td>RateBookDetailsScreen.pcf:216</td>
+<td>Web.Rating.RateBooks.BookGroup</td>
+<td>rateBook.BookGroup</td>
+<td>true</td>
+<td>
+RateBookDetail
+</td>
+</tr>
+</table>
+</div></div>
+<a name="ratebook_bookgroup_prop"></a>
+<p class="column">
+<span class="coltitle">BOOKGROUP_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_bookjurisdiction"></a>
+<p class="column">
+<span class="coltitle">BookJurisdiction</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Jurisdiction_tl.html" TARGET="tableFrame">Jurisdiction</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The Jurisdiction this books applies to; countrywide is null</span>
+<a name="ratebook_bookjurisdiction_prop"></a>
+<p class="column">
+<span class="coltitle">BOOKJURISDICTION_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_bookname"></a>
+<p class="column">
+<span class="coltitle">BookName</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(localized)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>localized</b><br>The property is represented by a different localized table.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The name of the rate book. This, combined with the 'BookEdition', identifies the rate book to the user.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_4 onclick='showAndHideUIDetails("UITable_4", "showhideUI_4")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_4' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>ImpactTestingSelectRatebooksScreen.pcf:121</td>
+<td>Web.Rating.RateBooks.Name</td>
+<td>inactiveRateBook.BookName</td>
+<td>false</td>
+<td>
+ImpactTestingWizard
+</td>
+</tr>
+<tr>
+<td>ImpactTestingSelectRatebooksScreen.pcf:190</td>
+<td>Web.Rating.RateBooks.Name</td>
+<td>selectedRateBook.RateBook.BookName</td>
+<td>false</td>
+<td>
+ImpactTestingWizard
+</td>
+</tr>
+<tr>
+<td>ImpactTestingSelectRatebooksScreen.pcf:64</td>
+<td>Web.Rating.RateBooks.Name</td>
+<td>activeRateBook.BookName</td>
+<td>false</td>
+<td>
+ImpactTestingWizard
+</td>
+</tr>
+<tr>
+<td>RateBookDV.pcf:34</td>
+<td>Web.Rating.RateBooks.Name</td>
+<td>ratebook.BookName</td>
+<td>true</td>
+<td>
+EditRateBook
+<br>
+VersionRateBook
+<br>
+RateBookDetail
+<br>
+NewRateBook
+</td>
+</tr>
+<tr>
+<td>RateBookDetailsScreen.pcf:188</td>
+<td>Web.Rating.RateBooks.Name</td>
+<td>rateBook.BookName</td>
+<td>true</td>
+<td>
+RateBookDetail
+</td>
+</tr>
+<tr>
+<td>RateBookMergePopup.pcf:170</td>
+<td></td>
+<td>mergedRateBook.BookName</td>
+<td>(book1.BookName != book2.BookName)</td>
+<td>
+RateBookMergePopup
+</td>
+</tr>
+<tr>
+<td>RateBookPanelSet.pcf:66</td>
+<td>Web.Rating.RateBooks.Name</td>
+<td>ratebook.BookName</td>
+<td>false</td>
+<td>
+RateBooks
+</td>
+</tr>
+</table>
+</div></div>
+<a name="ratebook_bookname_en_us"></a>
+<p class="column">
+<span class="coltitle">BookName_en_US</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_bookname_l10n_array_prop"></a>
+<p class="column">
+<span class="coltitle">BOOKNAME_L10N_ARRAY_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_bookname_prop"></a>
+<p class="column">
+<span class="coltitle">BOOKNAME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_bookoffering"></a>
+<p class="column">
+<span class="coltitle">BookOffering</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "patterncode")'>patterncode</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The offering this books applies to</span>
+<a name="ratebook_bookoffering_prop"></a>
+<p class="column">
+<span class="coltitle">BOOKOFFERING_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_calcroutinesnotinpromotedratebook"></a>
+<p class="column">
+<span class="coltitle">CalcRoutinesNotInPromotedRateBook</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.Set<entity.CalcRoutineDefinition></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Set of Calc Routine Definitions included in this Rate Book that are not included in any promoted Rate Book.
+Effectively, the set of Calc Routine Definitions that may need to be re-validated before this Rate Book is promoted.</span>
+<a name="ratebook_cascadedlookup"></a>
+<p class="column">
+<span class="coltitle">CascadedLookup</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: 1)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">If it is true we continue to look past this ratebook for rateTables and rateRoutines</span>
+<div class='screenrefbody'>
+<span id=showhideUI_5 onclick='showAndHideUIDetails("UITable_5", "showhideUI_5")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_5' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>RateBookDV.pcf:56</td>
+<td>Web.Rating.RateBooks.CascadedLookup</td>
+<td>ratebook.CascadedLookup</td>
+<td>true</td>
+<td>
+EditRateBook
+<br>
+VersionRateBook
+<br>
+RateBookDetail
+<br>
+NewRateBook
+</td>
+</tr>
+<tr>
+<td>RateBookDetailsScreen.pcf:210</td>
+<td>Web.Rating.RateBooks.CascadedLookup</td>
+<td>rateBook.CascadedLookup</td>
+<td>true</td>
+<td>
+RateBookDetail
+</td>
+</tr>
+<tr>
+<td>RateBookMergePopup.pcf:214</td>
+<td></td>
+<td>mergedRateBook.CascadedLookup</td>
+<td>(book1.CascadedLookup != book2.CascadedLookup)</td>
+<td>
+RateBookMergePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="ratebook_cascadedlookup_prop"></a>
+<p class="column">
+<span class="coltitle">CASCADEDLOOKUP_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_createtime"></a>
+<p class="column">
+<span class="coltitle">CreateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was created</span>
+<a name="ratebook_createtime_prop"></a>
+<p class="column">
+<span class="coltitle">CREATETIME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_createuser"></a>
+<p class="column">
+<span class="coltitle">CreateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CreateUserID)</span>
+<br>
+<span class="desc">User who created the object</span>
+<a name="ratebook_createuser_prop"></a>
+<p class="column">
+<span class="coltitle">CREATEUSER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_effectivedate"></a>
+<p class="column">
+<span class="coltitle">EffectiveDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The earliest policy effective date that can be rated using this rate book</span>
+<div class='screenrefbody'>
+<span id=showhideUI_6 onclick='showAndHideUIDetails("UITable_6", "showhideUI_6")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_6' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>ImpactTestingSelectRatebooksScreen.pcf:137</td>
+<td>Web.Rating.RateBooks.EffectiveDate</td>
+<td>inactiveRateBook.EffectiveDate</td>
+<td>false</td>
+<td>
+ImpactTestingWizard
+</td>
+</tr>
+<tr>
+<td>ImpactTestingSelectRatebooksScreen.pcf:208</td>
+<td>Web.Rating.RateBooks.EffectiveDate</td>
+<td>selectedRateBook.RateBook.EffectiveDate</td>
+<td>false</td>
+<td>
+ImpactTestingWizard
+</td>
+</tr>
+<tr>
+<td>ImpactTestingSelectRatebooksScreen.pcf:80</td>
+<td>Web.Rating.RateBooks.EffectiveDate</td>
+<td>activeRateBook.EffectiveDate</td>
+<td>false</td>
+<td>
+ImpactTestingWizard
+</td>
+</tr>
+<tr>
+<td>RateBookDV.pcf:151</td>
+<td>Web.Rating.RateBooks.EffectiveDate.After</td>
+<td>rateBookDVUI.RateBook.EffectiveDate</td>
+<td>true</td>
+<td>
+EditRateBook
+<br>
+VersionRateBook
+<br>
+RateBookDetail
+<br>
+NewRateBook
+</td>
+</tr>
+<tr>
+<td>RateBookDetailsScreen.pcf:305</td>
+<td>Web.Rating.RateBooks.EffectiveDate.After</td>
+<td>rateBookDVUI.RateBook.EffectiveDate</td>
+<td>true</td>
+<td>
+RateBookDetail
+</td>
+</tr>
+<tr>
+<td>RateBookMergePopup.pcf:353</td>
+<td></td>
+<td>mergedRateBook.EffectiveDate</td>
+<td>(book1.EffectiveDate != book2.EffectiveDate)</td>
+<td>
+RateBookMergePopup
+</td>
+</tr>
+<tr>
+<td>RateBookPanelSet.pcf:87</td>
+<td>Web.Rating.RateBooks.EffectiveDate</td>
+<td>ratebook.EffectiveDate</td>
+<td>false</td>
+<td>
+RateBooks
+</td>
+</tr>
+<tr>
+<td>RateTableDefinitionUsagePanelSet.pcf:49</td>
+<td>Web.Rating.RateTableDefinition.Usage.RateBookEffectiveDate</td>
+<td>ratetable.RateBook.EffectiveDate</td>
+<td>false</td>
+<td>
+NewRateTableDefinition
+<br>
+RateTableDefinitionDetail
+</td>
+</tr>
+</table>
+</div></div>
+<a name="ratebook_effectivedate_prop"></a>
+<p class="column">
+<span class="coltitle">EFFECTIVEDATE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_empty"></a>
+<p class="column">
+<span class="coltitle">Empty</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_excelexportresult"></a>
+<p class="column">
+<span class="coltitle">ExcelExportResult</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning RateBookExportResult</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_excelexportresultfromdb"></a>
+<p class="column">
+<span class="coltitle">ExcelExportResultFromDB</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning RateBookExportResult</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">This method is used to get updated RateBookExportResult entity from DB while other process is updating the entity</span>
+<a name="ratebook_expirationdate"></a>
+<p class="column">
+<span class="coltitle">ExpirationDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The latest policy effective date that can be rated using this rate book</span>
+<div class='screenrefbody'>
+<span id=showhideUI_7 onclick='showAndHideUIDetails("UITable_7", "showhideUI_7")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_7' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>RateBookDV.pcf:160</td>
+<td>Web.Rating.RateBooks.RenewalEffectiveDate.Before</td>
+<td>rateBookDVUI.RateBook.ExpirationDate</td>
+<td>true</td>
+<td>
+EditRateBook
+<br>
+VersionRateBook
+<br>
+RateBookDetail
+<br>
+NewRateBook
+</td>
+</tr>
+<tr>
+<td>RateBookDV.pcf:181</td>
+<td>Web.Rating.RateBooks.RenewalEffectiveDate.Before</td>
+<td>ratebook.ExpirationDate</td>
+<td>true</td>
+<td>
+EditRateBook
+<br>
+VersionRateBook
+<br>
+RateBookDetail
+<br>
+NewRateBook
+</td>
+</tr>
+<tr>
+<td>RateBookDetailsScreen.pcf:314</td>
+<td>Web.Rating.RateBooks.RenewalEffectiveDate.Before</td>
+<td>rateBookDVUI.RateBook.ExpirationDate</td>
+<td>true</td>
+<td>
+RateBookDetail
+</td>
+</tr>
+<tr>
+<td>RateBookDetailsScreen.pcf:335</td>
+<td>Web.Rating.RateBooks.RenewalEffectiveDate.Before</td>
+<td>rateBook.ExpirationDate</td>
+<td>true</td>
+<td>
+RateBookDetail
+</td>
+</tr>
+</table>
+</div></div>
+<a name="ratebook_expirationdate_prop"></a>
+<p class="column">
+<span class="coltitle">EXPIRATIONDATE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_exportlock"></a>
+<p class="column">
+<span class="coltitle">ExportLock</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Indicates that this ratebook is being exported, so it's locked to prevent edits</span>
+<a name="ratebook_exportlock_prop"></a>
+<p class="column">
+<span class="coltitle">EXPORTLOCK_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_id_prop"></a>
+<p class="column">
+<span class="coltitle">ID_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_laststatuschangedate"></a>
+<p class="column">
+<span class="coltitle">LastStatusChangeDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The (calendar) date of the last Status change</span>
+<div class='screenrefbody'>
+<span id=showhideUI_8 onclick='showAndHideUIDetails("UITable_8", "showhideUI_8")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_8' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>RateBookDV.pcf:68</td>
+<td>rateBookDVUI.StatusChangeDateLabel</td>
+<td>ratebook.LastStatusChangeDate</td>
+<td>false</td>
+<td>
+EditRateBook
+<br>
+VersionRateBook
+<br>
+RateBookDetail
+<br>
+NewRateBook
+</td>
+</tr>
+<tr>
+<td>RateBookDetailsScreen.pcf:222</td>
+<td>rateBookDVUI.StatusChangeDateLabel</td>
+<td>rateBook.LastStatusChangeDate</td>
+<td>false</td>
+<td>
+RateBookDetail
+</td>
+</tr>
+</table>
+</div></div>
+<a name="ratebook_laststatuschangedate_prop"></a>
+<p class="column">
+<span class="coltitle">LASTSTATUSCHANGEDATE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_lasttablerowedit"></a>
+<p class="column">
+<span class="coltitle">LastTableRowEdit</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_lasttablerowedit_prop"></a>
+<p class="column">
+<span class="coltitle">LASTTABLEROWEDIT_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_localisedbookname"></a>
+<p class="column">
+<span class="coltitle">LocalisedBookName</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_new"></a>
+<p class="column">
+<span class="coltitle">New</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_newlyimported"></a>
+<p class="column">
+<span class="coltitle">NewlyImported</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_policyline"></a>
+<p class="column">
+<span class="coltitle">PolicyLine</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "patterncode")'>patterncode</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(unique index)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>unique index</b><br>The column participates in one or more unique indexes.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Code of the Policy Line that the rate table belongs to</span>
+<div class='screenrefbody'>
+<span id=showhideUI_9 onclick='showAndHideUIDetails("UITable_9", "showhideUI_9")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_9' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>RateBookPanelSet.pcf:93</td>
+<td>Web.Rating.RateBooks.PolicyLine</td>
+<td>ratebook.PolicyLine</td>
+<td>false</td>
+<td>
+RateBooks
+</td>
+</tr>
+</table>
+</div></div>
+<a name="ratebook_policyline_prop"></a>
+<p class="column">
+<span class="coltitle">POLICYLINE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_publicid"></a>
+<p class="column">
+<span class="coltitle">PublicID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "publicid")'>publicid</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ID or primary key of the row in the external system to which this row is mapped</span>
+<a name="ratebook_publicid_prop"></a>
+<p class="column">
+<span class="coltitle">PUBLICID_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_ratebookcalcroutines_prop"></a>
+<p class="column">
+<span class="coltitle">RATEBOOKCALCROUTINES_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_ratebookexportresults_prop"></a>
+<p class="column">
+<span class="coltitle">RATEBOOKEXPORTRESULTS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_ratebookhierarchy"></a>
+<p class="column">
+<span class="coltitle">RateBookHierarchy</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.List<entity.RateBook></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_ratebooks_prop"></a>
+<p class="column">
+<span class="coltitle">RATEBOOKS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_ratetables_prop"></a>
+<p class="column">
+<span class="coltitle">RATETABLES_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_ratetablesmissingincalcroutines"></a>
+<p class="column">
+<span class="coltitle">RateTablesMissingInCalcRoutines</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.Set<java.lang.String></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_renewaleffectivedate"></a>
+<p class="column">
+<span class="coltitle">RenewalEffectiveDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The earliest policy renewal effective date that can be rated using this rate book</span>
+<div class='screenrefbody'>
+<span id=showhideUI_10 onclick='showAndHideUIDetails("UITable_10", "showhideUI_10")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_10' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>RateBookDV.pcf:174</td>
+<td>Web.Rating.RateBooks.RenewalEffectiveDate.After</td>
+<td>rateBookDVUI.RateBook.RenewalEffectiveDate</td>
+<td>true</td>
+<td>
+EditRateBook
+<br>
+VersionRateBook
+<br>
+RateBookDetail
+<br>
+NewRateBook
+</td>
+</tr>
+<tr>
+<td>RateBookDetailsScreen.pcf:328</td>
+<td>Web.Rating.RateBooks.RenewalEffectiveDate.After</td>
+<td>rateBookDVUI.RateBook.RenewalEffectiveDate</td>
+<td>true</td>
+<td>
+RateBookDetail
+</td>
+</tr>
+<tr>
+<td>RateBookMergePopup.pcf:406</td>
+<td></td>
+<td>mergedRateBook.RenewalEffectiveDate</td>
+<td>(book1.RenewalEffectiveDate != book2.RenewalEffectiveDate)</td>
+<td>
+RateBookMergePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="ratebook_renewaleffectivedate_prop"></a>
+<p class="column">
+<span class="coltitle">RENEWALEFFECTIVEDATE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_retired"></a>
+<p class="column">
+<span class="coltitle">Retired</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_retired_dynprop"></a>
+<p class="column">
+<span class="coltitle">RETIRED_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_retiredvalue"></a>
+<p class="column">
+<span class="coltitle">RetiredValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "softentityreference")'>softentityreference</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: Retired)&nbsp;&nbsp;&nbsp;&nbsp;(default: 0)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Whether the entity is still in use. A value of 0 means that the entity is not retired. If the entity is retired from active use, this field has a non-zero value equal to the entity's ID. Once an entity is retired, it should not be unretired.</span>
+<a name="ratebook_retiredvalue_dynprop"></a>
+<p class="column">
+<span class="coltitle">RETIREDVALUE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_retiredvalue_prop"></a>
+<p class="column">
+<span class="coltitle">RETIREDVALUE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_status"></a>
+<p class="column">
+<span class="coltitle">Status</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/RateBookStatus_tl.html" TARGET="tableFrame">RateBookStatus</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: Draft)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The status determines things such as whether the rate book may be changed or be brought back into an editable state, whether it has been approved for production, and whether it has been put into production.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_11 onclick='showAndHideUIDetails("UITable_11", "showhideUI_11")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_11' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>RateBookDV.pcf:50</td>
+<td>Web.Rating.RateBooks.Status</td>
+<td>ratebook.Status</td>
+<td>false</td>
+<td>
+EditRateBook
+<br>
+VersionRateBook
+<br>
+RateBookDetail
+<br>
+NewRateBook
+</td>
+</tr>
+<tr>
+<td>RateBookDetailsScreen.pcf:204</td>
+<td>Web.Rating.RateBooks.Status</td>
+<td>rateBook.Status</td>
+<td>false</td>
+<td>
+RateBookDetail
+</td>
+</tr>
+<tr>
+<td>RateBookPanelSet.pcf:81</td>
+<td>Web.Rating.RateBooks.Status</td>
+<td>ratebook.Status</td>
+<td>false</td>
+<td>
+RateBooks
+</td>
+</tr>
+<tr>
+<td>RateTableDefinitionUsagePanelSet.pcf:43</td>
+<td>Web.Rating.RateTableDefinition.Usage.RateBookStatus</td>
+<td>ratetable.RateBook.Status</td>
+<td>false</td>
+<td>
+NewRateTableDefinition
+<br>
+RateTableDefinitionDetail
+</td>
+</tr>
+</table>
+</div></div>
+<a name="ratebook_status_prop"></a>
+<p class="column">
+<span class="coltitle">STATUS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_totalitemstoprocessinratebookexport"></a>
+<p class="column">
+<span class="coltitle">TotalItemsToProcessInRateBookExport</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning int</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_type"></a>
+<p class="column">
+<span class="coltitle">TYPE</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityTypeReference<entity.RateBook></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_updatetime"></a>
+<p class="column">
+<span class="coltitle">UpdateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was last updated</span>
+<div class='screenrefbody'>
+<span id=showhideUI_12 onclick='showAndHideUIDetails("UITable_12", "showhideUI_12")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_12' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>RateBookDV.pcf:80</td>
+<td>Web.Rating.RateBooks.LastUpdateTime</td>
+<td>ratebook.UpdateTime</td>
+<td>false</td>
+<td>
+EditRateBook
+<br>
+VersionRateBook
+<br>
+RateBookDetail
+<br>
+NewRateBook
+</td>
+</tr>
+<tr>
+<td>RateBookDetailsScreen.pcf:234</td>
+<td>Web.Rating.RateBooks.LastUpdateTime</td>
+<td>rateBook.UpdateTime</td>
+<td>false</td>
+<td>
+RateBookDetail
+</td>
+</tr>
+</table>
+</div></div>
+<a name="ratebook_updatetime_prop"></a>
+<p class="column">
+<span class="coltitle">UPDATETIME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_updateuser"></a>
+<p class="column">
+<span class="coltitle">UpdateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: UpdateUserID)</span>
+<br>
+<span class="desc">User who last updated the object</span>
+<div class='screenrefbody'>
+<span id=showhideUI_13 onclick='showAndHideUIDetails("UITable_13", "showhideUI_13")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_13' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>RateBookDV.pcf:74</td>
+<td>Web.Rating.RateBooks.LastUpdatedBy</td>
+<td>ratebook.UpdateUser</td>
+<td>false</td>
+<td>
+EditRateBook
+<br>
+VersionRateBook
+<br>
+RateBookDetail
+<br>
+NewRateBook
+</td>
+</tr>
+<tr>
+<td>RateBookDetailsScreen.pcf:228</td>
+<td>Web.Rating.RateBooks.LastUpdatedBy</td>
+<td>rateBook.UpdateUser</td>
+<td>false</td>
+<td>
+RateBookDetail
+</td>
+</tr>
+</table>
+</div></div>
+<a name="ratebook_updateuser_prop"></a>
+<p class="column">
+<span class="coltitle">UPDATEUSER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_uwcompany"></a>
+<p class="column">
+<span class="coltitle">UWCompany</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="UWCompany.html" TARGET="tableFrame">UWCompany</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The Underwriting company that insures policies that are rated using this book.</span>
+<a name="ratebook_uwcompany_prop"></a>
+<p class="column">
+<span class="coltitle">UWCOMPANY_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_xmlexportresult"></a>
+<p class="column">
+<span class="coltitle">XMLExportResult</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning RateBookExportResult</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_xmlexportresultfromdb"></a>
+<p class="column">
+<span class="coltitle">XMLExportResultFromDB</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning RateBookExportResult</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="Arrays"></a><div class="arraysbox">Arrays</div>
+<a name="ratebook_bookdesc_l10n_array"></a>
+<p class="column">
+<span class="coltitle">BookDesc_L10N_ARRAY</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="RateBook_BookDesc_L10N.html" TARGET="tableFrame">RateBook_BookDesc_L10N</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_bookname_l10n_array"></a>
+<p class="column">
+<span class="coltitle">BookName_L10N_ARRAY</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="RateBook_BookName_L10N.html" TARGET="tableFrame">RateBook_BookName_L10N</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_calcroutines"></a>
+<p class="column">
+<span class="coltitle">CalcRoutines</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning CalcRoutineDefinition</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_ownedtables"></a>
+<p class="column">
+<span class="coltitle">OwnedTables</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning RateTable</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_ratebookcalcroutines"></a>
+<p class="column">
+<span class="coltitle">RateBookCalcRoutines</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="RateBookCalcRoutine.html" TARGET="tableFrame">RateBookCalcRoutine</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Which rate routines are used in this rate book</span>
+<a name="ratebook_ratebookexportresults"></a>
+<p class="column">
+<span class="coltitle">RateBookExportResults</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="RateBookExportResult.html" TARGET="tableFrame">RateBookExportResult</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">List of rate book export results</span>
+<a name="ratebook_ratebooks"></a>
+<p class="column">
+<span class="coltitle">Ratebooks</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="ImpactTestingRateBook.html" TARGET="tableFrame">ImpactTestingRateBook</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">Array of test cases to which this ratebook belongs.</span>
+<a name="ratebook_ratetables"></a>
+<p class="column">
+<span class="coltitle">RateTables</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="RateTable.html" TARGET="tableFrame">RateTable</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Which logical rate tables are in this rate book</span>
+<a name="ratebook_selectedratetables"></a>
+<p class="column">
+<span class="coltitle">SelectedRateTables</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning RateTable</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="ratebook_updatedcalcroutines"></a>
+<p class="column">
+<span class="coltitle">updatedCalcRoutines</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning CalcRoutineDefinition</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="Unique Keys for RateBook"></a><div class="arraysbox">Unique Keys for RateBook</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>ratebook1a</td>
+<td>PublicID, Retired</td></tr>
+<tr><td>RBU1</td>
+<td>BookCode, BookEdition, PolicyLine, Retired</td></tr>
+</table>
+<script language="JavaScript">
+function showAllUIDetails() {
+showUIDetails('UITable_0', 'showhideUI_0');
+showUIDetails('UITable_1', 'showhideUI_1');
+showUIDetails('UITable_2', 'showhideUI_2');
+showUIDetails('UITable_3', 'showhideUI_3');
+showUIDetails('UITable_4', 'showhideUI_4');
+showUIDetails('UITable_5', 'showhideUI_5');
+showUIDetails('UITable_6', 'showhideUI_6');
+showUIDetails('UITable_7', 'showhideUI_7');
+showUIDetails('UITable_8', 'showhideUI_8');
+showUIDetails('UITable_9', 'showhideUI_9');
+showUIDetails('UITable_10', 'showhideUI_10');
+showUIDetails('UITable_11', 'showhideUI_11');
+showUIDetails('UITable_12', 'showhideUI_12');
+showUIDetails('UITable_13', 'showhideUI_13');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Hide user interface details on all fields';
+  link.onclick = hideAllUIDetails;
+  return false;
+}
+function hideAllUIDetails() {
+hideUIDetails('UITable_0', 'showhideUI_0');
+hideUIDetails('UITable_1', 'showhideUI_1');
+hideUIDetails('UITable_2', 'showhideUI_2');
+hideUIDetails('UITable_3', 'showhideUI_3');
+hideUIDetails('UITable_4', 'showhideUI_4');
+hideUIDetails('UITable_5', 'showhideUI_5');
+hideUIDetails('UITable_6', 'showhideUI_6');
+hideUIDetails('UITable_7', 'showhideUI_7');
+hideUIDetails('UITable_8', 'showhideUI_8');
+hideUIDetails('UITable_9', 'showhideUI_9');
+hideUIDetails('UITable_10', 'showhideUI_10');
+hideUIDetails('UITable_11', 'showhideUI_11');
+hideUIDetails('UITable_12', 'showhideUI_12');
+hideUIDetails('UITable_13', 'showhideUI_13');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Show user interface details on all fields';
+  link.onclick = showAllUIDetails;
+  return false;
+}
+</script>
+
+</body>
+</html>

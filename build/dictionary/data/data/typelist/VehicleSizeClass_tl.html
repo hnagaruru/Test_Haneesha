@@ -1,0 +1,942 @@
+<html>
+<head>
+<title>VehicleSizeClass</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox"
+<div><span class="pagetitle">VehicleSizeClass</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="entityname">(pctl_vehiclesizeclass)</span>
+</div>
+<div class="desc"></div>
+</div>
+<table cellpadding="3" cellspacing="0" border="0" height="20" width="100%">
+<tr>
+<td nowrap="true" class="attrbox" height="20">
+<span class="attrtitle">Attributes: 
+
+</span>
+</td>
+</tr>
+</table>
+<br/>
+<div class="refbox biglist odd">
+<span id="reflink_9631" class="reftext" onclick='showAndHideRefBox("refbox_9631", "reflink_9631")'><img src="../../res/blackup.gif" border="0"><b>Referenced by: </b></span>
+<div id="refbox_9631" class="refbox_inner" style="display:none;">
+<A HREF="../full/BusinessVehicle.html" TARGET="tableFrame">BusinessVehicle.VehicleSizeClass</A><br><A HREF="../full/VehicleClassCode.html" TARGET="tableFrame">VehicleClassCode.SizeClass</A>
+</div>
+</span>
+</div>
+<a id='TOC'></a>
+<a name="Typecodes"></a><div class="arraysbox">Typecodes</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+<td>Description</td>
+<td>Priority</td>
+<td>Internal</td>
+<td>Retired</td>
+</tr>
+<tr valign="top">
+<td><a href=#0-70CC>0-70CC</a></td>
+<td>0-70 CC</td>
+<td>0-70 CC</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#1-8>1-8</a></td>
+<td>1 to 8 passenger</td>
+<td>1 to 8</td>
+<td align=center>1</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#101-125CC>101-125CC</a></td>
+<td>101-125 CC</td>
+<td>101-125 CC</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#126-200CC>126-200CC</a></td>
+<td>126-200 CC</td>
+<td>126-200 CC</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#201-275CC>201-275CC</a></td>
+<td>201-275 CC</td>
+<td>201-275 CC</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#21-60>21-60</a></td>
+<td>21 to 60 passenger</td>
+<td>21 to 60</td>
+<td align=center>3</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#276-350CC>276-350CC</a></td>
+<td>276-350 CC</td>
+<td>276-350 CC</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#351-500CC>351-500CC</a></td>
+<td>351-500 CC</td>
+<td>351-500 CC</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#501-650CC>501-650CC</a></td>
+<td>501-650 CC</td>
+<td>501-650 CC</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#71-100CC>71-100CC</a></td>
+<td>71-100 CC</td>
+<td>71-100 CC</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#9-20>9-20</a></td>
+<td>9 to 20 passenger</td>
+<td>9 to 20</td>
+<td align=center>2</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#ExtraHeavyTruck>ExtraHeavyTruck</a></td>
+<td>Extra heavy truck</td>
+<td>Extra heavy truck (over 45000 lbs. GVW)</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#ExtraHeavyTruckTractor>ExtraHeavyTruckTractor</a></td>
+<td>Extra heavy truck-tractor</td>
+<td>Extra heavy truck-tractor (over 45000 lbs. GCW)</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#HeavyTruck>HeavyTruck</a></td>
+<td>Heavy truck</td>
+<td>Light truck (20001-45000 lbs. GVW)</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#HeavyTruckTractor>HeavyTruckTractor</a></td>
+<td>Heavy truck-tractor</td>
+<td>Heavy truck-tractor (0-45000 lbs. GCW)</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#LightTruck>LightTruck</a></td>
+<td>Light truck</td>
+<td>Light truck (0-10000 lbs. GVW)</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#MediumTruck>MediumTruck</a></td>
+<td>Medium truck</td>
+<td>Medium truck (10,001-20,000 lbs. GVW)</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#PrivatePassenger>PrivatePassenger</a></td>
+<td>Private passenger</td>
+<td>Private passenger</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#Semitrailer>Semitrailer</a></td>
+<td>Semitrailer</td>
+<td>Semitrailer</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#ServiceUtilityTrailer>ServiceUtilityTrailer</a></td>
+<td>Service or utility trailer</td>
+<td>Service or utility trailer</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#Trailer>Trailer</a></td>
+<td>Trailer</td>
+<td>Trailer</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#over60>over60</a></td>
+<td>over 60 passenger</td>
+<td>over 60</td>
+<td align=center>4</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#over650CC>over650CC</a></td>
+<td>over 650 CC</td>
+<td>over 650 CC</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<div class='subtypebox'>
+<a name=0-70CC></a>
+<div class="titlebox">
+<div class="filtertitle">0-70CC <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9632" class="reftext" onclick='showAndHideRefBox("refbox_9632", "reflink_9632")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9632" class="refbox_inner" style="display:none;">
+0-70 CC
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#Special" TARGET="tableFrame">VehicleType.Special</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>0-70 CC</td>
+<td>0-70 CC</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=1-8></a>
+<div class="titlebox">
+<div class="filtertitle">1-8 <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9633" class="reftext" onclick='showAndHideRefBox("refbox_9633", "reflink_9633")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9633" class="refbox_inner" style="display:none;">
+1 to 8
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#PublicTransport" TARGET="tableFrame">VehicleType.PublicTransport</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>1 to 8 passenger</td>
+<td>1 to 8</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=101-125CC></a>
+<div class="titlebox">
+<div class="filtertitle">101-125CC <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9634" class="reftext" onclick='showAndHideRefBox("refbox_9634", "reflink_9634")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9634" class="refbox_inner" style="display:none;">
+101-125 CC
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#Special" TARGET="tableFrame">VehicleType.Special</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>101-125 CC</td>
+<td>101-125 CC</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=126-200CC></a>
+<div class="titlebox">
+<div class="filtertitle">126-200CC <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9635" class="reftext" onclick='showAndHideRefBox("refbox_9635", "reflink_9635")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9635" class="refbox_inner" style="display:none;">
+126-200 CC
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#Special" TARGET="tableFrame">VehicleType.Special</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>126-200 CC</td>
+<td>126-200 CC</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=201-275CC></a>
+<div class="titlebox">
+<div class="filtertitle">201-275CC <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9636" class="reftext" onclick='showAndHideRefBox("refbox_9636", "reflink_9636")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9636" class="refbox_inner" style="display:none;">
+201-275 CC
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#Special" TARGET="tableFrame">VehicleType.Special</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>201-275 CC</td>
+<td>201-275 CC</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=21-60></a>
+<div class="titlebox">
+<div class="filtertitle">21-60 <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9637" class="reftext" onclick='showAndHideRefBox("refbox_9637", "reflink_9637")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9637" class="refbox_inner" style="display:none;">
+21 to 60
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#PublicTransport" TARGET="tableFrame">VehicleType.PublicTransport</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>21 to 60 passenger</td>
+<td>21 to 60</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=276-350CC></a>
+<div class="titlebox">
+<div class="filtertitle">276-350CC <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9638" class="reftext" onclick='showAndHideRefBox("refbox_9638", "reflink_9638")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9638" class="refbox_inner" style="display:none;">
+276-350 CC
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#Special" TARGET="tableFrame">VehicleType.Special</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>276-350 CC</td>
+<td>276-350 CC</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=351-500CC></a>
+<div class="titlebox">
+<div class="filtertitle">351-500CC <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9639" class="reftext" onclick='showAndHideRefBox("refbox_9639", "reflink_9639")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9639" class="refbox_inner" style="display:none;">
+351-500 CC
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#Special" TARGET="tableFrame">VehicleType.Special</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>351-500 CC</td>
+<td>351-500 CC</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=501-650CC></a>
+<div class="titlebox">
+<div class="filtertitle">501-650CC <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9640" class="reftext" onclick='showAndHideRefBox("refbox_9640", "reflink_9640")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9640" class="refbox_inner" style="display:none;">
+501-650 CC
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#Special" TARGET="tableFrame">VehicleType.Special</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>501-650 CC</td>
+<td>501-650 CC</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=71-100CC></a>
+<div class="titlebox">
+<div class="filtertitle">71-100CC <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9641" class="reftext" onclick='showAndHideRefBox("refbox_9641", "reflink_9641")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9641" class="refbox_inner" style="display:none;">
+71-100 CC
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#Special" TARGET="tableFrame">VehicleType.Special</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>71-100 CC</td>
+<td>71-100 CC</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=9-20></a>
+<div class="titlebox">
+<div class="filtertitle">9-20 <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9642" class="reftext" onclick='showAndHideRefBox("refbox_9642", "reflink_9642")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9642" class="refbox_inner" style="display:none;">
+9 to 20
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#PublicTransport" TARGET="tableFrame">VehicleType.PublicTransport</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>9 to 20 passenger</td>
+<td>9 to 20</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=ExtraHeavyTruck></a>
+<div class="titlebox">
+<div class="filtertitle">ExtraHeavyTruck <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9643" class="reftext" onclick='showAndHideRefBox("refbox_9643", "reflink_9643")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9643" class="refbox_inner" style="display:none;">
+Extra heavy truck (over 45000 lbs. GVW)
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#Commercial" TARGET="tableFrame">VehicleType.Commercial</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Extra heavy truck</td>
+<td>Extra heavy truck (over 45000 lbs. GVW)</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=ExtraHeavyTruckTractor></a>
+<div class="titlebox">
+<div class="filtertitle">ExtraHeavyTruckTractor <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9644" class="reftext" onclick='showAndHideRefBox("refbox_9644", "reflink_9644")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9644" class="refbox_inner" style="display:none;">
+Extra heavy truck-tractor (over 45000 lbs. GCW)
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#Commercial" TARGET="tableFrame">VehicleType.Commercial</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Extra heavy truck-tractor</td>
+<td>Extra heavy truck-tractor (over 45000 lbs. GCW)</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=HeavyTruck></a>
+<div class="titlebox">
+<div class="filtertitle">HeavyTruck <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9645" class="reftext" onclick='showAndHideRefBox("refbox_9645", "reflink_9645")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9645" class="refbox_inner" style="display:none;">
+Light truck (20001-45000 lbs. GVW)
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#Commercial" TARGET="tableFrame">VehicleType.Commercial</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Heavy truck</td>
+<td>Light truck (20001-45000 lbs. GVW)</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=HeavyTruckTractor></a>
+<div class="titlebox">
+<div class="filtertitle">HeavyTruckTractor <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9646" class="reftext" onclick='showAndHideRefBox("refbox_9646", "reflink_9646")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9646" class="refbox_inner" style="display:none;">
+Heavy truck-tractor (0-45000 lbs. GCW)
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#Commercial" TARGET="tableFrame">VehicleType.Commercial</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Heavy truck-tractor</td>
+<td>Heavy truck-tractor (0-45000 lbs. GCW)</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=LightTruck></a>
+<div class="titlebox">
+<div class="filtertitle">LightTruck <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9647" class="reftext" onclick='showAndHideRefBox("refbox_9647", "reflink_9647")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9647" class="refbox_inner" style="display:none;">
+Light truck (0-10000 lbs. GVW)
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#Commercial" TARGET="tableFrame">VehicleType.Commercial</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Light truck</td>
+<td>Light truck (0-10000 lbs. GVW)</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=MediumTruck></a>
+<div class="titlebox">
+<div class="filtertitle">MediumTruck <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9648" class="reftext" onclick='showAndHideRefBox("refbox_9648", "reflink_9648")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9648" class="refbox_inner" style="display:none;">
+Medium truck (10,001-20,000 lbs. GVW)
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#Commercial" TARGET="tableFrame">VehicleType.Commercial</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Medium truck</td>
+<td>Medium truck (10,001-20,000 lbs. GVW)</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=PrivatePassenger></a>
+<div class="titlebox">
+<div class="filtertitle">PrivatePassenger <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9649" class="reftext" onclick='showAndHideRefBox("refbox_9649", "reflink_9649")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9649" class="refbox_inner" style="display:none;">
+Private passenger
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#PP" TARGET="tableFrame">VehicleType.PP</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Private passenger</td>
+<td>Private passenger</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=Semitrailer></a>
+<div class="titlebox">
+<div class="filtertitle">Semitrailer <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9650" class="reftext" onclick='showAndHideRefBox("refbox_9650", "reflink_9650")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9650" class="refbox_inner" style="display:none;">
+Semitrailer
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#Commercial" TARGET="tableFrame">VehicleType.Commercial</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Semitrailer</td>
+<td>Semitrailer</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=ServiceUtilityTrailer></a>
+<div class="titlebox">
+<div class="filtertitle">ServiceUtilityTrailer <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9651" class="reftext" onclick='showAndHideRefBox("refbox_9651", "reflink_9651")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9651" class="refbox_inner" style="display:none;">
+Service or utility trailer
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#Commercial" TARGET="tableFrame">VehicleType.Commercial</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Service or utility trailer</td>
+<td>Service or utility trailer</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=Trailer></a>
+<div class="titlebox">
+<div class="filtertitle">Trailer <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9652" class="reftext" onclick='showAndHideRefBox("refbox_9652", "reflink_9652")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9652" class="refbox_inner" style="display:none;">
+Trailer
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#Commercial" TARGET="tableFrame">VehicleType.Commercial</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Trailer</td>
+<td>Trailer</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=over60></a>
+<div class="titlebox">
+<div class="filtertitle">over60 <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9653" class="reftext" onclick='showAndHideRefBox("refbox_9653", "reflink_9653")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9653" class="refbox_inner" style="display:none;">
+over 60
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#PublicTransport" TARGET="tableFrame">VehicleType.PublicTransport</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>over 60 passenger</td>
+<td>over 60</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=over650CC></a>
+<div class="titlebox">
+<div class="filtertitle">over650CC <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9654" class="reftext" onclick='showAndHideRefBox("refbox_9654", "reflink_9654")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9654" class="refbox_inner" style="display:none;">
+over 650 CC
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="VehicleType_tl.html#Special" TARGET="tableFrame">VehicleType.Special</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>over 650 CC</td>
+<td>over 650 CC</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,696 @@
+<html>
+<head>
+<title>UWIssueCheckingSet</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox"
+<div><span class="pagetitle">UWIssueCheckingSet</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="entityname">(pctl_uwissuecheckingset)</span>
+</div>
+<div class="desc">Sets of UWIssues which are generated (or re-generated) at the same time. When rule sets are run for a checking set, an issue which is not regenerated is assumed to no longer apply.</div>
+</div>
+<table cellpadding="3" cellspacing="0" border="0" height="20" width="100%">
+<tr>
+<td nowrap="true" class="attrbox" height="20">
+<span class="attrtitle">Attributes: 
+
+</span>
+</td>
+</tr>
+</table>
+<br/>
+<div class="refbox biglist odd">
+<span id="reflink_9422" class="reftext" onclick='showAndHideRefBox("refbox_9422", "reflink_9422")'><img src="../../res/blackup.gif" border="0"><b>Referenced by: </b></span>
+<div id="refbox_9422" class="refbox_inner" style="display:none;">
+<A HREF="../full/PolicyHold.html" TARGET="tableFrame">PolicyHold.HoldType</A><br><A HREF="../full/UWIssueType.html" TARGET="tableFrame">UWIssueType.CheckingSet</A>
+</div>
+</span>
+</div>
+<a id='TOC'></a>
+<a name="Typecodes"></a><div class="arraysbox">Typecodes</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+<td>Description</td>
+<td>Priority</td>
+<td>Internal</td>
+<td>Retired</td>
+</tr>
+<tr valign="top">
+<td><a href=#All>All</a></td>
+<td>All</td>
+<td>Checked at every blocking point.</td>
+<td align=center>10000</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#MVR>MVR</a></td>
+<td>MVR Issues</td>
+<td>Checks at PreQuote and PreBind for MVR issues</td>
+<td align=center>1300</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#Manual>Manual</a></td>
+<td>Manual</td>
+<td>Created manually.</td>
+<td align=center>800</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#PolicyRenewalAPI>PolicyRenewalAPI</a></td>
+<td>PolicyRenewalAPI</td>
+<td>Created during PolicyRenewalAPI execution</td>
+<td align=center>1000</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#PreBind>PreBind</a></td>
+<td>Bind Issues</td>
+<td>Created before binding.</td>
+<td align=center>200</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#PreIssuance>PreIssuance</a></td>
+<td>Issuance Issues</td>
+<td>Created before issuance.</td>
+<td align=center>100</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#PreQuote>PreQuote</a></td>
+<td>Quote Issues</td>
+<td>Created before quoting.</td>
+<td align=center>400</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#PreQuoteRelease>PreQuoteRelease</a></td>
+<td>Quote Release Issues</td>
+<td>Created before releasing a quote.</td>
+<td align=center>300</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#PreRateRelease>PreRateRelease</a></td>
+<td>Rate Release Issues</td>
+<td>Created before releasing a rate.</td>
+<td align=center>350</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#Question>Question</a></td>
+<td>Question</td>
+<td>Created automatically from a Question.</td>
+<td align=center>700</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#Referral>Referral</a></td>
+<td>Referral</td>
+<td>Created from an UW referral reason.</td>
+<td align=center>600</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#RegulatoryHold>RegulatoryHold</a></td>
+<td>Regulatory Hold</td>
+<td>Created for regulatory holds</td>
+<td align=center>1200</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#Reinsurance>Reinsurance</a></td>
+<td>Reinsurance</td>
+<td>Checks for reinsurance issues, done at each stage after PreQuote</td>
+<td align=center>1400</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#Renewal>Renewal</a></td>
+<td>Renewal</td>
+<td>Created as part of renewal processing.</td>
+<td align=center>500</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#UWHold>UWHold</a></td>
+<td>Underwriting Hold</td>
+<td>Created for underwriting holds</td>
+<td align=center>1100</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#Upgrade>Upgrade</a></td>
+<td>Upgrade</td>
+<td>Created during DB upgrade.</td>
+<td align=center>900</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<div class='subtypebox'>
+<a name=All></a>
+<div class="titlebox">
+<div class="filtertitle">All <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9423" class="reftext" onclick='showAndHideRefBox("refbox_9423", "reflink_9423")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9423" class="refbox_inner" style="display:none;">
+Checked at every blocking point.
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="TriggeringPointKey_tl.html#All" TARGET="tableFrame">TriggeringPointKey.All</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>All</td>
+<td>Checked at every blocking point.</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=MVR></a>
+<div class="titlebox">
+<div class="filtertitle">MVR <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9424" class="reftext" onclick='showAndHideRefBox("refbox_9424", "reflink_9424")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9424" class="refbox_inner" style="display:none;">
+Checks at PreQuote and PreBind for MVR issues
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="TriggeringPointKey_tl.html#MVR" TARGET="tableFrame">TriggeringPointKey.MVR</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>MVR Issues</td>
+<td>Checks at PreQuote and PreBind for MVR issues</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=Manual></a>
+<div class="titlebox">
+<div class="filtertitle">Manual <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9425" class="reftext" onclick='showAndHideRefBox("refbox_9425", "reflink_9425")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9425" class="refbox_inner" style="display:none;">
+Created manually.
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="TriggeringPointKey_tl.html#Manual" TARGET="tableFrame">TriggeringPointKey.Manual</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Manual</td>
+<td>Created manually.</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=PolicyRenewalAPI></a>
+<div class="titlebox">
+<div class="filtertitle">PolicyRenewalAPI <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9426" class="reftext" onclick='showAndHideRefBox("refbox_9426", "reflink_9426")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9426" class="refbox_inner" style="display:none;">
+Created during PolicyRenewalAPI execution
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="TriggeringPointKey_tl.html#PolicyRenewalAPI" TARGET="tableFrame">TriggeringPointKey.PolicyRenewalAPI</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>PolicyRenewalAPI</td>
+<td>Created during PolicyRenewalAPI execution</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=PreBind></a>
+<div class="titlebox">
+<div class="filtertitle">PreBind <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9427" class="reftext" onclick='showAndHideRefBox("refbox_9427", "reflink_9427")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9427" class="refbox_inner" style="display:none;">
+Created before binding.
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="TriggeringPointKey_tl.html#PreBind" TARGET="tableFrame">TriggeringPointKey.PreBind</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Bind Issues</td>
+<td>Created before binding.</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=PreIssuance></a>
+<div class="titlebox">
+<div class="filtertitle">PreIssuance <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9428" class="reftext" onclick='showAndHideRefBox("refbox_9428", "reflink_9428")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9428" class="refbox_inner" style="display:none;">
+Created before issuance.
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="TriggeringPointKey_tl.html#PreIssuance" TARGET="tableFrame">TriggeringPointKey.PreIssuance</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Issuance Issues</td>
+<td>Created before issuance.</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=PreQuote></a>
+<div class="titlebox">
+<div class="filtertitle">PreQuote <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9429" class="reftext" onclick='showAndHideRefBox("refbox_9429", "reflink_9429")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9429" class="refbox_inner" style="display:none;">
+Created before quoting.
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="TriggeringPointKey_tl.html#PreQuote" TARGET="tableFrame">TriggeringPointKey.PreQuote</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Quote Issues</td>
+<td>Created before quoting.</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=PreQuoteRelease></a>
+<div class="titlebox">
+<div class="filtertitle">PreQuoteRelease <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9430" class="reftext" onclick='showAndHideRefBox("refbox_9430", "reflink_9430")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9430" class="refbox_inner" style="display:none;">
+Created before releasing a quote.
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="TriggeringPointKey_tl.html#PreQuoteRelease" TARGET="tableFrame">TriggeringPointKey.PreQuoteRelease</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Quote Release Issues</td>
+<td>Created before releasing a quote.</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=PreRateRelease></a>
+<div class="titlebox">
+<div class="filtertitle">PreRateRelease <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9431" class="reftext" onclick='showAndHideRefBox("refbox_9431", "reflink_9431")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9431" class="refbox_inner" style="display:none;">
+Created before releasing a rate.
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="TriggeringPointKey_tl.html#PreRateRelease" TARGET="tableFrame">TriggeringPointKey.PreRateRelease</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Rate Release Issues</td>
+<td>Created before releasing a rate.</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=Question></a>
+<div class="titlebox">
+<div class="filtertitle">Question <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9432" class="reftext" onclick='showAndHideRefBox("refbox_9432", "reflink_9432")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9432" class="refbox_inner" style="display:none;">
+Created automatically from a Question.
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="TriggeringPointKey_tl.html#Question" TARGET="tableFrame">TriggeringPointKey.Question</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Question</td>
+<td>Created automatically from a Question.</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=Referral></a>
+<div class="titlebox">
+<div class="filtertitle">Referral <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9433" class="reftext" onclick='showAndHideRefBox("refbox_9433", "reflink_9433")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9433" class="refbox_inner" style="display:none;">
+Created from an UW referral reason.
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="TriggeringPointKey_tl.html#Referral" TARGET="tableFrame">TriggeringPointKey.Referral</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Referral</td>
+<td>Created from an UW referral reason.</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=RegulatoryHold></a>
+<div class="titlebox">
+<div class="filtertitle">RegulatoryHold <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9434" class="reftext" onclick='showAndHideRefBox("refbox_9434", "reflink_9434")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9434" class="refbox_inner" style="display:none;">
+Created for regulatory holds
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="TriggeringPointKey_tl.html#RegulatoryHold" TARGET="tableFrame">TriggeringPointKey.RegulatoryHold</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Regulatory Hold</td>
+<td>Created for regulatory holds</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=Reinsurance></a>
+<div class="titlebox">
+<div class="filtertitle">Reinsurance <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9435" class="reftext" onclick='showAndHideRefBox("refbox_9435", "reflink_9435")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9435" class="refbox_inner" style="display:none;">
+Checks for reinsurance issues, done at each stage after PreQuote
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="TriggeringPointKey_tl.html#Reinsurance" TARGET="tableFrame">TriggeringPointKey.Reinsurance</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Reinsurance</td>
+<td>Checks for reinsurance issues, done at each stage after PreQuote</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=Renewal></a>
+<div class="titlebox">
+<div class="filtertitle">Renewal <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9436" class="reftext" onclick='showAndHideRefBox("refbox_9436", "reflink_9436")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9436" class="refbox_inner" style="display:none;">
+Created as part of renewal processing.
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="TriggeringPointKey_tl.html#Renewal" TARGET="tableFrame">TriggeringPointKey.Renewal</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Renewal</td>
+<td>Created as part of renewal processing.</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=UWHold></a>
+<div class="titlebox">
+<div class="filtertitle">UWHold <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9437" class="reftext" onclick='showAndHideRefBox("refbox_9437", "reflink_9437")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9437" class="refbox_inner" style="display:none;">
+Created for underwriting holds
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="TriggeringPointKey_tl.html#UWHold" TARGET="tableFrame">TriggeringPointKey.UWHold</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Underwriting Hold</td>
+<td>Created for underwriting holds</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=Upgrade></a>
+<div class="titlebox">
+<div class="filtertitle">Upgrade <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9438" class="reftext" onclick='showAndHideRefBox("refbox_9438", "reflink_9438")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9438" class="refbox_inner" style="display:none;">
+Created during DB upgrade.
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="TriggeringPointKey_tl.html#Upgrade" TARGET="tableFrame">TriggeringPointKey.Upgrade</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Upgrade</td>
+<td>Created during DB upgrade.</td>
+</tr>
+</table>
+</div>
+<a name="Typefilters"></a><div class="arraysbox">Typefilters</div>
+<div class='subtypebox'>
+<div class="titlebox">
+<div class="filtertitle">PolicyHoldsTypeFilter <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9439" class="reftext" onclick='showAndHideRefBox("refbox_9439", "reflink_9439")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9439" class="refbox_inner" style="display:none;">
+Policy Holds Type Filter
+</div>
+</span>
+</div>
+</div>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Type</td>
+<td>Code</td>
+</tr>
+<tr>
+<td>Include</td>
+<td><A HREF="#UWHold" TARGET="tableFrame">UWHold</A></td>
+</tr>
+<tr>
+<td>Include</td>
+<td><A HREF="#RegulatoryHold" TARGET="tableFrame">RegulatoryHold</A></td>
+</tr>
+</table>
+</div>
+</body>
+</html>

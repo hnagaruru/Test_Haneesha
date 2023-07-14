@@ -1,0 +1,864 @@
+<html>
+<head>
+<title>RiskAssessmentError</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox"
+<div><span class="pagetitle">RiskAssessmentError</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="entityname">(pctl_riskassessmenterror)</span>
+</div>
+<div class="desc">Risk Assessment Errors</div>
+</div>
+<table cellpadding="3" cellspacing="0" border="0" height="20" width="100%">
+<tr>
+<td nowrap="true" class="attrbox" height="20">
+<span class="attrtitle">Attributes: 
+
+</span>
+</td>
+</tr>
+</table>
+<br/>
+<div class="refbox biglist odd">
+<span id="reflink_8085" class="reftext" onclick='showAndHideRefBox("refbox_8085", "reflink_8085")'><img src="../../res/blackup.gif" border="0"><b>Referenced by: </b></span>
+<div id="refbox_8085" class="refbox_inner" style="display:none;">
+<A HREF="../full/InboundRiskAssessmentErrorTempStore.html" TARGET="tableFrame">InboundRiskAssessmentErrorTempStore.RiskAssessmentError</A><br><A HREF="../full/InboundLocationRiskAssessmentErrorTempStore.html" TARGET="tableFrame">InboundLocationRiskAssessmentErrorTempStore.RiskAssessmentError</A><br><A HREF="../full/InboundPeriodRiskAssessmentErrorTempStore.html" TARGET="tableFrame">InboundPeriodRiskAssessmentErrorTempStore.RiskAssessmentError</A>
+</div>
+</span>
+</div>
+<a id='TOC'></a>
+<a name="Typecodes"></a><div class="arraysbox">Typecodes</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+<td>Description</td>
+<td>Priority</td>
+<td>Internal</td>
+<td>Retired</td>
+</tr>
+<tr valign="top">
+<td><a href=#ErrorContactingParameterService>ErrorContactingParameterService</a></td>
+<td>Error Contacting Parameter Service</td>
+<td>Error contacting Spotlight Interactive parameter service</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#ErrorForUnexpectedLocation>ErrorForUnexpectedLocation</a></td>
+<td>Error for unexpected location</td>
+<td>Error was returned for a location that was not requested</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#HttpBadRequest>HttpBadRequest</a></td>
+<td>Http Bad Request</td>
+<td>Risk assessment service reported bad http request</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#InvalidJson>InvalidJson</a></td>
+<td>Invalid Json</td>
+<td>Invalid Json</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#InvalidLocation-CoordinatesInvalid>InvalidLocation-CoordinatesInvalid</a></td>
+<td>Invalid Location Coordinates - Latitude or Longitude Invalid</td>
+<td>Invalid location latitude</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#InvalidLocation-CoordinatesOrAddressRequired>InvalidLocation-CoordinatesOrAddressRequired</a></td>
+<td>Invalid Location - Coordinates Or Address Required</td>
+<td>There was no address or lat long sent to Risk Assessment</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#InvalidLocation-PolicySystemIdRequired>InvalidLocation-PolicySystemIdRequired</a></td>
+<td>Invalid Location Policy System Id Required</td>
+<td>A public ID was not sent to the risk assessment.</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#InvalidLocationGeocodeableAddress-CouldNotGeocode>InvalidLocationGeocodeableAddress-CouldNotGeocode</a></td>
+<td>Invalid Location Geocodeable Address - Could Not Geocode</td>
+<td>The address sent to Risk Assessment could not be parsed</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#LacksMultipleLocationRiskAssessmentPermission>LacksMultipleLocationRiskAssessmentPermission</a></td>
+<td>Lacks Multiple Location Risk Assessment Permission</td>
+<td>Insufficient permissions to make multiple location risk assessment requests</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#LacksSingleLocationRiskAssessmentPermission>LacksSingleLocationRiskAssessmentPermission</a></td>
+<td>Lacks Single Location Risk Assessment Permission</td>
+<td>Insufficient permissions to make single location risk assessment requests</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#LocationRequired>LocationRequired</a></td>
+<td>Location Required</td>
+<td>null</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#NoResponseEntityFromRiskAssessmentService>NoResponseEntityFromRiskAssessmentService</a></td>
+<td>No Response Entity From Risk Assessment Service</td>
+<td>No response entity received from risk assessment service</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#NoSelectedLocation>NoSelectedLocation</a></td>
+<td>No Selected Location</td>
+<td>Spotlight interactive there was no pin or selected location</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#NoSelectedRiskProfile>NoSelectedRiskProfile</a></td>
+<td>Risk Profile Code Required</td>
+<td>The risk assessment did not send a risk profile code</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#RiskAssessmentAuthenticationFailed>RiskAssessmentAuthenticationFailed</a></td>
+<td>Risk Assessment Authentication Failed</td>
+<td>Risk assessment service authentication failed</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#RiskAssessmentServiceConnectionRefused>RiskAssessmentServiceConnectionRefused</a></td>
+<td>Risk Assessment Service Connection Refused</td>
+<td>Connection to risk assessment service is refused</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#RiskProfileCodeInvalid>RiskProfileCodeInvalid</a></td>
+<td>Invalid Risk Profile Code</td>
+<td>Risk profile Code was not recognized by Risk Assessment</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#TimeoutContactingParameterService>TimeoutContactingParameterService</a></td>
+<td>Timeout Contacting Parameter Service</td>
+<td>Timeout contacting Spotlight Interactive parameter service</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#UnableToParseJSONErrors>UnableToParseJSONErrors</a></td>
+<td>Unable to parse JSON errors</td>
+<td>Unable to parse JSON errors</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#UnknownErrorCategory>UnknownErrorCategory</a></td>
+<td>Unkown Error Category</td>
+<td>Risk assessment Error found but not configured with a known category</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#UnknownErrorCode>UnknownErrorCode</a></td>
+<td>Unknown Error Code</td>
+<td>Unknown error code, code is not in this typelist</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<div class='subtypebox'>
+<a name=ErrorContactingParameterService></a>
+<div class="titlebox">
+<div class="filtertitle">ErrorContactingParameterService <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8086" class="reftext" onclick='showAndHideRefBox("refbox_8086", "reflink_8086")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8086" class="refbox_inner" style="display:none;">
+Error contacting Spotlight Interactive parameter service
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Request" TARGET="tableFrame">RiskAssessmentErrorType.Request</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Error Contacting Parameter Service</td>
+<td>Error contacting Spotlight Interactive parameter service</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=ErrorForUnexpectedLocation></a>
+<div class="titlebox">
+<div class="filtertitle">ErrorForUnexpectedLocation <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8087" class="reftext" onclick='showAndHideRefBox("refbox_8087", "reflink_8087")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8087" class="refbox_inner" style="display:none;">
+Error was returned for a location that was not requested
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Location" TARGET="tableFrame">RiskAssessmentErrorType.Location</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Error for unexpected location</td>
+<td>Error was returned for a location that was not requested</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=HttpBadRequest></a>
+<div class="titlebox">
+<div class="filtertitle">HttpBadRequest <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8088" class="reftext" onclick='showAndHideRefBox("refbox_8088", "reflink_8088")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8088" class="refbox_inner" style="display:none;">
+Risk assessment service reported bad http request
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Request" TARGET="tableFrame">RiskAssessmentErrorType.Request</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Http Bad Request</td>
+<td>Risk assessment service reported bad http request</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=InvalidJson></a>
+<div class="titlebox">
+<div class="filtertitle">InvalidJson <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8089" class="reftext" onclick='showAndHideRefBox("refbox_8089", "reflink_8089")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8089" class="refbox_inner" style="display:none;">
+Invalid Json
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Location" TARGET="tableFrame">RiskAssessmentErrorType.Location</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Invalid Json</td>
+<td>Invalid Json</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=InvalidLocation-CoordinatesInvalid></a>
+<div class="titlebox">
+<div class="filtertitle">InvalidLocation-CoordinatesInvalid <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8090" class="reftext" onclick='showAndHideRefBox("refbox_8090", "reflink_8090")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8090" class="refbox_inner" style="display:none;">
+Invalid location latitude
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Location" TARGET="tableFrame">RiskAssessmentErrorType.Location</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Invalid Location Coordinates - Latitude or Longitude Invalid</td>
+<td>Invalid location latitude</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=InvalidLocation-CoordinatesOrAddressRequired></a>
+<div class="titlebox">
+<div class="filtertitle">InvalidLocation-CoordinatesOrAddressRequired <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8091" class="reftext" onclick='showAndHideRefBox("refbox_8091", "reflink_8091")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8091" class="refbox_inner" style="display:none;">
+There was no address or lat long sent to Risk Assessment
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Location" TARGET="tableFrame">RiskAssessmentErrorType.Location</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Invalid Location - Coordinates Or Address Required</td>
+<td>There was no address or lat long sent to Risk Assessment</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=InvalidLocation-PolicySystemIdRequired></a>
+<div class="titlebox">
+<div class="filtertitle">InvalidLocation-PolicySystemIdRequired <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8092" class="reftext" onclick='showAndHideRefBox("refbox_8092", "reflink_8092")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8092" class="refbox_inner" style="display:none;">
+A public ID was not sent to the risk assessment.
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Location" TARGET="tableFrame">RiskAssessmentErrorType.Location</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Invalid Location Policy System Id Required</td>
+<td>A public ID was not sent to the risk assessment.</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=InvalidLocationGeocodeableAddress-CouldNotGeocode></a>
+<div class="titlebox">
+<div class="filtertitle">InvalidLocationGeocodeableAddress-CouldNotGeocode <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8093" class="reftext" onclick='showAndHideRefBox("refbox_8093", "reflink_8093")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8093" class="refbox_inner" style="display:none;">
+The address sent to Risk Assessment could not be parsed
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Location" TARGET="tableFrame">RiskAssessmentErrorType.Location</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Invalid Location Geocodeable Address - Could Not Geocode</td>
+<td>The address sent to Risk Assessment could not be parsed</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=LacksMultipleLocationRiskAssessmentPermission></a>
+<div class="titlebox">
+<div class="filtertitle">LacksMultipleLocationRiskAssessmentPermission <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8094" class="reftext" onclick='showAndHideRefBox("refbox_8094", "reflink_8094")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8094" class="refbox_inner" style="display:none;">
+Insufficient permissions to make multiple location risk assessment requests
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Request" TARGET="tableFrame">RiskAssessmentErrorType.Request</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Lacks Multiple Location Risk Assessment Permission</td>
+<td>Insufficient permissions to make multiple location risk assessment requests</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=LacksSingleLocationRiskAssessmentPermission></a>
+<div class="titlebox">
+<div class="filtertitle">LacksSingleLocationRiskAssessmentPermission <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8095" class="reftext" onclick='showAndHideRefBox("refbox_8095", "reflink_8095")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8095" class="refbox_inner" style="display:none;">
+Insufficient permissions to make single location risk assessment requests
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Request" TARGET="tableFrame">RiskAssessmentErrorType.Request</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Lacks Single Location Risk Assessment Permission</td>
+<td>Insufficient permissions to make single location risk assessment requests</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=LocationRequired></a>
+<div class="titlebox">
+<div class="filtertitle">LocationRequired <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8096" class="reftext" onclick='showAndHideRefBox("refbox_8096", "reflink_8096")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8096" class="refbox_inner" style="display:none;">
+
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Request" TARGET="tableFrame">RiskAssessmentErrorType.Request</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Location Required</td>
+<td></td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=NoResponseEntityFromRiskAssessmentService></a>
+<div class="titlebox">
+<div class="filtertitle">NoResponseEntityFromRiskAssessmentService <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8097" class="reftext" onclick='showAndHideRefBox("refbox_8097", "reflink_8097")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8097" class="refbox_inner" style="display:none;">
+No response entity received from risk assessment service
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Request" TARGET="tableFrame">RiskAssessmentErrorType.Request</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>No Response Entity From Risk Assessment Service</td>
+<td>No response entity received from risk assessment service</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=NoSelectedLocation></a>
+<div class="titlebox">
+<div class="filtertitle">NoSelectedLocation <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8098" class="reftext" onclick='showAndHideRefBox("refbox_8098", "reflink_8098")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8098" class="refbox_inner" style="display:none;">
+Spotlight interactive there was no pin or selected location
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Location" TARGET="tableFrame">RiskAssessmentErrorType.Location</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>No Selected Location</td>
+<td>Spotlight interactive there was no pin or selected location</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=NoSelectedRiskProfile></a>
+<div class="titlebox">
+<div class="filtertitle">NoSelectedRiskProfile <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8099" class="reftext" onclick='showAndHideRefBox("refbox_8099", "reflink_8099")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8099" class="refbox_inner" style="display:none;">
+The risk assessment did not send a risk profile code
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Location" TARGET="tableFrame">RiskAssessmentErrorType.Location</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Risk Profile Code Required</td>
+<td>The risk assessment did not send a risk profile code</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=RiskAssessmentAuthenticationFailed></a>
+<div class="titlebox">
+<div class="filtertitle">RiskAssessmentAuthenticationFailed <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8100" class="reftext" onclick='showAndHideRefBox("refbox_8100", "reflink_8100")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8100" class="refbox_inner" style="display:none;">
+Risk assessment service authentication failed
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Request" TARGET="tableFrame">RiskAssessmentErrorType.Request</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Risk Assessment Authentication Failed</td>
+<td>Risk assessment service authentication failed</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=RiskAssessmentServiceConnectionRefused></a>
+<div class="titlebox">
+<div class="filtertitle">RiskAssessmentServiceConnectionRefused <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8101" class="reftext" onclick='showAndHideRefBox("refbox_8101", "reflink_8101")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8101" class="refbox_inner" style="display:none;">
+Connection to risk assessment service is refused
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Request" TARGET="tableFrame">RiskAssessmentErrorType.Request</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Risk Assessment Service Connection Refused</td>
+<td>Connection to risk assessment service is refused</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=RiskProfileCodeInvalid></a>
+<div class="titlebox">
+<div class="filtertitle">RiskProfileCodeInvalid <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8102" class="reftext" onclick='showAndHideRefBox("refbox_8102", "reflink_8102")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8102" class="refbox_inner" style="display:none;">
+Risk profile Code was not recognized by Risk Assessment
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Location" TARGET="tableFrame">RiskAssessmentErrorType.Location</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Invalid Risk Profile Code</td>
+<td>Risk profile Code was not recognized by Risk Assessment</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=TimeoutContactingParameterService></a>
+<div class="titlebox">
+<div class="filtertitle">TimeoutContactingParameterService <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8103" class="reftext" onclick='showAndHideRefBox("refbox_8103", "reflink_8103")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8103" class="refbox_inner" style="display:none;">
+Timeout contacting Spotlight Interactive parameter service
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Request" TARGET="tableFrame">RiskAssessmentErrorType.Request</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Timeout Contacting Parameter Service</td>
+<td>Timeout contacting Spotlight Interactive parameter service</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=UnableToParseJSONErrors></a>
+<div class="titlebox">
+<div class="filtertitle">UnableToParseJSONErrors <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8104" class="reftext" onclick='showAndHideRefBox("refbox_8104", "reflink_8104")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8104" class="refbox_inner" style="display:none;">
+Unable to parse JSON errors
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Request" TARGET="tableFrame">RiskAssessmentErrorType.Request</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Unable to parse JSON errors</td>
+<td>Unable to parse JSON errors</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=UnknownErrorCategory></a>
+<div class="titlebox">
+<div class="filtertitle">UnknownErrorCategory <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8105" class="reftext" onclick='showAndHideRefBox("refbox_8105", "reflink_8105")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8105" class="refbox_inner" style="display:none;">
+Risk assessment Error found but not configured with a known category
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Request" TARGET="tableFrame">RiskAssessmentErrorType.Request</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Unkown Error Category</td>
+<td>Risk assessment Error found but not configured with a known category</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=UnknownErrorCode></a>
+<div class="titlebox">
+<div class="filtertitle">UnknownErrorCode <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_8106" class="reftext" onclick='showAndHideRefBox("refbox_8106", "reflink_8106")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_8106" class="refbox_inner" style="display:none;">
+Unknown error code, code is not in this typelist
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="RiskAssessmentErrorType_tl.html#Location" TARGET="tableFrame">RiskAssessmentErrorType.Location</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Unknown Error Code</td>
+<td>Unknown error code, code is not in this typelist</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

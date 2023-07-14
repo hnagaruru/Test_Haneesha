@@ -1,0 +1,973 @@
+<html>
+<head>
+<title>CPBuildingCov</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">CPBuildingCov <span class="entityname">(pc_cpbuildingcov) (delegates to <A HREF="Coverage.html" TARGET="tableFrame">Coverage</A>, <A HREF="EffDated.html" TARGET="tableFrame">EffDated</A>)</span></div>
+<div class="desc">
+<span id="reflink_1129" class="reftext" onclick='showAndHideRefBox("refbox_1129", "reflink_1129")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_1129" class="refbox_inner" style="display:none;">
+A building-level coverage for Commercial Property
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">CPBuildingCov</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Editable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Editable</b><br>The related database table contains rows that are editable by application users based on roles and permissions. An Editable table manages additional fields that represent an audit trail of an entity in the table (for example, who created it and when, who last edited it and when).')">?</span></sup>, Exportable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>, Extendable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Extendable</b><br>Can be extended with additional custom fields added to it.')">?</span></sup>, Keyed<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Keyed</b><br>Has a related database table that has a primary key. Each row in a Keyed table has an integer primary key named ID. IDs are managed internally by the application, and the system ensures that no two rows in a keyed table have the same ID. In addition to the internal key, an external primary key can be associated with each row in a table.')">?</span></sup>, Sourceable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Sourceable</b><br>Contains entities that are linked to an external source. Each row in a Sourceable entity\'s table has additional fields to identify the external system and store the ID of the Sourceable entity in the external system.')">?</span></sup>, Supertype<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Supertype</b><br>A single table that represents multiple types of entities, called subtypes. Each subtype shares application logic and a majority of their fields. Each subtype may also define fields that are particular to it.')">?</span></sup>, Versionable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Versionable</b><br>Has a version number that increases every time the entity is changed. This allows the cache to identify when entities have been updated.')">?</span></sup></span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_1130" class="reftext" onclick='showAndHideRefBox("refbox_1130", "reflink_1130")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_1130" class="refbox_inner" style="display:none;">
+<A HREF="../full/CPBuildingCov.html" TARGET="tableFrame">CPBuildingCov.BasedOnValue</A><br><A HREF="../full/CPBuildingCov.html" TARGET="tableFrame">CPBuildingCov.Fixed</A><br><A HREF="../full/CPCost.html#CPBuildingCovCost" TARGET="tableFrame">CPBuildingCovCost.CPBuildingCov</A>
+</div>
+</span>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_1131" class="reftext" onclick='showAndHideRefBox("refbox_1131", "reflink_1131")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_1131" class="refbox_inner" style="display:none;">
+<A HREF="../full/CPBlanket.html" TARGET="tableFrame">CPBlanket.BuildingCoverages</A><br><A HREF="../full/CPBuilding.html" TARGET="tableFrame">CPBuilding.Coverages</A>
+</div>
+</span>
+</div>
+<span class="showhidelink"><a id="showAllElements" href="#" onClick="return showAllUIDetails()">Show user interface details on all fields</a></span>
+
+<br>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+<a name="cpbuildingcov_id"></a>
+<p class="column">
+<span class="coltitle">ID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "key")'>key</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Internally managed primary key</span>
+<a name="cpbuildingcov_archivepartition"></a>
+<p class="column">
+<span class="coltitle">ArchivePartition</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "softentityreference")'>softentityreference</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">Unique number to partition the data so that the multiple workers can work independently</span>
+<a name="cpbuildingcov_archivepartition_prop"></a>
+<p class="column">
+<span class="coltitle">ARCHIVEPARTITION_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_basedon"></a>
+<p class="column">
+<span class="coltitle">BasedOn</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning CPBuildingCov</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_basedonid_dynprop"></a>
+<p class="column">
+<span class="coltitle">BASEDONID_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_basedonuntyped"></a>
+<p class="column">
+<span class="coltitle">BasedOnUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning EffDated</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_basedonvalue"></a>
+<p class="column">
+<span class="coltitle">BasedOnValue</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="CPBuildingCov.html" TARGET="tableFrame">CPBuildingCov</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: BasedOnID)</span>
+<br>
+<span class="desc">Link to the row on which this row is based; or null if new to branch</span>
+<a name="cpbuildingcov_basedonvalue_prop"></a>
+<p class="column">
+<span class="coltitle">BASEDONVALUE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_bean"></a>
+<p class="column">
+<span class="coltitle">Bean</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning EffDated</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_beanversion_prop"></a>
+<p class="column">
+<span class="coltitle">BEANVERSION_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_booleanterm1"></a>
+<p class="column">
+<span class="coltitle">BooleanTerm1</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">boolean cov term field</span>
+<a name="cpbuildingcov_booleanterm1_prop"></a>
+<p class="column">
+<span class="coltitle">BOOLEANTERM1_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_booleanterm1avl"></a>
+<p class="column">
+<span class="coltitle">BooleanTerm1Avl</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">whether or not the BooleanTerm1 field was available the last time availability was checked</span>
+<a name="cpbuildingcov_booleanterm1avl_prop"></a>
+<p class="column">
+<span class="coltitle">BOOLEANTERM1AVL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_booleanterm2"></a>
+<p class="column">
+<span class="coltitle">BooleanTerm2</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">boolean cov term field</span>
+<a name="cpbuildingcov_booleanterm2_prop"></a>
+<p class="column">
+<span class="coltitle">BOOLEANTERM2_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_booleanterm2avl"></a>
+<p class="column">
+<span class="coltitle">BooleanTerm2Avl</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">whether or not the BooleanTerm2 field was available the last time availability was checked</span>
+<a name="cpbuildingcov_booleanterm2avl_prop"></a>
+<p class="column">
+<span class="coltitle">BOOLEANTERM2AVL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_booleanterm3"></a>
+<p class="column">
+<span class="coltitle">BooleanTerm3</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">boolean cov term field</span>
+<a name="cpbuildingcov_booleanterm3_prop"></a>
+<p class="column">
+<span class="coltitle">BOOLEANTERM3_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_booleanterm3avl"></a>
+<p class="column">
+<span class="coltitle">BooleanTerm3Avl</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">whether or not the BooleanTerm3 field was available the last time availability was checked</span>
+<a name="cpbuildingcov_booleanterm3avl_prop"></a>
+<p class="column">
+<span class="coltitle">BOOLEANTERM3AVL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_branch"></a>
+<p class="column">
+<span class="coltitle">Branch</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning PolicyPeriod</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_branchid_dynprop"></a>
+<p class="column">
+<span class="coltitle">BRANCHID_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_branchuntyped"></a>
+<p class="column">
+<span class="coltitle">BranchUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning EffDatedBranch</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_branchvalue"></a>
+<p class="column">
+<span class="coltitle">BranchValue</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="PolicyPeriod.html" TARGET="tableFrame">PolicyPeriod</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: BranchID)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Link to root of effdated tree</span>
+<a name="cpbuildingcov_branchvalue_prop"></a>
+<p class="column">
+<span class="coltitle">BRANCHVALUE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_changetype"></a>
+<p class="column">
+<span class="coltitle">ChangeType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/EffDatedChangeType_tl.html" TARGET="tableFrame">EffDatedChangeType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">Type of change made to this row</span>
+<a name="cpbuildingcov_changetype_dynprop"></a>
+<p class="column">
+<span class="coltitle">CHANGETYPE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_changetype_prop"></a>
+<p class="column">
+<span class="coltitle">CHANGETYPE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_choiceterm1"></a>
+<p class="column">
+<span class="coltitle">ChoiceTerm1</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "patterncode")'>patterncode</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">choice cov term field</span>
+<a name="cpbuildingcov_choiceterm1_prop"></a>
+<p class="column">
+<span class="coltitle">CHOICETERM1_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_choiceterm1avl"></a>
+<p class="column">
+<span class="coltitle">ChoiceTerm1Avl</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">whether or not the ChoiceTerm1 field was available the last time availability was checked</span>
+<a name="cpbuildingcov_choiceterm1avl_prop"></a>
+<p class="column">
+<span class="coltitle">CHOICETERM1AVL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_choiceterm2"></a>
+<p class="column">
+<span class="coltitle">ChoiceTerm2</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "patterncode")'>patterncode</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">choice cov term field</span>
+<a name="cpbuildingcov_choiceterm2_prop"></a>
+<p class="column">
+<span class="coltitle">CHOICETERM2_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_choiceterm2avl"></a>
+<p class="column">
+<span class="coltitle">ChoiceTerm2Avl</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">whether or not the ChoiceTerm2 field was available the last time availability was checked</span>
+<a name="cpbuildingcov_choiceterm2avl_prop"></a>
+<p class="column">
+<span class="coltitle">CHOICETERM2AVL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_choiceterm3"></a>
+<p class="column">
+<span class="coltitle">ChoiceTerm3</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "patterncode")'>patterncode</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">choice cov term field</span>
+<a name="cpbuildingcov_choiceterm3_prop"></a>
+<p class="column">
+<span class="coltitle">CHOICETERM3_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_choiceterm3avl"></a>
+<p class="column">
+<span class="coltitle">ChoiceTerm3Avl</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">whether or not the ChoiceTerm3 field was available the last time availability was checked</span>
+<a name="cpbuildingcov_choiceterm3avl_prop"></a>
+<p class="column">
+<span class="coltitle">CHOICETERM3AVL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_choiceterm4"></a>
+<p class="column">
+<span class="coltitle">ChoiceTerm4</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "patterncode")'>patterncode</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">choice cov term field</span>
+<a name="cpbuildingcov_choiceterm4_prop"></a>
+<p class="column">
+<span class="coltitle">CHOICETERM4_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_choiceterm4avl"></a>
+<p class="column">
+<span class="coltitle">ChoiceTerm4Avl</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">whether or not the ChoiceTerm4 field was available the last time availability was checked</span>
+<a name="cpbuildingcov_choiceterm4avl_prop"></a>
+<p class="column">
+<span class="coltitle">CHOICETERM4AVL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_choiceterm5"></a>
+<p class="column">
+<span class="coltitle">ChoiceTerm5</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "patterncode")'>patterncode</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">choice cov term field</span>
+<a name="cpbuildingcov_choiceterm5_prop"></a>
+<p class="column">
+<span class="coltitle">CHOICETERM5_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_choiceterm5avl"></a>
+<p class="column">
+<span class="coltitle">ChoiceTerm5Avl</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">whether or not the ChoiceTerm5 field was available the last time availability was checked</span>
+<a name="cpbuildingcov_choiceterm5avl_prop"></a>
+<p class="column">
+<span class="coltitle">CHOICETERM5AVL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_choiceterm6"></a>
+<p class="column">
+<span class="coltitle">ChoiceTerm6</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "patterncode")'>patterncode</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">choice cov term field</span>
+<a name="cpbuildingcov_choiceterm6_prop"></a>
+<p class="column">
+<span class="coltitle">CHOICETERM6_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_choiceterm6avl"></a>
+<p class="column">
+<span class="coltitle">ChoiceTerm6Avl</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">whether or not the ChoiceTerm6 field was available the last time availability was checked</span>
+<a name="cpbuildingcov_choiceterm6avl_prop"></a>
+<p class="column">
+<span class="coltitle">CHOICETERM6AVL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_choiceterm7"></a>
+<p class="column">
+<span class="coltitle">ChoiceTerm7</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "patterncode")'>patterncode</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">choice cov term field</span>
+<a name="cpbuildingcov_choiceterm7_prop"></a>
+<p class="column">
+<span class="coltitle">CHOICETERM7_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_choiceterm7avl"></a>
+<p class="column">
+<span class="coltitle">ChoiceTerm7Avl</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">whether or not the ChoiceTerm7 field was available the last time availability was checked</span>
+<a name="cpbuildingcov_choiceterm7avl_prop"></a>
+<p class="column">
+<span class="coltitle">CHOICETERM7AVL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_choiceterm8"></a>
+<p class="column">
+<span class="coltitle">ChoiceTerm8</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "patterncode")'>patterncode</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">choice cov term field</span>
+<a name="cpbuildingcov_choiceterm8_prop"></a>
+<p class="column">
+<span class="coltitle">CHOICETERM8_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_choiceterm8avl"></a>
+<p class="column">
+<span class="coltitle">ChoiceTerm8Avl</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">whether or not the ChoiceTerm8 field was available the last time availability was checked</span>
+<a name="cpbuildingcov_choiceterm8avl_prop"></a>
+<p class="column">
+<span class="coltitle">CHOICETERM8AVL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_costs_prop"></a>
+<p class="column">
+<span class="coltitle">COSTS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_cpblanket"></a>
+<p class="column">
+<span class="coltitle">CPBlanket</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="CPBlanket.html" TARGET="tableFrame">CPBlanket</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_cpblanket_prop"></a>
+<p class="column">
+<span class="coltitle">CPBLANKET_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_cpbuilding"></a>
+<p class="column">
+<span class="coltitle">CPBuilding</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="CPBuilding.html" TARGET="tableFrame">CPBuilding</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<div class='screenrefbody'>
+<span id=showhideUI_0 onclick='showAndHideUIDetails("UITable_0", "showhideUI_0")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_0' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>CPBlanketPanelSet.pcf:208</td>
+<td>Web.Policy.CP.Blanket.Building</td>
+<td>matchingCov.CPBuilding</td>
+<td>false</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_PolicyReview
+<br>
+PolicyFile_CPBlanket
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+CommercialProperty_Blanket
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>CPBlanketPopup.pcf:162</td>
+<td>Web.Policy.CP.Blanket.Building</td>
+<td>matchingCov.CPBuilding</td>
+<td>false</td>
+<td>
+CPBlanketPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="cpbuildingcov_cpbuilding_prop"></a>
+<p class="column">
+<span class="coltitle">CPBUILDING_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_createtime"></a>
+<p class="column">
+<span class="coltitle">CreateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was created</span>
+<a name="cpbuildingcov_createtime_prop"></a>
+<p class="column">
+<span class="coltitle">CREATETIME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_createuser"></a>
+<p class="column">
+<span class="coltitle">CreateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CreateUserID)</span>
+<br>
+<span class="desc">User who created the object</span>
+<a name="cpbuildingcov_createuser_prop"></a>
+<p class="column">
+<span class="coltitle">CREATEUSER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_currency"></a>
+<p class="column">
+<span class="coltitle">Currency</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Currency associated with the coverage</span>
+<a name="cpbuildingcov_currency_dynprop"></a>
+<p class="column">
+<span class="coltitle">CURRENCY_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_currency_prop"></a>
+<p class="column">
+<span class="coltitle">CURRENCY_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_dateterm1"></a>
+<p class="column">
+<span class="coltitle">DateTerm1</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">datetime cov term field</span>
+<a name="cpbuildingcov_dateterm1_prop"></a>
+<p class="column">
+<span class="coltitle">DATETERM1_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_dateterm1avl"></a>
+<p class="column">
+<span class="coltitle">DateTerm1Avl</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">whether or not the DateTerm1 field was available the last time availability was checked</span>
+<a name="cpbuildingcov_dateterm1avl_prop"></a>
+<p class="column">
+<span class="coltitle">DATETERM1AVL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_dateterm2"></a>
+<p class="column">
+<span class="coltitle">DateTerm2</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">datetime cov term field</span>
+<a name="cpbuildingcov_dateterm2_prop"></a>
+<p class="column">
+<span class="coltitle">DATETERM2_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_dateterm2avl"></a>
+<p class="column">
+<span class="coltitle">DateTerm2Avl</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">whether or not the DateTerm2 field was available the last time availability was checked</span>
+<a name="cpbuildingcov_dateterm2avl_prop"></a>
+<p class="column">
+<span class="coltitle">DATETERM2AVL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_directterm1"></a>
+<p class="column">
+<span class="coltitle">DirectTerm1</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "decimal")'>decimal</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">direct cov term field</span>
+<a name="cpbuildingcov_directterm1_prop"></a>
+<p class="column">
+<span class="coltitle">DIRECTTERM1_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_directterm1avl"></a>
+<p class="column">
+<span class="coltitle">DirectTerm1Avl</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">whether or not the DirectTerm1 field was available the last time availability was checked</span>
+<a name="cpbuildingcov_directterm1avl_prop"></a>
+<p class="column">
+<span class="coltitle">DIRECTTERM1AVL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_directterm2"></a>
+<p class="column">
+<span class="coltitle">DirectTerm2</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "decimal")'>decimal</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">direct cov term field</span>
+<a name="cpbuildingcov_directterm2_prop"></a>
+<p class="column">
+<span class="coltitle">DIRECTTERM2_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_directterm2avl"></a>
+<p class="column">
+<span class="coltitle">DirectTerm2Avl</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">whether or not the DirectTerm2 field was available the last time availability was checked</span>
+<a name="cpbuildingcov_directterm2avl_prop"></a>
+<p class="column">
+<span class="coltitle">DIRECTTERM2AVL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_directterm3"></a>
+<p class="column">
+<span class="coltitle">DirectTerm3</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "decimal")'>decimal</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">direct cov term field</span>
+<a name="cpbuildingcov_directterm3_prop"></a>
+<p class="column">
+<span class="coltitle">DIRECTTERM3_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_directterm3avl"></a>
+<p class="column">
+<span class="coltitle">DirectTerm3Avl</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">whether or not the DirectTerm3 field was available the last time availability was checked</span>
+<a name="cpbuildingcov_directterm3avl_prop"></a>
+<p class="column">
+<span class="coltitle">DIRECTTERM3AVL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_effdatedkey"></a>
+<p class="column">
+<span class="coltitle">EffDatedKey</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.core.effdate.EffDatedKey</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_effectivedate"></a>
+<p class="column">
+<span class="coltitle">EffectiveDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Effective date of this row.  A value of NULL in the database indicates that this row's effective date is equal to the Period Start.</span>
+<a name="cpbuildingcov_effectivedate_dynprop"></a>
+<p class="column">
+<span class="coltitle">EFFECTIVEDATE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_effectivedate_prop"></a>
+<p class="column">
+<span class="coltitle">EFFECTIVEDATE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_expirationdate"></a>
+<p class="column">
+<span class="coltitle">ExpirationDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Expiration date of this row.  A value of NULL in the database indicates that this row's expiration date is equal to the Period End.</span>
+<a name="cpbuildingcov_expirationdate_dynprop"></a>
+<p class="column">
+<span class="coltitle">EXPIRATIONDATE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_expirationdate_prop"></a>
+<p class="column">
+<span class="coltitle">EXPIRATIONDATE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_fixed"></a>
+<p class="column">
+<span class="coltitle">Fixed</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="CPBuildingCov.html" TARGET="tableFrame">CPBuildingCov</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: FixedID)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Unique ID for this 'object' across all branches and periods</span>
+<a name="cpbuildingcov_fixed_prop"></a>
+<p class="column">
+<span class="coltitle">FIXED_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_fixedid"></a>
+<p class="column">
+<span class="coltitle">FixedId</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.core.Key</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_fixedid_dynprop"></a>
+<p class="column">
+<span class="coltitle">FIXEDID_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_frozen"></a>
+<p class="column">
+<span class="coltitle">Frozen</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_frozenset"></a>
+<p class="column">
+<span class="coltitle">FrozenSet</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="FrozenSet.html" TARGET="tableFrame">FrozenSet</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: FrozenSetID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_frozenset_prop"></a>
+<p class="column">
+<span class="coltitle">FROZENSET_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_id_prop"></a>
+<p class="column">
+<span class="coltitle">ID_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_new"></a>
+<p class="column">
+<span class="coltitle">New</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_newlyimported"></a>
+<p class="column">
+<span class="coltitle">NewlyImported</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_owningcoverable"></a>
+<p class="column">
+<span class="coltitle">OwningCoverable</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning Coverable</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_pattern"></a>
+<p class="column">
+<span class="coltitle">Pattern</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.productmodel.ClausePattern</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_patterncode"></a>
+<p class="column">
+<span class="coltitle">PatternCode</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "patterncode")'>patterncode</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">The pattern defining what kind of Coverage this is</span>
+<a name="cpbuildingcov_patterncode_dynprop"></a>
+<p class="column">
+<span class="coltitle">PATTERNCODE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_patterncode_prop"></a>
+<p class="column">
+<span class="coltitle">PATTERNCODE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_policyline"></a>
+<p class="column">
+<span class="coltitle">PolicyLine</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning PolicyLine</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_promoted"></a>
+<p class="column">
+<span class="coltitle">Promoted</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_publicid"></a>
+<p class="column">
+<span class="coltitle">PublicID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "publicid")'>publicid</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ID or primary key of the row in the external system to which this row is mapped</span>
+<a name="cpbuildingcov_publicid_prop"></a>
+<p class="column">
+<span class="coltitle">PUBLICID_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_referencedate"></a>
+<p class="column">
+<span class="coltitle">ReferenceDate</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.Date</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_referencedateinternal"></a>
+<p class="column">
+<span class="coltitle">ReferenceDateInternal</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">Internal field for storing the reference date of coverages on bound policy periods. Normally the ReferenceDate property should be used instead.</span>
+<a name="cpbuildingcov_referencedateinternal_dynprop"></a>
+<p class="column">
+<span class="coltitle">REFERENCEDATEINTERNAL_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_referencedateinternal_prop"></a>
+<p class="column">
+<span class="coltitle">REFERENCEDATEINTERNAL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_reinsurablecoverable"></a>
+<p class="column">
+<span class="coltitle">ReinsurableCoverable</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.reinsurance.ReinsurableCoverable</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_slice"></a>
+<p class="column">
+<span class="coltitle">Slice</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_slicedate"></a>
+<p class="column">
+<span class="coltitle">SliceDate</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.Date</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_subtype"></a>
+<p class="column">
+<span class="coltitle">Subtype</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="#subtypes" TARGET="tableFrame">CPBuildingCov</A> subtypes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Identifies a particular subtype within a supertype table; each subtype of a supertype has its own unique subtype value</span>
+<a name="cpbuildingcov_subtype_prop"></a>
+<p class="column">
+<span class="coltitle">SUBTYPE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_type"></a>
+<p class="column">
+<span class="coltitle">TYPE</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EffDatedEntityTypeReference<entity.CPBuildingCov, entity.PolicyPeriod></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_unsliced"></a>
+<p class="column">
+<span class="coltitle">Unsliced</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning CPBuildingCov</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_unsliceduntyped"></a>
+<p class="column">
+<span class="coltitle">UnslicedUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning EffDated</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_updatetime"></a>
+<p class="column">
+<span class="coltitle">UpdateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was last updated</span>
+<a name="cpbuildingcov_updatetime_prop"></a>
+<p class="column">
+<span class="coltitle">UPDATETIME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_updateuser"></a>
+<p class="column">
+<span class="coltitle">UpdateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: UpdateUserID)</span>
+<br>
+<span class="desc">User who last updated the object</span>
+<a name="cpbuildingcov_updateuser_prop"></a>
+<p class="column">
+<span class="coltitle">UPDATEUSER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_versionlist"></a>
+<p class="column">
+<span class="coltitle">VersionList</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning windowed.CPBuildingCovVersionList</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_versionlistuntyped"></a>
+<p class="column">
+<span class="coltitle">VersionListUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.core.effdate.EffDatedVersionList</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="Arrays"></a><div class="arraysbox">Arrays</div>
+<a name="cpbuildingcov_costs"></a>
+<p class="column">
+<span class="coltitle">Costs</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="CPCost.html#CPBuildingCovCost" TARGET="tableFrame">CPBuildingCovCost</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbuildingcov_covterms"></a>
+<p class="column">
+<span class="coltitle">CovTerms</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning gw.api.domain.covterm.CovTerm</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="Unique Keys for CPBuildingCov"></a><div class="arraysbox">Unique Keys for CPBuildingCov</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>cpbuildingcov3a</td>
+<td>BranchID, FixedID, Subtype, ID</td></tr>
+<tr><td>cpbuildingcov1a</td>
+<td>PublicID</td></tr>
+<tr><td>EffectiveConsCheck</td>
+<td>CPBuilding, BranchID, EffectiveDate, ExpirationDate, PatternCode, ID</td></tr>
+</table>
+<script language="JavaScript">
+function showAllUIDetails() {
+showUIDetails('UITable_0', 'showhideUI_0');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Hide user interface details on all fields';
+  link.onclick = hideAllUIDetails;
+  return false;
+}
+function hideAllUIDetails() {
+hideUIDetails('UITable_0', 'showhideUI_0');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Show user interface details on all fields';
+  link.onclick = showAllUIDetails;
+  return false;
+}
+</script>
+
+</body>
+</html>

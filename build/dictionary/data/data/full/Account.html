@@ -1,0 +1,1675 @@
+<html>
+<head>
+<title>Account</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">Account <span class="entityname">(pc_account) (delegates to <A HREF="DestructionRootPinnable.html" TARGET="tableFrame">DestructionRootPinnable</A>, <A HREF="EventAware.html" TARGET="tableFrame">EventAware</A>, <A HREF="Extractable.html" TARGET="tableFrame">Extractable</A>, <A HREF="FrozenSetMember.html" TARGET="tableFrame">FrozenSetMember</A>, <A HREF="Retireable.html" TARGET="tableFrame">Retireable</A>, <A HREF="RootInfo.html" TARGET="tableFrame">RootInfo</A>, <A HREF="UserRoleOwner.html" TARGET="tableFrame">UserRoleOwner</A>, <A HREF="Validatable.html" TARGET="tableFrame">Validatable</A>)</span></div>
+<div class="desc">
+<span id="reflink_469" class="reftext" onclick='showAndHideRefBox("refbox_469", "reflink_469")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_469" class="refbox_inner" style="display:none;">
+An account is an entity (person or company) that applies for or purchases one or more policies from the carrier. Account attributes include years in business, industry code (SIC, NAICS, etc) and nature of ops, FEIN identifier, Bureau (WC) number and business entity type (e.g. individual, corp., partenership, etc.)
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">Account</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Editable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Editable</b><br>The related database table contains rows that are editable by application users based on roles and permissions. An Editable table manages additional fields that represent an audit trail of an entity in the table (for example, who created it and when, who last edited it and when).')">?</span></sup>, Exportable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>, Extendable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Extendable</b><br>Can be extended with additional custom fields added to it.')">?</span></sup>, Final<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Final</b><br>The entity cannot be subtyped.')">?</span></sup>, Keyed<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Keyed</b><br>Has a related database table that has a primary key. Each row in a Keyed table has an integer primary key named ID. IDs are managed internally by the application, and the system ensures that no two rows in a keyed table have the same ID. In addition to the internal key, an external primary key can be associated with each row in a table.')">?</span></sup>, Sourceable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Sourceable</b><br>Contains entities that are linked to an external source. Each row in a Sourceable entity\'s table has additional fields to identify the external system and store the ID of the Sourceable entity in the external system.')">?</span></sup>, Versionable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Versionable</b><br>Has a version number that increases every time the entity is changed. This allows the cache to identify when entities have been updated.')">?</span></sup></span>
+</div>
+</div>
+<b>Messaging Events:</b> The application will generate these events for this entity:<ul><li>ResyncAccount</li><li>AccountAdded</li><li>AccountChanged</li><li>AccountRemoved</li><li>PersonalDataPurge</li><li>DestructionRootPinnableAdded</li><li>DestructionRootPinnableChanged</li><li>DestructionRootPinnableRemoved</li></ul><i>Integration programmers can write Event Fired rules to perform actions on these events. Refer
+ to the <b>Integration Guide</b> for the complete list of events for all entities. Remember to
+ configure a new or existing messaging destination in Studio to listen for desired events. </i><div class="refbox biglist odd">
+<span id="reflink_470" class="reftext" onclick='showAndHideRefBox("refbox_470", "reflink_470")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_470" class="refbox_inner" style="display:none;">
+<A HREF="../full/AccountAccount.html" TARGET="tableFrame">AccountAccount.SourceAccount</A><br><A HREF="../full/AccountAccount.html" TARGET="tableFrame">AccountAccount.TargetAccount</A><br><A HREF="../full/AccountContact.html" TARGET="tableFrame">AccountContact.Account</A><br><A HREF="../full/AccountProducerCode.html" TARGET="tableFrame">AccountProducerCode.Account</A><br><A HREF="../full/AccountSummary.html" TARGET="tableFrame">AccountSummary.Account</A><br><A HREF="../full/AccountUserRoleAssignment.html" TARGET="tableFrame">AccountUserRoleAssignment.Account</A><br><A HREF="../full/Acctholderedge.html" TARGET="tableFrame">Acctholderedge.Owner</A><br><A HREF="../full/Activity.html" TARGET="tableFrame">Activity.Account</A><br><A HREF="../full/Address.html#AccountLocation" TARGET="tableFrame">AccountLocation.Account</A><br><A HREF="../full/Document.html" TARGET="tableFrame">Document.Account</A><br><A HREF="../full/DocumentSearchCriteria.html" TARGET="tableFrame">DocumentSearchCriteria.Account</A><br><A HREF="../full/History.html" TARGET="tableFrame">History.Account</A><br><A HREF="../full/JobGroup.html" TARGET="tableFrame">JobGroup.Account</A><br><A HREF="../full/Message.html" TARGET="tableFrame">Message.Account</A><br><A HREF="../full/MessageHistory.html" TARGET="tableFrame">MessageHistory.Account</A><br><A HREF="../full/Note.html" TARGET="tableFrame">Note.Account</A><br><A HREF="../full/NoteSearchCriteria.html" TARGET="tableFrame">NoteSearchCriteria.Account</A><br><A HREF="../full/Policy.html" TARGET="tableFrame">Policy.Account</A><br><A HREF="../full/Policy.html" TARGET="tableFrame">Policy.MovedPolicySourceAccount</A><br><A HREF="../full/PolicyProductRoot.html" TARGET="tableFrame">PolicyProductRoot.Account</A><br><A HREF="../full/PrimaryAcctLoc.html" TARGET="tableFrame">PrimaryAcctLoc.Owner</A><br><A HREF="../full/ProducerSelection.html" TARGET="tableFrame">ProducerSelection.Account</A>
+</div>
+</span>
+</div>
+<span class="showhidelink"><a id="showAllElements" href="#" onClick="return showAllUIDetails()">Show user interface details on all fields</a></span>
+
+<br>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+<a name="account_id"></a>
+<p class="column">
+<span class="coltitle">ID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "key")'>key</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Internally managed primary key</span>
+<a name="account_accountadded_event"></a>
+<p class="column">
+<span class="coltitle">ACCOUNTADDED_EVENT</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_accountchanged_event"></a>
+<p class="column">
+<span class="coltitle">ACCOUNTCHANGED_EVENT</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_accountcontactrolesubtypes"></a>
+<p class="column">
+<span class="coltitle">AccountContactRoleSubtypes</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.database.IQueryResult<entity.AccountContactRole, typekey.AccountContactRole></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Return a query result for all distinct AccountContactRole subtypes
+associated with this Account.</span>
+<a name="account_accountcontacts_prop"></a>
+<p class="column">
+<span class="coltitle">ACCOUNTCONTACTS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_accountholder"></a>
+<p class="column">
+<span class="coltitle">AccountHolder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning AccountHolder</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_accountholdercontact"></a>
+<p class="column">
+<span class="coltitle">AccountHolderContact</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="Contact.html" TARGET="tableFrame">Contact</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Account Holder Contact denormalized onto Account for performance.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_0 onclick='showAndHideUIDetails("UITable_0", "showhideUI_0")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_0' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>AccountDetailViewTile.pcf:39</td>
+<td>Web.Dashboard.Tile.PolicyAccount.AccountName</td>
+<td>account.AccountHolderContact</td>
+<td>false</td>
+<td>
+ArchivedPolicyPeriodPage
+<br>
+PolicyFile_Summary
+</td>
+</tr>
+</table>
+</div></div>
+<a name="account_accountholdercontact_prop"></a>
+<p class="column">
+<span class="coltitle">ACCOUNTHOLDERCONTACT_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_accountholdercontactnameandnick"></a>
+<p class="column">
+<span class="coltitle">AccountHolderContactNameAndNick</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_accountlocations_prop"></a>
+<p class="column">
+<span class="coltitle">ACCOUNTLOCATIONS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_accountnumber"></a>
+<p class="column">
+<span class="coltitle">AccountNumber</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(unique index)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>unique index</b><br>The column participates in one or more unique indexes.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The account number of this account.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_1 onclick='showAndHideUIDetails("UITable_1", "showhideUI_1")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_1' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>AccountDetailViewTile.pcf:43</td>
+<td>Web.Dashboard.Tile.PolicyAccount.AccountNumber</td>
+<td>account.AccountNumber</td>
+<td>false</td>
+<td>
+ArchivedPolicyPeriodPage
+<br>
+PolicyFile_Summary
+</td>
+</tr>
+<tr>
+<td>AccountDetailsDetailViewTile.pcf:27</td>
+<td>Web.Dashboard.Tile.AccountDetails.AccountNo</td>
+<td>account.AccountNumber</td>
+<td>false</td>
+<td>
+AccountFile_Summary
+</td>
+</tr>
+<tr>
+<td>AccountFile_MovePoliciesSelection.pcf:43</td>
+<td>Web.AccountFile.Summary.AccountNumber</td>
+<td>srcAccount.AccountNumber</td>
+<td>false</td>
+<td>
+AccountFile_MovePoliciesSelection
+</td>
+</tr>
+<tr>
+<td>AccountFile_RelatedAccounts.pcf:63</td>
+<td>Web.AccountFile.RelatedAccounts.AccountNumber</td>
+<td>otherAccount.AccountNumber</td>
+<td>false</td>
+<td>
+AccountFile_RelatedAccounts
+</td>
+</tr>
+<tr>
+<td>AccountFile_RewritePoliciesSelection.pcf:36</td>
+<td>Web.AccountFile.Summary.AccountNumber</td>
+<td>srcAccount.AccountNumber</td>
+<td>false</td>
+<td>
+AccountFile_RewritePoliciesSelection
+</td>
+</tr>
+<tr>
+<td>AccountFile_Summary_BasicInfoDV.pcf:18</td>
+<td>Web.AccountFile.Summary.AccountNumber</td>
+<td>account.AccountNumber</td>
+<td>false</td>
+<td>
+AccountFile_MergeAccountsSelection
+</td>
+</tr>
+<tr>
+<td>PolicyDetailsDetailViewTile.pcf:140</td>
+<td>Web.Dashboard.Tile.PolicyDetails.SourceAccount</td>
+<td>period.Policy.MovedPolicySourceAccount.AccountNumber</td>
+<td>false</td>
+<td>
+ArchivedPolicyPeriodPage
+<br>
+PolicyFile_Summary
+</td>
+</tr>
+<tr>
+<td>RelatedAccountsListViewTile.pcf:35</td>
+<td>Web.Dashboard.Tile.RelatedAccounts.Number</td>
+<td>relatedAccount.AccountNumber</td>
+<td>false</td>
+<td>
+AccountFile_Summary
+</td>
+</tr>
+<tr>
+<td>SplitPolicyListViewTile.pcf:46</td>
+<td>Web.PolicyFile.Summary.DividePolicies.Account</td>
+<td>splitPolicy.Period.Policy.Account.AccountNumber</td>
+<td>false</td>
+<td>
+PolicyFile_Summary
+</td>
+</tr>
+<tr>
+<td>SplitPolicyPopup.pcf:42</td>
+<td>Web.PolicyFile.Summary.DividePolicies.Account</td>
+<td>splitPolicy.Period.Policy.Account.AccountNumber</td>
+<td>false</td>
+<td>
+SplitPolicyPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="account_accountnumber_prop"></a>
+<p class="column">
+<span class="coltitle">ACCOUNTNUMBER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_accountnumberdenorm"></a>
+<p class="column">
+<span class="coltitle">AccountNumberDenorm</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">denorm field for The account number of this account.</span>
+<a name="account_accountnumberdenorm_prop"></a>
+<p class="column">
+<span class="coltitle">ACCOUNTNUMBERDENORM_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_accountorgtype"></a>
+<p class="column">
+<span class="coltitle">AccountOrgType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/AccountOrgType_tl.html" TARGET="tableFrame">AccountOrgType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Organization type of this account</span>
+<div class='screenrefbody'>
+<span id=showhideUI_2 onclick='showAndHideUIDetails("UITable_2", "showhideUI_2")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_2' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>AccountFile_Summary_BasicInfoDV.pcf:95</td>
+<td>Web.EditAccount.OrgType</td>
+<td>account.AccountOrgType</td>
+<td>true</td>
+<td>
+AccountFile_MergeAccountsSelection
+</td>
+</tr>
+<tr>
+<td>AccountInfoInputSet.pcf:190</td>
+<td>Web.Policy.Account.OrganizationType</td>
+<td>period.Policy.Account.AccountOrgType</td>
+<td>period.Policy.Account.Editable</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyFile_PolicyInfo
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>CreateAccountDV.pcf:55</td>
+<td>Web.EditAccount.OrgType</td>
+<td>account.AccountOrgType</td>
+<td>true</td>
+<td>
+CreateAccount
+<br>
+CreateAccountForContact
+</td>
+</tr>
+<tr>
+<td>EditAccountPopup.pcf:96</td>
+<td>Web.EditAccount.OrgType</td>
+<td>account.AccountOrgType</td>
+<td>true</td>
+<td>
+EditAccountPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="account_accountorgtype_prop"></a>
+<p class="column">
+<span class="coltitle">ACCOUNTORGTYPE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_accountremoved_event"></a>
+<p class="column">
+<span class="coltitle">ACCOUNTREMOVED_EVENT</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_accountstatus"></a>
+<p class="column">
+<span class="coltitle">AccountStatus</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/AccountStatus_tl.html" TARGET="tableFrame">AccountStatus</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: Active)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The status of this account</span>
+<div class='screenrefbody'>
+<span id=showhideUI_3 onclick='showAndHideUIDetails("UITable_3", "showhideUI_3")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_3' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>AccountFile_Summary_BasicInfoDV.pcf:27</td>
+<td>Web.AccountFile.Summary.AccountStatus</td>
+<td>account.AccountStatus</td>
+<td>false</td>
+<td>
+AccountFile_MergeAccountsSelection
+</td>
+</tr>
+</table>
+</div></div>
+<a name="account_accountstatus_prop"></a>
+<p class="column">
+<span class="coltitle">ACCOUNTSTATUS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_accountstatusupdatetime"></a>
+<p class="column">
+<span class="coltitle">AccountStatusUpdateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Time when account status was last updated</span>
+<div class='screenrefbody'>
+<span id=showhideUI_4 onclick='showAndHideUIDetails("UITable_4", "showhideUI_4")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_4' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>AccountDetailsDetailViewTile.pcf:55</td>
+<td>Account.Withdrawn.Date</td>
+<td>account.AccountStatusUpdateTime</td>
+<td>false</td>
+<td>
+AccountFile_Summary
+</td>
+</tr>
+<tr>
+<td>AccountFile_Summary_BasicInfoDV.pcf:34</td>
+<td>Account.Withdrawn.Date</td>
+<td>account.AccountStatusUpdateTime</td>
+<td>false</td>
+<td>
+AccountFile_MergeAccountsSelection
+</td>
+</tr>
+</table>
+</div></div>
+<a name="account_accountstatusupdatetime_prop"></a>
+<p class="column">
+<span class="coltitle">ACCOUNTSTATUSUPDATETIME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_acctholderedgearray_prop"></a>
+<p class="column">
+<span class="coltitle">ACCTHOLDEREDGEARRAY_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_allopenactivities"></a>
+<p class="column">
+<span class="coltitle">AllOpenActivities</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.database.IQueryBeanResult<entity.Activity></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_applicationmajorversion"></a>
+<p class="column">
+<span class="coltitle">ApplicationMajorVersion</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning int</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_applicationminorversion"></a>
+<p class="column">
+<span class="coltitle">ApplicationMinorVersion</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning int</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_archivedate"></a>
+<p class="column">
+<span class="coltitle">ArchiveDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">When archiving was attempted on the root. Null if we never attempted to archive it.</span>
+<a name="account_archivedate_dynprop"></a>
+<p class="column">
+<span class="coltitle">ARCHIVEDATE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_archivedate_prop"></a>
+<p class="column">
+<span class="coltitle">ARCHIVEDATE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_archivefailure"></a>
+<p class="column">
+<span class="coltitle">ArchiveFailure</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="ArchiveFailure.html" TARGET="tableFrame">ArchiveFailure</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: ArchiveFailureID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">Short version of the reason for a failure to archive</span>
+<a name="account_archivefailure_dynprop"></a>
+<p class="column">
+<span class="coltitle">ARCHIVEFAILURE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_archivefailure_prop"></a>
+<p class="column">
+<span class="coltitle">ARCHIVEFAILURE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_archivefailuredetails"></a>
+<p class="column">
+<span class="coltitle">ArchiveFailureDetails</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="ArchiveFailureDetails.html" TARGET="tableFrame">ArchiveFailureDetails</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: ArchiveFailureDetailsID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">Full details of archive failure</span>
+<a name="account_archivefailuredetails_dynprop"></a>
+<p class="column">
+<span class="coltitle">ARCHIVEFAILUREDETAILS_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_archivefailuredetails_prop"></a>
+<p class="column">
+<span class="coltitle">ARCHIVEFAILUREDETAILS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_archivepartition"></a>
+<p class="column">
+<span class="coltitle">ArchivePartition</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "softentityreference")'>softentityreference</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">Unique number to partition the data so that the multiple workers can work independently</span>
+<a name="account_archivepartition_dynprop"></a>
+<p class="column">
+<span class="coltitle">ARCHIVEPARTITION_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_archivepartition_prop"></a>
+<p class="column">
+<span class="coltitle">ARCHIVEPARTITION_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_archiveschemainfo"></a>
+<p class="column">
+<span class="coltitle">ArchiveSchemaInfo</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="UpgradeDatamodelInfo.html" TARGET="tableFrame">UpgradeDatamodelInfo</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">Schema version at which the root was archived or null if it was not archived</span>
+<a name="account_archiveschemainfo_dynprop"></a>
+<p class="column">
+<span class="coltitle">ARCHIVESCHEMAINFO_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_archiveschemainfo_prop"></a>
+<p class="column">
+<span class="coltitle">ARCHIVESCHEMAINFO_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_archivestate"></a>
+<p class="column">
+<span class="coltitle">ArchiveState</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/ArchiveState_tl.html" TARGET="tableFrame">ArchiveState</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">The archive state of the graph</span>
+<a name="account_archivestate_dynprop"></a>
+<p class="column">
+<span class="coltitle">ARCHIVESTATE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_archivestate_prop"></a>
+<p class="column">
+<span class="coltitle">ARCHIVESTATE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_beanversion_prop"></a>
+<p class="column">
+<span class="coltitle">BEANVERSION_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_busopsdesc"></a>
+<p class="column">
+<span class="coltitle">BusOpsDesc</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (240)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Business and operations description.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_5 onclick='showAndHideUIDetails("UITable_5", "showhideUI_5")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_5' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>AccountFile_Summary_BasicInfoDV.pcf:107</td>
+<td>Web.EditAccount.DescriptionOfBusiness</td>
+<td>account.BusOpsDesc</td>
+<td>true</td>
+<td>
+AccountFile_MergeAccountsSelection
+</td>
+</tr>
+<tr>
+<td>AccountInfoInputSet.pcf:178</td>
+<td>Web.Policy.Account.WC.BusOps</td>
+<td>period.Policy.Account.BusOpsDesc</td>
+<td>period.Policy.Account.Editable</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyFile_PolicyInfo
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>ContactDetailsTileInputSet.company.pcf:34</td>
+<td>Web.Dashboard.Tile.AccountDetails.BusinessDescription</td>
+<td>account.BusOpsDesc</td>
+<td>false</td>
+<td>
+AccountFile_Summary
+</td>
+</tr>
+<tr>
+<td>CreateAccountDV.pcf:60</td>
+<td>Web.EditAccount.DescriptionOfBusiness</td>
+<td>account.BusOpsDesc</td>
+<td>true</td>
+<td>
+CreateAccount
+<br>
+CreateAccountForContact
+</td>
+</tr>
+<tr>
+<td>EditAccountPopup.pcf:108</td>
+<td>Web.EditAccount.DescriptionOfBusiness</td>
+<td>account.BusOpsDesc</td>
+<td>true</td>
+<td>
+EditAccountPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="account_busopsdesc_prop"></a>
+<p class="column">
+<span class="coltitle">BUSOPSDESC_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_createtime"></a>
+<p class="column">
+<span class="coltitle">CreateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was created</span>
+<a name="account_createtime_prop"></a>
+<p class="column">
+<span class="coltitle">CREATETIME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_createuser"></a>
+<p class="column">
+<span class="coltitle">CreateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CreateUserID)</span>
+<br>
+<span class="desc">User who created the object</span>
+<a name="account_createuser_prop"></a>
+<p class="column">
+<span class="coltitle">CREATEUSER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_currentroleassignment"></a>
+<p class="column">
+<span class="coltitle">CurrentRoleAssignment</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning AccountUserRoleAssignment</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_documents"></a>
+<p class="column">
+<span class="coltitle">Documents</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.database.IQueryBeanResult<entity.Document></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_donotdestroy"></a>
+<p class="column">
+<span class="coltitle">DoNotDestroy</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">If set then the entity should not be destroyed</span>
+<a name="account_donotdestroy_dynprop"></a>
+<p class="column">
+<span class="coltitle">DONOTDESTROY_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_donotdestroy_prop"></a>
+<p class="column">
+<span class="coltitle">DONOTDESTROY_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_editable"></a>
+<p class="column">
+<span class="coltitle">Editable</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_excludedfromarchive"></a>
+<p class="column">
+<span class="coltitle">ExcludedFromArchive</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">Indicate if this entity should be excluded from archiving</span>
+<a name="account_excludedfromarchive_dynprop"></a>
+<p class="column">
+<span class="coltitle">EXCLUDEDFROMARCHIVE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_excludedfromarchive_prop"></a>
+<p class="column">
+<span class="coltitle">EXCLUDEDFROMARCHIVE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_excludereason"></a>
+<p class="column">
+<span class="coltitle">ExcludeReason</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">Reason for excluding or skipping the entity from archiving. If the ExcludeFromArchive bit is set, this gives the reason for excluding. Else, if this is not null, it is the reason for skipping.</span>
+<a name="account_excludereason_dynprop"></a>
+<p class="column">
+<span class="coltitle">EXCLUDEREASON_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_excludereason_prop"></a>
+<p class="column">
+<span class="coltitle">EXCLUDEREASON_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_extensionsversion"></a>
+<p class="column">
+<span class="coltitle">ExtensionsVersion</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning int</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_finder"></a>
+<p class="column">
+<span class="coltitle">finder</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.domain.account.AccountFinder</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_frozen"></a>
+<p class="column">
+<span class="coltitle">Frozen</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_frozenset"></a>
+<p class="column">
+<span class="coltitle">FrozenSet</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="FrozenSet.html" TARGET="tableFrame">FrozenSet</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: FrozenSetID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_frozenset_dynprop"></a>
+<p class="column">
+<span class="coltitle">FROZENSET_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_frozenset_prop"></a>
+<p class="column">
+<span class="coltitle">FROZENSET_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_id_prop"></a>
+<p class="column">
+<span class="coltitle">ID_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_industrycode"></a>
+<p class="column">
+<span class="coltitle">IndustryCode</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="IndustryCode.html" TARGET="tableFrame">IndustryCode</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: IndustryCodeID)&nbsp;&nbsp;&nbsp;&nbsp;(export as id)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>export as id</b><br>Causes the system to create an appropriate identifier for the referenced entity: for example, ClaimIdentifier if the foreign key points to the claim table.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Industry Code of Account</span>
+<div class='screenrefbody'>
+<span id=showhideUI_6 onclick='showAndHideUIDetails("UITable_6", "showhideUI_6")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_6' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>AccountFile_Summary_BasicInfoDV.pcf:5</td>
+<td>Web.EditAccount.IndustryCode</td>
+<td>account.IndustryCode</td>
+<td>true</td>
+<td>
+AccountFile_MergeAccountsSelection
+</td>
+</tr>
+<tr>
+<td>CreateAccountDV.pcf:5</td>
+<td>Java.IndustryCodeInputWidget.Label</td>
+<td>account.IndustryCode</td>
+<td>true</td>
+<td>
+CreateAccount
+<br>
+CreateAccountForContact
+</td>
+</tr>
+<tr>
+<td>EditAccountPopup.pcf:5</td>
+<td>Web.EditAccount.IndustryCode</td>
+<td>account.IndustryCode</td>
+<td>true</td>
+<td>
+EditAccountPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="account_industrycode_prop"></a>
+<p class="column">
+<span class="coltitle">INDUSTRYCODE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_issuedpolicies"></a>
+<p class="column">
+<span class="coltitle">IssuedPolicies</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.database.IQueryBeanResult<entity.PolicyPeriodSummary></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_jobgroups_prop"></a>
+<p class="column">
+<span class="coltitle">JOBGROUPS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_linkcontacts"></a>
+<p class="column">
+<span class="coltitle">LinkContacts</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Indicates that this Account will sync Contacts with an external Contact Management System.</span>
+<a name="account_linkcontacts_prop"></a>
+<p class="column">
+<span class="coltitle">LINKCONTACTS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_locationautonumberseq"></a>
+<p class="column">
+<span class="coltitle">LocationAutoNumberSeq</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="AutoNumberSequence.html" TARGET="tableFrame">AutoNumberSequence</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Sequence to autonumber account locations</span>
+<a name="account_locationautonumberseq_prop"></a>
+<p class="column">
+<span class="coltitle">LOCATIONAUTONUMBERSEQ_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_locked"></a>
+<p class="column">
+<span class="coltitle">Locked</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_lockedfrommerge"></a>
+<p class="column">
+<span class="coltitle">LockedFromMerge</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(unique index)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>unique index</b><br>The column participates in one or more unique indexes.')">?</span></sup></span>
+<br>
+<span class="desc">If true then no Policy may be created or retrieved on this Account</span>
+<a name="account_lockedfrommerge_prop"></a>
+<p class="column">
+<span class="coltitle">LOCKEDFROMMERGE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_lockingcolumn"></a>
+<p class="column">
+<span class="coltitle">LockingColumn</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "lockingcolumn")'>lockingcolumn</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: 0)</span>
+<br>
+<span class="desc">Meaningless column for locking</span>
+<a name="account_lockingcolumn_prop"></a>
+<p class="column">
+<span class="coltitle">LOCKINGCOLUMN_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_new"></a>
+<p class="column">
+<span class="coltitle">New</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_newlyimported"></a>
+<p class="column">
+<span class="coltitle">NewlyImported</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_newsubmissionvisible"></a>
+<p class="column">
+<span class="coltitle">NewSubmissionVisible</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Determines whether or not an action (button or menu item) to start a New Submission should be visible when used on
+the UI.</span>
+<a name="account_nickname"></a>
+<p class="column">
+<span class="coltitle">Nickname</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (30)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">A nickname of the account used to distinguish multiple accounts of a single account holder</span>
+<div class='screenrefbody'>
+<span id=showhideUI_7 onclick='showAndHideUIDetails("UITable_7", "showhideUI_7")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_7' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>AccountFile_Summary_BasicInfoDV.pcf:58</td>
+<td>Web.AccountFile.Summary.Nickname</td>
+<td>account.Nickname</td>
+<td>false</td>
+<td>
+AccountFile_MergeAccountsSelection
+</td>
+</tr>
+<tr>
+<td>CreateAccountDV.pcf:72</td>
+<td>Web.EditAccount.Nickname</td>
+<td>account.Nickname</td>
+<td>true</td>
+<td>
+CreateAccount
+<br>
+CreateAccountForContact
+</td>
+</tr>
+<tr>
+<td>EditAccountPopup.pcf:42</td>
+<td>Web.EditAccount.Nickname</td>
+<td>account.Nickname</td>
+<td>true</td>
+<td>
+EditAccountPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="account_nickname_prop"></a>
+<p class="column">
+<span class="coltitle">NICKNAME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_notes_prop"></a>
+<p class="column">
+<span class="coltitle">NOTES_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_originationdate"></a>
+<p class="column">
+<span class="coltitle">OriginationDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The date the account became a client of the carrier.</span>
+<a name="account_originationdate_prop"></a>
+<p class="column">
+<span class="coltitle">ORIGINATIONDATE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_otherorgtypedescription"></a>
+<p class="column">
+<span class="coltitle">OtherOrgTypeDescription</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (40)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">If AccountOrgType is 'other', this value must be filled in</span>
+<div class='screenrefbody'>
+<span id=showhideUI_8 onclick='showAndHideUIDetails("UITable_8", "showhideUI_8")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_8' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>AccountInfoInputSet.pcf:197</td>
+<td>Web.Policy.Account.OrganizationTypeOtherDescription</td>
+<td>period.Policy.Account.OtherOrgTypeDescription</td>
+<td>period.Policy.Account.Editable</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyFile_PolicyInfo
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="account_otherorgtypedescription_prop"></a>
+<p class="column">
+<span class="coltitle">OTHERORGTYPEDESCRIPTION_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_pinnablechildren"></a>
+<p class="column">
+<span class="coltitle">PinnableChildren</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.List<entity.DestructionRootPinnable></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_pinnabledescendants"></a>
+<p class="column">
+<span class="coltitle">PinnableDescendants</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.List<entity.DestructionRootPinnable></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_pinnableparents"></a>
+<p class="column">
+<span class="coltitle">PinnableParents</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.List<entity.DestructionRootPinnable></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_platformmajorversion"></a>
+<p class="column">
+<span class="coltitle">PlatformMajorVersion</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning int</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_platformminorversion"></a>
+<p class="column">
+<span class="coltitle">PlatformMinorVersion</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning int</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_preferredcoveragecurrency"></a>
+<p class="column">
+<span class="coltitle">PreferredCoverageCurrency</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Preferred Coverage Currency</span>
+<div class='screenrefbody'>
+<span id=showhideUI_9 onclick='showAndHideUIDetails("UITable_9", "showhideUI_9")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_9' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>AccountCurrencyInputSet.pcf:48</td>
+<td>Web.AccountDetail.PreferredCoverageCurrency</td>
+<td>account.PreferredCoverageCurrency</td>
+<td>account.Editable</td>
+<td>
+CreateAccount
+<br>
+AccountFile_MergeAccountsSelection
+<br>
+EditAccountPopup
+<br>
+CreateAccountForContact
+</td>
+</tr>
+</table>
+</div></div>
+<a name="account_preferredcoveragecurrency_prop"></a>
+<p class="column">
+<span class="coltitle">PREFERREDCOVERAGECURRENCY_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_preferredsettlementcurrency"></a>
+<p class="column">
+<span class="coltitle">PreferredSettlementCurrency</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Preferred Settlement Currency</span>
+<div class='screenrefbody'>
+<span id=showhideUI_10 onclick='showAndHideUIDetails("UITable_10", "showhideUI_10")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_10' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>AccountCurrencyInputSet.pcf:41</td>
+<td>Web.AccountDetail.PreferredSettlementCurrency</td>
+<td>account.PreferredSettlementCurrency</td>
+<td>account.Editable</td>
+<td>
+CreateAccount
+<br>
+AccountFile_MergeAccountsSelection
+<br>
+EditAccountPopup
+<br>
+CreateAccountForContact
+</td>
+</tr>
+</table>
+</div></div>
+<a name="account_preferredsettlementcurrency_prop"></a>
+<p class="column">
+<span class="coltitle">PREFERREDSETTLEMENTCURRENCY_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_primaryacctlocarray_prop"></a>
+<p class="column">
+<span class="coltitle">PRIMARYACCTLOCARRAY_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_primarylanguage"></a>
+<p class="column">
+<span class="coltitle">PrimaryLanguage</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/LanguageType_tl.html" TARGET="tableFrame">LanguageType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: en_US)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The account's preferred language</span>
+<div class='screenrefbody'>
+<span id=showhideUI_11 onclick='showAndHideUIDetails("UITable_11", "showhideUI_11")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_11' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>AccountFile_Summary_BasicInfoDV.pcf:41</td>
+<td>Web.EditAccount.PrimaryLanguage</td>
+<td>account.PrimaryLanguage</td>
+<td>true</td>
+<td>
+AccountFile_MergeAccountsSelection
+</td>
+</tr>
+<tr>
+<td>CreateAccountDV.pcf:80</td>
+<td>Web.NewSubmissionAccountDetail.PrimaryLanguage</td>
+<td>account.PrimaryLanguage</td>
+<td>true</td>
+<td>
+CreateAccount
+<br>
+CreateAccountForContact
+</td>
+</tr>
+<tr>
+<td>EditAccountPopup.pcf:49</td>
+<td>Web.EditAccount.PrimaryLanguage</td>
+<td>account.PrimaryLanguage</td>
+<td>true</td>
+<td>
+EditAccountPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="account_primarylanguage_prop"></a>
+<p class="column">
+<span class="coltitle">PRIMARYLANGUAGE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_primarylocale"></a>
+<p class="column">
+<span class="coltitle">PrimaryLocale</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/LocaleType_tl.html" TARGET="tableFrame">LocaleType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: en_US)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The account's preferred locale</span>
+<a name="account_primarylocale_prop"></a>
+<p class="column">
+<span class="coltitle">PRIMARYLOCALE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_primarylocation"></a>
+<p class="column">
+<span class="coltitle">PrimaryLocation</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="Address.html#AccountLocation" TARGET="tableFrame">AccountLocation</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(export as id)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>export as id</b><br>Causes the system to create an appropriate identifier for the referenced entity: for example, ClaimIdentifier if the foreign key points to the claim table.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The primary Location for this Account.</span>
+<a name="account_primarylocation_prop"></a>
+<p class="column">
+<span class="coltitle">PRIMARYLOCATION_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_producercodes_prop"></a>
+<p class="column">
+<span class="coltitle">PRODUCERCODES_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_publicid"></a>
+<p class="column">
+<span class="coltitle">PublicID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "publicid")'>publicid</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ID or primary key of the row in the external system to which this row is mapped</span>
+<a name="account_publicid_prop"></a>
+<p class="column">
+<span class="coltitle">PUBLICID_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_publicidofroot"></a>
+<p class="column">
+<span class="coltitle">PublicIDOfRoot</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_purgeableevenwithunpurgeablesiblings"></a>
+<p class="column">
+<span class="coltitle">PurgeableEvenWithUnpurgeableSiblings</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_renewalgroups"></a>
+<p class="column">
+<span class="coltitle">RenewalGroups</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.List<entity.RenewalGroup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_restrictors"></a>
+<p class="column">
+<span class="coltitle">restrictors</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning com.guidewire.pc.domain.account.AccountQueryRestrictors</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_resyncaccount_event"></a>
+<p class="column">
+<span class="coltitle">RESYNCACCOUNT_EVENT</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_retired"></a>
+<p class="column">
+<span class="coltitle">Retired</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_retired_dynprop"></a>
+<p class="column">
+<span class="coltitle">RETIRED_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_retiredvalue"></a>
+<p class="column">
+<span class="coltitle">RetiredValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "softentityreference")'>softentityreference</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: Retired)&nbsp;&nbsp;&nbsp;&nbsp;(default: 0)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Whether the entity is still in use. A value of 0 means that the entity is not retired. If the entity is retired from active use, this field has a non-zero value equal to the entity's ID. Once an entity is retired, it should not be unretired.</span>
+<a name="account_retiredvalue_dynprop"></a>
+<p class="column">
+<span class="coltitle">RETIREDVALUE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_retiredvalue_prop"></a>
+<p class="column">
+<span class="coltitle">RETIREDVALUE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_roleassignments_prop"></a>
+<p class="column">
+<span class="coltitle">ROLEASSIGNMENTS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_servicetier"></a>
+<p class="column">
+<span class="coltitle">ServiceTier</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/CustomerServiceTier_tl.html" TARGET="tableFrame">CustomerServiceTier</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Customer Service Tier</span>
+<div class='screenrefbody'>
+<span id=showhideUI_12 onclick='showAndHideUIDetails("UITable_12", "showhideUI_12")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_12' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>AccountFile_Summary_BasicInfoDV.pcf:46</td>
+<td>Web.EditAccount.ServiceTier</td>
+<td>account.ServiceTier</td>
+<td>false</td>
+<td>
+AccountFile_MergeAccountsSelection
+</td>
+</tr>
+<tr>
+<td>EditAccountPopup.pcf:55</td>
+<td>Web.EditAccount.ServiceTier</td>
+<td>account.ServiceTier</td>
+<td>true</td>
+<td>
+EditAccountPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="account_servicetier_prop"></a>
+<p class="column">
+<span class="coltitle">SERVICETIER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_sourcerelatedaccounts_prop"></a>
+<p class="column">
+<span class="coltitle">SOURCERELATEDACCOUNTS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_statebureaunum"></a>
+<p class="column">
+<span class="coltitle">StateBureauNum</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">State Bureau number of this account.</span>
+<a name="account_statebureaunum_prop"></a>
+<p class="column">
+<span class="coltitle">STATEBUREAUNUM_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_submissiongroups"></a>
+<p class="column">
+<span class="coltitle">SubmissionGroups</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.List<entity.SubmissionGroup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_targetrelatedaccounts_prop"></a>
+<p class="column">
+<span class="coltitle">TARGETRELATEDACCOUNTS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_type"></a>
+<p class="column">
+<span class="coltitle">TYPE</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityTypeReference<entity.Account></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_updatetime"></a>
+<p class="column">
+<span class="coltitle">UpdateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was last updated</span>
+<a name="account_updatetime_prop"></a>
+<p class="column">
+<span class="coltitle">UPDATETIME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_updateuser"></a>
+<p class="column">
+<span class="coltitle">UpdateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: UpdateUserID)</span>
+<br>
+<span class="desc">User who last updated the object</span>
+<a name="account_updateuser_prop"></a>
+<p class="column">
+<span class="coltitle">UPDATEUSER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_validation_results_dynprop"></a>
+<p class="column">
+<span class="coltitle">VALIDATION_RESULTS_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_validationresult"></a>
+<p class="column">
+<span class="coltitle">ValidationResult</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.validation.ValidationResult</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_versionstring"></a>
+<p class="column">
+<span class="coltitle">VersionString</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_visiblepolicies"></a>
+<p class="column">
+<span class="coltitle">VisiblePolicies</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.List<entity.Policy></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns all policies for this account that are visible to the current user.</span>
+<a name="account_yearbusinessstarted"></a>
+<p class="column">
+<span class="coltitle">YearBusinessStarted</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "year")'>year</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">What year was the business started?</span>
+<div class='screenrefbody'>
+<span id=showhideUI_13 onclick='showAndHideUIDetails("UITable_13", "showhideUI_13")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_13' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>AccountInfoInputSet.pcf:172</td>
+<td>Web.Policy.Account.WC.YearBusinessStarted</td>
+<td>period.Policy.Account.YearBusinessStarted</td>
+<td>period.Policy.Account.Editable</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyFile_PolicyInfo
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="account_yearbusinessstarted_prop"></a>
+<p class="column">
+<span class="coltitle">YEARBUSINESSSTARTED_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="Arrays"></a><div class="arraysbox">Arrays</div>
+<a name="account_accountcontacts"></a>
+<p class="column">
+<span class="coltitle">AccountContacts</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="AccountContact.html" TARGET="tableFrame">AccountContact</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">All the contacts related to this account, including inactive ones.</span>
+<a name="account_accountlocations"></a>
+<p class="column">
+<span class="coltitle">AccountLocations</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="Address.html#AccountLocation" TARGET="tableFrame">AccountLocation</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The list of account locations for this Account</span>
+<a name="account_activeaccountcontacts"></a>
+<p class="column">
+<span class="coltitle">ActiveAccountContacts</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning AccountContact</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_activeaccountlocations"></a>
+<p class="column">
+<span class="coltitle">ActiveAccountLocations</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning AccountLocation</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Return an array of account locations, each of which is marked as active.</span>
+<a name="account_issuedpoliciesasarray"></a>
+<p class="column">
+<span class="coltitle">IssuedPoliciesAsArray</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning PolicyPeriodSummary</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<b><i>Deprecated</i></b><br>
+<span class="desc"></span>
+<a name="account_jobgroups"></a>
+<p class="column">
+<span class="coltitle">JobGroups</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="JobGroup.html" TARGET="tableFrame">JobGroup</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The list of Job Groups of this Account</span>
+<a name="account_lossfinancials"></a>
+<p class="column">
+<span class="coltitle">LossFinancials</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning LossFinancials</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="account_notes"></a>
+<p class="column">
+<span class="coltitle">Notes</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="Note.html" TARGET="tableFrame">Note</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Notes associated with this account.</span>
+<a name="account_policies"></a>
+<p class="column">
+<span class="coltitle">Policies</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning Policy</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Return all internal policies for this account</span>
+<a name="account_producercodes"></a>
+<p class="column">
+<span class="coltitle">ProducerCodes</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="AccountProducerCode.html" TARGET="tableFrame">AccountProducerCode</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Producer Codes associated with this account.</span>
+<a name="account_roleassignments"></a>
+<p class="column">
+<span class="coltitle">RoleAssignments</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="AccountUserRoleAssignment.html" TARGET="tableFrame">AccountUserRoleAssignment</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(triggers validation)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>triggers validation</b><br>Changes to the entity pointed to by this array trigger validation.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Role Assignments for this account.</span>
+<a name="account_sourcerelatedaccounts"></a>
+<p class="column">
+<span class="coltitle">SourceRelatedAccounts</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="AccountAccount.html" TARGET="tableFrame">AccountAccount</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Relationships from this account to another one.</span>
+<a name="account_targetrelatedaccounts"></a>
+<p class="column">
+<span class="coltitle">TargetRelatedAccounts</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="AccountAccount.html" TARGET="tableFrame">AccountAccount</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Relationships from another account to this one.</span>
+<a name="Unique Keys for Account"></a><div class="arraysbox">Unique Keys for Account</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>accountu1</td>
+<td>AccountNumber, Retired</td></tr>
+<tr><td>archfailuredetails</td>
+<td>ArchiveFailureDetailsID</td></tr>
+<tr><td>AccountFrozen</td>
+<td>LockedFromMerge, Retired, ID</td></tr>
+<tr><td>account1a</td>
+<td>PublicID, Retired</td></tr>
+<tr><td>accountp2</td>
+<td>AccountStatus, Retired, ID</td></tr>
+<tr><td>accountp3x</td>
+<td>ID, Retired, CreateTime, AccountStatus, AccountNumber</td></tr>
+<tr><td>accountp1</td>
+<td>CreateTime, Retired, ID</td></tr>
+</table>
+<script language="JavaScript">
+function showAllUIDetails() {
+showUIDetails('UITable_0', 'showhideUI_0');
+showUIDetails('UITable_1', 'showhideUI_1');
+showUIDetails('UITable_2', 'showhideUI_2');
+showUIDetails('UITable_3', 'showhideUI_3');
+showUIDetails('UITable_4', 'showhideUI_4');
+showUIDetails('UITable_5', 'showhideUI_5');
+showUIDetails('UITable_6', 'showhideUI_6');
+showUIDetails('UITable_7', 'showhideUI_7');
+showUIDetails('UITable_8', 'showhideUI_8');
+showUIDetails('UITable_9', 'showhideUI_9');
+showUIDetails('UITable_10', 'showhideUI_10');
+showUIDetails('UITable_11', 'showhideUI_11');
+showUIDetails('UITable_12', 'showhideUI_12');
+showUIDetails('UITable_13', 'showhideUI_13');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Hide user interface details on all fields';
+  link.onclick = hideAllUIDetails;
+  return false;
+}
+function hideAllUIDetails() {
+hideUIDetails('UITable_0', 'showhideUI_0');
+hideUIDetails('UITable_1', 'showhideUI_1');
+hideUIDetails('UITable_2', 'showhideUI_2');
+hideUIDetails('UITable_3', 'showhideUI_3');
+hideUIDetails('UITable_4', 'showhideUI_4');
+hideUIDetails('UITable_5', 'showhideUI_5');
+hideUIDetails('UITable_6', 'showhideUI_6');
+hideUIDetails('UITable_7', 'showhideUI_7');
+hideUIDetails('UITable_8', 'showhideUI_8');
+hideUIDetails('UITable_9', 'showhideUI_9');
+hideUIDetails('UITable_10', 'showhideUI_10');
+hideUIDetails('UITable_11', 'showhideUI_11');
+hideUIDetails('UITable_12', 'showhideUI_12');
+hideUIDetails('UITable_13', 'showhideUI_13');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Show user interface details on all fields';
+  link.onclick = showAllUIDetails;
+  return false;
+}
+</script>
+
+</body>
+</html>

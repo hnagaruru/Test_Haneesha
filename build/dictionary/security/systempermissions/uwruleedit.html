@@ -1,0 +1,182 @@
+<html>
+<head>
+<title>uwruleedit</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../securitydictionary.css" TYPE="text/css"/>
+<script language="JavaScript"> 
+function showAndHideUIDetails(theId, theLink) {
+   var el = document.getElementById(theId);
+   var link = document.getElementById(theLink);
+
+   if (el.style.display=="none") {
+      showUIDetails(theId, theLink);
+   }
+   else {
+      hideUIDetails(theId, theLink);
+   }
+   return false;
+}
+
+function showAndHideRefBox(theId, theLink) {
+   var el = document.getElementById(theId);
+   var link = document.getElementById(theLink);
+
+   if (el.style.display=="none") {
+      showRefBox(theId, theLink);
+   }
+   else {
+      hideRefBox(theId, theLink);
+   }
+   return false;
+}
+
+function hideUIDetails(theId, theLink) {
+   var el = document.getElementById(theId);
+   var link = document.getElementById(theLink);
+
+   el.style.display="none"; //hide element
+   link.innerHTML = '<img src="../blackup.gif" border="0">Show user interface details...';
+   return false;
+}
+
+function showUIDetails(theId, theLink) {
+   var el = document.getElementById(theId);
+   var link = document.getElementById(theLink);
+
+   el.style.display="block"; //show element
+   link.innerHTML = '<img src="../blackdown.gif" border="0">Hide user interface details...';
+   return false;
+}function hideRefBox(theId, theLink) {
+   var el = document.getElementById(theId);
+   var link = document.getElementById(theLink);
+
+   el.style.display="none"; //hide element
+   link.firstChild.src = '../blackup.gif';
+   return false;
+}
+
+function showRefBox(theId, theLink) {
+   var el = document.getElementById(theId);
+   var link = document.getElementById(theLink);
+
+   el.style.display="block"; //show element
+   link.firstChild.src='../blackdown.gif';
+   return false;
+}
+function popupDefinition(event, def) {
+   if(!event) var event = window.event;
+   var popup = document.createElement('div');
+   popup.style.position = 'absolute';
+   var posx = 0;
+   var posy = 0;
+   if (event.pageX || event.pageY){
+     posx = event.pageX;
+     posy = event.pageY;
+   }
+   else if (event.clientX || event.clientY){
+     posx = event.clientX + document.body.scrollLeft;
+     posy = event.clientY + document.body.scrollTop;
+   }
+   popup.style.left = posx + 10;
+   popup.style.top = posy + 7;
+   popup.className = 'defPopup';
+   popup.id = 'popup';
+   popup.innerHTML = def;
+   document.body.appendChild(popup);
+   document.body.onmousemove = function() {document.body.removeChild(document.getElementById('popup')); document.body.onmousemove = null};
+}
+function generateTOC() {
+   var tocdiv = document.createElement('div');
+   tocdiv.className = 'TOC';
+   var divs = document.body.getElementsByTagName('DIV');
+   for(var i=0; i<divs.length; i++){
+     if(divs[i].className == 'arraysbox'){
+       var sectionName = divs[i].firstChild.nodeValue;
+       var link = document.createElement('a');
+       link.href = '#' + sectionName;
+       link.appendChild(document.createTextNode(sectionName));
+       tocdiv.appendChild(link);
+       tocdiv.appendChild(document.createTextNode(' | '))
+     }
+   }
+   if(tocdiv.childNodes.length > 0){
+     tocdiv.removeChild(tocdiv.lastChild);
+   }
+   if(tocdiv.childNodes.length > 1){
+     var placeholder = document.getElementById('TOC');
+     placeholder.parentNode.insertBefore(tocdiv, placeholder);
+   }
+}
+</script> 
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">uwruleedit <span class="entityname">(object-based) - Edit UW Rules</span></div>
+<div class="desc">
+<span id="reflink_370" class="reftext" onclick='showAndHideRefBox("refbox_370", "reflink_370")'><img src="../blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_370" class="refbox_inner" style="display:none;">
+Permission to edit UW Rules
+</div>
+</span>
+</div>
+</div>
+<a name="Roles"></a><div class="arraysbox">Roles</div>
+<a name="admindata.role.name.all_permissions"></a>
+<p class="column">
+<span class="coltitle"><a href='../roles/superuser.html'>AdminData.Role.Name.All_Permissions</a></span>  <span class="titleDesc"></span>    
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">AdminData.Role.Description.All_Permissions</span>
+<a name="admindata.role.name.rule_admin"></a>
+<p class="column">
+<span class="coltitle"><a href='../roles/rule_admin.html'>AdminData.Role.Name.Rule_Admin</a></span>  <span class="titleDesc"></span>    
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">AdminData.Role.Description.Rule_Admin</span>
+<a name="Related Application Permission Keys"></a><div class="arraysbox">Related Application Permission Keys</div>
+<a name="rule create"></a>
+<p class="column">
+<span class="coltitle"><a href='../keys/Rule_create.html'>Rule create</a></span>  <span class="titleDesc"></span>    
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">Permission to create a Rule. A user can create a Rule if they have edit permission for the specific Rule type.</span>
+<a name="rule delete"></a>
+<p class="column">
+<span class="coltitle"><a href='../keys/Rule_delete.html'>Rule delete</a></span>  <span class="titleDesc"></span>    
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">Permission to edit a Rule. A user can edit a Rule if they have edit permission for the specific Rule type.</span>
+<a name="rule edit"></a>
+<p class="column">
+<span class="coltitle"><a href='../keys/Rule_edit.html'>Rule edit</a></span>  <span class="titleDesc"></span>    
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">Permission to edit a Rule. A user can edit a Rule if they have edit permission for the specific Rule type.</span>
+<a name="Related Pages"></a><div class="arraysbox">Related Pages</div>
+<a name="uwruleeditpopup"></a>
+<p class="column">
+<span class="coltitle"><a href='../pages/UWRuleEditPopup.html'>UWRuleEditPopup</a></span>  <span class="titleDesc">via <a href='../keys/Rule_edit.html'>Rule edit</a></span>    
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="Related Elements"></a><div class="arraysbox">Related Elements</div>
+<a name="!stateholder.importinprogress and perm.rule.edit(stateholder.selectedversion.rule) ? displaykey.get('bizrules.ruledetailspage.alert.unavailabletorun.withmakeavailableaction') : displaykey.get('bizrules.ruledetailspage.alert.unavailabletorun') (alertbar)"></a>
+<p class="column">
+<span class="coltitle">!stateHolder.ImportInProgress and perm.Rule.edit(stateHolder.SelectedVersion.Rule) ? DisplayKey.get('BizRules.RuleDetailsPage.Alert.UnavailableToRun.WithMakeAvailableAction') : DisplayKey.get('BizRules.RuleDetailsPage.Alert.UnavailableToRun') (AlertBar)</span>  <span class="titleDesc">available attribute via <a href='../keys/Rule_edit.html'>Rule edit</a></span>    
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"><a href='../pages/UWRuleDetail.html'>UWRuleDetail</a> (UWRuleDetail.pcf)</span>
+<a name="!stateholder.importinprogress and perm.rule.edit(stateholder.selectedversion.rule) ? displaykey.get('bizrules.ruledetailspage.alert.unavailabletorun.withmakeavailableaction') : displaykey.get('bizrules.ruledetailspage.alert.unavailabletorun') (alertbar)"></a>
+<p class="column">
+<span class="coltitle">!stateHolder.ImportInProgress and perm.Rule.edit(stateHolder.SelectedVersion.Rule) ? DisplayKey.get('BizRules.RuleDetailsPage.Alert.UnavailableToRun.WithMakeAvailableAction') : DisplayKey.get('BizRules.RuleDetailsPage.Alert.UnavailableToRun') (AlertBar)</span>  <span class="titleDesc">label attribute via <a href='../keys/Rule_edit.html'>Rule edit</a></span>    
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"><a href='../pages/UWRuleDetail.html'>UWRuleDetail</a> (UWRuleDetail.pcf)</span>
+<a name="the existing rule version is in draft. editing of existing and imported versions has been disabled. (alertbar)"></a>
+<p class="column">
+<span class="coltitle">The existing rule version is in draft. Editing of existing and imported versions has been disabled. (AlertBar)</span>  <span class="titleDesc">visible attribute via <a href='../keys/Rule_edit.html'>Rule edit</a></span>    
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"><a href='../pages/UWRuleComparisonPopup.html'>UWRuleComparisonPopup</a> (UWRuleComparisonPopup.pcf)</span>
+</body>
+</html>

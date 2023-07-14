@@ -1,0 +1,764 @@
+<html>
+<head>
+<title>APDCost</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">APDCost <span class="entityname">(pcx_apdcost) (delegates to <A HREF="Cost.html" TARGET="tableFrame">Cost</A>, <A HREF="EffDated.html" TARGET="tableFrame">EffDated</A>)</span></div>
+<div class="desc">
+<span id="reflink_188" class="reftext" onclick='showAndHideRefBox("refbox_188", "reflink_188")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_188" class="refbox_inner" style="display:none;">
+A unit of premium or other cost (taxes, fees, etc.) for the Manual Products line.
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">APDCost</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Abstract<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Abstract</b><br>The entity is a supertype, but all instances of it must be one of its subtypes. That is, you cannot instantiate the supertype entity itself. An abstract entity is appropriate when the supertype serves only to collect logic or common fields, but does not make sense to exist on its own.')">?</span></sup>, Editable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Editable</b><br>The related database table contains rows that are editable by application users based on roles and permissions. An Editable table manages additional fields that represent an audit trail of an entity in the table (for example, who created it and when, who last edited it and when).')">?</span></sup>, Exportable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>, Extendable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Extendable</b><br>Can be extended with additional custom fields added to it.')">?</span></sup>, Keyed<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Keyed</b><br>Has a related database table that has a primary key. Each row in a Keyed table has an integer primary key named ID. IDs are managed internally by the application, and the system ensures that no two rows in a keyed table have the same ID. In addition to the internal key, an external primary key can be associated with each row in a table.')">?</span></sup>, Sourceable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Sourceable</b><br>Contains entities that are linked to an external source. Each row in a Sourceable entity\'s table has additional fields to identify the external system and store the ID of the Sourceable entity in the external system.')">?</span></sup>, Supertype<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Supertype</b><br>A single table that represents multiple types of entities, called subtypes. Each subtype shares application logic and a majority of their fields. Each subtype may also define fields that are particular to it.')">?</span></sup>, Versionable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Versionable</b><br>Has a version number that increases every time the entity is changed. This allows the cache to identify when entities have been updated.')">?</span></sup></span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_189" class="reftext" onclick='showAndHideRefBox("refbox_189", "reflink_189")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_189" class="refbox_inner" style="display:none;">
+<A HREF="../full/APDCost.html" TARGET="tableFrame">APDCost.BasedOnValue</A><br><A HREF="../full/APDCost.html" TARGET="tableFrame">APDCost.Fixed</A><br><A HREF="../full/APDTransaction.html" TARGET="tableFrame">APDTransaction.APDCost</A>
+</div>
+</span>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_190" class="reftext" onclick='showAndHideRefBox("refbox_190", "reflink_190")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_190" class="refbox_inner" style="display:none;">
+<A HREF="../full/PolicyLine.html#APDManualPolicyLine" TARGET="tableFrame">APDManualPolicyLine.APDCosts</A>
+</div>
+</span>
+</div>
+<span class="showhidelink"><a id="showAllElements" href="#" onClick="return showAllUIDetails()">Show user interface details on all fields</a></span>
+
+<br>
+<a name=subtypes></a>
+<br/>
+<span class="filtertitle">Subtypes</span>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+</tr>
+<tr>
+<td>
+APDRiskCost</td>
+<td><A HREF="#APDRiskCost" TARGET="tableFrame">APDRiskCost</A></td>
+</tr>
+<tr>
+<td>
+APDRiskCovCost</td>
+<td><A HREF="#APDRiskCovCost" TARGET="tableFrame">APDRiskCovCost</A></td>
+</tr>
+</table>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+<a name="apdcost_id"></a>
+<p class="column">
+<span class="coltitle">ID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "key")'>key</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Internally managed primary key</span>
+<a name="apdcost_actualadjrate"></a>
+<p class="column">
+<span class="coltitle">ActualAdjRate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "rate")'>rate</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: 1)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The adjusted rate (after mod factors are applied) for the cost over the rated term.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_0 onclick='showAndHideUIDetails("UITable_0", "showhideUI_0")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_0' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDRatingOverrideCostLV.pcf:87</td>
+<td>Web.Policy.RatingOverride.AdjustedRate</td>
+<td>cost.ActualAdjRate</td>
+<td>false</td>
+<td>
+RatingOverridePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcost_actualamount_amt"></a>
+<p class="column">
+<span class="coltitle">ActualAmount_amt</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "money")'>money</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: ActualAmount)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_actualamount_cur"></a>
+<p class="column">
+<span class="coltitle">ActualAmount_cur</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_actualamountbilling_amt"></a>
+<p class="column">
+<span class="coltitle">ActualAmountBilling_amt</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "money")'>money</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: ActualAmountBilling)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_actualamountbilling_cur"></a>
+<p class="column">
+<span class="coltitle">ActualAmountBilling_cur</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_actualbaserate"></a>
+<p class="column">
+<span class="coltitle">ActualBaseRate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "rate")'>rate</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: 1)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The base rate (before mod factors are applied) for the cost over the rated term.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_1 onclick='showAndHideUIDetails("UITable_1", "showhideUI_1")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_1' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDRatingOverrideCostLV.pcf:81</td>
+<td>Web.Policy.RatingOverride.BaseRate</td>
+<td>cost.ActualBaseRate</td>
+<td>false</td>
+<td>
+RatingOverridePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcost_actualtermamount_amt"></a>
+<p class="column">
+<span class="coltitle">ActualTermAmount_amt</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "money")'>money</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: ActualTermAmount)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_actualtermamount_cur"></a>
+<p class="column">
+<span class="coltitle">ActualTermAmount_cur</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_actualtermamountbilling_amt"></a>
+<p class="column">
+<span class="coltitle">ActualTermAmountBilling_amt</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "money")'>money</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: ActualTermAmountBilling)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_actualtermamountbilling_cur"></a>
+<p class="column">
+<span class="coltitle">ActualTermAmountBilling_cur</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_archivepartition"></a>
+<p class="column">
+<span class="coltitle">ArchivePartition</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "softentityreference")'>softentityreference</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">Unique number to partition the data so that the multiple workers can work independently</span>
+<a name="apdcost_basedonvalue"></a>
+<p class="column">
+<span class="coltitle">BasedOnValue</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDCost.html" TARGET="tableFrame">APDCost</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: BasedOnID)</span>
+<br>
+<span class="desc">Link to the row on which this row is based; or null if new to branch</span>
+<a name="apdcost_basis"></a>
+<p class="column">
+<span class="coltitle">Basis</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "ratinglinebasisamount")'>ratinglinebasisamount</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: 0)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The basis for the cost over the rated term.  The basis type itself may vary (e.g. units of risk, units of money, etc.)</span>
+<a name="apdcost_billgroup"></a>
+<p class="column">
+<span class="coltitle">BillGroup</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: BillGroup_Ext)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Custom grouping for costs itemised for billing but collected as one charge</span>
+<a name="apdcost_branchvalue"></a>
+<p class="column">
+<span class="coltitle">BranchValue</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="PolicyPeriod.html" TARGET="tableFrame">PolicyPeriod</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: BranchID)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Link to root of effdated tree</span>
+<a name="apdcost_changetype"></a>
+<p class="column">
+<span class="coltitle">ChangeType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/EffDatedChangeType_tl.html" TARGET="tableFrame">EffDatedChangeType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">Type of change made to this row</span>
+<a name="apdcost_chargegroup"></a>
+<p class="column">
+<span class="coltitle">ChargeGroup</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Custom group name to group charges together</span>
+<a name="apdcost_chargepattern"></a>
+<p class="column">
+<span class="coltitle">ChargePattern</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/ChargePattern_tl.html" TARGET="tableFrame">ChargePattern</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: Premium)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The type of charge (Premium, Taxes, Fee)</span>
+<a name="apdcost_costcode"></a>
+<p class="column">
+<span class="coltitle">CostCode</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="CostCode.html" TARGET="tableFrame">CostCode</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CostCode_ExtID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_createtime"></a>
+<p class="column">
+<span class="coltitle">CreateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was created</span>
+<a name="apdcost_createuser"></a>
+<p class="column">
+<span class="coltitle">CreateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CreateUserID)</span>
+<br>
+<span class="desc">User who created the object</span>
+<a name="apdcost_effectivedate"></a>
+<p class="column">
+<span class="coltitle">EffectiveDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Effective date of this row.  A value of NULL in the database indicates that this row's effective date is equal to the Period Start.</span>
+<a name="apdcost_expirationdate"></a>
+<p class="column">
+<span class="coltitle">ExpirationDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Expiration date of this row.  A value of NULL in the database indicates that this row's expiration date is equal to the Period End.</span>
+<a name="apdcost_fixed"></a>
+<p class="column">
+<span class="coltitle">Fixed</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDCost.html" TARGET="tableFrame">APDCost</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: FixedID)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Unique ID for this 'object' across all branches and periods</span>
+<a name="apdcost_frozenset"></a>
+<p class="column">
+<span class="coltitle">FrozenSet</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="FrozenSet.html" TARGET="tableFrame">FrozenSet</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: FrozenSetID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_fxrateconversionused"></a>
+<p class="column">
+<span class="coltitle">FXRateConversionUsed</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Flags when the PolicyFXRate is used to convert amounts from coverage currency to settlement currency</span>
+<a name="apdcost_manualpolicyline"></a>
+<p class="column">
+<span class="coltitle">ManualPolicyLine</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="PolicyLine.html#APDManualPolicyLine" TARGET="tableFrame">APDManualPolicyLine</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Manual Products line</span>
+<a name="apdcost_numdaysinratedterm"></a>
+<p class="column">
+<span class="coltitle">NumDaysInRatedTerm</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "positiveinteger")'>positiveinteger</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The number of days in the term period used to arrive at the rate.</span>
+<a name="apdcost_overridable"></a>
+<p class="column">
+<span class="coltitle">Overridable</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: true)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Indicates whether this cost can have an override applied; most likely set by the rating engine.</span>
+<a name="apdcost_overrideadjrate"></a>
+<p class="column">
+<span class="coltitle">OverrideAdjRate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "rate")'>rate</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The user-specified override for the adjusted rate.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_2 onclick='showAndHideUIDetails("UITable_2", "showhideUI_2")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_2' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDRatingOverrideCostLV.pcf:113</td>
+<td>Web.Policy.RatingOverride.AdjustedRate</td>
+<td>cost.OverrideAdjRate</td>
+<td>cost.Overridable</td>
+<td>
+RatingOverridePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcost_overrideamount_amt"></a>
+<p class="column">
+<span class="coltitle">OverrideAmount_amt</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "money")'>money</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: OverrideAmount)</span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_overrideamount_cur"></a>
+<p class="column">
+<span class="coltitle">OverrideAmount_cur</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_overrideamountbilling_amt"></a>
+<p class="column">
+<span class="coltitle">OverrideAmountBilling_amt</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "money")'>money</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: OverrideAmountBilling)</span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_overrideamountbilling_cur"></a>
+<p class="column">
+<span class="coltitle">OverrideAmountBilling_cur</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_overridebaserate"></a>
+<p class="column">
+<span class="coltitle">OverrideBaseRate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "rate")'>rate</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The user-specified override for the base rate.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_3 onclick='showAndHideUIDetails("UITable_3", "showhideUI_3")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_3' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDRatingOverrideCostLV.pcf:105</td>
+<td>Web.Policy.RatingOverride.BaseRate</td>
+<td>cost.OverrideBaseRate</td>
+<td>cost.Overridable</td>
+<td>
+RatingOverridePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcost_overridereason"></a>
+<p class="column">
+<span class="coltitle">OverrideReason</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Why the override is being applied.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_4 onclick='showAndHideUIDetails("UITable_4", "showhideUI_4")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_4' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDRatingOverrideCostLV.pcf:136</td>
+<td>Web.Policy.RatingOverride.Reason</td>
+<td>cost.OverrideReason</td>
+<td>cost.Overridable</td>
+<td>
+RatingOverridePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcost_overridesource"></a>
+<p class="column">
+<span class="coltitle">OverrideSource</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/OverrideSourceType_tl.html" TARGET="tableFrame">OverrideSourceType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: manual)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Source of override, or null if none</span>
+<a name="apdcost_overridetermamount_amt"></a>
+<p class="column">
+<span class="coltitle">OverrideTermAmount_amt</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "money")'>money</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: OverrideTermAmount)</span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_overridetermamount_cur"></a>
+<p class="column">
+<span class="coltitle">OverrideTermAmount_cur</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_overridetermamountbilling_amt"></a>
+<p class="column">
+<span class="coltitle">OverrideTermAmountBilling_amt</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "money")'>money</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: OverrideTermAmountBilling)</span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_overridetermamountbilling_cur"></a>
+<p class="column">
+<span class="coltitle">OverrideTermAmountBilling_cur</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_policyfxrate"></a>
+<p class="column">
+<span class="coltitle">PolicyFXRate</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="PolicyFXRate.html" TARGET="tableFrame">PolicyFXRate</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<span class=tag>[ExcludeFromNonRevisionedOwner]&nbsp;&nbsp;</span><br><br>
+<span class="desc"></span>
+<a name="apdcost_prorationmethod"></a>
+<p class="column">
+<span class="coltitle">ProrationMethod</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/ProrationMethod_tl.html" TARGET="tableFrame">ProrationMethod</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: ProRataByDays)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Procedure used to derive Amount from Term Amount, e.g. day-based pro-rata, or flat</span>
+<a name="apdcost_publicid"></a>
+<p class="column">
+<span class="coltitle">PublicID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "publicid")'>publicid</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ID or primary key of the row in the external system to which this row is mapped</span>
+<a name="apdcost_rateamounttype"></a>
+<p class="column">
+<span class="coltitle">RateAmountType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/RateAmountType_tl.html" TARGET="tableFrame">RateAmountType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: StdPremium)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Tax/surcharge, a standard premium, or a non-standard premium</span>
+<a name="apdcost_ratebook"></a>
+<p class="column">
+<span class="coltitle">RateBook</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="RateBook.html" TARGET="tableFrame">RateBook</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_roundinglevel"></a>
+<p class="column">
+<span class="coltitle">RoundingLevel</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "integer")'>integer</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Number of decimal places to which this cost should be rounded when prorated</span>
+<a name="apdcost_roundingmode"></a>
+<p class="column">
+<span class="coltitle">RoundingMode</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/RoundingModeType_tl.html" TARGET="tableFrame">RoundingModeType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Rounding mode (e.g. HALF_UP) to be used when prorating</span>
+<a name="apdcost_standardadjrate"></a>
+<p class="column">
+<span class="coltitle">StandardAdjRate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "rate")'>rate</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The adjusted rate (after mod factors are applied) for the cost over the rated term, as calculated based on the standard base rate.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_5 onclick='showAndHideUIDetails("UITable_5", "showhideUI_5")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_5' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDRatingOverrideCostLV.pcf:148</td>
+<td>Web.Policy.RatingOverride.AdjustedRate</td>
+<td>cost.StandardAdjRate</td>
+<td>false</td>
+<td>
+RatingOverridePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcost_standardamount_amt"></a>
+<p class="column">
+<span class="coltitle">StandardAmount_amt</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "money")'>money</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: StandardAmount)</span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_standardamount_cur"></a>
+<p class="column">
+<span class="coltitle">StandardAmount_cur</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_standardamountbilling_amt"></a>
+<p class="column">
+<span class="coltitle">StandardAmountBilling_amt</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "money")'>money</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: StandardAmountBilling)</span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_standardamountbilling_cur"></a>
+<p class="column">
+<span class="coltitle">StandardAmountBilling_cur</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_standardbaserate"></a>
+<p class="column">
+<span class="coltitle">StandardBaseRate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "rate")'>rate</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The standard base rate (before mod factors are applied) for the cost over the rated term.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_6 onclick='showAndHideUIDetails("UITable_6", "showhideUI_6")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_6' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDRatingOverrideCostLV.pcf:142</td>
+<td>Web.Policy.RatingOverride.BaseRate</td>
+<td>cost.StandardBaseRate</td>
+<td>false</td>
+<td>
+RatingOverridePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcost_standardtermamount_amt"></a>
+<p class="column">
+<span class="coltitle">StandardTermAmount_amt</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "money")'>money</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: StandardTermAmount)</span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_standardtermamount_cur"></a>
+<p class="column">
+<span class="coltitle">StandardTermAmount_cur</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_standardtermamountbilling_amt"></a>
+<p class="column">
+<span class="coltitle">StandardTermAmountBilling_amt</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "money")'>money</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: StandardTermAmountBilling)</span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_standardtermamountbilling_cur"></a>
+<p class="column">
+<span class="coltitle">StandardTermAmountBilling_cur</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="apdcost_subjecttoreporting"></a>
+<p class="column">
+<span class="coltitle">SubjectToReporting</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Indicates whether this cost is subject to reporting.  If a cost is subject to reporting and a policy has a reporting plan, that cost will only generate charged transactions during report jobs and final audit.</span>
+<a name="apdcost_subtype"></a>
+<p class="column">
+<span class="coltitle">Subtype</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="#subtypes" TARGET="tableFrame">APDCost</A> subtypes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Identifies a particular subtype within a supertype table; each subtype of a supertype has its own unique subtype value</span>
+<a name="apdcost_updatetime"></a>
+<p class="column">
+<span class="coltitle">UpdateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was last updated</span>
+<a name="apdcost_updateuser"></a>
+<p class="column">
+<span class="coltitle">UpdateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: UpdateUserID)</span>
+<br>
+<span class="desc">User who last updated the object</span>
+<a name="Arrays"></a><div class="arraysbox">Arrays</div>
+<a name="apdcost_transactions"></a>
+<p class="column">
+<span class="coltitle">Transactions</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="APDTransaction.html" TARGET="tableFrame">APDTransaction</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup></span>
+<br>
+<span class="desc">APD Transactions</span>
+<a name="Unique Keys for APDCost"></a><div class="arraysbox">Unique Keys for APDCost</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>apdcost1a</td>
+<td>PublicID</td></tr>
+<tr><td>apdcost3a</td>
+<td>BranchID, FixedID, Subtype, ID</td></tr>
+</table>
+<a name="Subtypes"></a><div class="arraysbox">Subtypes</div>
+<div class='subtypebox'>
+<a name=APDRiskCost></a>
+<div class="titlebox">
+<div class="filtertitle">APDRiskCost <span class='supername'>(subtype of <A HREF="APDCost.html" TARGET="tableFrame">APDCost</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_191" class="reftext" onclick='showAndHideRefBox("refbox_191", "reflink_191")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_191" class="refbox_inner" style="display:none;">
+A cost that makes up the price of the risk
+</div>
+</span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_192" class="reftext" onclick='showAndHideRefBox("refbox_192", "reflink_192")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_192" class="refbox_inner" style="display:none;">
+<A HREF="../full/APDRiskCoverable.html" TARGET="tableFrame">APDRiskCoverable.RiskCosts</A>
+</div>
+</span>
+</div>
+<a name="apdriskcost_riskcoverable"></a>
+<p class="column">
+<span class="coltitle">RiskCoverable</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDRiskCoverable.html" TARGET="tableFrame">APDRiskCoverable</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: RiskCoverableID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The coverable to which this cost applies</span>
+<a name="Unique Keys for APDRiskCost"></a><div class="arraysbox">Unique Keys for APDRiskCost</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>apdcost1a</td>
+<td>PublicID</td></tr>
+<tr><td>apdcost3a</td>
+<td>BranchID, FixedID, Subtype, ID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=APDRiskCovCost></a>
+<div class="titlebox">
+<div class="filtertitle">APDRiskCovCost <span class='supername'>(subtype of <A HREF="APDCost.html" TARGET="tableFrame">APDCost</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_193" class="reftext" onclick='showAndHideRefBox("refbox_193", "reflink_193")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_193" class="refbox_inner" style="display:none;">
+A cost that makes up the price of the risk
+</div>
+</span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_194" class="reftext" onclick='showAndHideRefBox("refbox_194", "reflink_194")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_194" class="refbox_inner" style="display:none;">
+<A HREF="../full/APDRiskClause.html#APDRiskCoverage" TARGET="tableFrame">APDRiskCoverage.RiskCovCosts</A>
+</div>
+</span>
+</div>
+<a name="apdriskcovcost_exposure"></a>
+<p class="column">
+<span class="coltitle">Exposure</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDRiskExposure.html" TARGET="tableFrame">APDRiskExposure</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: ExposureID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The exposure to which this relates (when there is exposure based pricing)</span>
+<a name="apdriskcovcost_risk"></a>
+<p class="column">
+<span class="coltitle">Risk</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDRiskCoverable.html" TARGET="tableFrame">APDRiskCoverable</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: RiskID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The entity to which this relates (when there is entity/coverable based pricing)</span>
+<a name="apdriskcovcost_riskcoverage"></a>
+<p class="column">
+<span class="coltitle">RiskCoverage</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDRiskClause.html#APDRiskCoverage" TARGET="tableFrame">APDRiskCoverage</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: RiskCoverageID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The coverage to which this cost applies</span>
+<a name="Unique Keys for APDRiskCovCost"></a><div class="arraysbox">Unique Keys for APDRiskCovCost</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>apdcost1a</td>
+<td>PublicID</td></tr>
+<tr><td>apdcost3a</td>
+<td>BranchID, FixedID, Subtype, ID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<script language="JavaScript">
+function showAllUIDetails() {
+showUIDetails('UITable_0', 'showhideUI_0');
+showUIDetails('UITable_1', 'showhideUI_1');
+showUIDetails('UITable_2', 'showhideUI_2');
+showUIDetails('UITable_3', 'showhideUI_3');
+showUIDetails('UITable_4', 'showhideUI_4');
+showUIDetails('UITable_5', 'showhideUI_5');
+showUIDetails('UITable_6', 'showhideUI_6');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Hide user interface details on all fields';
+  link.onclick = hideAllUIDetails;
+  return false;
+}
+function hideAllUIDetails() {
+hideUIDetails('UITable_0', 'showhideUI_0');
+hideUIDetails('UITable_1', 'showhideUI_1');
+hideUIDetails('UITable_2', 'showhideUI_2');
+hideUIDetails('UITable_3', 'showhideUI_3');
+hideUIDetails('UITable_4', 'showhideUI_4');
+hideUIDetails('UITable_5', 'showhideUI_5');
+hideUIDetails('UITable_6', 'showhideUI_6');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Show user interface details on all fields';
+  link.onclick = showAllUIDetails;
+  return false;
+}
+</script>
+
+</body>
+</html>

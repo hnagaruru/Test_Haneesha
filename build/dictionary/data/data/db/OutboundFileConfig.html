@@ -1,0 +1,733 @@
+<html>
+<head>
+<title>OutboundFileConfig</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">OutboundFileConfig <span class="entityname">(pc_outboundfileconfig) (delegates to <A HREF="Editable.html" TARGET="tableFrame">Editable</A>)</span></div>
+<div class="desc">
+<span id="reflink_2892" class="reftext" onclick='showAndHideRefBox("refbox_2892", "reflink_2892")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_2892" class="refbox_inner" style="display:none;">
+Used for storing info related to file handler
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">OutboundFileConfig</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Abstract<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Abstract</b><br>The entity is a supertype, but all instances of it must be one of its subtypes. That is, you cannot instantiate the supertype entity itself. An abstract entity is appropriate when the supertype serves only to collect logic or common fields, but does not make sense to exist on its own.')">?</span></sup>, Editable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Editable</b><br>The related database table contains rows that are editable by application users based on roles and permissions. An Editable table manages additional fields that represent an audit trail of an entity in the table (for example, who created it and when, who last edited it and when).')">?</span></sup>, Extendable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Extendable</b><br>Can be extended with additional custom fields added to it.')">?</span></sup>, Keyed<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Keyed</b><br>Has a related database table that has a primary key. Each row in a Keyed table has an integer primary key named ID. IDs are managed internally by the application, and the system ensures that no two rows in a keyed table have the same ID. In addition to the internal key, an external primary key can be associated with each row in a table.')">?</span></sup>, Sourceable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Sourceable</b><br>Contains entities that are linked to an external source. Each row in a Sourceable entity\'s table has additional fields to identify the external system and store the ID of the Sourceable entity in the external system.')">?</span></sup>, Supertype<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Supertype</b><br>A single table that represents multiple types of entities, called subtypes. Each subtype shares application logic and a majority of their fields. Each subtype may also define fields that are particular to it.')">?</span></sup>, Versionable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Versionable</b><br>Has a version number that increases every time the entity is changed. This allows the cache to identify when entities have been updated.')">?</span></sup></span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_2893" class="reftext" onclick='showAndHideRefBox("refbox_2893", "reflink_2893")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_2893" class="refbox_inner" style="display:none;">
+<A HREF="../full/OutboundFile.html" TARGET="tableFrame">OutboundFile.Config</A><br><A HREF="../full/OutboundRecord.html" TARGET="tableFrame">OutboundRecord.Config</A>
+</div>
+</span>
+</div>
+<span class="showhidelink"><a id="showAllElements" href="#" onClick="return showAllUIDetails()">Show user interface details on all fields</a></span>
+
+<br>
+<a name=subtypes></a>
+<br/>
+<span class="filtertitle">Subtypes</span>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+</tr>
+<tr>
+<td>
+OutboundFileLocalConfig</td>
+<td><A HREF="#OutboundFileLocalConfig" TARGET="tableFrame">OutboundFileLocalConfig</A></td>
+</tr>
+<tr>
+<td>
+OutboundFileS3Config</td>
+<td><A HREF="#OutboundFileS3Config" TARGET="tableFrame">OutboundFileS3Config</A></td>
+</tr>
+</table>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+<a name="outboundfileconfig_id"></a>
+<p class="column">
+<span class="coltitle">ID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "key")'>key</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Internally managed primary key</span>
+<a name="outboundfileconfig_createtime"></a>
+<p class="column">
+<span class="coltitle">CreateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was created</span>
+<a name="outboundfileconfig_createuser"></a>
+<p class="column">
+<span class="coltitle">CreateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CreateUserID)</span>
+<br>
+<span class="desc">User who created the object</span>
+<a name="outboundfileconfig_daystillpurge"></a>
+<p class="column">
+<span class="coltitle">DaysTillPurge</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "integer")'>integer</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The number of days to wait before purging outbound files.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_0 onclick='showAndHideUIDetails("UITable_0", "showhideUI_0")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_0' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>NewOutboundLocalConfigPopup.pcf:73</td>
+<td>OutboundFile.Config.DaysTillPurge</td>
+<td>outboundFileConfig.DaysTillPurge</td>
+<td>true</td>
+<td>
+NewOutboundLocalConfigPopup
+</td>
+</tr>
+<tr>
+<td>NewOutboundS3ConfigPopup.pcf:85</td>
+<td>OutboundFile.Config.DaysTillPurge</td>
+<td>outboundFileConfig.DaysTillPurge</td>
+<td>true</td>
+<td>
+NewOutboundS3ConfigPopup
+</td>
+</tr>
+<tr>
+<td>OutboundConfigPopup.pcf:100</td>
+<td>OutboundFile.Config.DaysTillPurge</td>
+<td>outboundConfig.DaysTillPurge</td>
+<td>true</td>
+<td>
+OutboundConfigPopup
+</td>
+</tr>
+<tr>
+<td>OutboundConfigPopup.pcf:195</td>
+<td>OutboundFile.Config.DaysTillPurge</td>
+<td>outboundConfig.DaysTillPurge</td>
+<td>true</td>
+<td>
+OutboundConfigPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="outboundfileconfig_extension"></a>
+<p class="column">
+<span class="coltitle">Extension</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (10)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Extension for the output file.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_1 onclick='showAndHideUIDetails("UITable_1", "showhideUI_1")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_1' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>NewOutboundLocalConfigPopup.pcf:58</td>
+<td>OutboundFile.Config.Extension</td>
+<td>outboundFileConfig.Extension</td>
+<td>true</td>
+<td>
+NewOutboundLocalConfigPopup
+</td>
+</tr>
+<tr>
+<td>NewOutboundS3ConfigPopup.pcf:70</td>
+<td>OutboundFile.Config.Extension</td>
+<td>outboundFileConfig.Extension</td>
+<td>true</td>
+<td>
+NewOutboundS3ConfigPopup
+</td>
+</tr>
+<tr>
+<td>OutboundConfigPopup.pcf:181</td>
+<td>OutboundFile.Config.Extension</td>
+<td>outboundConfig.Extension</td>
+<td>true</td>
+<td>
+OutboundConfigPopup
+</td>
+</tr>
+<tr>
+<td>OutboundConfigPopup.pcf:86</td>
+<td>OutboundFile.Config.Extension</td>
+<td>outboundConfig.Extension</td>
+<td>true</td>
+<td>
+OutboundConfigPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="outboundfileconfig_filehandlerclass"></a>
+<p class="column">
+<span class="coltitle">FileHandlerClass</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (512)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Fully qualified class name of the outbound file handler.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_2 onclick='showAndHideUIDetails("UITable_2", "showhideUI_2")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_2' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>NewOutboundLocalConfigPopup.pcf:66</td>
+<td>OutboundFile.Config.HandlerClass</td>
+<td>outboundFileConfig.FileHandlerClass</td>
+<td>true</td>
+<td>
+NewOutboundLocalConfigPopup
+</td>
+</tr>
+<tr>
+<td>NewOutboundS3ConfigPopup.pcf:78</td>
+<td>OutboundFile.Config.HandlerClass</td>
+<td>outboundFileConfig.FileHandlerClass</td>
+<td>true</td>
+<td>
+NewOutboundS3ConfigPopup
+</td>
+</tr>
+<tr>
+<td>OutboundConfigPopup.pcf:188</td>
+<td>OutboundFile.Config.HandlerClass</td>
+<td>outboundConfig.FileHandlerClass</td>
+<td>true</td>
+<td>
+OutboundConfigPopup
+</td>
+</tr>
+<tr>
+<td>OutboundConfigPopup.pcf:93</td>
+<td>OutboundFile.Config.HandlerClass</td>
+<td>outboundConfig.FileHandlerClass</td>
+<td>true</td>
+<td>
+OutboundConfigPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="outboundfileconfig_name"></a>
+<p class="column">
+<span class="coltitle">Name</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (40)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(unique index)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>unique index</b><br>The column participates in one or more unique indexes.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Name of the outbound file handler source.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_3 onclick='showAndHideUIDetails("UITable_3", "showhideUI_3")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_3' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>NewOutboundLocalConfigPopup.pcf:34</td>
+<td>OutboundFile.Config.Name</td>
+<td>outboundFileConfig.Name</td>
+<td>true</td>
+<td>
+NewOutboundLocalConfigPopup
+</td>
+</tr>
+<tr>
+<td>NewOutboundS3ConfigPopup.pcf:34</td>
+<td>OutboundFile.Config.Name</td>
+<td>outboundFileConfig.Name</td>
+<td>true</td>
+<td>
+NewOutboundS3ConfigPopup
+</td>
+</tr>
+<tr>
+<td>OutboundConfigPopup.pcf:144</td>
+<td>OutboundFile.Config.Name</td>
+<td>outboundConfig.Name</td>
+<td>true</td>
+<td>
+OutboundConfigPopup
+</td>
+</tr>
+<tr>
+<td>OutboundConfigPopup.pcf:62</td>
+<td>OutboundFile.Config.Name</td>
+<td>outboundConfig.Name</td>
+<td>true</td>
+<td>
+OutboundConfigPopup
+</td>
+</tr>
+<tr>
+<td>OutboundFileSearch.pcf:162</td>
+<td>OutboundFile.Config</td>
+<td>row.Config.Name</td>
+<td>false</td>
+<td>
+OutboundFileSearch
+</td>
+</tr>
+<tr>
+<td>OutboundFileSearch.pcf:79</td>
+<td>OutboundFile.Config</td>
+<td>row.Config.Name</td>
+<td>false</td>
+<td>
+OutboundFileSearch
+</td>
+</tr>
+</table>
+</div></div>
+<a name="outboundfileconfig_prefix"></a>
+<p class="column">
+<span class="coltitle">Prefix</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (10)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Prefix used for the batch identifier and the output file name.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_4 onclick='showAndHideUIDetails("UITable_4", "showhideUI_4")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_4' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>NewOutboundLocalConfigPopup.pcf:52</td>
+<td>OutboundFile.Config.Prefix</td>
+<td>outboundFileConfig.Prefix</td>
+<td>true</td>
+<td>
+NewOutboundLocalConfigPopup
+</td>
+</tr>
+<tr>
+<td>NewOutboundS3ConfigPopup.pcf:64</td>
+<td>OutboundFile.Config.Prefix</td>
+<td>outboundFileConfig.Prefix</td>
+<td>true</td>
+<td>
+NewOutboundS3ConfigPopup
+</td>
+</tr>
+<tr>
+<td>OutboundConfigPopup.pcf:175</td>
+<td>OutboundFile.Config.Prefix</td>
+<td>outboundConfig.Prefix</td>
+<td>true</td>
+<td>
+OutboundConfigPopup
+</td>
+</tr>
+<tr>
+<td>OutboundConfigPopup.pcf:80</td>
+<td>OutboundFile.Config.Prefix</td>
+<td>outboundConfig.Prefix</td>
+<td>true</td>
+<td>
+OutboundConfigPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="outboundfileconfig_publicid"></a>
+<p class="column">
+<span class="coltitle">PublicID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "publicid")'>publicid</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ID or primary key of the row in the external system to which this row is mapped</span>
+<a name="outboundfileconfig_subtype"></a>
+<p class="column">
+<span class="coltitle">Subtype</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="#subtypes" TARGET="tableFrame">OutboundFileConfig</A> subtypes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Identifies a particular subtype within a supertype table; each subtype of a supertype has its own unique subtype value</span>
+<a name="outboundfileconfig_temporarydirectory"></a>
+<p class="column">
+<span class="coltitle">TemporaryDirectory</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (512)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Valid file path to the temporary directory.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_5 onclick='showAndHideUIDetails("UITable_5", "showhideUI_5")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_5' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>NewOutboundLocalConfigPopup.pcf:40</td>
+<td>OutboundFile.Config.TemporaryDirectory</td>
+<td>outboundFileConfig.TemporaryDirectory</td>
+<td>true</td>
+<td>
+NewOutboundLocalConfigPopup
+</td>
+</tr>
+<tr>
+<td>NewOutboundS3ConfigPopup.pcf:46</td>
+<td>OutboundFile.Config.TemporaryDirectory</td>
+<td>outboundFileConfig.TemporaryDirectory</td>
+<td>true</td>
+<td>
+NewOutboundS3ConfigPopup
+</td>
+</tr>
+<tr>
+<td>OutboundConfigPopup.pcf:157</td>
+<td>OutboundFile.Config.TemporaryDirectory</td>
+<td>outboundConfig.TemporaryDirectory</td>
+<td>true</td>
+<td>
+OutboundConfigPopup
+</td>
+</tr>
+<tr>
+<td>OutboundConfigPopup.pcf:68</td>
+<td>OutboundFile.Config.TemporaryDirectory</td>
+<td>outboundConfig.TemporaryDirectory</td>
+<td>true</td>
+<td>
+OutboundConfigPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="outboundfileconfig_updatetime"></a>
+<p class="column">
+<span class="coltitle">UpdateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was last updated</span>
+<a name="outboundfileconfig_updateuser"></a>
+<p class="column">
+<span class="coltitle">UpdateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: UpdateUserID)</span>
+<br>
+<span class="desc">User who last updated the object</span>
+<a name="Unique Keys for OutboundFileConfig"></a><div class="arraysbox">Unique Keys for OutboundFileConfig</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>outbnddstnameindx</td>
+<td>Name</td></tr>
+<tr><td>outboundfileconf1a</td>
+<td>PublicID</td></tr>
+</table>
+<a name="Subtypes"></a><div class="arraysbox">Subtypes</div>
+<div class='subtypebox'>
+<a name=OutboundFileLocalConfig></a>
+<div class="titlebox">
+<div class="filtertitle">OutboundFileLocalConfig <span class='supername'>(subtype of <A HREF="OutboundFileConfig.html" TARGET="tableFrame">OutboundFileConfig</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_2894" class="reftext" onclick='showAndHideRefBox("refbox_2894", "reflink_2894")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_2894" class="refbox_inner" style="display:none;">
+
+</div>
+</span>
+</div>
+</div>
+<a name="outboundfilelocalconfig_permanentdirectory"></a>
+<p class="column">
+<span class="coltitle">PermanentDirectory</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (512)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Valid file path to the permanent directory.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_6 onclick='showAndHideUIDetails("UITable_6", "showhideUI_6")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_6' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>NewOutboundLocalConfigPopup.pcf:46</td>
+<td>OutboundFile.Config.PermanentDirectory</td>
+<td>outboundFileConfig.PermanentDirectory</td>
+<td>true</td>
+<td>
+NewOutboundLocalConfigPopup
+</td>
+</tr>
+<tr>
+<td>OutboundConfigPopup.pcf:74</td>
+<td>OutboundFile.Config.PermanentDirectory</td>
+<td>outboundConfig.PermanentDirectory</td>
+<td>true</td>
+<td>
+OutboundConfigPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="Unique Keys for OutboundFileLocalConfig"></a><div class="arraysbox">Unique Keys for OutboundFileLocalConfig</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>outbnddstnameindx</td>
+<td>Name</td></tr>
+<tr><td>outboundfileconf1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=OutboundFileS3Config></a>
+<div class="titlebox">
+<div class="filtertitle">OutboundFileS3Config <span class='supername'>(subtype of <A HREF="OutboundFileConfig.html" TARGET="tableFrame">OutboundFileConfig</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_2895" class="reftext" onclick='showAndHideRefBox("refbox_2895", "reflink_2895")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_2895" class="refbox_inner" style="display:none;">
+
+</div>
+</span>
+</div>
+</div>
+<a name="outboundfiles3config_destinations3bucket"></a>
+<p class="column">
+<span class="coltitle">DestinationS3Bucket</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (128)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Amazon S3 bucket ARN address for permanent destination</span>
+<div class='screenrefbody'>
+<span id=showhideUI_7 onclick='showAndHideUIDetails("UITable_7", "showhideUI_7")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_7' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>NewOutboundS3ConfigPopup.pcf:52</td>
+<td>OutboundFile.Config.PermanentBucket</td>
+<td>outboundFileConfig.DestinationS3Bucket</td>
+<td>true</td>
+<td>
+NewOutboundS3ConfigPopup
+</td>
+</tr>
+<tr>
+<td>OutboundConfigPopup.pcf:163</td>
+<td>OutboundFile.Config.PermanentBucket</td>
+<td>outboundConfig.DestinationS3Bucket</td>
+<td>true</td>
+<td>
+OutboundConfigPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="outboundfiles3config_destinations3prefix"></a>
+<p class="column">
+<span class="coltitle">DestinationS3Prefix</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (512)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The full path name inside Amazon S3 bucket for permanent destination.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_8 onclick='showAndHideUIDetails("UITable_8", "showhideUI_8")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_8' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>NewOutboundS3ConfigPopup.pcf:58</td>
+<td>OutboundFile.Config.PermanentPrefix</td>
+<td>outboundFileConfig.DestinationS3Prefix</td>
+<td>true</td>
+<td>
+NewOutboundS3ConfigPopup
+</td>
+</tr>
+<tr>
+<td>OutboundConfigPopup.pcf:169</td>
+<td>OutboundFile.Config.PermanentPrefix</td>
+<td>outboundConfig.DestinationS3Prefix</td>
+<td>true</td>
+<td>
+OutboundConfigPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="outboundfiles3config_profilename"></a>
+<p class="column">
+<span class="coltitle">ProfileName</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (128)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Amazon S3 user profile for credentials</span>
+<div class='screenrefbody'>
+<span id=showhideUI_9 onclick='showAndHideUIDetails("UITable_9", "showhideUI_9")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_9' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>NewOutboundS3ConfigPopup.pcf:40</td>
+<td>OutboundFile.Config.UserProfile</td>
+<td>outboundFileConfig.ProfileName</td>
+<td>true</td>
+<td>
+NewOutboundS3ConfigPopup
+</td>
+</tr>
+<tr>
+<td>OutboundConfigPopup.pcf:151</td>
+<td>OutboundFile.Config.UserProfile</td>
+<td>outboundConfig.ProfileName</td>
+<td>true</td>
+<td>
+OutboundConfigPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="Unique Keys for OutboundFileS3Config"></a><div class="arraysbox">Unique Keys for OutboundFileS3Config</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>outbnddstnameindx</td>
+<td>Name</td></tr>
+<tr><td>outboundfileconf1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<script language="JavaScript">
+function showAllUIDetails() {
+showUIDetails('UITable_0', 'showhideUI_0');
+showUIDetails('UITable_1', 'showhideUI_1');
+showUIDetails('UITable_2', 'showhideUI_2');
+showUIDetails('UITable_3', 'showhideUI_3');
+showUIDetails('UITable_4', 'showhideUI_4');
+showUIDetails('UITable_5', 'showhideUI_5');
+showUIDetails('UITable_6', 'showhideUI_6');
+showUIDetails('UITable_7', 'showhideUI_7');
+showUIDetails('UITable_8', 'showhideUI_8');
+showUIDetails('UITable_9', 'showhideUI_9');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Hide user interface details on all fields';
+  link.onclick = hideAllUIDetails;
+  return false;
+}
+function hideAllUIDetails() {
+hideUIDetails('UITable_0', 'showhideUI_0');
+hideUIDetails('UITable_1', 'showhideUI_1');
+hideUIDetails('UITable_2', 'showhideUI_2');
+hideUIDetails('UITable_3', 'showhideUI_3');
+hideUIDetails('UITable_4', 'showhideUI_4');
+hideUIDetails('UITable_5', 'showhideUI_5');
+hideUIDetails('UITable_6', 'showhideUI_6');
+hideUIDetails('UITable_7', 'showhideUI_7');
+hideUIDetails('UITable_8', 'showhideUI_8');
+hideUIDetails('UITable_9', 'showhideUI_9');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Show user interface details on all fields';
+  link.onclick = showAllUIDetails;
+  return false;
+}
+</script>
+
+</body>
+</html>

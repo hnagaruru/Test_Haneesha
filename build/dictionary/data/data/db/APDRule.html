@@ -1,0 +1,571 @@
+<html>
+<head>
+<title>APDRule</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">APDRule <span class="entityname">(pcx_apdrule) (delegates to <A HREF="Retireable.html" TARGET="tableFrame">Retireable</A>)</span></div>
+<div class="desc">
+<span id="reflink_445" class="reftext" onclick='showAndHideRefBox("refbox_445", "reflink_445")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_445" class="refbox_inner" style="display:none;">
+A data rule within the product model
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">APDRule</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Abstract<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Abstract</b><br>The entity is a supertype, but all instances of it must be one of its subtypes. That is, you cannot instantiate the supertype entity itself. An abstract entity is appropriate when the supertype serves only to collect logic or common fields, but does not make sense to exist on its own.')">?</span></sup>, Editable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Editable</b><br>The related database table contains rows that are editable by application users based on roles and permissions. An Editable table manages additional fields that represent an audit trail of an entity in the table (for example, who created it and when, who last edited it and when).')">?</span></sup>, Exportable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>, Extendable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Extendable</b><br>Can be extended with additional custom fields added to it.')">?</span></sup>, Keyed<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Keyed</b><br>Has a related database table that has a primary key. Each row in a Keyed table has an integer primary key named ID. IDs are managed internally by the application, and the system ensures that no two rows in a keyed table have the same ID. In addition to the internal key, an external primary key can be associated with each row in a table.')">?</span></sup>, Sourceable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Sourceable</b><br>Contains entities that are linked to an external source. Each row in a Sourceable entity\'s table has additional fields to identify the external system and store the ID of the Sourceable entity in the external system.')">?</span></sup>, Supertype<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Supertype</b><br>A single table that represents multiple types of entities, called subtypes. Each subtype shares application logic and a majority of their fields. Each subtype may also define fields that are particular to it.')">?</span></sup>, Versionable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Versionable</b><br>Has a version number that increases every time the entity is changed. This allows the cache to identify when entities have been updated.')">?</span></sup></span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_446" class="reftext" onclick='showAndHideRefBox("refbox_446", "reflink_446")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_446" class="refbox_inner" style="display:none;">
+<A HREF="../full/APDRuleElement.html" TARGET="tableFrame">APDRuleElement.Rule</A>
+</div>
+</span>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_447" class="reftext" onclick='showAndHideRefBox("refbox_447", "reflink_447")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_447" class="refbox_inner" style="display:none;">
+<A HREF="../full/APDEdition.html" TARGET="tableFrame">APDEdition.EditionRules</A>
+</div>
+</span>
+</div>
+<span class="showhidelink"><a id="showAllElements" href="#" onClick="return showAllUIDetails()">Show user interface details on all fields</a></span>
+
+<br>
+<a name=subtypes></a>
+<br/>
+<span class="filtertitle">Subtypes</span>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+</tr>
+<tr>
+<td>
+APDAttributeRule</td>
+<td><A HREF="#APDAttributeRule" TARGET="tableFrame">APDAttributeRule</A></td>
+</tr>
+<tr>
+<td>
+&nbsp;
+&nbsp;
+APDDropdownEntryRule</td>
+<td><A HREF="#APDDropdownEntryRule" TARGET="tableFrame">APDDropdownEntryRule</A></td>
+</tr>
+<tr>
+<td>
+APDClauseRule</td>
+<td><A HREF="#APDClauseRule" TARGET="tableFrame">APDClauseRule</A></td>
+</tr>
+</table>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+<a name="apdrule_id"></a>
+<p class="column">
+<span class="coltitle">ID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "key")'>key</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Internally managed primary key</span>
+<a name="apdrule_createtime"></a>
+<p class="column">
+<span class="coltitle">CreateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was created</span>
+<a name="apdrule_createuser"></a>
+<p class="column">
+<span class="coltitle">CreateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CreateUserID)</span>
+<br>
+<span class="desc">User who created the object</span>
+<a name="apdrule_defaultbitvalue"></a>
+<p class="column">
+<span class="coltitle">DefaultBitValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The value if a true/false</span>
+<div class='screenrefbody'>
+<span id=showhideUI_0 onclick='showAndHideUIDetails("UITable_0", "showhideUI_0")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_0' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDAttributeRulePopup.pcf:127</td>
+<td>gw.apd.web.APDRulePopupHelper.getDefaultValueLabel(rule)</td>
+<td>rule.DefaultBitValue</td>
+<td>true</td>
+<td>
+APDAttributeRulePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdrule_defaultcalculatedvalue"></a>
+<p class="column">
+<span class="coltitle">DefaultCalculatedValue</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDFunctionOperand.html" TARGET="tableFrame">APDFunctionOperand</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">A calculated value</span>
+<a name="apdrule_defaultcodevalue"></a>
+<p class="column">
+<span class="coltitle">DefaultCodeValue</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDDropdownEntry.html" TARGET="tableFrame">APDDropdownEntry</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CodeValueID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The dropdown list entry if this field is a dropdown</span>
+<div class='screenrefbody'>
+<span id=showhideUI_1 onclick='showAndHideUIDetails("UITable_1", "showhideUI_1")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_1' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDAttributeRulePopup.pcf:163</td>
+<td>gw.apd.web.APDRulePopupHelper.getDefaultValueLabel(rule)</td>
+<td>rule.DefaultCodeValue</td>
+<td>true</td>
+<td>
+APDAttributeRulePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdrule_defaultdatevalue"></a>
+<p class="column">
+<span class="coltitle">DefaultDateValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The value if a date/time</span>
+<div class='screenrefbody'>
+<span id=showhideUI_2 onclick='showAndHideUIDetails("UITable_2", "showhideUI_2")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_2' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDAttributeRulePopup.pcf:135</td>
+<td>gw.apd.web.APDRulePopupHelper.getDefaultValueLabel(rule)</td>
+<td>rule.DefaultDateValue</td>
+<td>true</td>
+<td>
+APDAttributeRulePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdrule_defaultdecimalvalue"></a>
+<p class="column">
+<span class="coltitle">DefaultDecimalValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "decimal")'>decimal</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The value if a number</span>
+<div class='screenrefbody'>
+<span id=showhideUI_3 onclick='showAndHideUIDetails("UITable_3", "showhideUI_3")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_3' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDAttributeRulePopup.pcf:119</td>
+<td>gw.apd.web.APDRulePopupHelper.getDefaultValueLabel(rule)</td>
+<td>rule.DefaultDecimalValue</td>
+<td>true</td>
+<td>
+APDAttributeRulePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdrule_defaultexistence"></a>
+<p class="column">
+<span class="coltitle">DefaultExistence</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/APDDataExistenceType_tl.html" TARGET="tableFrame">APDDataExistenceType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The default for an existence rule</span>
+<div class='screenrefbody'>
+<span id=showhideUI_4 onclick='showAndHideUIDetails("UITable_4", "showhideUI_4")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_4' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDAttributeRulePopup.pcf:177</td>
+<td>gw.apd.web.APDRulePopupHelper.getDefaultValueLabel(rule)</td>
+<td>rule.DefaultExistence</td>
+<td>true</td>
+<td>
+APDAttributeRulePopup
+</td>
+</tr>
+<tr>
+<td>APDClauseRulePopup.pcf:67</td>
+<td>gw.apd.web.APDRulePopupHelper.getDefaultValueLabel(rule)</td>
+<td>rule.DefaultExistence</td>
+<td>true</td>
+<td>
+APDClauseRulePopup
+</td>
+</tr>
+<tr>
+<td>APDDropdownEntryRulePopup.pcf:63</td>
+<td>gw.apd.web.APDRulePopupHelper.getDefaultValueLabel(rule)</td>
+<td>rule.DefaultExistence</td>
+<td>true</td>
+<td>
+APDDropdownEntryRulePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdrule_defaultintegervalue"></a>
+<p class="column">
+<span class="coltitle">DefaultIntegerValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "integer")'>integer</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The value if an integer</span>
+<div class='screenrefbody'>
+<span id=showhideUI_5 onclick='showAndHideUIDetails("UITable_5", "showhideUI_5")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_5' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDAttributeRulePopup.pcf:153</td>
+<td>gw.apd.web.APDRulePopupHelper.getDefaultValueLabel(rule)</td>
+<td>rule.DefaultIntegerValue</td>
+<td>true</td>
+<td>
+APDAttributeRulePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdrule_defaultstringvalue"></a>
+<p class="column">
+<span class="coltitle">DefaultStringValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The value if text or a dropdown entry</span>
+<div class='screenrefbody'>
+<span id=showhideUI_6 onclick='showAndHideUIDetails("UITable_6", "showhideUI_6")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_6' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDAttributeRulePopup.pcf:143</td>
+<td>gw.apd.web.APDRulePopupHelper.getDefaultValueLabel(rule)</td>
+<td>rule.DefaultStringValue</td>
+<td>true</td>
+<td>
+APDAttributeRulePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdrule_defaulttagvalue"></a>
+<p class="column">
+<span class="coltitle">DefaultTagValue</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/APDTagApplicability_tl.html" TARGET="tableFrame">APDTagApplicability</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The value if a tag</span>
+<div class='screenrefbody'>
+<span id=showhideUI_7 onclick='showAndHideUIDetails("UITable_7", "showhideUI_7")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_7' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDTagPopup.pcf:90</td>
+<td>Web.APDTagPopup.TagDefaultValue</td>
+<td>ruleDetails.DefaultTagValue</td>
+<td>true</td>
+<td>
+APDTagPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdrule_edition"></a>
+<p class="column">
+<span class="coltitle">Edition</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDEdition.html" TARGET="tableFrame">APDEdition</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: EditionID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The edition that this version of the rule applies to (if there is no edition, it is a base rule)</span>
+<a name="apdrule_publicid"></a>
+<p class="column">
+<span class="coltitle">PublicID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "publicid")'>publicid</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ID or primary key of the row in the external system to which this row is mapped</span>
+<a name="apdrule_retiredvalue"></a>
+<p class="column">
+<span class="coltitle">RetiredValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "softentityreference")'>softentityreference</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: Retired)&nbsp;&nbsp;&nbsp;&nbsp;(default: 0)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Whether the entity is still in use. A value of 0 means that the entity is not retired. If the entity is retired from active use, this field has a non-zero value equal to the entity's ID. Once an entity is retired, it should not be unretired.</span>
+<a name="apdrule_ruletype"></a>
+<p class="column">
+<span class="coltitle">RuleType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/APDRuleType_tl.html" TARGET="tableFrame">APDRuleType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The type of rule being implemented</span>
+<a name="apdrule_subtype"></a>
+<p class="column">
+<span class="coltitle">Subtype</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="#subtypes" TARGET="tableFrame">APDRule</A> subtypes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Identifies a particular subtype within a supertype table; each subtype of a supertype has its own unique subtype value</span>
+<a name="apdrule_tagtype"></a>
+<p class="column">
+<span class="coltitle">TagType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/APDTagType_tl.html" TARGET="tableFrame">APDTagType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The type of tag for a tag rule</span>
+<a name="apdrule_updatetime"></a>
+<p class="column">
+<span class="coltitle">UpdateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was last updated</span>
+<a name="apdrule_updateuser"></a>
+<p class="column">
+<span class="coltitle">UpdateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: UpdateUserID)</span>
+<br>
+<span class="desc">User who last updated the object</span>
+<a name="Arrays"></a><div class="arraysbox">Arrays</div>
+<a name="apdrule_ruleelements"></a>
+<p class="column">
+<span class="coltitle">RuleElements</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="APDRuleElement.html" TARGET="tableFrame">APDRuleElement</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The full list of rule elements belonging to this rule</span>
+<a name="Unique Keys for APDRule"></a><div class="arraysbox">Unique Keys for APDRule</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>apdrule1a</td>
+<td>PublicID, Retired</td></tr>
+</table>
+<a name="Subtypes"></a><div class="arraysbox">Subtypes</div>
+<div class='subtypebox'>
+<a name=APDAttributeRule></a>
+<div class="titlebox">
+<div class="filtertitle">APDAttributeRule <span class='supername'>(subtype of <A HREF="APDRule.html" TARGET="tableFrame">APDRule</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_448" class="reftext" onclick='showAndHideRefBox("refbox_448", "reflink_448")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_448" class="refbox_inner" style="display:none;">
+Rule associated with an attribute
+</div>
+</span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_449" class="reftext" onclick='showAndHideRefBox("refbox_449", "reflink_449")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_449" class="refbox_inner" style="display:none;">
+<A HREF="../full/APDAttribute.html" TARGET="tableFrame">APDAttribute.Rules</A>
+</div>
+</span>
+</div>
+<a name="apdattributerule_attribute"></a>
+<p class="column">
+<span class="coltitle">Attribute</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDAttribute.html" TARGET="tableFrame">APDAttribute</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: AttributeID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The attribute to which this rule applies</span>
+<a name="Unique Keys for APDAttributeRule"></a><div class="arraysbox">Unique Keys for APDAttributeRule</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>apdrule1a</td>
+<td>PublicID, Retired</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=APDClauseRule></a>
+<div class="titlebox">
+<div class="filtertitle">APDClauseRule <span class='supername'>(subtype of <A HREF="APDRule.html" TARGET="tableFrame">APDRule</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_450" class="reftext" onclick='showAndHideRefBox("refbox_450", "reflink_450")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_450" class="refbox_inner" style="display:none;">
+Rule associated with a clause
+</div>
+</span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_451" class="reftext" onclick='showAndHideRefBox("refbox_451", "reflink_451")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_451" class="refbox_inner" style="display:none;">
+<A HREF="../full/APDClause.html" TARGET="tableFrame">APDClause.Rules</A>
+</div>
+</span>
+</div>
+<a name="apdclauserule_clause"></a>
+<p class="column">
+<span class="coltitle">Clause</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDClause.html" TARGET="tableFrame">APDClause</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: ClauseID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The clause to which this rule applies</span>
+<a name="Unique Keys for APDClauseRule"></a><div class="arraysbox">Unique Keys for APDClauseRule</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>apdrule1a</td>
+<td>PublicID, Retired</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=APDDropdownEntryRule></a>
+<div class="titlebox">
+<div class="filtertitle">APDDropdownEntryRule <span class='supername'>(subtype of <A HREF="APDRule.html#APDAttributeRule" TARGET="tableFrame">APDAttributeRule</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_452" class="reftext" onclick='showAndHideRefBox("refbox_452", "reflink_452")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_452" class="refbox_inner" style="display:none;">
+Rules that apply to a dropdown entry
+</div>
+</span>
+</div>
+</div>
+<a name="apddropdownentryrule_dropdownentry"></a>
+<p class="column">
+<span class="coltitle">DropdownEntry</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDDropdownEntry.html" TARGET="tableFrame">APDDropdownEntry</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: DropdownEntryID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The dropdown entry to which this rule applies</span>
+<a name="Unique Keys for APDDropdownEntryRule"></a><div class="arraysbox">Unique Keys for APDDropdownEntryRule</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>apdrule1a</td>
+<td>PublicID, Retired</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<script language="JavaScript">
+function showAllUIDetails() {
+showUIDetails('UITable_0', 'showhideUI_0');
+showUIDetails('UITable_1', 'showhideUI_1');
+showUIDetails('UITable_2', 'showhideUI_2');
+showUIDetails('UITable_3', 'showhideUI_3');
+showUIDetails('UITable_4', 'showhideUI_4');
+showUIDetails('UITable_5', 'showhideUI_5');
+showUIDetails('UITable_6', 'showhideUI_6');
+showUIDetails('UITable_7', 'showhideUI_7');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Hide user interface details on all fields';
+  link.onclick = hideAllUIDetails;
+  return false;
+}
+function hideAllUIDetails() {
+hideUIDetails('UITable_0', 'showhideUI_0');
+hideUIDetails('UITable_1', 'showhideUI_1');
+hideUIDetails('UITable_2', 'showhideUI_2');
+hideUIDetails('UITable_3', 'showhideUI_3');
+hideUIDetails('UITable_4', 'showhideUI_4');
+hideUIDetails('UITable_5', 'showhideUI_5');
+hideUIDetails('UITable_6', 'showhideUI_6');
+hideUIDetails('UITable_7', 'showhideUI_7');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Show user interface details on all fields';
+  link.onclick = showAllUIDetails;
+  return false;
+}
+</script>
+
+</body>
+</html>

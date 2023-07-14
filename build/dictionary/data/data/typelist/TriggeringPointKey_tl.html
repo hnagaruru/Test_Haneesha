@@ -1,0 +1,752 @@
+<html>
+<head>
+<title>TriggeringPointKey</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox"
+<div><span class="pagetitle">TriggeringPointKey</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="entityname">(pctl_triggeringpointkey)</span>
+</div>
+<div class="desc">Unique key identifying a TriggeringPoint, used when invoking Business Rules</div>
+</div>
+<table cellpadding="3" cellspacing="0" border="0" height="20" width="100%">
+<tr>
+<td nowrap="true" class="attrbox" height="20">
+<span class="attrtitle">Attributes: 
+
+</span>
+</td>
+</tr>
+</table>
+<br/>
+<div class="refbox biglist odd">
+<span id="reflink_9277" class="reftext" onclick='showAndHideRefBox("refbox_9277", "reflink_9277")'><img src="../../res/blackup.gif" border="0"><b>Referenced by: </b></span>
+<div id="refbox_9277" class="refbox_inner" style="display:none;">
+<A HREF="../full/Rule.html" TARGET="tableFrame">Rule.TriggeringPointKey</A>
+</div>
+</span>
+</div>
+<a id='TOC'></a>
+<a name="Typecodes"></a><div class="arraysbox">Typecodes</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+<td>Description</td>
+<td>Priority</td>
+<td>Internal</td>
+<td>Retired</td>
+</tr>
+<tr valign="top">
+<td><a href=#All>All</a></td>
+<td>All</td>
+<td>Triggers at every blocking point</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#MVR>MVR</a></td>
+<td>MVR</td>
+<td>Triggers at MVR</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#Manual>Manual</a></td>
+<td>Manual</td>
+<td>Triggers at Manual</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#PolicyRenewalAPI>PolicyRenewalAPI</a></td>
+<td>PolicyRenewalAPI</td>
+<td>Triggers at PolicyRenewalAPI</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#PreBind>PreBind</a></td>
+<td>PreBind</td>
+<td>Triggers at PreBind</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#PreIssuance>PreIssuance</a></td>
+<td>PreIssuance</td>
+<td>Triggers at PreIssuance</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#PreQuote>PreQuote</a></td>
+<td>PreQuote</td>
+<td>Triggers before Quote</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#PreQuoteRelease>PreQuoteRelease</a></td>
+<td>PreQuoteRelease</td>
+<td>Triggers at PreQuoteRelease</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#PreRateRelease>PreRateRelease</a></td>
+<td>PreRateRelease</td>
+<td>Triggers at PreRateRelease</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#Question>Question</a></td>
+<td>Question</td>
+<td>Triggers at Questions</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#Referral>Referral</a></td>
+<td>Referral</td>
+<td>Triggers at Referral</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#RegulatoryHold>RegulatoryHold</a></td>
+<td>RegulatoryHold</td>
+<td>Triggers at RegulatoryHold</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#Reinsurance>Reinsurance</a></td>
+<td>Reinsurance</td>
+<td>Triggers at Reinsurance</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#Renewal>Renewal</a></td>
+<td>Renewal</td>
+<td>Triggers at Renewal</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#UWHold>UWHold</a></td>
+<td>UWHold</td>
+<td>Triggers at UWHold</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#Upgrade>Upgrade</a></td>
+<td>Upgrade</td>
+<td>Triggers at Upgrade</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<div class='subtypebox'>
+<a name=All></a>
+<div class="titlebox">
+<div class="filtertitle">All <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9278" class="reftext" onclick='showAndHideRefBox("refbox_9278", "reflink_9278")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9278" class="refbox_inner" style="display:none;">
+Triggers at every blocking point
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Rule_tl.html#UWRule" TARGET="tableFrame">Rule.UWRule</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>All</td>
+<td>Triggers at every blocking point</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=MVR></a>
+<div class="titlebox">
+<div class="filtertitle">MVR <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9279" class="reftext" onclick='showAndHideRefBox("refbox_9279", "reflink_9279")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9279" class="refbox_inner" style="display:none;">
+Triggers at MVR
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Rule_tl.html#UWRule" TARGET="tableFrame">Rule.UWRule</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>MVR</td>
+<td>Triggers at MVR</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=Manual></a>
+<div class="titlebox">
+<div class="filtertitle">Manual <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9280" class="reftext" onclick='showAndHideRefBox("refbox_9280", "reflink_9280")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9280" class="refbox_inner" style="display:none;">
+Triggers at Manual
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Rule_tl.html#UWRule" TARGET="tableFrame">Rule.UWRule</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Manual</td>
+<td>Triggers at Manual</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=PolicyRenewalAPI></a>
+<div class="titlebox">
+<div class="filtertitle">PolicyRenewalAPI <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9281" class="reftext" onclick='showAndHideRefBox("refbox_9281", "reflink_9281")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9281" class="refbox_inner" style="display:none;">
+Triggers at PolicyRenewalAPI
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Rule_tl.html#UWRule" TARGET="tableFrame">Rule.UWRule</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>PolicyRenewalAPI</td>
+<td>Triggers at PolicyRenewalAPI</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=PreBind></a>
+<div class="titlebox">
+<div class="filtertitle">PreBind <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9282" class="reftext" onclick='showAndHideRefBox("refbox_9282", "reflink_9282")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9282" class="refbox_inner" style="display:none;">
+Triggers at PreBind
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Rule_tl.html#UWRule" TARGET="tableFrame">Rule.UWRule</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>PreBind</td>
+<td>Triggers at PreBind</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=PreIssuance></a>
+<div class="titlebox">
+<div class="filtertitle">PreIssuance <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9283" class="reftext" onclick='showAndHideRefBox("refbox_9283", "reflink_9283")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9283" class="refbox_inner" style="display:none;">
+Triggers at PreIssuance
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Rule_tl.html#UWRule" TARGET="tableFrame">Rule.UWRule</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>PreIssuance</td>
+<td>Triggers at PreIssuance</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=PreQuote></a>
+<div class="titlebox">
+<div class="filtertitle">PreQuote <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9284" class="reftext" onclick='showAndHideRefBox("refbox_9284", "reflink_9284")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9284" class="refbox_inner" style="display:none;">
+Triggers before Quote
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Rule_tl.html#UWRule" TARGET="tableFrame">Rule.UWRule</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>PreQuote</td>
+<td>Triggers before Quote</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=PreQuoteRelease></a>
+<div class="titlebox">
+<div class="filtertitle">PreQuoteRelease <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9285" class="reftext" onclick='showAndHideRefBox("refbox_9285", "reflink_9285")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9285" class="refbox_inner" style="display:none;">
+Triggers at PreQuoteRelease
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Rule_tl.html#UWRule" TARGET="tableFrame">Rule.UWRule</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>PreQuoteRelease</td>
+<td>Triggers at PreQuoteRelease</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=PreRateRelease></a>
+<div class="titlebox">
+<div class="filtertitle">PreRateRelease <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9286" class="reftext" onclick='showAndHideRefBox("refbox_9286", "reflink_9286")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9286" class="refbox_inner" style="display:none;">
+Triggers at PreRateRelease
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Rule_tl.html#UWRule" TARGET="tableFrame">Rule.UWRule</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>PreRateRelease</td>
+<td>Triggers at PreRateRelease</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=Question></a>
+<div class="titlebox">
+<div class="filtertitle">Question <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9287" class="reftext" onclick='showAndHideRefBox("refbox_9287", "reflink_9287")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9287" class="refbox_inner" style="display:none;">
+Triggers at Questions
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Rule_tl.html#UWRule" TARGET="tableFrame">Rule.UWRule</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Question</td>
+<td>Triggers at Questions</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=Referral></a>
+<div class="titlebox">
+<div class="filtertitle">Referral <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9288" class="reftext" onclick='showAndHideRefBox("refbox_9288", "reflink_9288")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9288" class="refbox_inner" style="display:none;">
+Triggers at Referral
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Rule_tl.html#UWRule" TARGET="tableFrame">Rule.UWRule</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Referral</td>
+<td>Triggers at Referral</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=RegulatoryHold></a>
+<div class="titlebox">
+<div class="filtertitle">RegulatoryHold <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9289" class="reftext" onclick='showAndHideRefBox("refbox_9289", "reflink_9289")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9289" class="refbox_inner" style="display:none;">
+Triggers at RegulatoryHold
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Rule_tl.html#UWRule" TARGET="tableFrame">Rule.UWRule</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>RegulatoryHold</td>
+<td>Triggers at RegulatoryHold</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=Reinsurance></a>
+<div class="titlebox">
+<div class="filtertitle">Reinsurance <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9290" class="reftext" onclick='showAndHideRefBox("refbox_9290", "reflink_9290")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9290" class="refbox_inner" style="display:none;">
+Triggers at Reinsurance
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Rule_tl.html#UWRule" TARGET="tableFrame">Rule.UWRule</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Reinsurance</td>
+<td>Triggers at Reinsurance</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=Renewal></a>
+<div class="titlebox">
+<div class="filtertitle">Renewal <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9291" class="reftext" onclick='showAndHideRefBox("refbox_9291", "reflink_9291")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9291" class="refbox_inner" style="display:none;">
+Triggers at Renewal
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Rule_tl.html#UWRule" TARGET="tableFrame">Rule.UWRule</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Renewal</td>
+<td>Triggers at Renewal</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=UWHold></a>
+<div class="titlebox">
+<div class="filtertitle">UWHold <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9292" class="reftext" onclick='showAndHideRefBox("refbox_9292", "reflink_9292")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9292" class="refbox_inner" style="display:none;">
+Triggers at UWHold
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Rule_tl.html#UWRule" TARGET="tableFrame">Rule.UWRule</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>UWHold</td>
+<td>Triggers at UWHold</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=Upgrade></a>
+<div class="titlebox">
+<div class="filtertitle">Upgrade <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9293" class="reftext" onclick='showAndHideRefBox("refbox_9293", "reflink_9293")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9293" class="refbox_inner" style="display:none;">
+Triggers at Upgrade
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="Rule_tl.html#UWRule" TARGET="tableFrame">Rule.UWRule</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Upgrade</td>
+<td>Triggers at Upgrade</td>
+</tr>
+</table>
+</div>
+<a name="Typefilters"></a><div class="arraysbox">Typefilters</div>
+<div class='subtypebox'>
+<div class="titlebox">
+<div class="filtertitle">UWRuleCheckingSetFilter <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_9294" class="reftext" onclick='showAndHideRefBox("refbox_9294", "reflink_9294")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_9294" class="refbox_inner" style="display:none;">
+Checking sets associated with UWRules
+</div>
+</span>
+</div>
+</div>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Type</td>
+<td>Code</td>
+</tr>
+<tr>
+<td>Include</td>
+<td><A HREF="#PreQuote" TARGET="tableFrame">PreQuote</A></td>
+</tr>
+<tr>
+<td>Include</td>
+<td><A HREF="#PreRateRelease" TARGET="tableFrame">PreRateRelease</A></td>
+</tr>
+<tr>
+<td>Include</td>
+<td><A HREF="#PreQuoteRelease" TARGET="tableFrame">PreQuoteRelease</A></td>
+</tr>
+<tr>
+<td>Include</td>
+<td><A HREF="#PreBind" TARGET="tableFrame">PreBind</A></td>
+</tr>
+<tr>
+<td>Include</td>
+<td><A HREF="#PreIssuance" TARGET="tableFrame">PreIssuance</A></td>
+</tr>
+<tr>
+<td>Include</td>
+<td><A HREF="#Renewal" TARGET="tableFrame">Renewal</A></td>
+</tr>
+<tr>
+<td>Include</td>
+<td><A HREF="#Manual" TARGET="tableFrame">Manual</A></td>
+</tr>
+<tr>
+<td>Include</td>
+<td><A HREF="#MVR" TARGET="tableFrame">MVR</A></td>
+</tr>
+<tr>
+<td>Include</td>
+<td><A HREF="#PolicyRenewalAPI" TARGET="tableFrame">PolicyRenewalAPI</A></td>
+</tr>
+<tr>
+<td>Include</td>
+<td><A HREF="#Question" TARGET="tableFrame">Question</A></td>
+</tr>
+<tr>
+<td>Include</td>
+<td><A HREF="#Referral" TARGET="tableFrame">Referral</A></td>
+</tr>
+<tr>
+<td>Include</td>
+<td><A HREF="#RegulatoryHold" TARGET="tableFrame">RegulatoryHold</A></td>
+</tr>
+<tr>
+<td>Include</td>
+<td><A HREF="#upgrade" TARGET="tableFrame">upgrade</A></td>
+</tr>
+<tr>
+<td>Include</td>
+<td><A HREF="#Reinsurance" TARGET="tableFrame">Reinsurance</A></td>
+</tr>
+<tr>
+<td>Include</td>
+<td><A HREF="#UWHold" TARGET="tableFrame">UWHold</A></td>
+</tr>
+<tr>
+<td>Include</td>
+<td><A HREF="#All" TARGET="tableFrame">All</A></td>
+</tr>
+</table>
+</div>
+</body>
+</html>

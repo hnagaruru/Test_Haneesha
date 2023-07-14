@@ -1,0 +1,2012 @@
+<html>
+<head>
+<title>AddlInterestDetail</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">AddlInterestDetail <span class="entityname">(pc_addlinterestdetail) (delegates to <A HREF="EffDated.html" TARGET="tableFrame">EffDated</A>)</span></div>
+<div class="desc">
+<span id="reflink_570" class="reftext" onclick='showAndHideRefBox("refbox_570", "reflink_570")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_570" class="refbox_inner" style="display:none;">
+The details of the relationship of a PolicyAddlInterest to some entity.
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">AddlInterestDetail</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Abstract<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Abstract</b><br>The entity is a supertype, but all instances of it must be one of its subtypes. That is, you cannot instantiate the supertype entity itself. An abstract entity is appropriate when the supertype serves only to collect logic or common fields, but does not make sense to exist on its own.')">?</span></sup>, Editable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Editable</b><br>The related database table contains rows that are editable by application users based on roles and permissions. An Editable table manages additional fields that represent an audit trail of an entity in the table (for example, who created it and when, who last edited it and when).')">?</span></sup>, Exportable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>, Extendable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Extendable</b><br>Can be extended with additional custom fields added to it.')">?</span></sup>, Keyed<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Keyed</b><br>Has a related database table that has a primary key. Each row in a Keyed table has an integer primary key named ID. IDs are managed internally by the application, and the system ensures that no two rows in a keyed table have the same ID. In addition to the internal key, an external primary key can be associated with each row in a table.')">?</span></sup>, Sourceable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Sourceable</b><br>Contains entities that are linked to an external source. Each row in a Sourceable entity\'s table has additional fields to identify the external system and store the ID of the Sourceable entity in the external system.')">?</span></sup>, Supertype<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Supertype</b><br>A single table that represents multiple types of entities, called subtypes. Each subtype shares application logic and a majority of their fields. Each subtype may also define fields that are particular to it.')">?</span></sup>, Versionable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Versionable</b><br>Has a version number that increases every time the entity is changed. This allows the cache to identify when entities have been updated.')">?</span></sup></span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_571" class="reftext" onclick='showAndHideRefBox("refbox_571", "reflink_571")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_571" class="refbox_inner" style="display:none;">
+<A HREF="../full/AddlInterestDetail.html" TARGET="tableFrame">AddlInterestDetail.BasedOnValue</A><br><A HREF="../full/AddlInterestDetail.html" TARGET="tableFrame">AddlInterestDetail.Fixed</A>
+</div>
+</span>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_572" class="reftext" onclick='showAndHideRefBox("refbox_572", "reflink_572")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_572" class="refbox_inner" style="display:none;">
+<A HREF="../full/PolicyContactRole.html#PolicyAddlInterest" TARGET="tableFrame">PolicyAddlInterest.AdditionalInterestDetails</A>
+</div>
+</span>
+</div>
+<span class="showhidelink"><a id="showAllElements" href="#" onClick="return showAllUIDetails()">Show user interface details on all fields</a></span>
+
+<br>
+<a name=subtypes></a>
+<br/>
+<span class="filtertitle">Subtypes</span>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+</tr>
+<tr>
+<td>
+BAVhcleAddlInterest</td>
+<td><A HREF="#BAVhcleAddlInterest" TARGET="tableFrame">BAVhcleAddlInterest</A></td>
+</tr>
+<tr>
+<td>
+BOPBldgAddlInterest</td>
+<td><A HREF="#BOPBldgAddlInterest" TARGET="tableFrame">BOPBldgAddlInterest</A></td>
+</tr>
+<tr>
+<td>
+CPBldgAddlInterest</td>
+<td><A HREF="#CPBldgAddlInterest" TARGET="tableFrame">CPBldgAddlInterest</A></td>
+</tr>
+<tr>
+<td>
+HOPDwellAddlInterest</td>
+<td><A HREF="#HOPDwellAddlInterest" TARGET="tableFrame">HOPDwellAddlInterest</A></td>
+</tr>
+<tr>
+<td>
+IMSchEquipAddlInterest</td>
+<td><A HREF="#IMSchEquipAddlInterest" TARGET="tableFrame">IMSchEquipAddlInterest</A></td>
+</tr>
+<tr>
+<td>
+PAVhcleAddlInterest</td>
+<td><A HREF="#PAVhcleAddlInterest" TARGET="tableFrame">PAVhcleAddlInterest</A></td>
+</tr>
+</table>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+<a name="addlinterestdetail_id"></a>
+<p class="column">
+<span class="coltitle">ID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "key")'>key</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Internally managed primary key</span>
+<a name="addlinterestdetail_additionalinteresttype"></a>
+<p class="column">
+<span class="coltitle">AdditionalInterestType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/AdditionalInterestType_tl.html" TARGET="tableFrame">AdditionalInterestType</A> using key filter <A HREF="../typelist/AddlInterestDetail_tl.html" TARGET="tableFrame">Subtype</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Interest type</span>
+<div class='screenrefbody'>
+<span id=showhideUI_0 onclick='showAndHideUIDetails("UITable_0", "showhideUI_0")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_0' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>AdditionalInterestDetailsDV.pcf:150</td>
+<td>Web.Policy.AdditionalInterest.Type</td>
+<td>addlInterestDetail.AdditionalInterestType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_ContractorsEquipmentPart
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_Vehicles
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+InlandMarine_PolicyFilePart
+<br>
+BOPBuildingPopup
+<br>
+BAVehiclePopup
+<br>
+CPBuildingPopup
+<br>
+PolicyFile_PersonalAuto_Vehicles
+<br>
+PolicyFile_Buildings_BOP
+<br>
+RewriteNewAccountWizard
+</td>
+</tr>
+<tr>
+<td>HOPDwellingAdditionalInterestDetailsDV.pcf:150</td>
+<td>Web.Policy.AdditionalInterest.Type</td>
+<td>addlInterestDetail.AdditionalInterestType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>NewAdditionalInterestPopup.pcf:70</td>
+<td>Web.Policy.AdditionalInterest.Type</td>
+<td>addlInterestDetail.AdditionalInterestType</td>
+<td>true</td>
+<td>
+NewAdditionalInterestPopup
+</td>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.BAVhcleAddlInterest.pcf:50</td>
+<td>Web.Policy.AdditionalInterest.Type</td>
+<td>addlInterestDetail.AdditionalInterestType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.BOPBldgAddlInterest.pcf:50</td>
+<td>Web.Policy.AdditionalInterest.Type</td>
+<td>addlInterestDetail.AdditionalInterestType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.CPBldgAddlInterest.pcf:50</td>
+<td>Web.Policy.AdditionalInterest.Type</td>
+<td>addlInterestDetail.AdditionalInterestType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.IMSchEquipAddlInterest.pcf:46</td>
+<td>Web.Policy.AdditionalInterest.Type</td>
+<td>addlInterestDetail.AdditionalInterestType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.PAVhcleAddlInterest.pcf:50</td>
+<td>Web.Policy.AdditionalInterest.Type</td>
+<td>addlInterestDetail.AdditionalInterestType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="addlinterestdetail_additionalinteresttype_prop"></a>
+<p class="column">
+<span class="coltitle">ADDITIONALINTERESTTYPE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_archivepartition"></a>
+<p class="column">
+<span class="coltitle">ArchivePartition</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "softentityreference")'>softentityreference</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">Unique number to partition the data so that the multiple workers can work independently</span>
+<a name="addlinterestdetail_archivepartition_prop"></a>
+<p class="column">
+<span class="coltitle">ARCHIVEPARTITION_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_basedon"></a>
+<p class="column">
+<span class="coltitle">BasedOn</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning AddlInterestDetail</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_basedonid_dynprop"></a>
+<p class="column">
+<span class="coltitle">BASEDONID_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_basedonuntyped"></a>
+<p class="column">
+<span class="coltitle">BasedOnUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning EffDated</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_basedonvalue"></a>
+<p class="column">
+<span class="coltitle">BasedOnValue</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="AddlInterestDetail.html" TARGET="tableFrame">AddlInterestDetail</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: BasedOnID)</span>
+<br>
+<span class="desc">Link to the row on which this row is based; or null if new to branch</span>
+<a name="addlinterestdetail_basedonvalue_prop"></a>
+<p class="column">
+<span class="coltitle">BASEDONVALUE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_beanversion_prop"></a>
+<p class="column">
+<span class="coltitle">BEANVERSION_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_branch"></a>
+<p class="column">
+<span class="coltitle">Branch</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning PolicyPeriod</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_branchid_dynprop"></a>
+<p class="column">
+<span class="coltitle">BRANCHID_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_branchuntyped"></a>
+<p class="column">
+<span class="coltitle">BranchUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning EffDatedBranch</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_branchvalue"></a>
+<p class="column">
+<span class="coltitle">BranchValue</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="PolicyPeriod.html" TARGET="tableFrame">PolicyPeriod</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: BranchID)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Link to root of effdated tree</span>
+<a name="addlinterestdetail_branchvalue_prop"></a>
+<p class="column">
+<span class="coltitle">BRANCHVALUE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_certrequired"></a>
+<p class="column">
+<span class="coltitle">CertRequired</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Is a certificate required?</span>
+<div class='screenrefbody'>
+<span id=showhideUI_1 onclick='showAndHideUIDetails("UITable_1", "showhideUI_1")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_1' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>AdditionalInterestDetailsDV.pcf:155</td>
+<td>Web.Policy.AdditionalInterest.CertificateRequired</td>
+<td>addlInterestDetail.CertRequired</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_ContractorsEquipmentPart
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_Vehicles
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+InlandMarine_PolicyFilePart
+<br>
+BOPBuildingPopup
+<br>
+BAVehiclePopup
+<br>
+CPBuildingPopup
+<br>
+PolicyFile_PersonalAuto_Vehicles
+<br>
+PolicyFile_Buildings_BOP
+<br>
+RewriteNewAccountWizard
+</td>
+</tr>
+<tr>
+<td>HOPDwellingAdditionalInterestDetailsDV.pcf:170</td>
+<td>Web.Policy.AdditionalInterest.CertificateRequired</td>
+<td>addlInterestDetail.CertRequired</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>NewAdditionalInterestPopup.pcf:75</td>
+<td>Web.Policy.AdditionalInterest.CertificateRequired</td>
+<td>addlInterestDetail.CertRequired</td>
+<td>true</td>
+<td>
+NewAdditionalInterestPopup
+</td>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.BAVhcleAddlInterest.pcf:55</td>
+<td>Web.Policy.AdditionalInterest.CertificateRequired</td>
+<td>addlInterestDetail.CertRequired</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.BOPBldgAddlInterest.pcf:55</td>
+<td>Web.Policy.AdditionalInterest.CertificateRequired</td>
+<td>addlInterestDetail.CertRequired</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.CPBldgAddlInterest.pcf:55</td>
+<td>Web.Policy.AdditionalInterest.CertificateRequired</td>
+<td>addlInterestDetail.CertRequired</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.IMSchEquipAddlInterest.pcf:51</td>
+<td>Web.Policy.AdditionalInterest.CertificateRequired</td>
+<td>addlInterestDetail.CertRequired</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.PAVhcleAddlInterest.pcf:55</td>
+<td>Web.Policy.AdditionalInterest.CertificateRequired</td>
+<td>addlInterestDetail.CertRequired</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="addlinterestdetail_certrequired_prop"></a>
+<p class="column">
+<span class="coltitle">CERTREQUIRED_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_changetype"></a>
+<p class="column">
+<span class="coltitle">ChangeType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/EffDatedChangeType_tl.html" TARGET="tableFrame">EffDatedChangeType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">Type of change made to this row</span>
+<a name="addlinterestdetail_changetype_dynprop"></a>
+<p class="column">
+<span class="coltitle">CHANGETYPE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_changetype_prop"></a>
+<p class="column">
+<span class="coltitle">CHANGETYPE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_contractnumber"></a>
+<p class="column">
+<span class="coltitle">ContractNumber</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Loan numbers associated with a mortgagee or lender</span>
+<div class='screenrefbody'>
+<span id=showhideUI_2 onclick='showAndHideUIDetails("UITable_2", "showhideUI_2")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_2' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>AdditionalInterestDetailsDV.pcf:160</td>
+<td>Web.Policy.AdditionalInterest.ContractNumber</td>
+<td>addlInterestDetail.ContractNumber</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_ContractorsEquipmentPart
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_Vehicles
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+InlandMarine_PolicyFilePart
+<br>
+BOPBuildingPopup
+<br>
+BAVehiclePopup
+<br>
+CPBuildingPopup
+<br>
+PolicyFile_PersonalAuto_Vehicles
+<br>
+PolicyFile_Buildings_BOP
+<br>
+RewriteNewAccountWizard
+</td>
+</tr>
+<tr>
+<td>HOPDwellingAdditionalInterestDetailsDV.pcf:175</td>
+<td>Web.Policy.AdditionalInterest.ContractNumber</td>
+<td>addlInterestDetail.ContractNumber</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>NewAdditionalInterestPopup.pcf:80</td>
+<td>Web.Policy.AdditionalInterest.ContractNumber</td>
+<td>addlInterestDetail.ContractNumber</td>
+<td>true</td>
+<td>
+NewAdditionalInterestPopup
+</td>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.BAVhcleAddlInterest.pcf:60</td>
+<td>Web.Policy.AdditionalInterest.ContractNumber</td>
+<td>addlInterestDetail.ContractNumber</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.BOPBldgAddlInterest.pcf:60</td>
+<td>Web.Policy.AdditionalInterest.ContractNumber</td>
+<td>addlInterestDetail.ContractNumber</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.CPBldgAddlInterest.pcf:60</td>
+<td>Web.Policy.AdditionalInterest.ContractNumber</td>
+<td>addlInterestDetail.ContractNumber</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.IMSchEquipAddlInterest.pcf:56</td>
+<td>Web.Policy.AdditionalInterest.ContractNumber</td>
+<td>addlInterestDetail.ContractNumber</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.PAVhcleAddlInterest.pcf:60</td>
+<td>Web.Policy.AdditionalInterest.ContractNumber</td>
+<td>addlInterestDetail.ContractNumber</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="addlinterestdetail_contractnumber_prop"></a>
+<p class="column">
+<span class="coltitle">CONTRACTNUMBER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_createtime"></a>
+<p class="column">
+<span class="coltitle">CreateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was created</span>
+<a name="addlinterestdetail_createtime_prop"></a>
+<p class="column">
+<span class="coltitle">CREATETIME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_createuser"></a>
+<p class="column">
+<span class="coltitle">CreateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CreateUserID)</span>
+<br>
+<span class="desc">User who created the object</span>
+<a name="addlinterestdetail_createuser_prop"></a>
+<p class="column">
+<span class="coltitle">CREATEUSER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_effdatedkey"></a>
+<p class="column">
+<span class="coltitle">EffDatedKey</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.core.effdate.EffDatedKey</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_effectivedate"></a>
+<p class="column">
+<span class="coltitle">EffectiveDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Effective date of this row.  A value of NULL in the database indicates that this row's effective date is equal to the Period Start.</span>
+<a name="addlinterestdetail_effectivedate_dynprop"></a>
+<p class="column">
+<span class="coltitle">EFFECTIVEDATE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_effectivedate_prop"></a>
+<p class="column">
+<span class="coltitle">EFFECTIVEDATE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_expirationdate"></a>
+<p class="column">
+<span class="coltitle">ExpirationDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Expiration date of this row.  A value of NULL in the database indicates that this row's expiration date is equal to the Period End.</span>
+<a name="addlinterestdetail_expirationdate_dynprop"></a>
+<p class="column">
+<span class="coltitle">EXPIRATIONDATE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_expirationdate_prop"></a>
+<p class="column">
+<span class="coltitle">EXPIRATIONDATE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_fixed"></a>
+<p class="column">
+<span class="coltitle">Fixed</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="AddlInterestDetail.html" TARGET="tableFrame">AddlInterestDetail</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: FixedID)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Unique ID for this 'object' across all branches and periods</span>
+<a name="addlinterestdetail_fixed_prop"></a>
+<p class="column">
+<span class="coltitle">FIXED_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_fixedid"></a>
+<p class="column">
+<span class="coltitle">FixedId</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.core.Key</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_fixedid_dynprop"></a>
+<p class="column">
+<span class="coltitle">FIXEDID_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_frozen"></a>
+<p class="column">
+<span class="coltitle">Frozen</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_frozenset"></a>
+<p class="column">
+<span class="coltitle">FrozenSet</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="FrozenSet.html" TARGET="tableFrame">FrozenSet</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: FrozenSetID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_frozenset_prop"></a>
+<p class="column">
+<span class="coltitle">FROZENSET_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_id_prop"></a>
+<p class="column">
+<span class="coltitle">ID_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_new"></a>
+<p class="column">
+<span class="coltitle">New</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_newlyimported"></a>
+<p class="column">
+<span class="coltitle">NewlyImported</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_policyaddlinterest"></a>
+<p class="column">
+<span class="coltitle">PolicyAddlInterest</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="PolicyContactRole.html#PolicyAddlInterest" TARGET="tableFrame">PolicyAddlInterest</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<div class='screenrefbody'>
+<span id=showhideUI_3 onclick='showAndHideUIDetails("UITable_3", "showhideUI_3")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_3' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>AdditionalInterestDetailsDV.pcf:143</td>
+<td>Web.Policy.AdditionalInterest.Name</td>
+<td>addlInterestDetail.PolicyAddlInterest</td>
+<td>false</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_ContractorsEquipmentPart
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_Vehicles
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+InlandMarine_PolicyFilePart
+<br>
+BOPBuildingPopup
+<br>
+BAVehiclePopup
+<br>
+CPBuildingPopup
+<br>
+PolicyFile_PersonalAuto_Vehicles
+<br>
+PolicyFile_Buildings_BOP
+<br>
+RewriteNewAccountWizard
+</td>
+</tr>
+<tr>
+<td>HOPDwellingAdditionalInterestDetailsDV.pcf:143</td>
+<td>Web.Policy.AdditionalInterest.Name</td>
+<td>addlInterestDetail.PolicyAddlInterest</td>
+<td>false</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="addlinterestdetail_policyaddlinterest_prop"></a>
+<p class="column">
+<span class="coltitle">POLICYADDLINTEREST_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_promoted"></a>
+<p class="column">
+<span class="coltitle">Promoted</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_publicid"></a>
+<p class="column">
+<span class="coltitle">PublicID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "publicid")'>publicid</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ID or primary key of the row in the external system to which this row is mapped</span>
+<a name="addlinterestdetail_publicid_prop"></a>
+<p class="column">
+<span class="coltitle">PUBLICID_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_slice"></a>
+<p class="column">
+<span class="coltitle">Slice</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_slicedate"></a>
+<p class="column">
+<span class="coltitle">SliceDate</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.Date</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_subtype"></a>
+<p class="column">
+<span class="coltitle">Subtype</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="#subtypes" TARGET="tableFrame">AddlInterestDetail</A> subtypes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Identifies a particular subtype within a supertype table; each subtype of a supertype has its own unique subtype value</span>
+<a name="addlinterestdetail_subtype_prop"></a>
+<p class="column">
+<span class="coltitle">SUBTYPE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_type"></a>
+<p class="column">
+<span class="coltitle">TYPE</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EffDatedEntityTypeReference<entity.AddlInterestDetail, entity.PolicyPeriod></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_unsliced"></a>
+<p class="column">
+<span class="coltitle">Unsliced</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning AddlInterestDetail</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_unsliceduntyped"></a>
+<p class="column">
+<span class="coltitle">UnslicedUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning EffDated</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_updatetime"></a>
+<p class="column">
+<span class="coltitle">UpdateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was last updated</span>
+<a name="addlinterestdetail_updatetime_prop"></a>
+<p class="column">
+<span class="coltitle">UPDATETIME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_updateuser"></a>
+<p class="column">
+<span class="coltitle">UpdateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: UpdateUserID)</span>
+<br>
+<span class="desc">User who last updated the object</span>
+<a name="addlinterestdetail_updateuser_prop"></a>
+<p class="column">
+<span class="coltitle">UPDATEUSER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_versionlist"></a>
+<p class="column">
+<span class="coltitle">VersionList</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning windowed.AddlInterestDetailVersionList</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="addlinterestdetail_versionlistuntyped"></a>
+<p class="column">
+<span class="coltitle">VersionListUntyped</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.core.effdate.EffDatedVersionList</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="Unique Keys for AddlInterestDetail"></a><div class="arraysbox">Unique Keys for AddlInterestDetail</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>addlinterestdeta1a</td>
+<td>PublicID</td></tr>
+<tr><td>addlinterestdeta3a</td>
+<td>BranchID, FixedID, Subtype, ID</td></tr>
+</table>
+<a name="Subtypes"></a><div class="arraysbox">Subtypes</div>
+<div class='subtypebox'>
+<a name=BAVhcleAddlInterest></a>
+<div class="titlebox">
+<div class="filtertitle">BAVhcleAddlInterest <span class='supername'>(subtype of <A HREF="AddlInterestDetail.html" TARGET="tableFrame">AddlInterestDetail</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_573" class="reftext" onclick='showAndHideRefBox("refbox_573", "reflink_573")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_573" class="refbox_inner" style="display:none;">
+An additional interest on a businsess auto vehicle
+</div>
+</span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_574" class="reftext" onclick='showAndHideRefBox("refbox_574", "reflink_574")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_574" class="refbox_inner" style="display:none;">
+<A HREF="../full/BusinessVehicle.html" TARGET="tableFrame">BusinessVehicle.AdditionalInterests</A>
+</div>
+</span>
+</div>
+<a name="bavhcleaddlinterest_basedon"></a>
+<p class="column">
+<span class="coltitle">BasedOn</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning BAVhcleAddlInterest</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="bavhcleaddlinterest_bavehicle"></a>
+<p class="column">
+<span class="coltitle">BAVehicle</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="BusinessVehicle.html" TARGET="tableFrame">BusinessVehicle</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<div class='screenrefbody'>
+<span id=showhideUI_4 onclick='showAndHideUIDetails("UITable_4", "showhideUI_4")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_4' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.BAVhcleAddlInterest.pcf:43</td>
+<td>Web.Policy.BA.Vehicles</td>
+<td>addlInterestDetail.BAVehicle</td>
+<td>false</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="bavhcleaddlinterest_bavehicle_prop"></a>
+<p class="column">
+<span class="coltitle">BAVEHICLE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="bavhcleaddlinterest_branch"></a>
+<p class="column">
+<span class="coltitle">Branch</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning PolicyPeriod</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="bavhcleaddlinterest_type"></a>
+<p class="column">
+<span class="coltitle">TYPE</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EffDatedEntityTypeReference<entity.BAVhcleAddlInterest, entity.PolicyPeriod></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="bavhcleaddlinterest_unsliced"></a>
+<p class="column">
+<span class="coltitle">Unsliced</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning BAVhcleAddlInterest</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="bavhcleaddlinterest_versionlist"></a>
+<p class="column">
+<span class="coltitle">VersionList</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning windowed.BAVhcleAddlInterestVersionList</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="Unique Keys for BAVhcleAddlInterest"></a><div class="arraysbox">Unique Keys for BAVhcleAddlInterest</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>addlinterestdeta1a</td>
+<td>PublicID</td></tr>
+<tr><td>addlinterestdeta3a</td>
+<td>BranchID, FixedID, Subtype, ID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=BOPBldgAddlInterest></a>
+<div class="titlebox">
+<div class="filtertitle">BOPBldgAddlInterest <span class='supername'>(subtype of <A HREF="AddlInterestDetail.html" TARGET="tableFrame">AddlInterestDetail</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_575" class="reftext" onclick='showAndHideRefBox("refbox_575", "reflink_575")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_575" class="refbox_inner" style="display:none;">
+An additional interest on a building
+</div>
+</span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_576" class="reftext" onclick='showAndHideRefBox("refbox_576", "reflink_576")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_576" class="refbox_inner" style="display:none;">
+<A HREF="../full/BOPBuilding.html" TARGET="tableFrame">BOPBuilding.AdditionalInterests</A>
+</div>
+</span>
+</div>
+<a name="bopbldgaddlinterest_basedon"></a>
+<p class="column">
+<span class="coltitle">BasedOn</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning BOPBldgAddlInterest</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="bopbldgaddlinterest_bopbuilding"></a>
+<p class="column">
+<span class="coltitle">BOPBuilding</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="BOPBuilding.html" TARGET="tableFrame">BOPBuilding</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<div class='screenrefbody'>
+<span id=showhideUI_5 onclick='showAndHideUIDetails("UITable_5", "showhideUI_5")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_5' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.BOPBldgAddlInterest.pcf:43</td>
+<td>Web.Policy.BOP.Buildings</td>
+<td>addlInterestDetail.BOPBuilding</td>
+<td>false</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="bopbldgaddlinterest_bopbuilding_prop"></a>
+<p class="column">
+<span class="coltitle">BOPBUILDING_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="bopbldgaddlinterest_branch"></a>
+<p class="column">
+<span class="coltitle">Branch</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning PolicyPeriod</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="bopbldgaddlinterest_type"></a>
+<p class="column">
+<span class="coltitle">TYPE</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EffDatedEntityTypeReference<entity.BOPBldgAddlInterest, entity.PolicyPeriod></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="bopbldgaddlinterest_unsliced"></a>
+<p class="column">
+<span class="coltitle">Unsliced</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning BOPBldgAddlInterest</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="bopbldgaddlinterest_versionlist"></a>
+<p class="column">
+<span class="coltitle">VersionList</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning windowed.BOPBldgAddlInterestVersionList</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="Unique Keys for BOPBldgAddlInterest"></a><div class="arraysbox">Unique Keys for BOPBldgAddlInterest</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>addlinterestdeta1a</td>
+<td>PublicID</td></tr>
+<tr><td>addlinterestdeta3a</td>
+<td>BranchID, FixedID, Subtype, ID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=CPBldgAddlInterest></a>
+<div class="titlebox">
+<div class="filtertitle">CPBldgAddlInterest <span class='supername'>(subtype of <A HREF="AddlInterestDetail.html" TARGET="tableFrame">AddlInterestDetail</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_577" class="reftext" onclick='showAndHideRefBox("refbox_577", "reflink_577")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_577" class="refbox_inner" style="display:none;">
+An additional interest on a building
+</div>
+</span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_578" class="reftext" onclick='showAndHideRefBox("refbox_578", "reflink_578")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_578" class="refbox_inner" style="display:none;">
+<A HREF="../full/CPBuilding.html" TARGET="tableFrame">CPBuilding.AdditionalInterests</A>
+</div>
+</span>
+</div>
+<a name="cpbldgaddlinterest_basedon"></a>
+<p class="column">
+<span class="coltitle">BasedOn</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning CPBldgAddlInterest</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbldgaddlinterest_branch"></a>
+<p class="column">
+<span class="coltitle">Branch</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning PolicyPeriod</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbldgaddlinterest_cpbuilding"></a>
+<p class="column">
+<span class="coltitle">CPBuilding</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="CPBuilding.html" TARGET="tableFrame">CPBuilding</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<div class='screenrefbody'>
+<span id=showhideUI_6 onclick='showAndHideUIDetails("UITable_6", "showhideUI_6")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_6' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.CPBldgAddlInterest.pcf:43</td>
+<td>Web.Policy.CP.Location.Building</td>
+<td>addlInterestDetail.CPBuilding</td>
+<td>false</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="cpbldgaddlinterest_cpbuilding_prop"></a>
+<p class="column">
+<span class="coltitle">CPBUILDING_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbldgaddlinterest_type"></a>
+<p class="column">
+<span class="coltitle">TYPE</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EffDatedEntityTypeReference<entity.CPBldgAddlInterest, entity.PolicyPeriod></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbldgaddlinterest_unsliced"></a>
+<p class="column">
+<span class="coltitle">Unsliced</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning CPBldgAddlInterest</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="cpbldgaddlinterest_versionlist"></a>
+<p class="column">
+<span class="coltitle">VersionList</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning windowed.CPBldgAddlInterestVersionList</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="Unique Keys for CPBldgAddlInterest"></a><div class="arraysbox">Unique Keys for CPBldgAddlInterest</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>addlinterestdeta1a</td>
+<td>PublicID</td></tr>
+<tr><td>addlinterestdeta3a</td>
+<td>BranchID, FixedID, Subtype, ID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=HOPDwellAddlInterest></a>
+<div class="titlebox">
+<div class="filtertitle">HOPDwellAddlInterest <span class='supername'>(subtype of <A HREF="AddlInterestDetail.html" TARGET="tableFrame">AddlInterestDetail</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_579" class="reftext" onclick='showAndHideRefBox("refbox_579", "reflink_579")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_579" class="refbox_inner" style="display:none;">
+An additional interest on a homeowner's dwelling
+</div>
+</span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_580" class="reftext" onclick='showAndHideRefBox("refbox_580", "reflink_580")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_580" class="refbox_inner" style="display:none;">
+<A HREF="../full/HOPDwelling.html" TARGET="tableFrame">HOPDwelling.AdditionalInterests</A>
+</div>
+</span>
+</div>
+<a name="hopdwelladdlinterest_addlinteffdate"></a>
+<p class="column">
+<span class="coltitle">AddlIntEffDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Effective date for additional interest</span>
+<div class='screenrefbody'>
+<span id=showhideUI_7 onclick='showAndHideUIDetails("UITable_7", "showhideUI_7")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_7' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingAdditionalInterestDetailsDV.pcf:155</td>
+<td>Web.Policy.HOP.HOPDwelling.AdditionalInterest.EffDate</td>
+<td>(addlInterestDetail as HOPDwellAddlInterest).AddlIntEffDate</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelladdlinterest_addlinteffdate_prop"></a>
+<p class="column">
+<span class="coltitle">ADDLINTEFFDATE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopdwelladdlinterest_addlintexpdate"></a>
+<p class="column">
+<span class="coltitle">AddlIntExpDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Expiration date for additional interest</span>
+<div class='screenrefbody'>
+<span id=showhideUI_8 onclick='showAndHideUIDetails("UITable_8", "showhideUI_8")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_8' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingAdditionalInterestDetailsDV.pcf:160</td>
+<td>Web.Policy.HOP.HOPDwelling.AdditionalInterest.ExpDate</td>
+<td>(addlInterestDetail as HOPDwellAddlInterest).AddlIntExpDate</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelladdlinterest_addlintexpdate_prop"></a>
+<p class="column">
+<span class="coltitle">ADDLINTEXPDATE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopdwelladdlinterest_basedon"></a>
+<p class="column">
+<span class="coltitle">BasedOn</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning HOPDwellAddlInterest</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopdwelladdlinterest_branch"></a>
+<p class="column">
+<span class="coltitle">Branch</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning PolicyPeriod</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopdwelladdlinterest_description"></a>
+<p class="column">
+<span class="coltitle">Description</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Description of additional interest</span>
+<div class='screenrefbody'>
+<span id=showhideUI_9 onclick='showAndHideUIDetails("UITable_9", "showhideUI_9")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_9' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingAdditionalInterestDetailsDV.pcf:165</td>
+<td>Web.Policy.HOP.HOPDwelling.AdditionalInterest.Description</td>
+<td>(addlInterestDetail as HOPDwellAddlInterest).Description</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelladdlinterest_description_prop"></a>
+<p class="column">
+<span class="coltitle">DESCRIPTION_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopdwelladdlinterest_hopdwelling"></a>
+<p class="column">
+<span class="coltitle">HOPDwelling</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="HOPDwelling.html" TARGET="tableFrame">HOPDwelling</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopdwelladdlinterest_hopdwelling_prop"></a>
+<p class="column">
+<span class="coltitle">HOPDWELLING_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopdwelladdlinterest_type"></a>
+<p class="column">
+<span class="coltitle">TYPE</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EffDatedEntityTypeReference<entity.HOPDwellAddlInterest, entity.PolicyPeriod></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopdwelladdlinterest_unsliced"></a>
+<p class="column">
+<span class="coltitle">Unsliced</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning HOPDwellAddlInterest</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopdwelladdlinterest_versionlist"></a>
+<p class="column">
+<span class="coltitle">VersionList</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning windowed.HOPDwellAddlInterestVersionList</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="Unique Keys for HOPDwellAddlInterest"></a><div class="arraysbox">Unique Keys for HOPDwellAddlInterest</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>addlinterestdeta1a</td>
+<td>PublicID</td></tr>
+<tr><td>addlinterestdeta3a</td>
+<td>BranchID, FixedID, Subtype, ID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=IMSchEquipAddlInterest></a>
+<div class="titlebox">
+<div class="filtertitle">IMSchEquipAddlInterest <span class='supername'>(subtype of <A HREF="AddlInterestDetail.html" TARGET="tableFrame">AddlInterestDetail</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_581" class="reftext" onclick='showAndHideRefBox("refbox_581", "reflink_581")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_581" class="refbox_inner" style="display:none;">
+An additional interest on a piece of contractors equipment
+</div>
+</span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_582" class="reftext" onclick='showAndHideRefBox("refbox_582", "reflink_582")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_582" class="refbox_inner" style="display:none;">
+<A HREF="../full/ContractorsEquipment.html" TARGET="tableFrame">ContractorsEquipment.AdditionalInterests</A>
+</div>
+</span>
+</div>
+<a name="imschequipaddlinterest_basedon"></a>
+<p class="column">
+<span class="coltitle">BasedOn</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning IMSchEquipAddlInterest</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="imschequipaddlinterest_branch"></a>
+<p class="column">
+<span class="coltitle">Branch</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning PolicyPeriod</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="imschequipaddlinterest_contractorsequipment"></a>
+<p class="column">
+<span class="coltitle">ContractorsEquipment</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="ContractorsEquipment.html" TARGET="tableFrame">ContractorsEquipment</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<div class='screenrefbody'>
+<span id=showhideUI_10 onclick='showAndHideUIDetails("UITable_10", "showhideUI_10")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_10' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.IMSchEquipAddlInterest.pcf:39</td>
+<td>Web.Policy.IM.ContractorsEquipment</td>
+<td>addlInterestDetail.ContractorsEquipment</td>
+<td>false</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="imschequipaddlinterest_contractorsequipment_prop"></a>
+<p class="column">
+<span class="coltitle">CONTRACTORSEQUIPMENT_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="imschequipaddlinterest_type"></a>
+<p class="column">
+<span class="coltitle">TYPE</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EffDatedEntityTypeReference<entity.IMSchEquipAddlInterest, entity.PolicyPeriod></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="imschequipaddlinterest_unsliced"></a>
+<p class="column">
+<span class="coltitle">Unsliced</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning IMSchEquipAddlInterest</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="imschequipaddlinterest_versionlist"></a>
+<p class="column">
+<span class="coltitle">VersionList</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning windowed.IMSchEquipAddlInterestVersionList</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="Unique Keys for IMSchEquipAddlInterest"></a><div class="arraysbox">Unique Keys for IMSchEquipAddlInterest</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>addlinterestdeta1a</td>
+<td>PublicID</td></tr>
+<tr><td>addlinterestdeta3a</td>
+<td>BranchID, FixedID, Subtype, ID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=PAVhcleAddlInterest></a>
+<div class="titlebox">
+<div class="filtertitle">PAVhcleAddlInterest <span class='supername'>(subtype of <A HREF="AddlInterestDetail.html" TARGET="tableFrame">AddlInterestDetail</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_583" class="reftext" onclick='showAndHideRefBox("refbox_583", "reflink_583")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_583" class="refbox_inner" style="display:none;">
+An additional interest on a personal auto vehicle
+</div>
+</span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_584" class="reftext" onclick='showAndHideRefBox("refbox_584", "reflink_584")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_584" class="refbox_inner" style="display:none;">
+<A HREF="../full/PersonalVehicle.html" TARGET="tableFrame">PersonalVehicle.AdditionalInterests</A>
+</div>
+</span>
+</div>
+<a name="pavhcleaddlinterest_basedon"></a>
+<p class="column">
+<span class="coltitle">BasedOn</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning PAVhcleAddlInterest</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="pavhcleaddlinterest_branch"></a>
+<p class="column">
+<span class="coltitle">Branch</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning PolicyPeriod</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="pavhcleaddlinterest_pavehicle"></a>
+<p class="column">
+<span class="coltitle">PAVehicle</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="PersonalVehicle.html" TARGET="tableFrame">PersonalVehicle</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<div class='screenrefbody'>
+<span id=showhideUI_11 onclick='showAndHideUIDetails("UITable_11", "showhideUI_11")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_11' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>PolicyAddlInterestPanelSet.PAVhcleAddlInterest.pcf:43</td>
+<td>Web.Policy.PA.Vehicles</td>
+<td>addlInterestDetail.PAVehicle</td>
+<td>false</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+PolicyFile_PersonalAuto_Drivers
+<br>
+PolicyFile_Contacts
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+EditPolicyContactRolePopup
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="pavhcleaddlinterest_pavehicle_prop"></a>
+<p class="column">
+<span class="coltitle">PAVEHICLE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="pavhcleaddlinterest_type"></a>
+<p class="column">
+<span class="coltitle">TYPE</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EffDatedEntityTypeReference<entity.PAVhcleAddlInterest, entity.PolicyPeriod></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="pavhcleaddlinterest_unsliced"></a>
+<p class="column">
+<span class="coltitle">Unsliced</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning PAVhcleAddlInterest</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="pavhcleaddlinterest_versionlist"></a>
+<p class="column">
+<span class="coltitle">VersionList</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning windowed.PAVhcleAddlInterestVersionList</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="Unique Keys for PAVhcleAddlInterest"></a><div class="arraysbox">Unique Keys for PAVhcleAddlInterest</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>addlinterestdeta1a</td>
+<td>PublicID</td></tr>
+<tr><td>addlinterestdeta3a</td>
+<td>BranchID, FixedID, Subtype, ID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<script language="JavaScript">
+function showAllUIDetails() {
+showUIDetails('UITable_0', 'showhideUI_0');
+showUIDetails('UITable_1', 'showhideUI_1');
+showUIDetails('UITable_2', 'showhideUI_2');
+showUIDetails('UITable_3', 'showhideUI_3');
+showUIDetails('UITable_4', 'showhideUI_4');
+showUIDetails('UITable_5', 'showhideUI_5');
+showUIDetails('UITable_6', 'showhideUI_6');
+showUIDetails('UITable_7', 'showhideUI_7');
+showUIDetails('UITable_8', 'showhideUI_8');
+showUIDetails('UITable_9', 'showhideUI_9');
+showUIDetails('UITable_10', 'showhideUI_10');
+showUIDetails('UITable_11', 'showhideUI_11');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Hide user interface details on all fields';
+  link.onclick = hideAllUIDetails;
+  return false;
+}
+function hideAllUIDetails() {
+hideUIDetails('UITable_0', 'showhideUI_0');
+hideUIDetails('UITable_1', 'showhideUI_1');
+hideUIDetails('UITable_2', 'showhideUI_2');
+hideUIDetails('UITable_3', 'showhideUI_3');
+hideUIDetails('UITable_4', 'showhideUI_4');
+hideUIDetails('UITable_5', 'showhideUI_5');
+hideUIDetails('UITable_6', 'showhideUI_6');
+hideUIDetails('UITable_7', 'showhideUI_7');
+hideUIDetails('UITable_8', 'showhideUI_8');
+hideUIDetails('UITable_9', 'showhideUI_9');
+hideUIDetails('UITable_10', 'showhideUI_10');
+hideUIDetails('UITable_11', 'showhideUI_11');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Show user interface details on all fields';
+  link.onclick = showAllUIDetails;
+  return false;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1342 @@
+<html>
+<head>
+<title>ReasonCode</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox"
+<div><span class="pagetitle">ReasonCode</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="entityname">(pctl_reasoncode)</span>
+</div>
+<div class="desc">Reason code</div>
+</div>
+<table cellpadding="3" cellspacing="0" border="0" height="20" width="100%">
+<tr>
+<td nowrap="true" class="attrbox" height="20">
+<span class="attrtitle">Attributes: 
+
+</span>
+</td>
+</tr>
+</table>
+<br/>
+<div class="refbox biglist odd">
+<span id="reflink_7897" class="reftext" onclick='showAndHideRefBox("refbox_7897", "reflink_7897")'><img src="../../res/blackup.gif" border="0"><b>Referenced by: </b></span>
+<div id="refbox_7897" class="refbox_inner" style="display:none;">
+<A HREF="../full/CancelRefund.html" TARGET="tableFrame">CancelRefund.ReasonCode</A><br><A HREF="../full/Job.html#Cancellation" TARGET="tableFrame">Cancellation.CancelReasonCode</A><br><A HREF="../full/Job.html#Submission" TARGET="tableFrame">Submission.RejectReason</A><br><A HREF="../full/ReasonCodeActionType.html" TARGET="tableFrame">ReasonCodeActionType.ReasonCode</A>
+</div>
+</span>
+</div>
+<a id='TOC'></a>
+<a name="Typecodes"></a><div class="arraysbox">Typecodes</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+<td>Description</td>
+<td>Priority</td>
+<td>Internal</td>
+<td>Retired</td>
+</tr>
+<tr valign="top">
+<td><a href=#CovsNotAvailable>CovsNotAvailable</a></td>
+<td>Requested coverages/limits not available</td>
+<td>Requested coverages/limits not available</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#InfoNotProvided>InfoNotProvided</a></td>
+<td>Required information not provided</td>
+<td>Required information not provided</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#LossHistory>LossHistory</a></td>
+<td>Loss history</td>
+<td>Loss history</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#OpsChars>OpsChars</a></td>
+<td>Operations characteristics</td>
+<td>Operations characteristics</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#PaymentHistory>PaymentHistory</a></td>
+<td>Payment history</td>
+<td>Payment history</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#ProdRequirements>ProdRequirements</a></td>
+<td>Does not meet program/product requirements</td>
+<td>Does not meet program/product requirements</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#ProductsChars>ProductsChars</a></td>
+<td>Products characteristics</td>
+<td>Products characteristics</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#cancel>cancel</a></td>
+<td>Cancellation of underlying insurance</td>
+<td>Cancellation of underlying insurance</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#condemn>condemn</a></td>
+<td>Condemned/unsafe</td>
+<td>Condemned/unsafe</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#criminal>criminal</a></td>
+<td>Criminal conduct by the insured</td>
+<td>Criminal conduct by the insured</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#eligibility>eligibility</a></td>
+<td>No longer eligible for group or program</td>
+<td>No longer eligible for group or program</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#failcoop>failcoop</a></td>
+<td>Failure to cooperate</td>
+<td>Failure to cooperate</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#failsafe>failsafe</a></td>
+<td>Failure to comply with safety recommendations</td>
+<td>Failure to comply with safety recommendations</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#failterm>failterm</a></td>
+<td>Failure to comply with terms and conditions</td>
+<td>Failure to comply with terms and conditions</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#fincononpay>fincononpay</a></td>
+<td>Insured's request - (finance co. nonpay)</td>
+<td>Insured's request - (Finance co. nonpay)</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#flatrewrite>flatrewrite</a></td>
+<td>Policy rewritten or replaced (flat cancel)</td>
+<td>Policy rewritten or replaced (flat cancel)</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#fraud>fraud</a></td>
+<td>Fraud</td>
+<td>Fraud</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#midtermrewrite>midtermrewrite</a></td>
+<td>Policy rewritten (mid-term)</td>
+<td>Policy rewritten (mid-term)</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#noc>noc</a></td>
+<td>Insured's request - N.O.C</td>
+<td>Insured's request - N.O.C</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#noemployee>noemployee</a></td>
+<td>No employees/operations</td>
+<td>No employees/operations</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#nondisclose>nondisclose</a></td>
+<td>Non disclosure of losses or underwriting information</td>
+<td>Non disclosure of losses or underwriting information</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#nonpayment>nonpayment</a></td>
+<td>Non-payment</td>
+<td>Payment not received</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#nonreport>nonreport</a></td>
+<td>Non-report of payroll or failure to cooperate</td>
+<td>Non-report of payroll or failure to cooperate</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#nottaken>nottaken</a></td>
+<td>Policy not-taken</td>
+<td>Policy not-taken</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#reinsurance>reinsurance</a></td>
+<td>Loss of reinsurance</td>
+<td>Loss of reinsurance</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#riskchange>riskchange</a></td>
+<td>Substantial change in risk or increase in hazard</td>
+<td>Substantial change in risk or increase in hazard</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#sold>sold</a></td>
+<td>Out of business/sold</td>
+<td>Out of business/sold</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#suspension>suspension</a></td>
+<td>Suspension or revocation of license or permits</td>
+<td>Suspension or revocation of license or permits</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#unresolvedcontingency>unresolvedcontingency</a></td>
+<td>Unresolved Contingency</td>
+<td>Unresolved Contingency</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#uwreasons>uwreasons</a></td>
+<td>Underwriting reasons</td>
+<td>Underwriting reasons</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#vacant>vacant</a></td>
+<td>Vacant; below occupancy limit</td>
+<td>Vacant; below occupancy limit</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#violation>violation</a></td>
+<td>Violation of health, safety, fire, or codes</td>
+<td>Violation of health, safety, fire, or codes</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#wrapup>wrapup</a></td>
+<td>Participation in wrap-up complete</td>
+<td>Participation in wrap-up complete</td>
+<td align=center>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<div class='subtypebox'>
+<a name=CovsNotAvailable></a>
+<div class="titlebox">
+<div class="filtertitle">CovsNotAvailable <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7898" class="reftext" onclick='showAndHideRefBox("refbox_7898", "reflink_7898")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7898" class="refbox_inner" style="display:none;">
+Requested coverages/limits not available
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="LetterType_tl.html#Declination" TARGET="tableFrame">LetterType.Declination</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Requested coverages/limits not available</td>
+<td>Requested coverages/limits not available</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=InfoNotProvided></a>
+<div class="titlebox">
+<div class="filtertitle">InfoNotProvided <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7899" class="reftext" onclick='showAndHideRefBox("refbox_7899", "reflink_7899")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7899" class="refbox_inner" style="display:none;">
+Required information not provided
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="LetterType_tl.html#Declination" TARGET="tableFrame">LetterType.Declination</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Required information not provided</td>
+<td>Required information not provided</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=LossHistory></a>
+<div class="titlebox">
+<div class="filtertitle">LossHistory <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7900" class="reftext" onclick='showAndHideRefBox("refbox_7900", "reflink_7900")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7900" class="refbox_inner" style="display:none;">
+Loss history
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="LetterType_tl.html#Declination" TARGET="tableFrame">LetterType.Declination</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Loss history</td>
+<td>Loss history</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=OpsChars></a>
+<div class="titlebox">
+<div class="filtertitle">OpsChars <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7901" class="reftext" onclick='showAndHideRefBox("refbox_7901", "reflink_7901")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7901" class="refbox_inner" style="display:none;">
+Operations characteristics
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="LetterType_tl.html#Declination" TARGET="tableFrame">LetterType.Declination</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Operations characteristics</td>
+<td>Operations characteristics</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=PaymentHistory></a>
+<div class="titlebox">
+<div class="filtertitle">PaymentHistory <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7902" class="reftext" onclick='showAndHideRefBox("refbox_7902", "reflink_7902")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7902" class="refbox_inner" style="display:none;">
+Payment history
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="LetterType_tl.html#Declination" TARGET="tableFrame">LetterType.Declination</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Payment history</td>
+<td>Payment history</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=ProdRequirements></a>
+<div class="titlebox">
+<div class="filtertitle">ProdRequirements <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7903" class="reftext" onclick='showAndHideRefBox("refbox_7903", "reflink_7903")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7903" class="refbox_inner" style="display:none;">
+Does not meet program/product requirements
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="LetterType_tl.html#Declination" TARGET="tableFrame">LetterType.Declination</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Does not meet program/product requirements</td>
+<td>Does not meet program/product requirements</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=ProductsChars></a>
+<div class="titlebox">
+<div class="filtertitle">ProductsChars <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7904" class="reftext" onclick='showAndHideRefBox("refbox_7904", "reflink_7904")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7904" class="refbox_inner" style="display:none;">
+Products characteristics
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="LetterType_tl.html#Declination" TARGET="tableFrame">LetterType.Declination</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Products characteristics</td>
+<td>Products characteristics</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=cancel></a>
+<div class="titlebox">
+<div class="filtertitle">cancel <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7905" class="reftext" onclick='showAndHideRefBox("refbox_7905", "reflink_7905")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7905" class="refbox_inner" style="display:none;">
+Cancellation of underlying insurance
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Cancellation of underlying insurance</td>
+<td>Cancellation of underlying insurance</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=condemn></a>
+<div class="titlebox">
+<div class="filtertitle">condemn <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7906" class="reftext" onclick='showAndHideRefBox("refbox_7906", "reflink_7906")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7906" class="refbox_inner" style="display:none;">
+Condemned/unsafe
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Condemned/unsafe</td>
+<td>Condemned/unsafe</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=criminal></a>
+<div class="titlebox">
+<div class="filtertitle">criminal <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7907" class="reftext" onclick='showAndHideRefBox("refbox_7907", "reflink_7907")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7907" class="refbox_inner" style="display:none;">
+Criminal conduct by the insured
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Criminal conduct by the insured</td>
+<td>Criminal conduct by the insured</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=eligibility></a>
+<div class="titlebox">
+<div class="filtertitle">eligibility <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7908" class="reftext" onclick='showAndHideRefBox("refbox_7908", "reflink_7908")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7908" class="refbox_inner" style="display:none;">
+No longer eligible for group or program
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>No longer eligible for group or program</td>
+<td>No longer eligible for group or program</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=failcoop></a>
+<div class="titlebox">
+<div class="filtertitle">failcoop <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7909" class="reftext" onclick='showAndHideRefBox("refbox_7909", "reflink_7909")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7909" class="refbox_inner" style="display:none;">
+Failure to cooperate
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Failure to cooperate</td>
+<td>Failure to cooperate</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=failsafe></a>
+<div class="titlebox">
+<div class="filtertitle">failsafe <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7910" class="reftext" onclick='showAndHideRefBox("refbox_7910", "reflink_7910")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7910" class="refbox_inner" style="display:none;">
+Failure to comply with safety recommendations
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Failure to comply with safety recommendations</td>
+<td>Failure to comply with safety recommendations</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=failterm></a>
+<div class="titlebox">
+<div class="filtertitle">failterm <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7911" class="reftext" onclick='showAndHideRefBox("refbox_7911", "reflink_7911")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7911" class="refbox_inner" style="display:none;">
+Failure to comply with terms and conditions
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Failure to comply with terms and conditions</td>
+<td>Failure to comply with terms and conditions</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=fincononpay></a>
+<div class="titlebox">
+<div class="filtertitle">fincononpay <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7912" class="reftext" onclick='showAndHideRefBox("refbox_7912", "reflink_7912")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7912" class="refbox_inner" style="display:none;">
+Insured's request - (Finance co. nonpay)
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#insured" TARGET="tableFrame">CancellationSource.insured</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Insured's request - (finance co. nonpay)</td>
+<td>Insured's request - (Finance co. nonpay)</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=flatrewrite></a>
+<div class="titlebox">
+<div class="filtertitle">flatrewrite <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7913" class="reftext" onclick='showAndHideRefBox("refbox_7913", "reflink_7913")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7913" class="refbox_inner" style="display:none;">
+Policy rewritten or replaced (flat cancel)
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Policy rewritten or replaced (flat cancel)</td>
+<td>Policy rewritten or replaced (flat cancel)</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=fraud></a>
+<div class="titlebox">
+<div class="filtertitle">fraud <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7914" class="reftext" onclick='showAndHideRefBox("refbox_7914", "reflink_7914")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7914" class="refbox_inner" style="display:none;">
+Fraud
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Fraud</td>
+<td>Fraud</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=midtermrewrite></a>
+<div class="titlebox">
+<div class="filtertitle">midtermrewrite <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7915" class="reftext" onclick='showAndHideRefBox("refbox_7915", "reflink_7915")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7915" class="refbox_inner" style="display:none;">
+Policy rewritten (mid-term)
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Policy rewritten (mid-term)</td>
+<td>Policy rewritten (mid-term)</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=noc></a>
+<div class="titlebox">
+<div class="filtertitle">noc <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7916" class="reftext" onclick='showAndHideRefBox("refbox_7916", "reflink_7916")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7916" class="refbox_inner" style="display:none;">
+Insured's request - N.O.C
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#insured" TARGET="tableFrame">CancellationSource.insured</A></li>
+<li>
+<A HREF="LetterType_tl.html#NotTakenAck" TARGET="tableFrame">LetterType.NotTakenAck</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Insured's request - N.O.C</td>
+<td>Insured's request - N.O.C</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=noemployee></a>
+<div class="titlebox">
+<div class="filtertitle">noemployee <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7917" class="reftext" onclick='showAndHideRefBox("refbox_7917", "reflink_7917")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7917" class="refbox_inner" style="display:none;">
+No employees/operations
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#insured" TARGET="tableFrame">CancellationSource.insured</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>No employees/operations</td>
+<td>No employees/operations</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=nondisclose></a>
+<div class="titlebox">
+<div class="filtertitle">nondisclose <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7918" class="reftext" onclick='showAndHideRefBox("refbox_7918", "reflink_7918")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7918" class="refbox_inner" style="display:none;">
+Non disclosure of losses or underwriting information
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Non disclosure of losses or underwriting information</td>
+<td>Non disclosure of losses or underwriting information</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=nonpayment></a>
+<div class="titlebox">
+<div class="filtertitle">nonpayment <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7919" class="reftext" onclick='showAndHideRefBox("refbox_7919", "reflink_7919")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7919" class="refbox_inner" style="display:none;">
+Payment not received
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Non-payment</td>
+<td>Payment not received</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=nonreport></a>
+<div class="titlebox">
+<div class="filtertitle">nonreport <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7920" class="reftext" onclick='showAndHideRefBox("refbox_7920", "reflink_7920")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7920" class="refbox_inner" style="display:none;">
+Non-report of payroll or failure to cooperate
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Non-report of payroll or failure to cooperate</td>
+<td>Non-report of payroll or failure to cooperate</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=nottaken></a>
+<div class="titlebox">
+<div class="filtertitle">nottaken <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7921" class="reftext" onclick='showAndHideRefBox("refbox_7921", "reflink_7921")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7921" class="refbox_inner" style="display:none;">
+Policy not-taken
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#insured" TARGET="tableFrame">CancellationSource.insured</A></li>
+<li>
+<A HREF="LetterType_tl.html#NotTakenAck" TARGET="tableFrame">LetterType.NotTakenAck</A></li>
+<li>
+<A HREF="PolicyPeriodStatus_tl.html#NotTaken" TARGET="tableFrame">PolicyPeriodStatus.NotTaken</A></li>
+<li>
+<A HREF="PolicyPeriodStatus_tl.html#NotTaken" TARGET="tableFrame">PolicyPeriodStatus.NotTaken</A></li>
+<li>
+<A HREF="PolicyPeriodStatus_tl.html#NotTaking" TARGET="tableFrame">PolicyPeriodStatus.NotTaking</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Policy not-taken</td>
+<td>Policy not-taken</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=reinsurance></a>
+<div class="titlebox">
+<div class="filtertitle">reinsurance <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7922" class="reftext" onclick='showAndHideRefBox("refbox_7922", "reflink_7922")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7922" class="refbox_inner" style="display:none;">
+Loss of reinsurance
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Loss of reinsurance</td>
+<td>Loss of reinsurance</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=riskchange></a>
+<div class="titlebox">
+<div class="filtertitle">riskchange <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7923" class="reftext" onclick='showAndHideRefBox("refbox_7923", "reflink_7923")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7923" class="refbox_inner" style="display:none;">
+Substantial change in risk or increase in hazard
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Substantial change in risk or increase in hazard</td>
+<td>Substantial change in risk or increase in hazard</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=sold></a>
+<div class="titlebox">
+<div class="filtertitle">sold <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7924" class="reftext" onclick='showAndHideRefBox("refbox_7924", "reflink_7924")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7924" class="refbox_inner" style="display:none;">
+Out of business/sold
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#insured" TARGET="tableFrame">CancellationSource.insured</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Out of business/sold</td>
+<td>Out of business/sold</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=suspension></a>
+<div class="titlebox">
+<div class="filtertitle">suspension <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7925" class="reftext" onclick='showAndHideRefBox("refbox_7925", "reflink_7925")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7925" class="refbox_inner" style="display:none;">
+Suspension or revocation of license or permits
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Suspension or revocation of license or permits</td>
+<td>Suspension or revocation of license or permits</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=unresolvedcontingency></a>
+<div class="titlebox">
+<div class="filtertitle">unresolvedcontingency <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7926" class="reftext" onclick='showAndHideRefBox("refbox_7926", "reflink_7926")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7926" class="refbox_inner" style="display:none;">
+Unresolved Contingency
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Unresolved Contingency</td>
+<td>Unresolved Contingency</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=uwreasons></a>
+<div class="titlebox">
+<div class="filtertitle">uwreasons <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7927" class="reftext" onclick='showAndHideRefBox("refbox_7927", "reflink_7927")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7927" class="refbox_inner" style="display:none;">
+Underwriting reasons
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Underwriting reasons</td>
+<td>Underwriting reasons</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=vacant></a>
+<div class="titlebox">
+<div class="filtertitle">vacant <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7928" class="reftext" onclick='showAndHideRefBox("refbox_7928", "reflink_7928")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7928" class="refbox_inner" style="display:none;">
+Vacant; below occupancy limit
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Vacant; below occupancy limit</td>
+<td>Vacant; below occupancy limit</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=violation></a>
+<div class="titlebox">
+<div class="filtertitle">violation <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7929" class="reftext" onclick='showAndHideRefBox("refbox_7929", "reflink_7929")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7929" class="refbox_inner" style="display:none;">
+Violation of health, safety, fire, or codes
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Violation of health, safety, fire, or codes</td>
+<td>Violation of health, safety, fire, or codes</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=wrapup></a>
+<div class="titlebox">
+<div class="filtertitle">wrapup <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7930" class="reftext" onclick='showAndHideRefBox("refbox_7930", "reflink_7930")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7930" class="refbox_inner" style="display:none;">
+Participation in wrap-up complete
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+<li>
+<A HREF="CancellationSource_tl.html#carrier" TARGET="tableFrame">CancellationSource.carrier</A></li>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Participation in wrap-up complete</td>
+<td>Participation in wrap-up complete</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

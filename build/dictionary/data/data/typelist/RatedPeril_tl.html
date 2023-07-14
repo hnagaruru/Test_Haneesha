@@ -1,0 +1,563 @@
+<html>
+<head>
+<title>RatedPeril</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox"
+<div><span class="pagetitle">RatedPeril</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="entityname">(pctl_ratedperil)</span>
+</div>
+<div class="desc">Rated peril</div>
+</div>
+<table cellpadding="3" cellspacing="0" border="0" height="20" width="100%">
+<tr>
+<td nowrap="true" class="attrbox" height="20">
+<span class="attrtitle">Attributes: 
+
+</span>
+</td>
+</tr>
+</table>
+<br/>
+<div class="refbox biglist odd">
+<span id="reflink_7809" class="reftext" onclick='showAndHideRefBox("refbox_7809", "reflink_7809")'><img src="../../res/blackup.gif" border="0"><b>Referenced by: </b></span>
+<div id="refbox_7809" class="refbox_inner" style="display:none;">
+<A HREF="../full/HOPCost.html#HOPDwellSchPerilCovItemCovCost" TARGET="tableFrame">HOPDwellSchPerilCovItemCovCost.RatedPeril</A><br><A HREF="../full/HOPCost.html#HOPDwellingPerilCovCost" TARGET="tableFrame">HOPDwellingPerilCovCost.RatedPeril</A>
+</div>
+</span>
+</div>
+<a id='TOC'></a>
+<a name="Typecodes"></a><div class="arraysbox">Typecodes</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+<td>Description</td>
+<td>Priority</td>
+<td>Internal</td>
+<td>Retired</td>
+</tr>
+<tr valign="top">
+<td><a href=#aircraft>aircraft</a></td>
+<td>Aircraft</td>
+<td>Damage caused by aircraft</td>
+<td align=center>60</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#explosion>explosion</a></td>
+<td>Explosion</td>
+<td>Explosion</td>
+<td align=center>40</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#fallingobject>fallingobject</a></td>
+<td>Falling Object</td>
+<td>Falling object</td>
+<td align=center>120</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#fire>fire</a></td>
+<td>Fire</td>
+<td>Fire</td>
+<td align=center>10</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#icesnow>icesnow</a></td>
+<td>Weight of Ice, Snow, or Sleet</td>
+<td>Weight of ice, snow, or sleet</td>
+<td align=center>130</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#lightning>lightning</a></td>
+<td>Lightning</td>
+<td>lightning</td>
+<td align=center>20</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#riotcommotion>riotcommotion</a></td>
+<td>Riot or Civil Commotion</td>
+<td>Riot or civil commotion</td>
+<td align=center>50</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#smoke>smoke</a></td>
+<td>Smoke</td>
+<td>Smoke</td>
+<td align=center>80</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#theft>theft</a></td>
+<td>Theft</td>
+<td>Theft</td>
+<td align=center>100</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#vandalism>vandalism</a></td>
+<td>Vandalism</td>
+<td>Vandalism</td>
+<td align=center>90</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#vehicles>vehicles</a></td>
+<td>Vehicles</td>
+<td>Damage cause by vehicles</td>
+<td align=center>70</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#volcanic>volcanic</a></td>
+<td>Volcanic Action</td>
+<td>Volcanic action</td>
+<td align=center>110</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#water>water</a></td>
+<td>Non-Weather Water</td>
+<td>Non-weather water</td>
+<td align=center>140</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#windstormhail>windstormhail</a></td>
+<td>Windstorm or Hail</td>
+<td>Windstorm or hail</td>
+<td align=center>30</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<div class='subtypebox'>
+<a name=aircraft></a>
+<div class="titlebox">
+<div class="filtertitle">aircraft <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7810" class="reftext" onclick='showAndHideRefBox("refbox_7810", "reflink_7810")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7810" class="refbox_inner" style="display:none;">
+Damage caused by aircraft
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Aircraft</td>
+<td>Damage caused by aircraft</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=explosion></a>
+<div class="titlebox">
+<div class="filtertitle">explosion <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7811" class="reftext" onclick='showAndHideRefBox("refbox_7811", "reflink_7811")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7811" class="refbox_inner" style="display:none;">
+Explosion
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Explosion</td>
+<td>Explosion</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=fallingobject></a>
+<div class="titlebox">
+<div class="filtertitle">fallingobject <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7812" class="reftext" onclick='showAndHideRefBox("refbox_7812", "reflink_7812")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7812" class="refbox_inner" style="display:none;">
+Falling object
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Falling Object</td>
+<td>Falling object</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=fire></a>
+<div class="titlebox">
+<div class="filtertitle">fire <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7813" class="reftext" onclick='showAndHideRefBox("refbox_7813", "reflink_7813")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7813" class="refbox_inner" style="display:none;">
+Fire
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Fire</td>
+<td>Fire</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=icesnow></a>
+<div class="titlebox">
+<div class="filtertitle">icesnow <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7814" class="reftext" onclick='showAndHideRefBox("refbox_7814", "reflink_7814")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7814" class="refbox_inner" style="display:none;">
+Weight of ice, snow, or sleet
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Weight of Ice, Snow, or Sleet</td>
+<td>Weight of ice, snow, or sleet</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=lightning></a>
+<div class="titlebox">
+<div class="filtertitle">lightning <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7815" class="reftext" onclick='showAndHideRefBox("refbox_7815", "reflink_7815")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7815" class="refbox_inner" style="display:none;">
+lightning
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Lightning</td>
+<td>lightning</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=riotcommotion></a>
+<div class="titlebox">
+<div class="filtertitle">riotcommotion <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7816" class="reftext" onclick='showAndHideRefBox("refbox_7816", "reflink_7816")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7816" class="refbox_inner" style="display:none;">
+Riot or civil commotion
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Riot or Civil Commotion</td>
+<td>Riot or civil commotion</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=smoke></a>
+<div class="titlebox">
+<div class="filtertitle">smoke <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7817" class="reftext" onclick='showAndHideRefBox("refbox_7817", "reflink_7817")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7817" class="refbox_inner" style="display:none;">
+Smoke
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Smoke</td>
+<td>Smoke</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=theft></a>
+<div class="titlebox">
+<div class="filtertitle">theft <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7818" class="reftext" onclick='showAndHideRefBox("refbox_7818", "reflink_7818")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7818" class="refbox_inner" style="display:none;">
+Theft
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Theft</td>
+<td>Theft</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=vandalism></a>
+<div class="titlebox">
+<div class="filtertitle">vandalism <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7819" class="reftext" onclick='showAndHideRefBox("refbox_7819", "reflink_7819")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7819" class="refbox_inner" style="display:none;">
+Vandalism
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Vandalism</td>
+<td>Vandalism</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=vehicles></a>
+<div class="titlebox">
+<div class="filtertitle">vehicles <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7820" class="reftext" onclick='showAndHideRefBox("refbox_7820", "reflink_7820")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7820" class="refbox_inner" style="display:none;">
+Damage cause by vehicles
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Vehicles</td>
+<td>Damage cause by vehicles</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=volcanic></a>
+<div class="titlebox">
+<div class="filtertitle">volcanic <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7821" class="reftext" onclick='showAndHideRefBox("refbox_7821", "reflink_7821")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7821" class="refbox_inner" style="display:none;">
+Volcanic action
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Volcanic Action</td>
+<td>Volcanic action</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=water></a>
+<div class="titlebox">
+<div class="filtertitle">water <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7822" class="reftext" onclick='showAndHideRefBox("refbox_7822", "reflink_7822")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7822" class="refbox_inner" style="display:none;">
+Non-weather water
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Non-Weather Water</td>
+<td>Non-weather water</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=windstormhail></a>
+<div class="titlebox">
+<div class="filtertitle">windstormhail <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_7823" class="reftext" onclick='showAndHideRefBox("refbox_7823", "reflink_7823")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_7823" class="refbox_inner" style="display:none;">
+Windstorm or hail
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Windstorm or Hail</td>
+<td>Windstorm or hail</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

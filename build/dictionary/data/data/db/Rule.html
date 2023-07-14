@@ -1,0 +1,461 @@
+<html>
+<head>
+<title>Rule</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">Rule <span class="entityname">(pc_bizrule) (delegates to <A HREF="RuleVersionDependent.html" TARGET="tableFrame">RuleVersionDependent</A>, <A HREF="Versionable.html" TARGET="tableFrame">Versionable</A>)</span></div>
+<div class="desc">
+<span id="reflink_3637" class="reftext" onclick='showAndHideRefBox("refbox_3637", "reflink_3637")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_3637" class="refbox_inner" style="display:none;">
+The root entity that encapsulates the definition of a business rule.
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">Rule</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Abstract<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Abstract</b><br>The entity is a supertype, but all instances of it must be one of its subtypes. That is, you cannot instantiate the supertype entity itself. An abstract entity is appropriate when the supertype serves only to collect logic or common fields, but does not make sense to exist on its own.')">?</span></sup>, Extendable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Extendable</b><br>Can be extended with additional custom fields added to it.')">?</span></sup>, Keyed<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Keyed</b><br>Has a related database table that has a primary key. Each row in a Keyed table has an integer primary key named ID. IDs are managed internally by the application, and the system ensures that no two rows in a keyed table have the same ID. In addition to the internal key, an external primary key can be associated with each row in a table.')">?</span></sup>, Sourceable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Sourceable</b><br>Contains entities that are linked to an external source. Each row in a Sourceable entity\'s table has additional fields to identify the external system and store the ID of the Sourceable entity in the external system.')">?</span></sup>, Supertype<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Supertype</b><br>A single table that represents multiple types of entities, called subtypes. Each subtype shares application logic and a majority of their fields. Each subtype may also define fields that are particular to it.')">?</span></sup>, Versionable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Versionable</b><br>Has a version number that increases every time the entity is changed. This allows the cache to identify when entities have been updated.')">?</span></sup></span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_3638" class="reftext" onclick='showAndHideRefBox("refbox_3638", "reflink_3638")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_3638" class="refbox_inner" style="display:none;">
+<A HREF="../full/RuleCommandDefinition.html" TARGET="tableFrame">RuleCommandDefinition.Rule</A><br><A HREF="../full/RuleCondition.html" TARGET="tableFrame">RuleCondition.Rule</A><br><A HREF="../full/RuleValidationInfo.html" TARGET="tableFrame">RuleValidationInfo.Rule</A><br><A HREF="../full/RuleVariable.html" TARGET="tableFrame">RuleVariable.Rule</A><br><A HREF="../full/RuleVersion.html" TARGET="tableFrame">RuleVersion.Rule</A>
+</div>
+</span>
+</div>
+<span class="showhidelink"><a id="showAllElements" href="#" onClick="return showAllUIDetails()">Show user interface details on all fields</a></span>
+
+<br>
+<a name=subtypes></a>
+<br/>
+<span class="filtertitle">Subtypes</span>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+</tr>
+<tr>
+<td>
+UWRule</td>
+<td><A HREF="#UWRule" TARGET="tableFrame">UWRule</A></td>
+</tr>
+</table>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+<a name="rule_id"></a>
+<p class="column">
+<span class="coltitle">ID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "key")'>key</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Internally managed primary key</span>
+<a name="rule_availabletorun"></a>
+<p class="column">
+<span class="coltitle">AvailableToRun</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: true)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<div class='screenrefbody'>
+<span id=showhideUI_0 onclick='showAndHideUIDetails("UITable_0", "showhideUI_0")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_0' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>AvailableToRunInputSet.pcf:14</td>
+<td>BizRules.RuleDetailsPage.AvailableToRun</td>
+<td>version.Rule.AvailableToRun</td>
+<td>true</td>
+<td>
+UWRulePopup
+<br>
+CreateUWRule
+<br>
+UWRuleDetail
+<br>
+UWRuleEditPopup
+</td>
+</tr>
+<tr>
+<td>ExportExclusionsPanelSet.pcf:48</td>
+<td>BizRules.RulesPage.LV.Available</td>
+<td>entry.DraftVersion.Rule.AvailableToRun</td>
+<td>false</td>
+<td>
+RuleExportAllConfirmationPopup
+</td>
+</tr>
+<tr>
+<td>RuleListPanelSet.pcf:45</td>
+<td>BizRules.RulesPage.LV.Available</td>
+<td>entry.Rule.AvailableToRun</td>
+<td>false</td>
+<td>
+RuleExportDetailsPopup
+<br>
+DeployConfirmationPopup
+</td>
+</tr>
+<tr>
+<td>RuleManagementAuditPopup.pcf:203</td>
+<td></td>
+<td>aggregateActivity.Version.Rule.AvailableToRun</td>
+<td>false</td>
+<td>
+RuleManagementAuditPopup
+</td>
+</tr>
+<tr>
+<td>RuleManagementAuditPopup.pcf:53</td>
+<td>BizRules.RuleDetailsPage.AvailableToRun</td>
+<td>historyHolder.SelectedVersion.Rule.AvailableToRun</td>
+<td>true</td>
+<td>
+RuleManagementAuditPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="rule_description"></a>
+<p class="column">
+<span class="coltitle">Description</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "mediumtext")'>mediumtext</span> (1333)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: RuleDescription)&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<div class='screenrefbody'>
+<span id=showhideUI_1 onclick='showAndHideUIDetails("UITable_1", "showhideUI_1")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_1' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>UWRulePanelSet.pcf:103</td>
+<td>Web.BizRules.Rule.RuleDescription</td>
+<td>uwRule.Description</td>
+<td>true</td>
+<td>
+UWRulePopup
+<br>
+CreateUWRule
+<br>
+UWRuleDetail
+<br>
+UWRuleEditPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="rule_name"></a>
+<p class="column">
+<span class="coltitle">Name</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<div class='screenrefbody'>
+<span id=showhideUI_2 onclick='showAndHideUIDetails("UITable_2", "showhideUI_2")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_2' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>ExportExclusionsPanelSet.pcf:55</td>
+<td>BizRules.RulesPage.LV.Name</td>
+<td>entry.DraftVersion.Rule.Name</td>
+<td>false</td>
+<td>
+RuleExportAllConfirmationPopup
+</td>
+</tr>
+<tr>
+<td>RuleListPanelSet.pcf:59</td>
+<td>BizRules.RulesPage.LV.Name</td>
+<td>entry.Rule.Name</td>
+<td>false</td>
+<td>
+RuleExportDetailsPopup
+<br>
+DeployConfirmationPopup
+</td>
+</tr>
+<tr>
+<td>RuleManagementAuditPopup.pcf:196</td>
+<td></td>
+<td>aggregateActivity.Version.Rule.Name</td>
+<td>false</td>
+<td>
+RuleManagementAuditPopup
+</td>
+</tr>
+<tr>
+<td>RuleManagementAuditPopup.pcf:47</td>
+<td>BizRules.RuleDetailsPage.Name</td>
+<td>historyHolder.SelectedVersion.Rule.Name</td>
+<td>true</td>
+<td>
+RuleManagementAuditPopup
+</td>
+</tr>
+<tr>
+<td>UWRules.pcf:136</td>
+<td>Web.BizRules.UWRules.Name</td>
+<td>rule.Name</td>
+<td>false</td>
+<td>
+UWRules
+</td>
+</tr>
+</table>
+</div></div>
+<a name="rule_publicid"></a>
+<p class="column">
+<span class="coltitle">PublicID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "publicid")'>publicid</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ID or primary key of the row in the external system to which this row is mapped</span>
+<a name="rule_rulecondition"></a>
+<p class="column">
+<span class="coltitle">RuleCondition</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="RuleCondition.html" TARGET="tableFrame">RuleCondition</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="rule_rulecontextdefinitionkey"></a>
+<p class="column">
+<span class="coltitle">RuleContextDefinitionKey</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/RuleContextDefinitionKey_tl.html" TARGET="tableFrame">RuleContextDefinitionKey</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="rule_subtype"></a>
+<p class="column">
+<span class="coltitle">Subtype</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="#subtypes" TARGET="tableFrame">Rule</A> subtypes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Identifies a particular subtype within a supertype table; each subtype of a supertype has its own unique subtype value</span>
+<a name="rule_triggeringpointkey"></a>
+<p class="column">
+<span class="coltitle">TriggeringPointKey</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/TriggeringPointKey_tl.html" TARGET="tableFrame">TriggeringPointKey</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<div class='screenrefbody'>
+<span id=showhideUI_3 onclick='showAndHideUIDetails("UITable_3", "showhideUI_3")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_3' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>UWRulePanelSet.pcf:66</td>
+<td>Web.BizRules.UWRulePanelSet.CheckingSet</td>
+<td>uwRule.TriggeringPointKey</td>
+<td>true</td>
+<td>
+UWRulePopup
+<br>
+CreateUWRule
+<br>
+UWRuleDetail
+<br>
+UWRuleEditPopup
+</td>
+</tr>
+<tr>
+<td>UWRules.pcf:175</td>
+<td>Web.BizRules.UWRules.CheckingSet</td>
+<td>rule.TriggeringPointKey</td>
+<td>false</td>
+<td>
+UWRules
+</td>
+</tr>
+</table>
+</div></div>
+<a name="rule_updatesystemid"></a>
+<p class="column">
+<span class="coltitle">UpdateSystemId</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Identifier of the system on which the rule was updated.</span>
+<a name="rule_updatetime"></a>
+<p class="column">
+<span class="coltitle">UpdateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="rule_updateusername"></a>
+<p class="column">
+<span class="coltitle">UpdateUserName</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (30)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">The name of the user who updated this rule.</span>
+<a name="Arrays"></a><div class="arraysbox">Arrays</div>
+<a name="rule_rulecommanddefinitions"></a>
+<p class="column">
+<span class="coltitle">RuleCommandDefinitions</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="RuleCommandDefinition.html" TARGET="tableFrame">RuleCommandDefinition</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="rule_rulevariables"></a>
+<p class="column">
+<span class="coltitle">RuleVariables</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="RuleVariable.html" TARGET="tableFrame">RuleVariable</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="rule_versions"></a>
+<p class="column">
+<span class="coltitle">Versions</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="RuleVersion.html" TARGET="tableFrame">RuleVersion</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="Unique Keys for Rule"></a><div class="arraysbox">Unique Keys for Rule</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>bizrule1a</td>
+<td>PublicID</td></tr>
+</table>
+<a name="Subtypes"></a><div class="arraysbox">Subtypes</div>
+<div class='subtypebox'>
+<a name=UWRule></a>
+<div class="titlebox">
+<div class="filtertitle">UWRule <span class='supername'>(subtype of <A HREF="Rule.html" TARGET="tableFrame">Rule</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_3639" class="reftext" onclick='showAndHideRefBox("refbox_3639", "reflink_3639")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_3639" class="refbox_inner" style="display:none;">
+Underwriter BizRules entity
+</div>
+</span>
+</div>
+<div class="desc">Attributes: Final<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Final</b><br>This entity cannot be subtyped.')">?</span></sup></div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_3640" class="reftext" onclick='showAndHideRefBox("refbox_3640", "reflink_3640")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_3640" class="refbox_inner" style="display:none;">
+<A HREF="../full/AppCritJurisdiction.html" TARGET="tableFrame">AppCritJurisdiction.UWRule</A><br><A HREF="../full/AppCritLineOfBusiness.html" TARGET="tableFrame">AppCritLineOfBusiness.UWRule</A><br><A HREF="../full/AppCritPolicyTransaction.html" TARGET="tableFrame">AppCritPolicyTransaction.UWRule</A><br><A HREF="../full/UWIssueType.html" TARGET="tableFrame">UWIssueType.UWRule</A>
+</div>
+</span>
+</div>
+<a name="uwrule_enddate"></a>
+<p class="column">
+<span class="exttitle">EndDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="uwrule_externallymanaged"></a>
+<p class="column">
+<span class="coltitle">ExternallyManaged</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="uwrule_jurisdictions"></a>
+<p class="column">
+<span class="exttitle">Jurisdictions</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="AppCritJurisdiction.html" TARGET="tableFrame">AppCritJurisdiction</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="uwrule_linesofbusiness"></a>
+<p class="column">
+<span class="exttitle">LinesOfBusiness</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="AppCritLineOfBusiness.html" TARGET="tableFrame">AppCritLineOfBusiness</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="uwrule_policytransactions"></a>
+<p class="column">
+<span class="exttitle">PolicyTransactions</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="AppCritPolicyTransaction.html" TARGET="tableFrame">AppCritPolicyTransaction</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="uwrule_startdate"></a>
+<p class="column">
+<span class="exttitle">StartDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="uwrule_uwissuetype"></a>
+<p class="column">
+<span class="coltitle">UWIssueType</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="UWIssueType.html" TARGET="tableFrame">UWIssueType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The Underwriter Issue Type associated to this Rule</span>
+<a name="Unique Keys for UWRule"></a><div class="arraysbox">Unique Keys for UWRule</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>bizrule1a</td>
+<td>PublicID</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<script language="JavaScript">
+function showAllUIDetails() {
+showUIDetails('UITable_0', 'showhideUI_0');
+showUIDetails('UITable_1', 'showhideUI_1');
+showUIDetails('UITable_2', 'showhideUI_2');
+showUIDetails('UITable_3', 'showhideUI_3');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Hide user interface details on all fields';
+  link.onclick = hideAllUIDetails;
+  return false;
+}
+function hideAllUIDetails() {
+hideUIDetails('UITable_0', 'showhideUI_0');
+hideUIDetails('UITable_1', 'showhideUI_1');
+hideUIDetails('UITable_2', 'showhideUI_2');
+hideUIDetails('UITable_3', 'showhideUI_3');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Show user interface details on all fields';
+  link.onclick = showAllUIDetails;
+  return false;
+}
+</script>
+
+</body>
+</html>

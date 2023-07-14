@@ -1,0 +1,2052 @@
+<html>
+<head>
+<title>HOPDwelling</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">HOPDwelling <span class="entityname">(pc_hopdwelling) (delegates to <A HREF="Coverable.html" TARGET="tableFrame">Coverable</A>, <A HREF="EffDated.html" TARGET="tableFrame">EffDated</A>, <A HREF="Modifiable.html" TARGET="tableFrame">Modifiable</A>)</span></div>
+<div class="desc">
+<span id="reflink_2174" class="reftext" onclick='showAndHideRefBox("refbox_2174", "reflink_2174")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_2174" class="refbox_inner" style="display:none;">
+Dwellings for Homeowners Line
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">HOPDwelling</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Editable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Editable</b><br>The related database table contains rows that are editable by application users based on roles and permissions. An Editable table manages additional fields that represent an audit trail of an entity in the table (for example, who created it and when, who last edited it and when).')">?</span></sup>, Exportable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>, Extendable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Extendable</b><br>Can be extended with additional custom fields added to it.')">?</span></sup>, Final<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Final</b><br>The entity cannot be subtyped.')">?</span></sup>, Keyed<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Keyed</b><br>Has a related database table that has a primary key. Each row in a Keyed table has an integer primary key named ID. IDs are managed internally by the application, and the system ensures that no two rows in a keyed table have the same ID. In addition to the internal key, an external primary key can be associated with each row in a table.')">?</span></sup>, Sourceable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Sourceable</b><br>Contains entities that are linked to an external source. Each row in a Sourceable entity\'s table has additional fields to identify the external system and store the ID of the Sourceable entity in the external system.')">?</span></sup>, Versionable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Versionable</b><br>Has a version number that increases every time the entity is changed. This allows the cache to identify when entities have been updated.')">?</span></sup></span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_2175" class="reftext" onclick='showAndHideRefBox("refbox_2175", "reflink_2175")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_2175" class="refbox_inner" style="display:none;">
+<A HREF="../full/AddlInterestDetail.html#HOPDwellAddlInterest" TARGET="tableFrame">HOPDwellAddlInterest.HOPDwelling</A><br><A HREF="../full/DwellingAnimal.html" TARGET="tableFrame">DwellingAnimal.HOPDwelling</A><br><A HREF="../full/DwellingHazard.html" TARGET="tableFrame">DwellingHazard.HOPDwelling</A><br><A HREF="../full/HOPDwelling.html" TARGET="tableFrame">HOPDwelling.BasedOnValue</A><br><A HREF="../full/HOPDwelling.html" TARGET="tableFrame">HOPDwelling.Fixed</A><br><A HREF="../full/HOPDwellingCond.html" TARGET="tableFrame">HOPDwellingCond.HOPDwelling</A><br><A HREF="../full/HOPDwellingCov.html" TARGET="tableFrame">HOPDwellingCov.HOPDwelling</A><br><A HREF="../full/HOPDwellingExcl.html" TARGET="tableFrame">HOPDwellingExcl.HOPDwelling</A><br><A HREF="../full/HOPDwellingMod.html" TARGET="tableFrame">HOPDwellingMod.HOPDwelling</A><br><A HREF="../full/HOPSwimmingPool.html" TARGET="tableFrame">HOPSwimmingPool.HOPDwelling</A>
+</div>
+</span>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_2176" class="reftext" onclick='showAndHideRefBox("refbox_2176", "reflink_2176")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_2176" class="refbox_inner" style="display:none;">
+<A HREF="../full/HOPCoveragePart.html" TARGET="tableFrame">HOPCoveragePart.HOPDwellings</A>
+</div>
+</span>
+</div>
+<span class="showhidelink"><a id="showAllElements" href="#" onClick="return showAllUIDetails()">Show user interface details on all fields</a></span>
+
+<br>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+<a name="hopdwelling_id"></a>
+<p class="column">
+<span class="coltitle">ID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "key")'>key</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Internally managed primary key</span>
+<a name="hopdwelling_archivepartition"></a>
+<p class="column">
+<span class="coltitle">ArchivePartition</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "softentityreference")'>softentityreference</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">Unique number to partition the data so that the multiple workers can work independently</span>
+<a name="hopdwelling_basedonvalue"></a>
+<p class="column">
+<span class="coltitle">BasedOnValue</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="HOPDwelling.html" TARGET="tableFrame">HOPDwelling</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: BasedOnID)</span>
+<br>
+<span class="desc">Link to the row on which this row is based; or null if new to branch</span>
+<a name="hopdwelling_branchvalue"></a>
+<p class="column">
+<span class="coltitle">BranchValue</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="PolicyPeriod.html" TARGET="tableFrame">PolicyPeriod</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: BranchID)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Link to root of effdated tree</span>
+<a name="hopdwelling_burglaralarmtype"></a>
+<p class="column">
+<span class="coltitle">BurglarAlarmType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/BurglarAlarmType_tl.html" TARGET="tableFrame">BurglarAlarmType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Burglar Alarm Type</span>
+<div class='screenrefbody'>
+<span id=showhideUI_0 onclick='showAndHideUIDetails("UITable_0", "showhideUI_0")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_0' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingProtectionInputSet.pcf:23</td>
+<td>Web.Policy.HOP.HOPDwellingProtection.BurglarAlarmType</td>
+<td>dwelling.BurglarAlarmType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_changetype"></a>
+<p class="column">
+<span class="coltitle">ChangeType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/EffDatedChangeType_tl.html" TARGET="tableFrame">EffDatedChangeType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc">Type of change made to this row</span>
+<a name="hopdwelling_constructiontype"></a>
+<p class="column">
+<span class="coltitle">ConstructionType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/HOPConstructionType_tl.html" TARGET="tableFrame">HOPConstructionType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Dwelling Construction Type</span>
+<div class='screenrefbody'>
+<span id=showhideUI_1 onclick='showAndHideUIDetails("UITable_1", "showhideUI_1")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_1' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:36</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.ConstructionType</td>
+<td>dwelling.ConstructionType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_constructiontypedescription"></a>
+<p class="column">
+<span class="coltitle">ConstructionTypeDescription</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (100)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Description of construction for type Other</span>
+<div class='screenrefbody'>
+<span id=showhideUI_2 onclick='showAndHideUIDetails("UITable_2", "showhideUI_2")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_2' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:45</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.ConstructionTypeDescription</td>
+<td>dwelling.ConstructionTypeDescription</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_coverageform"></a>
+<p class="column">
+<span class="coltitle">CoverageForm</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/HOPCoverageForm_tl.html" TARGET="tableFrame">HOPCoverageForm</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The HO coverage form for this dwelling</span>
+<div class='screenrefbody'>
+<span id=showhideUI_3 onclick='showAndHideUIDetails("UITable_3", "showhideUI_3")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_3' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>CoveragePartSelectionDV.HOPHomeowners.pcf:43</td>
+<td>Web.Policy.HOP.CoverageForm</td>
+<td>dwelling.CoverageForm</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_PolicyReview
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyFile_HOPCoverages
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_createtime"></a>
+<p class="column">
+<span class="coltitle">CreateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was created</span>
+<a name="hopdwelling_createuser"></a>
+<p class="column">
+<span class="coltitle">CreateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CreateUserID)</span>
+<br>
+<span class="desc">User who created the object</span>
+<a name="hopdwelling_deadbolts"></a>
+<p class="column">
+<span class="coltitle">Deadbolts</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Do all the doors have Deadbolts</span>
+<div class='screenrefbody'>
+<span id=showhideUI_4 onclick='showAndHideUIDetails("UITable_4", "showhideUI_4")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_4' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingProtectionInputSet.pcf:28</td>
+<td>Web.Policy.HOP.HOPDwellingProtection.DoorsHaveDeadbolts</td>
+<td>dwelling.Deadbolts</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_distancetofirehydrant"></a>
+<p class="column">
+<span class="coltitle">DistanceToFireHydrant</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "positiveinteger")'>positiveinteger</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Distance to Fire Hydrant</span>
+<div class='screenrefbody'>
+<span id=showhideUI_5 onclick='showAndHideUIDetails("UITable_5", "showhideUI_5")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_5' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingProtectionInputSet.pcf:34</td>
+<td>Web.Policy.HOP.HOPDwellingProtection.DistanceToFireHydrant</td>
+<td>dwelling.DistanceToFireHydrant</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_distancetofirestation"></a>
+<p class="column">
+<span class="coltitle">DistanceToFireStation</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "positiveinteger")'>positiveinteger</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Distance to Fire Station</span>
+<div class='screenrefbody'>
+<span id=showhideUI_6 onclick='showAndHideUIDetails("UITable_6", "showhideUI_6")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_6' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingProtectionInputSet.pcf:40</td>
+<td>Web.Policy.HOP.HOPDwellingProtection.DistanceToFireStation</td>
+<td>dwelling.DistanceToFireStation</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_dwellinglocation"></a>
+<p class="column">
+<span class="coltitle">DwellingLocation</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/DwellingLocationType_tl.html" TARGET="tableFrame">DwellingLocationType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Dwelling Location Type</span>
+<div class='screenrefbody'>
+<span id=showhideUI_7 onclick='showAndHideUIDetails("UITable_7", "showhideUI_7")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_7' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingInputSet.pcf:76</td>
+<td>Web.Policy.HOP.HOPDwelling.LocationType</td>
+<td>dwelling.DwellingLocation</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_dwellingusage"></a>
+<p class="column">
+<span class="coltitle">DwellingUsage</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/DwellingUsage_tl.html" TARGET="tableFrame">DwellingUsage</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Dwelling Usage</span>
+<div class='screenrefbody'>
+<span id=showhideUI_8 onclick='showAndHideUIDetails("UITable_8", "showhideUI_8")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_8' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingOccupancyInputSet.pcf:23</td>
+<td>Web.Policy.HOP.HOPDwellingOccupancy.DwellingUsageType</td>
+<td>dwelling.DwellingUsage</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_effectivedate"></a>
+<p class="column">
+<span class="coltitle">EffectiveDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Effective date of this row.  A value of NULL in the database indicates that this row's effective date is equal to the Period Start.</span>
+<a name="hopdwelling_electricalsystemupgradedate"></a>
+<p class="column">
+<span class="coltitle">ElectricalSystemUpgradeDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "year")'>year</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Date of Electrical System Upgrade</span>
+<div class='screenrefbody'>
+<span id=showhideUI_9 onclick='showAndHideUIDetails("UITable_9", "showhideUI_9")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_9' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:170</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.WiringUpgradeDate</td>
+<td>dwelling.ElectricalSystemUpgradeDate</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_electricaltype"></a>
+<p class="column">
+<span class="coltitle">ElectricalType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/BreakerType_tl.html" TARGET="tableFrame">BreakerType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Electrical Type</span>
+<div class='screenrefbody'>
+<span id=showhideUI_10 onclick='showAndHideUIDetails("UITable_10", "showhideUI_10")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_10' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:142</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.ElectricalSystem</td>
+<td>dwelling.ElectricalType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_expirationdate"></a>
+<p class="column">
+<span class="coltitle">ExpirationDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Expiration date of this row.  A value of NULL in the database indicates that this row's expiration date is equal to the Period End.</span>
+<a name="hopdwelling_firealarmtype"></a>
+<p class="column">
+<span class="coltitle">FireAlarmType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/FireAlarmType_tl.html" TARGET="tableFrame">FireAlarmType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Fire alarm type</span>
+<div class='screenrefbody'>
+<span id=showhideUI_11 onclick='showAndHideUIDetails("UITable_11", "showhideUI_11")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_11' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingProtectionInputSet.pcf:57</td>
+<td>Web.Policy.HOP.HOPDwellingProtection.FireAlarm</td>
+<td>dwelling.FireAlarmType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_fireplaceorwoodstovesnumber"></a>
+<p class="column">
+<span class="coltitle">FireplaceOrWoodStovesNumber</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "nonnegativeinteger")'>nonnegativeinteger</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Number of woodstoves or fire places</span>
+<a name="hopdwelling_fixed"></a>
+<p class="column">
+<span class="coltitle">Fixed</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="HOPDwelling.html" TARGET="tableFrame">HOPDwelling</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: FixedID)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Unique ID for this 'object' across all branches and periods</span>
+<a name="hopdwelling_floodinghazard"></a>
+<p class="column">
+<span class="coltitle">FloodingHazard</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Flooding or landslide hazard?</span>
+<a name="hopdwelling_foundation"></a>
+<p class="column">
+<span class="coltitle">Foundation</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/FoundationType_tl.html" TARGET="tableFrame">FoundationType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Foundation Type</span>
+<div class='screenrefbody'>
+<span id=showhideUI_12 onclick='showAndHideUIDetails("UITable_12", "showhideUI_12")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_12' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:63</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.FoundationType</td>
+<td>dwelling.Foundation</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_frozenset"></a>
+<p class="column">
+<span class="coltitle">FrozenSet</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="FrozenSet.html" TARGET="tableFrame">FrozenSet</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: FrozenSetID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopdwelling_garagetype"></a>
+<p class="column">
+<span class="coltitle">GarageType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/GarageType_tl.html" TARGET="tableFrame">GarageType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Garage type in dwelling</span>
+<div class='screenrefbody'>
+<span id=showhideUI_13 onclick='showAndHideUIDetails("UITable_13", "showhideUI_13")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_13' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:57</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.GarageType</td>
+<td>dwelling.GarageType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_heatingupgradedate"></a>
+<p class="column">
+<span class="coltitle">HeatingUpgradeDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "year")'>year</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Date of Heating Upgrade</span>
+<div class='screenrefbody'>
+<span id=showhideUI_14 onclick='showAndHideUIDetails("UITable_14", "showhideUI_14")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_14' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:152</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.HeatingUpgradeDate</td>
+<td>dwelling.HeatingUpgradeDate</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_hopcoveragepart"></a>
+<p class="column">
+<span class="coltitle">HOPCoveragePart</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="HOPCoveragePart.html" TARGET="tableFrame">HOPCoveragePart</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="hopdwelling_initialconditionscreated"></a>
+<p class="column">
+<span class="coltitle">InitialConditionsCreated</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Whether or not the initial set of conditions has been created on this Coverable.</span>
+<a name="hopdwelling_initialcoveragescreated"></a>
+<p class="column">
+<span class="coltitle">InitialCoveragesCreated</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Whether or not the initial set of coverages has been created on this Coverable.</span>
+<a name="hopdwelling_initialexclusionscreated"></a>
+<p class="column">
+<span class="coltitle">InitialExclusionsCreated</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Whether or not the initial set of exclusions has been created on this Coverable.</span>
+<a name="hopdwelling_insuredunits"></a>
+<p class="column">
+<span class="coltitle">InsuredUnits</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "positiveinteger")'>positiveinteger</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Number of units to be insured</span>
+<div class='screenrefbody'>
+<span id=showhideUI_15 onclick='showAndHideUIDetails("UITable_15", "showhideUI_15")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_15' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingInputSet.pcf:101</td>
+<td>Web.Policy.HOP.HOPDwelling.NumberOfInsuredUnits</td>
+<td>dwelling.InsuredUnits</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_knownwaterleakage"></a>
+<p class="column">
+<span class="coltitle">KnownWaterLeakage</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Any water leakage</span>
+<a name="hopdwelling_knownwaterleakagedescription"></a>
+<p class="column">
+<span class="coltitle">KnownWaterLeakageDescription</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (200)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Description of water leakage</span>
+<a name="hopdwelling_location"></a>
+<p class="column">
+<span class="coltitle">Location</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="PolicyLocation.html" TARGET="tableFrame">PolicyLocation</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The foreign key cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<div class='screenrefbody'>
+<span id=showhideUI_16 onclick='showAndHideUIDetails("UITable_16", "showhideUI_16")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_16' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingInputSet.pcf:37</td>
+<td>Web.Policy.HOP.HOPDwelling.LocationName</td>
+<td>dwelling.Location</td>
+<td>dwelling.CanEditLocation</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_nearcommercial"></a>
+<p class="column">
+<span class="coltitle">NearCommercial</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Property within 300 ft of commercial or non-residential property?</span>
+<a name="hopdwelling_numberoffireextinguishers"></a>
+<p class="column">
+<span class="coltitle">NumberOfFireExtinguishers</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "nonnegativeinteger")'>nonnegativeinteger</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">How many fire extinguishers are on premises</span>
+<div class='screenrefbody'>
+<span id=showhideUI_17 onclick='showAndHideUIDetails("UITable_17", "showhideUI_17")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_17' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingProtectionInputSet.pcf:63</td>
+<td>Web.Policy.HOP.HOPDwellingProtection.NumberOfFireExtinguishers</td>
+<td>dwelling.NumberOfFireExtinguishers</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_occupancy"></a>
+<p class="column">
+<span class="coltitle">Occupancy</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/DwellingOccupancyType_tl.html" TARGET="tableFrame">DwellingOccupancyType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">How the dwelling is being occupied</span>
+<div class='screenrefbody'>
+<span id=showhideUI_18 onclick='showAndHideUIDetails("UITable_18", "showhideUI_18")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_18' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingOccupancyInputSet.pcf:29</td>
+<td>Web.Policy.HOP.HOPDwellingOccupancy.DwellingOccupancyType</td>
+<td>dwelling.Occupancy</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_plumbingtype"></a>
+<p class="column">
+<span class="coltitle">PlumbingType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/PlumbingType_tl.html" TARGET="tableFrame">PlumbingType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Plumbing Type</span>
+<div class='screenrefbody'>
+<span id=showhideUI_19 onclick='showAndHideUIDetails("UITable_19", "showhideUI_19")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_19' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:121</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.Plumbing</td>
+<td>dwelling.PlumbingType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_plumbingtypedescription"></a>
+<p class="column">
+<span class="coltitle">PlumbingTypeDescription</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (100)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Description of plumbing for type Other</span>
+<div class='screenrefbody'>
+<span id=showhideUI_20 onclick='showAndHideUIDetails("UITable_20", "showhideUI_20")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_20' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:130</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.PlumbingTypeDescription</td>
+<td>dwelling.PlumbingTypeDescription</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_plumbingupgradedate"></a>
+<p class="column">
+<span class="coltitle">PlumbingUpgradeDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "year")'>year</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Date of Plumbing Upgrade</span>
+<div class='screenrefbody'>
+<span id=showhideUI_21 onclick='showAndHideUIDetails("UITable_21", "showhideUI_21")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_21' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:158</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.PlumbingUpgradeDate</td>
+<td>dwelling.PlumbingUpgradeDate</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_preferredcoveragecurrency"></a>
+<p class="column">
+<span class="coltitle">PreferredCoverageCurrency</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Preferred Coverage Currency for coverages associated with this coverable</span>
+<a name="hopdwelling_primaryheatingdescription"></a>
+<p class="column">
+<span class="coltitle">PrimaryHeatingDescription</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (100)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Description of primary heating for type Other</span>
+<div class='screenrefbody'>
+<span id=showhideUI_22 onclick='showAndHideUIDetails("UITable_22", "showhideUI_22")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_22' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:109</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.HeatingTypeDescription</td>
+<td>dwelling.PrimaryHeatingDescription</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_primaryheatingfuellinelocation"></a>
+<p class="column">
+<span class="coltitle">PrimaryHeatingFuelLineLocation</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/FuelLineLocationType_tl.html" TARGET="tableFrame">FuelLineLocationType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Location of fuel line for Oil based heating</span>
+<div class='screenrefbody'>
+<span id=showhideUI_23 onclick='showAndHideUIDetails("UITable_23", "showhideUI_23")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_23' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:102</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.FuelLineLocation</td>
+<td>dwelling.PrimaryHeatingFuelLineLocation</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_primaryheatingfueltanklocation"></a>
+<p class="column">
+<span class="coltitle">PrimaryHeatingFuelTankLocation</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/FuelTankLocationType_tl.html" TARGET="tableFrame">FuelTankLocationType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Location of fuel tank for Oil based heating</span>
+<div class='screenrefbody'>
+<span id=showhideUI_24 onclick='showAndHideUIDetails("UITable_24", "showhideUI_24")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_24' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:94</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.FuelStorageTankLocation</td>
+<td>dwelling.PrimaryHeatingFuelTankLocation</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_primaryheatingtype"></a>
+<p class="column">
+<span class="coltitle">PrimaryHeatingType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/HeatingType_tl.html" TARGET="tableFrame">HeatingType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Dwelling Heating Type</span>
+<div class='screenrefbody'>
+<span id=showhideUI_25 onclick='showAndHideUIDetails("UITable_25", "showhideUI_25")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_25' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:84</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.PrimaryHeating</td>
+<td>dwelling.PrimaryHeatingType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_publicid"></a>
+<p class="column">
+<span class="coltitle">PublicID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "publicid")'>publicid</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ID or primary key of the row in the external system to which this row is mapped</span>
+<a name="hopdwelling_referencedateinternal"></a>
+<p class="column">
+<span class="coltitle">ReferenceDateInternal</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Internal field for storing the reference date of this entity on bound policy periods.</span>
+<a name="hopdwelling_replacementcost_amt"></a>
+<p class="column">
+<span class="coltitle">ReplacementCost_amt</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "money")'>money</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="hopdwelling_replacementcost_cur"></a>
+<p class="column">
+<span class="coltitle">ReplacementCost_cur</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/Currency_tl.html" TARGET="tableFrame">Currency</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="hopdwelling_residencetype"></a>
+<p class="column">
+<span class="coltitle">ResidenceType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/ResidenceType_tl.html" TARGET="tableFrame">ResidenceType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Residence Type</span>
+<div class='screenrefbody'>
+<span id=showhideUI_26 onclick='showAndHideUIDetails("UITable_26", "showhideUI_26")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_26' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingInputSet.pcf:82</td>
+<td>Web.Policy.HOP.HOPDwelling.ResidenceType</td>
+<td>dwelling.ResidenceType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_roofingupgradedate"></a>
+<p class="column">
+<span class="coltitle">RoofingUpgradeDate</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "year")'>year</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Date of Roofing Upgrade</span>
+<div class='screenrefbody'>
+<span id=showhideUI_27 onclick='showAndHideUIDetails("UITable_27", "showhideUI_27")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_27' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:164</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.RoofingUpgradeDate</td>
+<td>dwelling.RoofingUpgradeDate</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_rooftype"></a>
+<p class="column">
+<span class="coltitle">RoofType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/HOPRoofType_tl.html" TARGET="tableFrame">HOPRoofType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Roof Material Classification</span>
+<div class='screenrefbody'>
+<span id=showhideUI_28 onclick='showAndHideUIDetails("UITable_28", "showhideUI_28")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_28' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:69</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.RoofType</td>
+<td>dwelling.RoofType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_rooftypedescription"></a>
+<p class="column">
+<span class="coltitle">RoofTypeDescription</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (100)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Description of Roof Type for type Other</span>
+<div class='screenrefbody'>
+<span id=showhideUI_29 onclick='showAndHideUIDetails("UITable_29", "showhideUI_29")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_29' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:78</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.RoofTypeDescription</td>
+<td>dwelling.RoofTypeDescription</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_roomerboardersnumber"></a>
+<p class="column">
+<span class="coltitle">RoomerBoardersNumber</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "nonnegativeinteger")'>nonnegativeinteger</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Number of roomers or boarders</span>
+<div class='screenrefbody'>
+<span id=showhideUI_30 onclick='showAndHideUIDetails("UITable_30", "showhideUI_30")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_30' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingOccupancyInputSet.pcf:35</td>
+<td>Web.Policy.HOP.HOPDwellingOccupancy.NumberOfRoomers</td>
+<td>dwelling.RoomerBoardersNumber</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_secondaryheatingtype"></a>
+<p class="column">
+<span class="coltitle">SecondaryHeatingType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/HeatingType_tl.html" TARGET="tableFrame">HeatingType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"> Secondary Heating Type</span>
+<div class='screenrefbody'>
+<span id=showhideUI_31 onclick='showAndHideUIDetails("UITable_31", "showhideUI_31")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_31' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:115</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.SecondaryHeating</td>
+<td>dwelling.SecondaryHeatingType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_smokealarm"></a>
+<p class="column">
+<span class="coltitle">SmokeAlarm</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/SmokeAlarms_tl.html" TARGET="tableFrame">SmokeAlarms</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Smoke Alarms on Premises</span>
+<div class='screenrefbody'>
+<span id=showhideUI_32 onclick='showAndHideUIDetails("UITable_32", "showhideUI_32")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_32' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingProtectionInputSet.pcf:69</td>
+<td>Web.Policy.HOP.HOPDwellingProtection.SmokeAlarms</td>
+<td>dwelling.SmokeAlarm</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_sprinklersystemtype"></a>
+<p class="column">
+<span class="coltitle">SprinklerSystemType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/SprinklerSystemType_tl.html" TARGET="tableFrame">SprinklerSystemType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Sprinkler System Type</span>
+<div class='screenrefbody'>
+<span id=showhideUI_33 onclick='showAndHideUIDetails("UITable_33", "showhideUI_33")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_33' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingProtectionInputSet.pcf:75</td>
+<td>Web.Policy.HOP.HOPDwellingProtection.SprinklerSystemType</td>
+<td>dwelling.SprinklerSystemType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_storiesnumber"></a>
+<p class="column">
+<span class="coltitle">StoriesNumber</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "positiveinteger")'>positiveinteger</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"> Number of stories in the dwelling</span>
+<div class='screenrefbody'>
+<span id=showhideUI_34 onclick='showAndHideUIDetails("UITable_34", "showhideUI_34")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_34' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:51</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.NumberOfStories</td>
+<td>dwelling.StoriesNumber</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_trampolineexists"></a>
+<p class="column">
+<span class="coltitle">TrampolineExists</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Trampoline exists on property?</span>
+<a name="hopdwelling_trampolinesafetynet"></a>
+<p class="column">
+<span class="coltitle">TrampolineSafetyNet</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Is there a safety net?</span>
+<a name="hopdwelling_unitsnumber"></a>
+<p class="column">
+<span class="coltitle">UnitsNumber</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "positiveinteger")'>positiveinteger</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"> Number of units between firewall</span>
+<div class='screenrefbody'>
+<span id=showhideUI_35 onclick='showAndHideUIDetails("UITable_35", "showhideUI_35")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_35' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingInputSet.pcf:95</td>
+<td>Web.Policy.HOP.HOPDwelling.NumberOfUnitsBetweenFirewall</td>
+<td>dwelling.UnitsNumber</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_updatetime"></a>
+<p class="column">
+<span class="coltitle">UpdateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was last updated</span>
+<a name="hopdwelling_updateuser"></a>
+<p class="column">
+<span class="coltitle">UpdateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: UpdateUserID)</span>
+<br>
+<span class="desc">User who last updated the object</span>
+<a name="hopdwelling_visibletoneighbors"></a>
+<p class="column">
+<span class="coltitle">VisibleToNeighbors</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Is the dwelling visible to neighbors</span>
+<div class='screenrefbody'>
+<span id=showhideUI_36 onclick='showAndHideUIDetails("UITable_36", "showhideUI_36")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_36' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingProtectionInputSet.pcf:80</td>
+<td>Web.Policy.HOP.HOPDwellingProtection.VisibleToNeighbors</td>
+<td>dwelling.VisibleToNeighbors</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+PolicyFile_HOPDwelling
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_wiringtype"></a>
+<p class="column">
+<span class="coltitle">WiringType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/WiringType_tl.html" TARGET="tableFrame">WiringType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Electrical Wiring Type</span>
+<div class='screenrefbody'>
+<span id=showhideUI_37 onclick='showAndHideUIDetails("UITable_37", "showhideUI_37")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_37' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:136</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.Wiring</td>
+<td>dwelling.WiringType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="hopdwelling_yearbuilt"></a>
+<p class="column">
+<span class="coltitle">YearBuilt</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "year")'>year</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Year Built</span>
+<div class='screenrefbody'>
+<span id=showhideUI_38 onclick='showAndHideUIDetails("UITable_38", "showhideUI_38")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_38' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>HOPDwellingConstructionDetailsDV.pcf:30</td>
+<td>Web.Policy.HOP.HOPDwellingConstruction.YearBuilt</td>
+<td>dwelling.YearBuilt</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+PolicyFile_HOPDwellingConstruction
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="Arrays"></a><div class="arraysbox">Arrays</div>
+<a name="hopdwelling_additionalinterests"></a>
+<p class="column">
+<span class="coltitle">AdditionalInterests</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="AddlInterestDetail.html#HOPDwellAddlInterest" TARGET="tableFrame">HOPDwellAddlInterest</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Third parties with an additional interest in the Dwelling</span>
+<a name="hopdwelling_conditions"></a>
+<p class="column">
+<span class="coltitle">Conditions</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="HOPDwellingCond.html" TARGET="tableFrame">HOPDwellingCond</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Conditions directly attached to the Dwelling</span>
+<a name="hopdwelling_coverages"></a>
+<p class="column">
+<span class="coltitle">Coverages</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="HOPDwellingCov.html" TARGET="tableFrame">HOPDwellingCov</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Coverages directly attached to the Dwelling</span>
+<a name="hopdwelling_dwellinganimals"></a>
+<p class="column">
+<span class="coltitle">DwellingAnimals</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="DwellingAnimal.html" TARGET="tableFrame">DwellingAnimal</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Animals in the dwelling premises</span>
+<a name="hopdwelling_dwellinghazards"></a>
+<p class="column">
+<span class="coltitle">DwellingHazards</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="DwellingHazard.html" TARGET="tableFrame">DwellingHazard</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Hazards in the dwelling premises</span>
+<a name="hopdwelling_exclusions"></a>
+<p class="column">
+<span class="coltitle">Exclusions</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="HOPDwellingExcl.html" TARGET="tableFrame">HOPDwellingExcl</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Exclusions directly attached to the Dwelling</span>
+<a name="hopdwelling_hopdwellingmods"></a>
+<p class="column">
+<span class="coltitle">HOPDwellingMods</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="HOPDwellingMod.html" TARGET="tableFrame">HOPDwellingMod</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Modifiers directly attached to the Dwelling</span>
+<a name="Unique Keys for HOPDwelling"></a><div class="arraysbox">Unique Keys for HOPDwelling</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>hopdwelling1a</td>
+<td>PublicID</td></tr>
+<tr><td>hopdwelling3a</td>
+<td>BranchID, FixedID, ID</td></tr>
+</table>
+<script language="JavaScript">
+function showAllUIDetails() {
+showUIDetails('UITable_0', 'showhideUI_0');
+showUIDetails('UITable_1', 'showhideUI_1');
+showUIDetails('UITable_2', 'showhideUI_2');
+showUIDetails('UITable_3', 'showhideUI_3');
+showUIDetails('UITable_4', 'showhideUI_4');
+showUIDetails('UITable_5', 'showhideUI_5');
+showUIDetails('UITable_6', 'showhideUI_6');
+showUIDetails('UITable_7', 'showhideUI_7');
+showUIDetails('UITable_8', 'showhideUI_8');
+showUIDetails('UITable_9', 'showhideUI_9');
+showUIDetails('UITable_10', 'showhideUI_10');
+showUIDetails('UITable_11', 'showhideUI_11');
+showUIDetails('UITable_12', 'showhideUI_12');
+showUIDetails('UITable_13', 'showhideUI_13');
+showUIDetails('UITable_14', 'showhideUI_14');
+showUIDetails('UITable_15', 'showhideUI_15');
+showUIDetails('UITable_16', 'showhideUI_16');
+showUIDetails('UITable_17', 'showhideUI_17');
+showUIDetails('UITable_18', 'showhideUI_18');
+showUIDetails('UITable_19', 'showhideUI_19');
+showUIDetails('UITable_20', 'showhideUI_20');
+showUIDetails('UITable_21', 'showhideUI_21');
+showUIDetails('UITable_22', 'showhideUI_22');
+showUIDetails('UITable_23', 'showhideUI_23');
+showUIDetails('UITable_24', 'showhideUI_24');
+showUIDetails('UITable_25', 'showhideUI_25');
+showUIDetails('UITable_26', 'showhideUI_26');
+showUIDetails('UITable_27', 'showhideUI_27');
+showUIDetails('UITable_28', 'showhideUI_28');
+showUIDetails('UITable_29', 'showhideUI_29');
+showUIDetails('UITable_30', 'showhideUI_30');
+showUIDetails('UITable_31', 'showhideUI_31');
+showUIDetails('UITable_32', 'showhideUI_32');
+showUIDetails('UITable_33', 'showhideUI_33');
+showUIDetails('UITable_34', 'showhideUI_34');
+showUIDetails('UITable_35', 'showhideUI_35');
+showUIDetails('UITable_36', 'showhideUI_36');
+showUIDetails('UITable_37', 'showhideUI_37');
+showUIDetails('UITable_38', 'showhideUI_38');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Hide user interface details on all fields';
+  link.onclick = hideAllUIDetails;
+  return false;
+}
+function hideAllUIDetails() {
+hideUIDetails('UITable_0', 'showhideUI_0');
+hideUIDetails('UITable_1', 'showhideUI_1');
+hideUIDetails('UITable_2', 'showhideUI_2');
+hideUIDetails('UITable_3', 'showhideUI_3');
+hideUIDetails('UITable_4', 'showhideUI_4');
+hideUIDetails('UITable_5', 'showhideUI_5');
+hideUIDetails('UITable_6', 'showhideUI_6');
+hideUIDetails('UITable_7', 'showhideUI_7');
+hideUIDetails('UITable_8', 'showhideUI_8');
+hideUIDetails('UITable_9', 'showhideUI_9');
+hideUIDetails('UITable_10', 'showhideUI_10');
+hideUIDetails('UITable_11', 'showhideUI_11');
+hideUIDetails('UITable_12', 'showhideUI_12');
+hideUIDetails('UITable_13', 'showhideUI_13');
+hideUIDetails('UITable_14', 'showhideUI_14');
+hideUIDetails('UITable_15', 'showhideUI_15');
+hideUIDetails('UITable_16', 'showhideUI_16');
+hideUIDetails('UITable_17', 'showhideUI_17');
+hideUIDetails('UITable_18', 'showhideUI_18');
+hideUIDetails('UITable_19', 'showhideUI_19');
+hideUIDetails('UITable_20', 'showhideUI_20');
+hideUIDetails('UITable_21', 'showhideUI_21');
+hideUIDetails('UITable_22', 'showhideUI_22');
+hideUIDetails('UITable_23', 'showhideUI_23');
+hideUIDetails('UITable_24', 'showhideUI_24');
+hideUIDetails('UITable_25', 'showhideUI_25');
+hideUIDetails('UITable_26', 'showhideUI_26');
+hideUIDetails('UITable_27', 'showhideUI_27');
+hideUIDetails('UITable_28', 'showhideUI_28');
+hideUIDetails('UITable_29', 'showhideUI_29');
+hideUIDetails('UITable_30', 'showhideUI_30');
+hideUIDetails('UITable_31', 'showhideUI_31');
+hideUIDetails('UITable_32', 'showhideUI_32');
+hideUIDetails('UITable_33', 'showhideUI_33');
+hideUIDetails('UITable_34', 'showhideUI_34');
+hideUIDetails('UITable_35', 'showhideUI_35');
+hideUIDetails('UITable_36', 'showhideUI_36');
+hideUIDetails('UITable_37', 'showhideUI_37');
+hideUIDetails('UITable_38', 'showhideUI_38');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Show user interface details on all fields';
+  link.onclick = showAllUIDetails;
+  return false;
+}
+</script>
+
+</body>
+</html>

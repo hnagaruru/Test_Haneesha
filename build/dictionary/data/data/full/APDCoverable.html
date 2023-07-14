@@ -1,0 +1,2726 @@
+<html>
+<head>
+<title>APDCoverable</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">APDCoverable <span class="entityname">(pcx_apdcoverable) (delegates to <A HREF="Retireable.html" TARGET="tableFrame">Retireable</A>)</span></div>
+<div class="desc">
+<span id="reflink_215" class="reftext" onclick='showAndHideRefBox("refbox_215", "reflink_215")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_215" class="refbox_inner" style="display:none;">
+Coverable definition
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">APDCoverable</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Editable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Editable</b><br>The related database table contains rows that are editable by application users based on roles and permissions. An Editable table manages additional fields that represent an audit trail of an entity in the table (for example, who created it and when, who last edited it and when).')">?</span></sup>, Exportable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>, Extendable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Extendable</b><br>Can be extended with additional custom fields added to it.')">?</span></sup>, Keyed<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Keyed</b><br>Has a related database table that has a primary key. Each row in a Keyed table has an integer primary key named ID. IDs are managed internally by the application, and the system ensures that no two rows in a keyed table have the same ID. In addition to the internal key, an external primary key can be associated with each row in a table.')">?</span></sup>, Sourceable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Sourceable</b><br>Contains entities that are linked to an external source. Each row in a Sourceable entity\'s table has additional fields to identify the external system and store the ID of the Sourceable entity in the external system.')">?</span></sup>, Supertype<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Supertype</b><br>A single table that represents multiple types of entities, called subtypes. Each subtype shares application logic and a majority of their fields. Each subtype may also define fields that are particular to it.')">?</span></sup>, Versionable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Versionable</b><br>Has a version number that increases every time the entity is changed. This allows the cache to identify when entities have been updated.')">?</span></sup></span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_216" class="reftext" onclick='showAndHideRefBox("refbox_216", "reflink_216")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_216" class="refbox_inner" style="display:none;">
+<A HREF="../full/APDAttribute.html#APDCoreAttribute" TARGET="tableFrame">APDCoreAttribute.Coverable</A><br><A HREF="../full/APDAttribute.html#APDField" TARGET="tableFrame">APDField.Coverable</A><br><A HREF="../full/APDClause.html" TARGET="tableFrame">APDClause.Coverable</A><br><A HREF="../full/APDClauseCategory.html" TARGET="tableFrame">APDClauseCategory.Coverable</A><br><A HREF="../full/APDCostDefinition.html#APDRiskCostDefinition" TARGET="tableFrame">APDRiskCostDefinition.Coverable</A><br><A HREF="../full/APDCoverable.html" TARGET="tableFrame">APDCoverable.Parent</A><br><A HREF="../full/APDCoverable_ChildrenLabel_L10N.html" TARGET="tableFrame">APDCoverable_ChildrenLabel_L10N.Owner</A><br><A HREF="../full/APDCoverable_Description_L10N.html" TARGET="tableFrame">APDCoverable_Description_L10N.Owner</A><br><A HREF="../full/APDCoverable_ExposureLabel_L10N.html" TARGET="tableFrame">APDCoverable_ExposureLabel_L10N.Owner</A><br><A HREF="../full/APDCoverable_MenuLabel_L10N.html" TARGET="tableFrame">APDCoverable_MenuLabel_L10N.Owner</A><br><A HREF="../full/APDCoverable_Name_L10N.html" TARGET="tableFrame">APDCoverable_Name_L10N.Owner</A><br><A HREF="../full/APDExposure.html" TARGET="tableFrame">APDExposure.Coverable</A><br><A HREF="../full/APDRiskCoverable.html" TARGET="tableFrame">APDRiskCoverable.Coverable</A><br><A HREF="../full/Apdcoverableparent.html" TARGET="tableFrame">Apdcoverableparent.ForeignEntity</A><br><A HREF="../full/Apdcoverableparent.html" TARGET="tableFrame">Apdcoverableparent.Owner</A>
+</div>
+</span>
+</div>
+<span class="showhidelink"><a id="showAllElements" href="#" onClick="return showAllUIDetails()">Show user interface details on all fields</a></span>
+
+<br>
+<a name=subtypes></a>
+<br/>
+<span class="filtertitle">Subtypes</span>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+</tr>
+<tr>
+<td>
+APDProductLine</td>
+<td><A HREF="#APDProductLine" TARGET="tableFrame">APDProductLine</A></td>
+</tr>
+<tr>
+<td>
+APDScheduledItem</td>
+<td><A HREF="#APDScheduledItem" TARGET="tableFrame">APDScheduledItem</A></td>
+</tr>
+</table>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+<a name="apdcoverable_id"></a>
+<p class="column">
+<span class="coltitle">ID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "key")'>key</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Internally managed primary key</span>
+<a name="apdcoverable_apdcoverableparentarray_prop"></a>
+<p class="column">
+<span class="coltitle">APDCOVERABLEPARENTARRAY_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_autonumber"></a>
+<p class="column">
+<span class="coltitle">AutoNumber</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_beanversion_prop"></a>
+<p class="column">
+<span class="coltitle">BEANVERSION_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_canbeautonumbered"></a>
+<p class="column">
+<span class="coltitle">CanBeAutoNumbered</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">A coverable needs auto numbering if it does not have a FK to either a PolicyLocation or a Building
+because these already have LocationNumber and BuildingNumber sequences respectively.</span>
+<a name="apdcoverable_childrenlabel"></a>
+<p class="column">
+<span class="coltitle">ChildrenLabel</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(localized)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>localized</b><br>The property is represented by a different localized table.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The label given to the tab or reference to the child objects</span>
+<div class='screenrefbody'>
+<span id=showhideUI_0 onclick='showAndHideUIDetails("UITable_0", "showhideUI_0")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_0' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableInputSet.default.pcf:70</td>
+<td>Web.APDCoverable.ChildrenLabel</td>
+<td>coverable.ChildrenLabel</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDCoverableInputSet.line.pcf:75</td>
+<td>Web.APDNewProduct.ChildrenLabel</td>
+<td>line.ChildrenLabel</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDProductAndLineInputSet.pcf:163</td>
+<td>Web.APDNewProduct.ChildrenLabel</td>
+<td>line.ChildrenLabel</td>
+<td>true</td>
+<td>
+APDNewProductPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcoverable_childrenlabel_en_us"></a>
+<p class="column">
+<span class="coltitle">ChildrenLabel_en_US</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_childrenlabel_l10n_array_prop"></a>
+<p class="column">
+<span class="coltitle">CHILDRENLABEL_L10N_ARRAY_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_childrenlabel_prop"></a>
+<p class="column">
+<span class="coltitle">CHILDRENLABEL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_clausecategories_prop"></a>
+<p class="column">
+<span class="coltitle">CLAUSECATEGORIES_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_clausecategoriesused"></a>
+<p class="column">
+<span class="coltitle">ClauseCategoriesUsed</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.Set<entity.APDClauseCategory></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the categories of all clauses on this coverable as a set.</span>
+<a name="apdcoverable_clauses_prop"></a>
+<p class="column">
+<span class="coltitle">CLAUSES_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_conditionandexclusionlibrarycategoriesxmlstring"></a>
+<p class="column">
+<span class="coltitle">ConditionAndExclusionLibraryCategoriesXMLString</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_containssplittableattribute"></a>
+<p class="column">
+<span class="coltitle">ContainsSplittableAttribute</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_corefields_prop"></a>
+<p class="column">
+<span class="coltitle">COREFIELDS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_costdefinitions_prop"></a>
+<p class="column">
+<span class="coltitle">COSTDEFINITIONS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_coverabletype"></a>
+<p class="column">
+<span class="coltitle">CoverableType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/APDCoverableType_tl.html" TARGET="tableFrame">APDCoverableType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The type of coverable, such as property, liability, etc</span>
+<div class='screenrefbody'>
+<span id=showhideUI_1 onclick='showAndHideUIDetails("UITable_1", "showhideUI_1")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_1' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableInputSet.default.pcf:40</td>
+<td>Web.APDCoverable.CoverableType</td>
+<td>coverable.CoverableType</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDCoverableInputSet.line.pcf:55</td>
+<td>Web.APDNewProduct.ProductLineType</td>
+<td>line.CoverableType</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDProductAndLineInputSet.pcf:143</td>
+<td>Web.APDNewProduct.ProductLineType</td>
+<td>line.CoverableType</td>
+<td>true</td>
+<td>
+APDNewProductPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcoverable_coverabletype_prop"></a>
+<p class="column">
+<span class="coltitle">COVERABLETYPE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_coveragelibrarycategoriesxmlstring"></a>
+<p class="column">
+<span class="coltitle">CoverageLibraryCategoriesXMLString</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_createtime"></a>
+<p class="column">
+<span class="coltitle">CreateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was created</span>
+<a name="apdcoverable_createtime_prop"></a>
+<p class="column">
+<span class="coltitle">CREATETIME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_createuser"></a>
+<p class="column">
+<span class="coltitle">CreateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CreateUserID)</span>
+<br>
+<span class="desc">User who created the object</span>
+<a name="apdcoverable_createuser_prop"></a>
+<p class="column">
+<span class="coltitle">CREATEUSER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_description"></a>
+<p class="column">
+<span class="coltitle">Description</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(localized)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>localized</b><br>The property is represented by a different localized table.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">A description of what the coverable is, e.g. a vehicle</span>
+<div class='screenrefbody'>
+<span id=showhideUI_2 onclick='showAndHideUIDetails("UITable_2", "showhideUI_2")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_2' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableCV.pcf:273</td>
+<td>Web.APDCoverable.Description</td>
+<td>child.Description</td>
+<td>false</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDCoverableInputSet.default.pcf:26</td>
+<td>DisplayKey.get("Web.APD.RequiredForGeneration", DisplayKey.get("Web.APDCoverable.Description"))</td>
+<td>coverable.Description</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDCoverableInputSet.line.pcf:30</td>
+<td>Web.APDNewProduct.Description</td>
+<td>line.Description</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDProductAndLineInputSet.pcf:101</td>
+<td>Web.APDNewProduct.Description</td>
+<td>line.Description</td>
+<td>true</td>
+<td>
+APDNewProductPopup
+</td>
+</tr>
+<tr>
+<td>APDProductLinesLV.pcf:36</td>
+<td>Web.APDProductScreen.APDProductLine.Description</td>
+<td>line.Description</td>
+<td>false</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcoverable_description_en_us"></a>
+<p class="column">
+<span class="coltitle">Description_en_US</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_description_l10n_array_prop"></a>
+<p class="column">
+<span class="coltitle">DESCRIPTION_L10N_ARRAY_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_description_prop"></a>
+<p class="column">
+<span class="coltitle">DESCRIPTION_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_diffdepth"></a>
+<p class="column">
+<span class="coltitle">DiffDepth</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Integer</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_emcoverable"></a>
+<p class="column">
+<span class="coltitle">EMCoverable</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning Type<java.lang.Object></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_exposurelabel"></a>
+<p class="column">
+<span class="coltitle">ExposureLabel</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(localized)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>localized</b><br>The property is represented by a different localized table.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The label given to the tab or reference to the exposure objects</span>
+<div class='screenrefbody'>
+<span id=showhideUI_3 onclick='showAndHideUIDetails("UITable_3", "showhideUI_3")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_3' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableInputSet.default.pcf:88</td>
+<td>Web.APDNewProduct.ExposureLabel</td>
+<td>coverable.ExposureLabel</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDCoverableInputSet.line.pcf:93</td>
+<td>Web.APDNewProduct.ExposureLabel</td>
+<td>line.ExposureLabel</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDProductAndLineInputSet.pcf:181</td>
+<td>Web.APDNewProduct.ExposureLabel</td>
+<td>line.ExposureLabel</td>
+<td>true</td>
+<td>
+APDNewProductPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcoverable_exposurelabel_en_us"></a>
+<p class="column">
+<span class="coltitle">ExposureLabel_en_US</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_exposurelabel_l10n_array_prop"></a>
+<p class="column">
+<span class="coltitle">EXPOSURELABEL_L10N_ARRAY_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_exposurelabel_prop"></a>
+<p class="column">
+<span class="coltitle">EXPOSURELABEL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_exposures_prop"></a>
+<p class="column">
+<span class="coltitle">EXPOSURES_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_fields_prop"></a>
+<p class="column">
+<span class="coltitle">FIELDS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_haschildren"></a>
+<p class="column">
+<span class="coltitle">HasChildren</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Defines if this coverable can have child coverables.</span>
+<div class='screenrefbody'>
+<span id=showhideUI_4 onclick='showAndHideUIDetails("UITable_4", "showhideUI_4")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_4' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableInputSet.default.pcf:60</td>
+<td>Web.APDCoverable.HasChildren</td>
+<td>coverable.HasChildren</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDCoverableInputSet.line.pcf:65</td>
+<td>Web.APDNewProduct.HasChildren</td>
+<td>line.HasChildren</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDProductAndLineInputSet.pcf:153</td>
+<td>Web.APDNewProduct.HasChildren</td>
+<td>line.HasChildren</td>
+<td>true</td>
+<td>
+APDNewProductPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcoverable_haschildren_prop"></a>
+<p class="column">
+<span class="coltitle">HASCHILDREN_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_hasconditionandexclusionlibrary"></a>
+<p class="column">
+<span class="coltitle">HasConditionAndExclusionLibrary</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_hascoveragelibrary"></a>
+<p class="column">
+<span class="coltitle">HasCoverageLibrary</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_hasexposure"></a>
+<p class="column">
+<span class="coltitle">HasExposure</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<div class='screenrefbody'>
+<span id=showhideUI_5 onclick='showAndHideUIDetails("UITable_5", "showhideUI_5")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_5' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableInputSet.default.pcf:78</td>
+<td>DisplayKey.get("Web.APDCoverable.HasExposure", coverable.Name)</td>
+<td>coverable.HasExposure</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDCoverableInputSet.line.pcf:83</td>
+<td>Web.APDNewProduct.HasExposure</td>
+<td>line.HasExposure</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDProductAndLineInputSet.pcf:171</td>
+<td>Web.APDNewProduct.HasExposure</td>
+<td>line.HasExposure</td>
+<td>true</td>
+<td>
+APDNewProductPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcoverable_hasexposure_prop"></a>
+<p class="column">
+<span class="coltitle">HASEXPOSURE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_hasmodifiers"></a>
+<p class="column">
+<span class="coltitle">HasModifiers</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Whether this coverable has modifiers</span>
+<a name="apdcoverable_hasmodifiers_prop"></a>
+<p class="column">
+<span class="coltitle">HASMODIFIERS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_hassplittablechildcoverables"></a>
+<p class="column">
+<span class="coltitle">HasSplittableChildCoverables</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns true if any direct child coverable has a splittable field</span>
+<a name="apdcoverable_hassplittablefields"></a>
+<p class="column">
+<span class="coltitle">HasSplittableFields</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns true if this coverable has any splittable fields</span>
+<a name="apdcoverable_id_prop"></a>
+<p class="column">
+<span class="coltitle">ID_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_isacoverable"></a>
+<p class="column">
+<span class="coltitle">IsACoverable</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_isautonumbered"></a>
+<p class="column">
+<span class="coltitle">IsAutoNumbered</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Defines if the coverable is automatically numbered (ignored for the line)</span>
+<div class='screenrefbody'>
+<span id=showhideUI_6 onclick='showAndHideUIDetails("UITable_6", "showhideUI_6")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_6' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableInputSet.default.pcf:33</td>
+<td>DisplayKey.get("Web.APDCoverable.IsAutoNumbered", coverable.Name)</td>
+<td>coverable.IsAutoNumbered</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcoverable_isautonumbered_prop"></a>
+<p class="column">
+<span class="coltitle">ISAUTONUMBERED_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_jurisdictionreferenceslocation"></a>
+<p class="column">
+<span class="coltitle">JurisdictionReferencesLocation</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns true if this coverable or one of its parents includes a location, and false otherwise. If this returns
+true, then the ReferenceToJurisdiction property will return a path to the location. If this returns false, then
+the ReferenceToJurisdiction property will return a path to the line's BaseState. These cases are handled in
+different ways during code generation.
+
+Note that APDProductLines never include locations, so this method always returns false for line coverables.</span>
+<a name="apdcoverable_lineprefix"></a>
+<p class="column">
+<span class="coltitle">LinePrefix</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lineprefixlowercase"></a>
+<p class="column">
+<span class="coltitle">LinePrefixLowerCase</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lobpackagename"></a>
+<p class="column">
+<span class="coltitle">LOBPackageName</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_locationfield"></a>
+<p class="column">
+<span class="coltitle">LocationField</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupcblendtag"></a>
+<p class="column">
+<span class="coltitle">LookupCblEndTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupcblschconditionendtag"></a>
+<p class="column">
+<span class="coltitle">LookupCblSchConditionEndTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupcblschconditionstarttag"></a>
+<p class="column">
+<span class="coltitle">LookupCblSchConditionStartTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupcblschendtag"></a>
+<p class="column">
+<span class="coltitle">LookupCblSchEndTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupcblschexclusionendtag"></a>
+<p class="column">
+<span class="coltitle">LookupCblSchExclusionEndTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupcblschexclusionstarttag"></a>
+<p class="column">
+<span class="coltitle">LookupCblSchExclusionStartTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupcblschstarttag"></a>
+<p class="column">
+<span class="coltitle">LookupCblSchStartTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupcblstarttag"></a>
+<p class="column">
+<span class="coltitle">LookupCblStartTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupcondendtag"></a>
+<p class="column">
+<span class="coltitle">LookupCondEndTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupcondstarttag"></a>
+<p class="column">
+<span class="coltitle">LookupCondStartTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupcovendtag"></a>
+<p class="column">
+<span class="coltitle">LookupCovEndTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupcovstarttag"></a>
+<p class="column">
+<span class="coltitle">LookupCovStartTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupexclendtag"></a>
+<p class="column">
+<span class="coltitle">LookupExclEndTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupexclstarttag"></a>
+<p class="column">
+<span class="coltitle">LookupExclStartTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupmodendtag"></a>
+<p class="column">
+<span class="coltitle">LookupModEndTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupmodstarttag"></a>
+<p class="column">
+<span class="coltitle">LookupModStartTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupschitemcondendtag"></a>
+<p class="column">
+<span class="coltitle">LookupSchItemCondEndTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupschitemcondstarttag"></a>
+<p class="column">
+<span class="coltitle">LookupSchItemCondStartTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupschitemcovendtag"></a>
+<p class="column">
+<span class="coltitle">LookupSchItemCovEndTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupschitemcovstarttag"></a>
+<p class="column">
+<span class="coltitle">LookupSchItemCovStartTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupschitemexclendtag"></a>
+<p class="column">
+<span class="coltitle">LookupSchItemExclEndTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lookupschitemexclstarttag"></a>
+<p class="column">
+<span class="coltitle">LookupSchItemExclStartTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_menulabel"></a>
+<p class="column">
+<span class="coltitle">MenuLabel</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(localized)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>localized</b><br>The property is represented by a different localized table.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Line detail label or coverable list label used in the UI</span>
+<div class='screenrefbody'>
+<span id=showhideUI_7 onclick='showAndHideUIDetails("UITable_7", "showhideUI_7")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_7' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableInputSet.default.pcf:93</td>
+<td>DisplayKey.get("Web.APD.RequiredForGeneration", DisplayKey.get("Web.APDCoverable.MenuLabel"))</td>
+<td>coverable.MenuLabel</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDCoverableInputSet.line.pcf:98</td>
+<td>DisplayKey.get("Web.APD.RequiredForGeneration", DisplayKey.get("Web.APDNewProduct.MenuLabel"))</td>
+<td>line.MenuLabel</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDProductAndLineInputSet.pcf:186</td>
+<td>DisplayKey.get("Web.APD.RequiredForGeneration", DisplayKey.get("Web.APDNewProduct.MenuLabel"))</td>
+<td>line.MenuLabel</td>
+<td>true</td>
+<td>
+APDNewProductPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcoverable_menulabel_en_us"></a>
+<p class="column">
+<span class="coltitle">MenuLabel_en_US</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_menulabel_l10n_array_prop"></a>
+<p class="column">
+<span class="coltitle">MENULABEL_L10N_ARRAY_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_menulabel_prop"></a>
+<p class="column">
+<span class="coltitle">MENULABEL_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_name"></a>
+<p class="column">
+<span class="coltitle">Name</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(localized)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>localized</b><br>The property is represented by a different localized table.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The name of the line or type of coverable used in the UI as a title</span>
+<div class='screenrefbody'>
+<span id=showhideUI_8 onclick='showAndHideUIDetails("UITable_8", "showhideUI_8")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_8' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableCV.pcf:269</td>
+<td>Web.APDCoverable.Name</td>
+<td>child.Name</td>
+<td>false</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDCoverableInputSet.default.pcf:20</td>
+<td>Web.APDCoverable.Name</td>
+<td>coverable.Name</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDCoverableInputSet.line.pcf:24</td>
+<td>Web.APDNewProduct.Name</td>
+<td>line.Name</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDLineSelectionScreen.pcf:95</td>
+<td>Web.APDLineSelection.ProductLineName</td>
+<td>productLine.Name</td>
+<td>false</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+<tr>
+<td>APDNewEditionPopup.pcf:49</td>
+<td>Web.APDProduct.EditionContext</td>
+<td>productLine.Name</td>
+<td>false</td>
+<td>
+APDNewEditionPopup
+</td>
+</tr>
+<tr>
+<td>APDProductAndLineInputSet.pcf:91</td>
+<td>Web.APDNewProduct.Name</td>
+<td>line.Name</td>
+<td>true</td>
+<td>
+APDNewProductPopup
+</td>
+</tr>
+<tr>
+<td>APDProductLinesLV.pcf:32</td>
+<td>Web.APDProductScreen.APDProductLine.Name</td>
+<td>line.Name</td>
+<td>false</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcoverable_name_en_us"></a>
+<p class="column">
+<span class="coltitle">Name_en_US</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_name_l10n_array_prop"></a>
+<p class="column">
+<span class="coltitle">NAME_L10N_ARRAY_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_name_prop"></a>
+<p class="column">
+<span class="coltitle">NAME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_new"></a>
+<p class="column">
+<span class="coltitle">New</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_newlyimported"></a>
+<p class="column">
+<span class="coltitle">NewlyImported</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_parent"></a>
+<p class="column">
+<span class="coltitle">Parent</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDCoverable.html" TARGET="tableFrame">APDCoverable</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_parent_prop"></a>
+<p class="column">
+<span class="coltitle">PARENT_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_productline"></a>
+<p class="column">
+<span class="coltitle">ProductLine</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning APDProductLine</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_publicid"></a>
+<p class="column">
+<span class="coltitle">PublicID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "publicid")'>publicid</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ID or primary key of the row in the external system to which this row is mapped</span>
+<a name="apdcoverable_publicid_prop"></a>
+<p class="column">
+<span class="coltitle">PUBLICID_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_qualifiedname"></a>
+<p class="column">
+<span class="coltitle">QualifiedName</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_referencetojurisdiction"></a>
+<p class="column">
+<span class="coltitle">ReferenceToJurisdiction</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns a path from this coverable to the closest available location or jurisdiction. If this coverable itself
+has a location (i.e., if the RiskLocation is TC_ISLOCATION, TC_ISBUILDING or TC_REFLOCATION), then the path will
+reference that location. Otherwise the path goes through the parent coverable. If the coverable is a line, then
+the path will reference the line's BaseState property. Thus, the path could lead to either a PolicyLocation or a
+Jurisdiction. Codegen uses the JurisdictionReferencesLocation property to distinguish between the two cases.</span>
+<a name="apdcoverable_retired"></a>
+<p class="column">
+<span class="coltitle">Retired</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_retired_dynprop"></a>
+<p class="column">
+<span class="coltitle">RETIRED_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_retiredvalue"></a>
+<p class="column">
+<span class="coltitle">RetiredValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "softentityreference")'>softentityreference</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: Retired)&nbsp;&nbsp;&nbsp;&nbsp;(default: 0)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Whether the entity is still in use. A value of 0 means that the entity is not retired. If the entity is retired from active use, this field has a non-zero value equal to the entity's ID. Once an entity is retired, it should not be unretired.</span>
+<a name="apdcoverable_retiredvalue_dynprop"></a>
+<p class="column">
+<span class="coltitle">RETIREDVALUE_DYNPROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.DynamicEntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_retiredvalue_prop"></a>
+<p class="column">
+<span class="coltitle">RETIREDVALUE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_risklocation"></a>
+<p class="column">
+<span class="coltitle">RiskLocation</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/APDRiskLocationType_tl.html" TARGET="tableFrame">APDRiskLocationType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: useParent)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Defines how the jurisdiction/location of this coverable risk is determined</span>
+<div class='screenrefbody'>
+<span id=showhideUI_9 onclick='showAndHideUIDetails("UITable_9", "showhideUI_9")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_9' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableInputSet.default.pcf:49</td>
+<td>Web.APDCoverable.RiskLocation</td>
+<td>coverable.RiskLocation</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcoverable_risklocation_prop"></a>
+<p class="column">
+<span class="coltitle">RISKLOCATION_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_scheduleconditemfieldname"></a>
+<p class="column">
+<span class="coltitle">ScheduleCondItemFieldName</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_schedulecovitemfieldname"></a>
+<p class="column">
+<span class="coltitle">ScheduleCovItemFieldName</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the name of the foreign key from a scheduled item coverage back to the scheduled item itself, for code
+generation. Throws if this coverable does not have any schedule coverages.</span>
+<a name="apdcoverable_scheduleditem"></a>
+<p class="column">
+<span class="coltitle">ScheduledItem</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns true if this is a scheduled item (an instance of APDScheduledItem), and false otherwise</span>
+<a name="apdcoverable_scheduleexclitemfieldname"></a>
+<p class="column">
+<span class="coltitle">ScheduleExclItemFieldName</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_separatebilling"></a>
+<p class="column">
+<span class="coltitle">SeparateBilling</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">If true, this coverable will create an individual debtors charge items for billing</span>
+<div class='screenrefbody'>
+<span id=showhideUI_10 onclick='showAndHideUIDetails("UITable_10", "showhideUI_10")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_10' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverablePricingPanelSet.pcf:23</td>
+<td>Web.APDRiskPricingPanelSet.SeparateBilling</td>
+<td>coverable.SeparateBilling</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDRiskPricingPanelSet.pcf:34</td>
+<td>Web.APDRiskPricingPanelSet.SeparateBilling</td>
+<td>risk.Coverable.SeparateBilling</td>
+<td>true</td>
+<td>
+APDPricingPopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcoverable_separatebilling_prop"></a>
+<p class="column">
+<span class="coltitle">SEPARATEBILLING_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_separatecollection"></a>
+<p class="column">
+<span class="coltitle">SeparateCollection</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">If true, this coverable will crate an individual debtors charge for cash allocation</span>
+<div class='screenrefbody'>
+<span id=showhideUI_11 onclick='showAndHideUIDetails("UITable_11", "showhideUI_11")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_11' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverablePricingPanelSet.pcf:30</td>
+<td>Web.APDRiskPricingPanelSet.SeparateCollection</td>
+<td>coverable.SeparateCollection</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDRiskPricingPanelSet.pcf:45</td>
+<td>Web.APDRiskPricingPanelSet.SeparateCollection</td>
+<td>risk.Coverable.SeparateCollection</td>
+<td>true</td>
+<td>
+APDPricingPopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+RewriteNewAccountWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcoverable_separatecollection_prop"></a>
+<p class="column">
+<span class="coltitle">SEPARATECOLLECTION_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_subtype"></a>
+<p class="column">
+<span class="coltitle">Subtype</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="#subtypes" TARGET="tableFrame">APDCoverable</A> subtypes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Identifies a particular subtype within a supertype table; each subtype of a supertype has its own unique subtype value</span>
+<a name="apdcoverable_subtype_prop"></a>
+<p class="column">
+<span class="coltitle">SUBTYPE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_type"></a>
+<p class="column">
+<span class="coltitle">TYPE</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityTypeReference<entity.APDCoverable></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_typename"></a>
+<p class="column">
+<span class="coltitle">TypeName</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (22)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The entity (or subtype for lines) used to persist this coverable</span>
+<div class='screenrefbody'>
+<span id=showhideUI_12 onclick='showAndHideUIDetails("UITable_12", "showhideUI_12")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_12' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableInputSet.default.pcf:100</td>
+<td>DisplayKey.get("Web.APD.RequiredForGeneration", DisplayKey.get("Web.APDCoverable.TypeName"))</td>
+<td>coverable.TypeName</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDCoverableInputSet.line.pcf:105</td>
+<td>DisplayKey.get("Web.APD.RequiredForGeneration", DisplayKey.get("Web.APDNewProduct.TypeName"))</td>
+<td>line.TypeName</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDProductAndLineInputSet.pcf:197</td>
+<td>DisplayKey.get("Web.APD.RequiredForGeneration", DisplayKey.get("Web.APDNewProduct.TypeName"))</td>
+<td>line.TypeName</td>
+<td>true</td>
+<td>
+APDNewProductPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdcoverable_typename_prop"></a>
+<p class="column">
+<span class="coltitle">TYPENAME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_updatetime"></a>
+<p class="column">
+<span class="coltitle">UpdateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was last updated</span>
+<a name="apdcoverable_updatetime_prop"></a>
+<p class="column">
+<span class="coltitle">UPDATETIME_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_updateuser"></a>
+<p class="column">
+<span class="coltitle">UpdateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: UpdateUserID)</span>
+<br>
+<span class="desc">User who last updated the object</span>
+<a name="apdcoverable_updateuser_prop"></a>
+<p class="column">
+<span class="coltitle">UPDATEUSER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ILinkPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_usesparentlocation"></a>
+<p class="column">
+<span class="coltitle">UsesParentLocation</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_writtenbythirdparty"></a>
+<p class="column">
+<span class="coltitle">WrittenByThirdParty</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">If true, this product is written by another insurance company (captured as an organisation)</span>
+<a name="apdcoverable_writtenbythirdparty_prop"></a>
+<p class="column">
+<span class="coltitle">WRITTENBYTHIRDPARTY_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="Arrays"></a><div class="arraysbox">Arrays</div>
+<a name="apdcoverable_allchildcoverables"></a>
+<p class="column">
+<span class="coltitle">AllChildCoverables</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDCoverable</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_allclausecategories"></a>
+<p class="column">
+<span class="coltitle">AllClauseCategories</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDClauseCategory</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_allclauses"></a>
+<p class="column">
+<span class="coltitle">AllClauses</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDClause</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_allconditions"></a>
+<p class="column">
+<span class="coltitle">AllConditions</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDCondition</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_allcoverages"></a>
+<p class="column">
+<span class="coltitle">AllCoverages</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDCoverage</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_allexclusions"></a>
+<p class="column">
+<span class="coltitle">AllExclusions</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDExclusion</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_allexposures"></a>
+<p class="column">
+<span class="coltitle">AllExposures</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDExposure</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_alltypelists"></a>
+<p class="column">
+<span class="coltitle">AllTypelists</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDAttribute</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_childcoverables"></a>
+<p class="column">
+<span class="coltitle">ChildCoverables</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDCoverable</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_childrenlabel_l10n_array"></a>
+<p class="column">
+<span class="coltitle">ChildrenLabel_L10N_ARRAY</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="APDCoverable_ChildrenLabel_L10N.html" TARGET="tableFrame">APDCoverable_ChildrenLabel_L10N</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_clausecategories"></a>
+<p class="column">
+<span class="coltitle">ClauseCategories</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="APDClauseCategory.html" TARGET="tableFrame">APDClauseCategory</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The set of clause categories used by this coverable</span>
+<a name="apdcoverable_clauserulecandidates"></a>
+<p class="column">
+<span class="coltitle">ClauseRuleCandidates</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDClause</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_clauses"></a>
+<p class="column">
+<span class="coltitle">Clauses</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="APDClause.html" TARGET="tableFrame">APDClause</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">All clauses relating to this coverable</span>
+<a name="apdcoverable_conditionandexclusionlibrarycategories"></a>
+<p class="column">
+<span class="coltitle">ConditionAndExclusionLibraryCategories</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDClauseCategory</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_conditions"></a>
+<p class="column">
+<span class="coltitle">Conditions</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDCondition</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_corefields"></a>
+<p class="column">
+<span class="coltitle">CoreFields</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="APDAttribute.html#APDCoreAttribute" TARGET="tableFrame">APDCoreAttribute</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Standard PolicyCenter fields that may be referred to in rules</span>
+<a name="apdcoverable_costdefinitions"></a>
+<p class="column">
+<span class="coltitle">CostDefinitions</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="APDCostDefinition.html#APDRiskCostDefinition" TARGET="tableFrame">APDRiskCostDefinition</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The definitions of costs that attach directly to this coverable</span>
+<a name="apdcoverable_coveragelibrarycategories"></a>
+<p class="column">
+<span class="coltitle">CoverageLibraryCategories</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDClauseCategory</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_coverages"></a>
+<p class="column">
+<span class="coltitle">Coverages</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDCoverage</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_covtermrulecandidates"></a>
+<p class="column">
+<span class="coltitle">CovTermRuleCandidates</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDTerm</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_description_l10n_array"></a>
+<p class="column">
+<span class="coltitle">Description_L10N_ARRAY</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="APDCoverable_Description_L10N.html" TARGET="tableFrame">APDCoverable_Description_L10N</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_exclusions"></a>
+<p class="column">
+<span class="coltitle">Exclusions</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDExclusion</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_exposurelabel_l10n_array"></a>
+<p class="column">
+<span class="coltitle">ExposureLabel_L10N_ARRAY</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="APDCoverable_ExposureLabel_L10N.html" TARGET="tableFrame">APDCoverable_ExposureLabel_L10N</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_exposures"></a>
+<p class="column">
+<span class="coltitle">Exposures</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="APDExposure.html" TARGET="tableFrame">APDExposure</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The types of risk exposure for this coverable</span>
+<a name="apdcoverable_fields"></a>
+<p class="column">
+<span class="coltitle">Fields</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="APDAttribute.html#APDField" TARGET="tableFrame">APDField</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Fields available for this coverable</span>
+<a name="apdcoverable_identifiers"></a>
+<p class="column">
+<span class="coltitle">Identifiers</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDField</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_itemisedcoveragecategories"></a>
+<p class="column">
+<span class="coltitle">ItemisedCoverageCategories</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDClauseCategory</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_lobdirectory"></a>
+<p class="column">
+<span class="coltitle">LOBDirectory</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_localizationfields"></a>
+<p class="column">
+<span class="coltitle">LocalizationFields</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_localizationlabels"></a>
+<p class="column">
+<span class="coltitle">LocalizationLabels</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_menulabel_l10n_array"></a>
+<p class="column">
+<span class="coltitle">MenuLabel_L10N_ARRAY</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="APDCoverable_MenuLabel_L10N.html" TARGET="tableFrame">APDCoverable_MenuLabel_L10N</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_name_l10n_array"></a>
+<p class="column">
+<span class="coltitle">Name_L10N_ARRAY</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="APDCoverable_Name_L10N.html" TARGET="tableFrame">APDCoverable_Name_L10N</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_rulecandidates"></a>
+<p class="column">
+<span class="coltitle">RuleCandidates</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDAttribute</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_toplevelconditions"></a>
+<p class="column">
+<span class="coltitle">TopLevelConditions</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDCondition</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_toplevelcoverages"></a>
+<p class="column">
+<span class="coltitle">TopLevelCoverages</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDCoverage</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdcoverable_toplevelexclusions"></a>
+<p class="column">
+<span class="coltitle">TopLevelExclusions</span>&nbsp;&nbsp;<span class="titleDesc">Derived array returning APDExclusion</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="Unique Keys for APDCoverable"></a><div class="arraysbox">Unique Keys for APDCoverable</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>apdcoverable1a</td>
+<td>PublicID, Retired</td></tr>
+</table>
+<a name="Subtypes"></a><div class="arraysbox">Subtypes</div>
+<div class='subtypebox'>
+<a name=APDProductLine></a>
+<div class="titlebox">
+<div class="filtertitle">APDProductLine <span class='supername'>(subtype of <A HREF="APDCoverable.html" TARGET="tableFrame">APDCoverable</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_217" class="reftext" onclick='showAndHideRefBox("refbox_217", "reflink_217")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_217" class="refbox_inner" style="display:none;">
+Product line definition
+</div>
+</span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_218" class="reftext" onclick='showAndHideRefBox("refbox_218", "reflink_218")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_218" class="refbox_inner" style="display:none;">
+<A HREF="../full/APDEdition.html#APDProductLineEdition" TARGET="tableFrame">APDProductLineEdition.ProductLine</A><br><A HREF="../full/APDProductToLine.html" TARGET="tableFrame">APDProductToLine.ProductLine</A>
+</div>
+</span>
+</div>
+<a name="apdproductline_allcostdefinitions"></a>
+<p class="column">
+<span class="coltitle">AllCostDefinitions</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.List<entity.APDCostDefinition></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns all cost definitions used by the line</span>
+<a name="apdproductline_allcoverables"></a>
+<p class="column">
+<span class="coltitle">AllCoverables</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.List<entity.APDCoverable></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns all entities that really are coverables, including the line itself (if appropriate)</span>
+<a name="apdproductline_allriskobjects"></a>
+<p class="column">
+<span class="coltitle">AllRiskObjects</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.List<entity.APDCoverable></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns all entities that are in the "coverable" hierarchy</span>
+<a name="apdproductline_basestaterequired"></a>
+<p class="column">
+<span class="coltitle">BaseStateRequired</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.Boolean</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdproductline_codeidentifier"></a>
+<p class="column">
+<span class="coltitle">CodeIdentifier</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "patterncode")'>patterncode</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The code used within the product model to identify this line</span>
+<div class='screenrefbody'>
+<span id=showhideUI_13 onclick='showAndHideUIDetails("UITable_13", "showhideUI_13")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_13' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableInputSet.line.pcf:42</td>
+<td>Web.APDNewProduct.CodeIdentifier</td>
+<td>line.CodeIdentifier</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDProductAndLineInputSet.pcf:121</td>
+<td>Web.APDNewProduct.CodeIdentifier</td>
+<td>line.CodeIdentifier</td>
+<td>true</td>
+<td>
+APDNewProductPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdproductline_codeidentifier_prop"></a>
+<p class="column">
+<span class="coltitle">CODEIDENTIFIER_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdproductline_corefieldtypes"></a>
+<p class="column">
+<span class="coltitle">CoreFieldTypes</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.Map<typekey.APDCoreFieldType, Type<java.lang.Object>></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Maps APDCoreFieldType values to the underlying type of the core field, which determines all the available
+dropdown entries for the core field.</span>
+<a name="apdproductline_currencies"></a>
+<p class="column">
+<span class="coltitle">Currencies</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/APDCurrencyHandling_tl.html" TARGET="tableFrame">APDCurrencyHandling</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: domestic)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The currencies used by this line</span>
+<div class='screenrefbody'>
+<span id=showhideUI_14 onclick='showAndHideUIDetails("UITable_14", "showhideUI_14")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_14' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableInputSet.line.pcf:48</td>
+<td>Web.APDNewProduct.Currencies</td>
+<td>line.Currencies</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDProductAndLineInputSet.pcf:131</td>
+<td>Web.APDNewProduct.Currencies</td>
+<td>line.Currencies</td>
+<td>true</td>
+<td>
+APDNewProductPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdproductline_currencies_prop"></a>
+<p class="column">
+<span class="coltitle">CURRENCIES_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.ITypekeyPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdproductline_definitionsequence"></a>
+<p class="column">
+<span class="coltitle">DefinitionSequence</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "integer")'>integer</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: 0)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Provides a generic sequence number for added definition objects to ensure a unique publicID for an LOB definition</span>
+<a name="apdproductline_definitionsequence_prop"></a>
+<p class="column">
+<span class="coltitle">DEFINITIONSEQUENCE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdproductline_editions"></a>
+<p class="column">
+<span class="coltitle">Editions</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="APDEdition.html#APDProductLineEdition" TARGET="tableFrame">APDProductLineEdition</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The editions of this product line</span>
+<a name="apdproductline_editions_prop"></a>
+<p class="column">
+<span class="coltitle">EDITIONS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdproductline_linecodeidentifiersuffix"></a>
+<p class="column">
+<span class="coltitle">LineCodeIdentifierSuffix</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the suffix to use when generating the CodeIdentifier for a line</span>
+<a name="apdproductline_lineprefix"></a>
+<p class="column">
+<span class="coltitle">LinePrefix</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (3)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The prefix uses for all objects that belong to this line</span>
+<div class='screenrefbody'>
+<span id=showhideUI_15 onclick='showAndHideUIDetails("UITable_15", "showhideUI_15")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_15' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableInputSet.line.pcf:36</td>
+<td>Web.APDNewProduct.LinePrefix</td>
+<td>line.LinePrefix</td>
+<td>true</td>
+<td>
+APDNewCoverablePopup
+<br>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDProductAndLineInputSet.pcf:111</td>
+<td>Web.APDNewProduct.LinePrefix</td>
+<td>line.LinePrefix</td>
+<td>true</td>
+<td>
+APDNewProductPopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdproductline_lineprefix_prop"></a>
+<p class="column">
+<span class="coltitle">LINEPREFIX_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdproductline_lookuplineendtag"></a>
+<p class="column">
+<span class="coltitle">LookupLineEndTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdproductline_lookuplinestarttag"></a>
+<p class="column">
+<span class="coltitle">LookupLineStartTag</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.lang.String</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdproductline_pmproductline"></a>
+<p class="column">
+<span class="coltitle">PMProductLine</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.api.productmodel.PolicyLinePattern</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdproductline_productlinecode"></a>
+<p class="column">
+<span class="coltitle">ProductLineCode</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "patterncode")'>patterncode</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The code of the actual product line generated from this definition</span>
+<a name="apdproductline_productlinecode_prop"></a>
+<p class="column">
+<span class="coltitle">PRODUCTLINECODE_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IColumnPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdproductline_products"></a>
+<p class="column">
+<span class="coltitle">Products</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="APDProductToLine.html" TARGET="tableFrame">APDProductToLine</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Link to the products that use this line</span>
+<a name="apdproductline_products_prop"></a>
+<p class="column">
+<span class="coltitle">PRODUCTS_PROP</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityPropertyInfoReference<gw.entity.IArrayPropertyInfo></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdproductline_type"></a>
+<p class="column">
+<span class="coltitle">TYPE</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityTypeReference<entity.APDProductLine></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="apdproductline_uniquecostdefinitions"></a>
+<p class="column">
+<span class="coltitle">UniqueCostDefinitions</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning java.util.List<entity.APDCostDefinition></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns one cost definition per coverable/coverage used by the line</span>
+<a name="Unique Keys for APDProductLine"></a><div class="arraysbox">Unique Keys for APDProductLine</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>apdcoverable1a</td>
+<td>PublicID, Retired</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<div class='subtypebox'>
+<a name=APDScheduledItem></a>
+<div class="titlebox">
+<div class="filtertitle">APDScheduledItem <span class='supername'>(subtype of <A HREF="APDCoverable.html" TARGET="tableFrame">APDCoverable</A>)</span> <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_219" class="reftext" onclick='showAndHideRefBox("refbox_219", "reflink_219")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_219" class="refbox_inner" style="display:none;">
+Scheduled item definition
+</div>
+</span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_220" class="reftext" onclick='showAndHideRefBox("refbox_220", "reflink_220")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_220" class="refbox_inner" style="display:none;">
+<A HREF="../full/APDClause.html" TARGET="tableFrame">APDClause.ScheduledItem</A>
+</div>
+</span>
+</div>
+<a name="apdscheduleditem_owningclause"></a>
+<p class="column">
+<span class="coltitle">OwningClause</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning APDClause</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc">Returns the clause that owns this scheduled item. This could be a newly created or updated clause in the current
+bundle, or a persisted clause in the database.</span>
+<a name="apdscheduleditem_type"></a>
+<p class="column">
+<span class="coltitle">TYPE</span>&nbsp;&nbsp;<span class="titleDesc">Derived property returning gw.pl.persistence.type.EntityTypeReference<entity.APDScheduledItem></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(virtual property)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>virtual property</b><br>The system creates no physical database column for this key.')">?</span></sup></span>
+<br>
+<span class="desc"></span>
+<a name="Unique Keys for APDScheduledItem"></a><div class="arraysbox">Unique Keys for APDScheduledItem</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>apdcoverable1a</td>
+<td>PublicID, Retired</td></tr>
+</table>
+<p class="desc"></p>
+</div>
+<script language="JavaScript">
+function showAllUIDetails() {
+showUIDetails('UITable_0', 'showhideUI_0');
+showUIDetails('UITable_1', 'showhideUI_1');
+showUIDetails('UITable_2', 'showhideUI_2');
+showUIDetails('UITable_3', 'showhideUI_3');
+showUIDetails('UITable_4', 'showhideUI_4');
+showUIDetails('UITable_5', 'showhideUI_5');
+showUIDetails('UITable_6', 'showhideUI_6');
+showUIDetails('UITable_7', 'showhideUI_7');
+showUIDetails('UITable_8', 'showhideUI_8');
+showUIDetails('UITable_9', 'showhideUI_9');
+showUIDetails('UITable_10', 'showhideUI_10');
+showUIDetails('UITable_11', 'showhideUI_11');
+showUIDetails('UITable_12', 'showhideUI_12');
+showUIDetails('UITable_13', 'showhideUI_13');
+showUIDetails('UITable_14', 'showhideUI_14');
+showUIDetails('UITable_15', 'showhideUI_15');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Hide user interface details on all fields';
+  link.onclick = hideAllUIDetails;
+  return false;
+}
+function hideAllUIDetails() {
+hideUIDetails('UITable_0', 'showhideUI_0');
+hideUIDetails('UITable_1', 'showhideUI_1');
+hideUIDetails('UITable_2', 'showhideUI_2');
+hideUIDetails('UITable_3', 'showhideUI_3');
+hideUIDetails('UITable_4', 'showhideUI_4');
+hideUIDetails('UITable_5', 'showhideUI_5');
+hideUIDetails('UITable_6', 'showhideUI_6');
+hideUIDetails('UITable_7', 'showhideUI_7');
+hideUIDetails('UITable_8', 'showhideUI_8');
+hideUIDetails('UITable_9', 'showhideUI_9');
+hideUIDetails('UITable_10', 'showhideUI_10');
+hideUIDetails('UITable_11', 'showhideUI_11');
+hideUIDetails('UITable_12', 'showhideUI_12');
+hideUIDetails('UITable_13', 'showhideUI_13');
+hideUIDetails('UITable_14', 'showhideUI_14');
+hideUIDetails('UITable_15', 'showhideUI_15');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Show user interface details on all fields';
+  link.onclick = showAllUIDetails;
+  return false;
+}
+</script>
+
+</body>
+</html>

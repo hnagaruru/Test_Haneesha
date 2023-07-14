@@ -1,0 +1,665 @@
+<html>
+<head>
+<title>APDExposure</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox">
+<div class="pagetitle">APDExposure <span class="entityname">(pcx_apdexposure) (delegates to <A HREF="Retireable.html" TARGET="tableFrame">Retireable</A>)</span></div>
+<div class="desc">
+<span id="reflink_316" class="reftext" onclick='showAndHideRefBox("refbox_316", "reflink_316")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_316" class="refbox_inner" style="display:none;">
+Things that expose a risk object to risk
+</div>
+</span>
+</div>
+</div>
+<div class="attrbox">
+<div class="entitybox"
+<span class="attrtitle">Entity: </span>
+<span class="attrtext">APDExposure</span>
+</div>
+<div class="attributesbox"
+<span class="attrtitle">Attributes: </span>
+<span class="attrtext">Editable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Editable</b><br>The related database table contains rows that are editable by application users based on roles and permissions. An Editable table manages additional fields that represent an audit trail of an entity in the table (for example, who created it and when, who last edited it and when).')">?</span></sup>, Exportable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>, Extendable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Extendable</b><br>Can be extended with additional custom fields added to it.')">?</span></sup>, Final<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Final</b><br>The entity cannot be subtyped.')">?</span></sup>, Keyed<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Keyed</b><br>Has a related database table that has a primary key. Each row in a Keyed table has an integer primary key named ID. IDs are managed internally by the application, and the system ensures that no two rows in a keyed table have the same ID. In addition to the internal key, an external primary key can be associated with each row in a table.')">?</span></sup>, Sourceable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Sourceable</b><br>Contains entities that are linked to an external source. Each row in a Sourceable entity\'s table has additional fields to identify the external system and store the ID of the Sourceable entity in the external system.')">?</span></sup>, Versionable<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>Versionable</b><br>Has a version number that increases every time the entity is changed. This allows the cache to identify when entities have been updated.')">?</span></sup></span>
+</div>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_317" class="reftext" onclick='showAndHideRefBox("refbox_317", "reflink_317")'><img src="../../res/blackup.gif" border="0"><b>Concrete FK references: </b></span>
+<div id="refbox_317" class="refbox_inner" style="display:none;">
+<A HREF="../full/APDAttribute.html#APDExposureField" TARGET="tableFrame">APDExposureField.Exposure</A><br><A HREF="../full/APDExposure_Description_L10N.html" TARGET="tableFrame">APDExposure_Description_L10N.Owner</A><br><A HREF="../full/APDExposure_MenuLabel_L10N.html" TARGET="tableFrame">APDExposure_MenuLabel_L10N.Owner</A><br><A HREF="../full/APDExposure_Name_L10N.html" TARGET="tableFrame">APDExposure_Name_L10N.Owner</A><br><A HREF="../full/APDRiskExposure.html" TARGET="tableFrame">APDRiskExposure.Exposure</A>
+</div>
+</span>
+</div>
+<div class="refbox biglist odd">
+<span id="reflink_318" class="reftext" onclick='showAndHideRefBox("refbox_318", "reflink_318")'><img src="../../res/blackup.gif" border="0"><b>Array references: </b></span>
+<div id="refbox_318" class="refbox_inner" style="display:none;">
+<A HREF="../full/APDCoverable.html" TARGET="tableFrame">APDCoverable.Exposures</A>
+</div>
+</span>
+</div>
+<span class="showhidelink"><a id="showAllElements" href="#" onClick="return showAllUIDetails()">Show user interface details on all fields</a></span>
+
+<br>
+<a id='TOC'></a>
+<a name="Fields"></a><div class="arraysbox">Fields</div>
+<a name="apdexposure_id"></a>
+<p class="column">
+<span class="coltitle">ID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "key")'>key</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Internally managed primary key</span>
+<a name="apdexposure_contactrole"></a>
+<p class="column">
+<span class="coltitle">ContactRole</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/APDExposureContactRole_tl.html" TARGET="tableFrame">APDExposureContactRole</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Where the exposure is a contact, this is the role of that contact on the policy</span>
+<div class='screenrefbody'>
+<span id=showhideUI_0 onclick='showAndHideUIDetails("UITable_0", "showhideUI_0")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_0' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableCV.pcf:164</td>
+<td>Web.APDCoverableCV.APDExposure.ContactRole</td>
+<td>exposure.ContactRole</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDNewExposurePopup.pcf:65</td>
+<td>Web.APDNewExposure.ContactRole</td>
+<td>exposure.ContactRole</td>
+<td>true</td>
+<td>
+APDNewExposurePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdexposure_coverable"></a>
+<p class="column">
+<span class="coltitle">Coverable</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="APDCoverable.html" TARGET="tableFrame">APDCoverable</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CoverableID)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The coverable for with this defines the risk exposure</span>
+<a name="apdexposure_createtime"></a>
+<p class="column">
+<span class="coltitle">CreateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was created</span>
+<a name="apdexposure_createuser"></a>
+<p class="column">
+<span class="coltitle">CreateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: CreateUserID)</span>
+<br>
+<span class="desc">User who created the object</span>
+<a name="apdexposure_description"></a>
+<p class="column">
+<span class="coltitle">Description</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(localized)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>localized</b><br>The property is represented by a different localized table.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">A description of what the exposure is, e.g. a driver, a class of employees, an industry class</span>
+<div class='screenrefbody'>
+<span id=showhideUI_1 onclick='showAndHideUIDetails("UITable_1", "showhideUI_1")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_1' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableCV.pcf:198</td>
+<td>DisplayKey.get("Web.APD.RequiredForGeneration", DisplayKey.get("Web.APDCoverableCV.APDExposure.Description"))</td>
+<td>exposure.Description</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDNewExposurePopup.pcf:37</td>
+<td>DisplayKey.get("Web.APD.RequiredForGeneration", DisplayKey.get("Web.APDNewExposure.Description"))</td>
+<td>exposure.Description</td>
+<td>true</td>
+<td>
+APDNewExposurePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdexposure_exposuretype"></a>
+<p class="column">
+<span class="coltitle">ExposureType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/APDExposureType_tl.html" TARGET="tableFrame">APDExposureType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: liab)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The type of risk resulting from this exposure</span>
+<div class='screenrefbody'>
+<span id=showhideUI_2 onclick='showAndHideUIDetails("UITable_2", "showhideUI_2")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_2' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableCV.pcf:152</td>
+<td>Web.APDCoverableCV.APDExposure.ExposureType</td>
+<td>exposure.ExposureType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDNewExposurePopup.pcf:44</td>
+<td>Web.APDNewExposure.ExposureType</td>
+<td>exposure.ExposureType</td>
+<td>true</td>
+<td>
+APDNewExposurePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdexposure_isautonumbered"></a>
+<p class="column">
+<span class="coltitle">IsAutoNumbered</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "bit")'>bit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: false)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Defines if the exposures are to be auto numbered (if this is needed?)</span>
+<a name="apdexposure_menulabel"></a>
+<p class="column">
+<span class="coltitle">MenuLabel</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(localized)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>localized</b><br>The property is represented by a different localized table.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Exposure list label used in the UI</span>
+<div class='screenrefbody'>
+<span id=showhideUI_3 onclick='showAndHideUIDetails("UITable_3", "showhideUI_3")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_3' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableCV.pcf:192</td>
+<td>DisplayKey.get("Web.APD.RequiredForGeneration", DisplayKey.get("Web.APDCoverableCV.APDExposure.MenuLabel"))</td>
+<td>exposure.MenuLabel</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdexposure_name"></a>
+<p class="column">
+<span class="coltitle">Name</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "shorttext")'>shorttext</span> (255)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(localized)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>localized</b><br>The property is represented by a different localized table.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The name of the type of exposure used in the UI as a title</span>
+<div class='screenrefbody'>
+<span id=showhideUI_4 onclick='showAndHideUIDetails("UITable_4", "showhideUI_4")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_4' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableCV.pcf:138</td>
+<td>Web.APDCoverableCV.APDExposure.Name</td>
+<td>exposure.Name</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDNewExposurePopup.pcf:32</td>
+<td>Web.APDNewExposure.Name</td>
+<td>exposure.Name</td>
+<td>true</td>
+<td>
+APDNewExposurePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdexposure_publicid"></a>
+<p class="column">
+<span class="coltitle">PublicID</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "publicid")'>publicid</span> (64)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">ID or primary key of the row in the external system to which this row is mapped</span>
+<a name="apdexposure_ratingtype"></a>
+<p class="column">
+<span class="coltitle">RatingType</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/APDExposureRatingType_tl.html" TARGET="tableFrame">APDExposureRatingType</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: term)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Determines how exposure based rating will be applied</span>
+<div class='screenrefbody'>
+<span id=showhideUI_5 onclick='showAndHideUIDetails("UITable_5", "showhideUI_5")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_5' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableCV.pcf:185</td>
+<td>Web.APDCoverableCV.APDExposure.RatingType</td>
+<td>exposure.RatingType</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDNewExposurePopup.pcf:54</td>
+<td>Web.APDNewExposure.RatingType</td>
+<td>exposure.RatingType</td>
+<td>true</td>
+<td>
+APDNewExposurePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdexposure_retiredvalue"></a>
+<p class="column">
+<span class="coltitle">RetiredValue</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "softentityreference")'>softentityreference</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: Retired)&nbsp;&nbsp;&nbsp;&nbsp;(default: 0)&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Whether the entity is still in use. A value of 0 means that the entity is not retired. If the entity is retired from active use, this field has a non-zero value equal to the entity's ID. Once an entity is retired, it should not be unretired.</span>
+<a name="apdexposure_risklocation"></a>
+<p class="column">
+<span class="coltitle">RiskLocation</span>&nbsp;&nbsp;<span class="titleDesc">type key to <A HREF="../typelist/APDRiskLocationType_tl.html" TARGET="tableFrame">APDRiskLocationType</A> using filter <A HREF="../typelist/APDRiskLocationType_tl.html#ExposureLocation" TARGET="tableFrame">ExposureLocation</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(default: useParent)&nbsp;&nbsp;&nbsp;&nbsp;(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The typekey cannot contain null values.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">Defines how the jurisdiction/location of this coverable risk is determined</span>
+<div class='screenrefbody'>
+<span id=showhideUI_6 onclick='showAndHideUIDetails("UITable_6", "showhideUI_6")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_6' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableCV.pcf:174</td>
+<td>Web.APDCoverableCV.APDExposure.RiskLocation</td>
+<td>exposure.RiskLocation</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+<tr>
+<td>APDNewExposurePopup.pcf:72</td>
+<td>Web.APDNewExposure.RiskLocation</td>
+<td>exposure.RiskLocation</td>
+<td>true</td>
+<td>
+APDNewExposurePopup
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdexposure_typename"></a>
+<p class="column">
+<span class="coltitle">TypeName</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "varchar")'>varchar</span> (22)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The entity used to persist this exposure</span>
+<div class='screenrefbody'>
+<span id=showhideUI_7 onclick='showAndHideUIDetails("UITable_7", "showhideUI_7")' style='cursor:pointer'>
+<img src="../../res/blackup.gif" border="0">Show user interface details...
+</span>
+<div id='UITable_7' style='display:none'>
+Used in:<br>
+<table class='screenreftable' border='1'>
+<tr>
+<th>PCF file</th>
+<th>Label</th>
+<th>Value</th>
+<th>Editable</th>
+<th>Pages</th>
+</tr>
+<tr>
+<td>APDCoverableCV.pcf:205</td>
+<td>DisplayKey.get("Web.APD.RequiredForGeneration", DisplayKey.get("Web.APDCoverableCV.APDExposure.TypeName"))</td>
+<td>exposure.TypeName</td>
+<td>true</td>
+<td>
+RewriteWizard
+<br>
+SubmissionWizard
+<br>
+RenewalWizard
+<br>
+AuditWizard
+<br>
+PolicyChangeWizard
+<br>
+IssuanceWizard
+<br>
+APDCoverablePopup
+<br>
+APDNewProductLinePopup
+<br>
+APDProductDefinition
+<br>
+RewriteNewAccountWizard
+<br>
+ReinstatementWizard
+<br>
+CancellationWizard
+<br>
+QuickSubmissionWizard
+</td>
+</tr>
+</table>
+</div></div>
+<a name="apdexposure_updatetime"></a>
+<p class="column">
+<span class="coltitle">UpdateTime</span>&nbsp;&nbsp;<span class="titleDesc"><span class='defPopupLink' onClick='popupDefinition(event, "datetime")'>datetime</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(non-null)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>non-null</b><br>The column cannot contain null values.')">?</span></sup></span>
+<br>
+<span class="desc">Timestamp when the object was last updated</span>
+<a name="apdexposure_updateuser"></a>
+<p class="column">
+<span class="coltitle">UpdateUser</span>&nbsp;&nbsp;<span class="titleDesc">foreign key to <A HREF="User.html" TARGET="tableFrame">User</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(database column: UpdateUserID)</span>
+<br>
+<span class="desc">User who last updated the object</span>
+<a name="Arrays"></a><div class="arraysbox">Arrays</div>
+<a name="apdexposure_description_l10n_array"></a>
+<p class="column">
+<span class="coltitle">Description_L10N_ARRAY</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="APDExposure_Description_L10N.html" TARGET="tableFrame">APDExposure_Description_L10N</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="apdexposure_fields"></a>
+<p class="column">
+<span class="coltitle">Fields</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="APDAttribute.html#APDExposureField" TARGET="tableFrame">APDExposureField</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize">(exportable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>exportable</b><br>The entity is available to the SOAP APIs.')">?</span></sup>&nbsp;&nbsp;&nbsp;&nbsp;(writable)<sup><span class='glossaryLink' onclick="popupDefinition(event, '<b>writable</b><br>The property can be written to via Gosu or the IDataObjectAPI.')">?</span></sup></span>
+<br>
+<span class="desc">The fields for this exposure type</span>
+<a name="apdexposure_menulabel_l10n_array"></a>
+<p class="column">
+<span class="coltitle">MenuLabel_L10N_ARRAY</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="APDExposure_MenuLabel_L10N.html" TARGET="tableFrame">APDExposure_MenuLabel_L10N</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="apdexposure_name_l10n_array"></a>
+<p class="column">
+<span class="coltitle">Name_L10N_ARRAY</span>&nbsp;&nbsp;<span class="titleDesc">array key for <A HREF="APDExposure_Name_L10N.html" TARGET="tableFrame">APDExposure_Name_L10N</A></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class = "spaceandsize"></span>
+<br>
+<span class="desc"></span>
+<a name="Unique Keys for APDExposure"></a><div class="arraysbox">Unique Keys for APDExposure</div>
+<span class="desc">A unique key is a combination of fields that must be unique, i.e. there can't be two rows in the table that have the same value for every field in the key.</span>
+<br/>
+<table class="typelistbody" border="1" CELLPADDING="2" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Index</td>
+<td>Included Columns</td>
+</tr>
+<tr><td>apdexposure1a</td>
+<td>PublicID, Retired</td></tr>
+</table>
+<script language="JavaScript">
+function showAllUIDetails() {
+showUIDetails('UITable_0', 'showhideUI_0');
+showUIDetails('UITable_1', 'showhideUI_1');
+showUIDetails('UITable_2', 'showhideUI_2');
+showUIDetails('UITable_3', 'showhideUI_3');
+showUIDetails('UITable_4', 'showhideUI_4');
+showUIDetails('UITable_5', 'showhideUI_5');
+showUIDetails('UITable_6', 'showhideUI_6');
+showUIDetails('UITable_7', 'showhideUI_7');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Hide user interface details on all fields';
+  link.onclick = hideAllUIDetails;
+  return false;
+}
+function hideAllUIDetails() {
+hideUIDetails('UITable_0', 'showhideUI_0');
+hideUIDetails('UITable_1', 'showhideUI_1');
+hideUIDetails('UITable_2', 'showhideUI_2');
+hideUIDetails('UITable_3', 'showhideUI_3');
+hideUIDetails('UITable_4', 'showhideUI_4');
+hideUIDetails('UITable_5', 'showhideUI_5');
+hideUIDetails('UITable_6', 'showhideUI_6');
+hideUIDetails('UITable_7', 'showhideUI_7');
+var link = document.getElementById('showAllElements');
+  link.innerHTML = 'Show user interface details on all fields';
+  link.onclick = showAllUIDetails;
+  return false;
+}
+</script>
+
+</body>
+</html>
