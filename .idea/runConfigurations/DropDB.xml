@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="DropDB" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.guidewire.testharness.db.DBResetTool" />
+    <module name="configuration" />
+    <option name="PROGRAM_PARAMETERS" value="-recreatedb_no_upgrade" />
+    <option name="VM_PARAMETERS" value="-server -ea -Xdebug -Xms1000m -Dgw.server.mode=dev -Dgwdebug=true -Dgw.webapp.dir=idea/webapp -Dgw.classpath.jar=true -Dgw.plugins.gclasses.dir=idea-gclasses" />
+    <method v="2">
+      <option name="MakeIncludingOSGi" enabled="true" />
+    </method>
+  </configuration>
+</component>

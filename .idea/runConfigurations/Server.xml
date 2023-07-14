@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Server" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.guidewire.commons.jetty.GWServerJettyServerMain" />
+    <module name="configuration" />
+    <option name="VM_PARAMETERS" value="-server -ea -Xdebug -Djava.awt.headless=true -Dgw.port=8180 -Xmx4g -Dgw.server.mode=dev -Dgwdebug=true -Dgw.webapp.dir=idea/webapp -Dgw.classpath.jar=true -Dgw.plugins.gclasses.dir=idea-gclasses -DgosuInit.supportDiscretePackages=true" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="8123" />
+      <option name="TRANSPORT" value="0" />
+      <option name="LOCAL" value="true" />
+    </RunnerSettings>
+    <ConfigurationWrapper RunnerId="Debug" />
+    <method v="2">
+      <option name="MakeIncludingOSGi" enabled="true" />
+    </method>
+  </configuration>
+</component>

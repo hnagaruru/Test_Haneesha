@@ -1,0 +1,41 @@
+<application>
+  <component name="DimensionService">
+    <location key="find.popup.0.0.1366.768" x="390" y="0" />
+    <size key="GridCell.Tab.0.right.0.0.1366.768" width="1345" height="210" />
+    <size key="GridCell.Tab.0.left.0.0.1366.768" width="1345" height="210" />
+    <size key="GridCell.Tab.0.center.0.0.1366.768" width="1345" height="210" />
+    <size key="GridCell.Tab.0.bottom.0.0.1366.768" width="1345" height="210" />
+    <size key="find.popup.0.0.1366.768" width="903" height="720" />
+    <size key="GridCell.Tab.1.left.0.0.1366.768" width="1345" height="210" />
+    <size key="GridCell.Tab.1.center.0.0.1366.768" width="1345" height="210" />
+    <size key="GridCell.Tab.1.right.0.0.1366.768" width="1345" height="210" />
+    <size key="GridCell.Tab.1.bottom.0.0.1366.768" width="1345" height="210" />
+  </component>
+  <component name="WindowManager">
+    <frame x="0" y="0" width="1366" height="720" extendedState="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="WindowStateApplicationService">
+    <state x="470" y="70" key="FileChooserDialogImpl" timestamp="1687780866224">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state x="470" y="70" key="FileChooserDialogImpl/0.0.1366.720" timestamp="1687780866224" />
+    <state x="376" y="30" key="NewModule_or_Project.wizard" timestamp="1687780834369">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state x="376" y="30" key="NewModule_or_Project.wizard/0.0.1366.720" timestamp="1687780834369" />
+  </component>
+</application>

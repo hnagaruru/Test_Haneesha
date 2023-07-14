@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="12000" />
+    <wildcardResourcePatterns>
+      <entry name="!**/*.java" />
+      <entry name="!?*.gs" />
+      <entry name="!?*.gsx" />
+      <entry name="!?*.gsp" />
+      <entry name="!?*.gst" />
+      <entry name="!?*.gr" />
+      <entry name="!?*.grs" />
+      <entry name="!?*.pcfc" />
+      <entry name="!order.txt" />
+      <entry name="!gwxmlmodule.xml" />
+    </wildcardResourcePatterns>
+  </component>
+</project>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="36083dc0-3d15-4f05-af93-dd971f4fe62d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="COMPILER_PROCESS_ADDITIONAL_VM_OPTIONS" value="-ea" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="GosuClass" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2R99s6elrUYk6sAmEzogaBYFCKD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="dynamic.classpath" value="true" />
+    <property name="show.inlinked.gradle.project.popup" value="false" />
+    <property name="show.unlinked.gradle.project.popup" value="false" />
+  </component>
+  <component name="RunManager" selected="Application.Server">
+    <configuration name="JsonSchemaCodegen" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.guidewire.tools.json.JsonSchemaWrapperCodegenTool" />
+      <module name="configuration" />
+      <option name="VM_PARAMETERS" value="-server -ea -Xdebug -Djava.awt.headless=true -Dgw.port=8180 -Xmx4g -Dgw.server.mode=dev -Dgwdebug=true -Dgw.webapp.dir=idea/webapp -Dgw.classpath.jar=true -Dgw.plugins.gclasses.dir=idea-gclasses -DgosuInit.supportDiscretePackages=true" />
+      <method v="2">
+        <option name="MakeIncludingOSGi" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="VM_PARAMETERS" value="-Xmx4g -Djava.awt.headless=true -ea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeIncludingOSGi" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <option name="GLUE" value="gw.cucumber" />
+      <option name="VM_PARAMETERS" value="-Xmx4g -Dgw.pc.env=h2mem -Dgw.tests.skip.knownbreak=true -Djava.awt.headless=true -ea -Dgw.webapp.dir=idea/webapp -Dgw.classpath.jar=true -Dgw.plugins.gclasses.dir=idea-gclasses -DgosuInit.supportDiscretePackages=true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeIncludingOSGi" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-Xmx4g -Dgw.pc.env=h2mem -Dgw.tests.skip.knownbreak=true -Djava.awt.headless=true -ea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeIncludingOSGi" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.DropDB" />
+      <item itemvalue="Application.JsonSchemaCodegen" />
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.TestServer" />
+    </list>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1687109999216">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.720@0.0.1366.720" timestamp="1687109999215" />
+    <state x="458" y="170" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1686994094950">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state x="458" y="170" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.720@0.0.1366.720" timestamp="1686994094950" />
+    <state width="1345" height="210" key="GridCell.Tab.0.bottom" timestamp="1689322380821">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state width="1345" height="210" key="GridCell.Tab.0.bottom/0.0.1366.720@0.0.1366.720" timestamp="1689322380821" />
+    <state width="1345" height="210" key="GridCell.Tab.0.center" timestamp="1689322380821">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state width="1345" height="210" key="GridCell.Tab.0.center/0.0.1366.720@0.0.1366.720" timestamp="1689322380821" />
+    <state width="1345" height="210" key="GridCell.Tab.0.left" timestamp="1689322380821">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state width="1345" height="210" key="GridCell.Tab.0.left/0.0.1366.720@0.0.1366.720" timestamp="1689322380821" />
+    <state width="1345" height="210" key="GridCell.Tab.0.right" timestamp="1689322380821">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state width="1345" height="210" key="GridCell.Tab.0.right/0.0.1366.720@0.0.1366.720" timestamp="1689322380821" />
+    <state width="1345" height="210" key="GridCell.Tab.1.bottom" timestamp="1689268085810">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state width="1345" height="210" key="GridCell.Tab.1.bottom/0.0.1366.720@0.0.1366.720" timestamp="1689268085810" />
+    <state width="1345" height="210" key="GridCell.Tab.1.center" timestamp="1689268085810">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state width="1345" height="210" key="GridCell.Tab.1.center/0.0.1366.720@0.0.1366.720" timestamp="1689268085810" />
+    <state width="1345" height="210" key="GridCell.Tab.1.left" timestamp="1689268085810">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state width="1345" height="210" key="GridCell.Tab.1.left/0.0.1366.720@0.0.1366.720" timestamp="1689268085810" />
+    <state width="1345" height="210" key="GridCell.Tab.1.right" timestamp="1689268085810">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state width="1345" height="210" key="GridCell.Tab.1.right/0.0.1366.720@0.0.1366.720" timestamp="1689268085810" />
+    <state x="92" y="92" width="1182" height="536" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1688727596925">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state x="92" y="92" width="1182" height="536" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.720@0.0.1366.720" timestamp="1688727596925" />
+    <state x="391" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1689322313889">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state x="391" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.720@0.0.1366.720" timestamp="1689322313889" />
+    <state x="390" y="0" width="903" height="720" key="find.popup" timestamp="1689231966430">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state x="390" y="0" width="903" height="720" key="find.popup/0.0.1366.720@0.0.1366.720" timestamp="1689231966430" />
+    <state x="346" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1689233262342">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state x="346" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1366.720@0.0.1366.720" timestamp="1689233262342" />
+  </component>
+</project>
